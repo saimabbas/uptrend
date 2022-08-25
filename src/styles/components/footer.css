@@ -1,0 +1,92 @@
+footer {
+  width: 100%;
+  background-color: var(--main-dark3);
+}
+.footer-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  padding: 5rem 0;
+}
+.footer-grid-card-2,
+.footer-grid-card-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.footer-grid-card-2 h6,
+.footer-grid-card-3 h6,
+.footer-grid-card-4 h6 {
+  font-size: 1.85rem;
+  color: var(--white);
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+}
+.footer-grid-card-2 a,
+.footer-grid-card-3 a {
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 400;
+  margin: 0 0 1rem 0;
+  text-decoration: none;
+}
+.footer-grid-card-4 p {
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 400;
+}
+.footer-subscribe-box {
+  width: 100%;
+  margin: 2.5rem 0;
+  background-color: var(--main-dark1);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-subscribe-box input {
+  width: 100%;
+  background-color: unset;
+  border: 0;
+  outline: 0;
+  padding: 1.25rem 0;
+  font-size: 1.65rem;
+  color: var(--white);
+}
+.footer-subscribe-box input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+.footer-subscribe-box button {
+  background-color: unset;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  font-size: 1.65rem;
+  color: var(--main-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.footer-icons-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-icons-box a {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5rem 0 0;
+}
+.footer-icons-box a svg {
+  width: 1.85rem;
+}

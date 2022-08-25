@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-100.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-200.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-300.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-400.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-500.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-600.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-700.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-800.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-900.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../assets/fonts/Gilroy-1000.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 1000;
+}
+.app * {
+  font-family: "Gilroy";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  width: 100%;
+  max-width: 2500px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+:root {
+  font-size: 10px;
+
+  /* Colors */
+  --white: #fff;
+  --black: #000;
+  --main-color: #31dd8c;
+  --main-dark1: #191c22;
+  --main-dark2: #c4c4c4;
+  --main-dark3: #101216;
+  --main-dark4: #1e1e1e;
+  --main-light1: #f7f7f7;
+
+  /* Transitions */
+  --trns1: 0.25s;
+  --trns2: 0.5s;
+  --trns3: 0.5s;
+  --trns4: 1s;
+}
+.d-c-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app h2 {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.app h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.app h4 {
+  font-size: 2.85rem;
+}
+.app h5 {
+  font-size: 2.35rem;
+}
+.app h6 {
+  font-size: 2rem;
+}
+.app p {
+  font-size: 1.65rem;
+}
+.app a {
+  text-decoration: none;
+}
+b {
+  font-weight: 700;
+}
+.ut-btn-lightgray {
+  background-color: var(--main-light1);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--main-color);
+  border-radius: 0.5rem;
+  border: 0;
+  outline: 0;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.ut-btn-green {
+  background-color: var(--main-color);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 0.5rem;
+  border: 0;
+  outline: 0;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: 0.35s;
+}
+.arrow-link {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.arrow-link span {
+  font-size: 1.75rem;
+  color: var(--main-color);
+  font-weight: 700;
+  margin: 0 1rem 0 0;
+}
+.arrow-link svg {
+  width: 2rem;
+  height: 2rem;
+  color: var(--main-color);
+}
+.ut-input {
+  width: 100%;
+  border: 2px solid transparent;
+  outline: 0;
+  padding: 1.5rem 1.5rem;
+  background-color: var(--main-light1);
+  font-size: 1.65rem;
+  color: var(--main-dark1);
+  border-radius: 0.5rem;
+  transition: 0.5s;
+}
+.ut-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.ut-input:focus {
+  border: 2px solid var(--main-color);
+}
+
+.heading-sublink-box {
+  width: 100%;
+}
+.heading-sublink-box a {
+  text-align: center;
+  width: 100%;
+}
+.heading-sublink-box h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+  text-transform: uppercase;
+}
