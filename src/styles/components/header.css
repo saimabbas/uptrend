@@ -137,7 +137,7 @@ header .ut-dropdown .dropdown-menu a:hover {
 }
 .header-dark .header-center a,
 .header-dark .header-center .ut-dropdown button,
-.header-light .header-center .ut-dropdown button svg,
+.header-dark .header-center .ut-dropdown button svg,
 .header-dark .header-right p {
   color: var(--black);
 }
