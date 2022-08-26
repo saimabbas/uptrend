@@ -237,3 +237,24 @@
   display: flex;
   flex-direction: column;
 }
+.links-page {
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.links-page a {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--black);
+  margin: 0 0 1.5rem 0;
+  text-decoration: none;
+}
+.links-page a:hover span {
+  color: var(--main-color);
+}
+.links-page a:hover {
+  color: var(--black);
+}

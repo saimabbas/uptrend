@@ -1,14 +1,32 @@
-// import Page from "./views/MetaverseMarketing";
-// import Page from "./views/EventMarketing";
-import Page from "./views/InfluencerMarketing";
-// import Page from "./views/Home";
+import MetaverseMarketing from "./views/MetaverseMarketing";
+import EventMarketing from "./views/EventMarketing";
+import InfluencerMarketing from "./views/InfluencerMarketing";
+import Home from "./views/Home";
+import LinksPage from "./views/Links";
+import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
-    <div>
-      <Page />
-    </div>
+    <>
+      <Switch>
+        <Routes>
+          <Route exact path="/" element={<LinksPage />} />
+          <Route exact path="/home" element={<Home />} />
+          <Route
+            exact
+            path="/influencermarketing"
+            element={<InfluencerMarketing />}
+          />
+          <Route exact path="/eventmarketing" element={<EventMarketing />} />
+          <Route
+            exact
+            path="/metaversemarketing"
+            element={<MetaverseMarketing />}
+          />
+        </Routes>
+      </Switch>
+    </>
   );
 }
 
