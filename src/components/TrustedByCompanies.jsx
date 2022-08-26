@@ -60,67 +60,67 @@ const TrustedByCompanies = (props) => {
             >
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo1} alt="companyLogo1" />
+                  <img loading="lazy" src={companyLogo1} alt="companyLogo1" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo2} alt="companyLogo2" />
+                  <img loading="lazy" src={companyLogo2} alt="companyLogo2" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo3} alt="companyLogo3" />
+                  <img loading="lazy" src={companyLogo3} alt="companyLogo3" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo4} alt="companyLogo4" />
+                  <img loading="lazy" src={companyLogo4} alt="companyLogo4" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo5} alt="companyLogo5" />
+                  <img loading="lazy" src={companyLogo5} alt="companyLogo5" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo6} alt="companyLogo6" />
+                  <img loading="lazy" src={companyLogo6} alt="companyLogo6" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo7} alt="companyLogo7" />
+                  <img loading="lazy" src={companyLogo7} alt="companyLogo7" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo8} alt="companyLogo8" />
+                  <img loading="lazy" src={companyLogo8} alt="companyLogo8" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo9} alt="companyLogo9" />
+                  <img loading="lazy" src={companyLogo9} alt="companyLogo9" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo10} alt="companyLogo10" />
+                  <img loading="lazy" src={companyLogo10} alt="companyLogo10" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo11} alt="companyLogo11" />
+                  <img loading="lazy" src={companyLogo11} alt="companyLogo11" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo12} alt="companyLogo12" />
+                  <img loading="lazy" src={companyLogo12} alt="companyLogo12" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo13} alt="companyLogo13" />
+                  <img loading="lazy" src={companyLogo13} alt="companyLogo13" />
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -136,67 +136,119 @@ const TrustedByCompanies = (props) => {
             >
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo1Dark} alt="companyLogo1" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo1Dark}
+                    alt="companyLogo1"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo2Dark} alt="companyLogo2" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo2Dark}
+                    alt="companyLogo2"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo3Dark} alt="companyLogo3" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo3Dark}
+                    alt="companyLogo3"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo4Dark} alt="companyLogo4" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo4Dark}
+                    alt="companyLogo4"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo5Dark} alt="companyLogo5" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo5Dark}
+                    alt="companyLogo5"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo6Dark} alt="companyLogo6" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo6Dark}
+                    alt="companyLogo6"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo7Dark} alt="companyLogo7" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo7Dark}
+                    alt="companyLogo7"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo8Dark} alt="companyLogo8" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo8Dark}
+                    alt="companyLogo8"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo9Dark} alt="companyLogo9" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo9Dark}
+                    alt="companyLogo9"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo10Dark} alt="companyLogo10" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo10Dark}
+                    alt="companyLogo10"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo11Dark} alt="companyLogo11" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo11Dark}
+                    alt="companyLogo11"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo12Dark} alt="companyLogo12" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo12Dark}
+                    alt="companyLogo12"
+                  />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="hero-company-logo-box">
-                  <img src={companyLogo13Dark} alt="companyLogo13" />
+                  <img
+                    loading="lazy"
+                    src={companyLogo13Dark}
+                    alt="companyLogo13"
+                  />
                 </div>
               </SwiperSlide>
             </Swiper>

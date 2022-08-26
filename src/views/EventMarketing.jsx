@@ -66,7 +66,12 @@ const EventMarketing = () => {
               </div>
             </div>
           </div>
-          <img className="im-hero-img" src={EmHeroImg} alt="EmHeroImg" />
+          <img
+            loading="lazy"
+            className="im-hero-img"
+            src={EmHeroImg}
+            alt="EmHeroImg"
+          />
         </section>
         <section className="service-description-section">
           <div className="box">
@@ -79,21 +84,21 @@ const EventMarketing = () => {
             </div>
             <div className="service-description-grid">
               <div className="sd-grid-card em-sd-grid-card-1">
-                <img src={PhotoImg} alt="PhotoImg" />
+                <img loading="lazy" src={PhotoImg} alt="PhotoImg" />
                 <h4>
                   We shape <b>memorable and impactful experiences</b>
                 </h4>
               </div>
               <div className="sd-grid-card em-sd-grid-card-2">
-                <img src={EMSD2ndImg} alt="EMSD2ndImg" />
+                <img loading="lazy" src={EMSD2ndImg} alt="EMSD2ndImg" />
               </div>
               <div className="sd-grid-card em-sd-grid-card-3">
-                <img src={EMSD3rdImg} alt="EMSD3rdImg" />
+                <img loading="lazy" src={EMSD3rdImg} alt="EMSD3rdImg" />
                 <h2>277%</h2>
                 <h6>Organic Traffic </h6>
               </div>
               <div className="sd-grid-card em-sd-grid-card-4">
-                <img src={KnotImg} alt="KnotImg" />
+                <img loading="lazy" src={KnotImg} alt="KnotImg" />
                 <h4>Enhance attention surrounding iconic brands</h4>
                 <ul>
                   <li>
@@ -140,11 +145,11 @@ const EventMarketing = () => {
             <UpTrendsEvents />
             <div className="events-names-box">
               <div className="event-name-box">
-                <img src={TrImg} alt="TrImg" />
+                <img loading="lazy" src={TrImg} alt="TrImg" />
                 <p>Turkey Meetup</p>
               </div>
               <div className="event-name-box">
-                <img src={ECImg} alt="ECImg" />
+                <img loading="lazy" src={ECImg} alt="ECImg" />
                 <p>Ecuador Event</p>
               </div>
             </div>
@@ -164,32 +169,32 @@ const EventMarketing = () => {
               >
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo1Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={BBLogo1Dark} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo2Dark} alt="BBLogo2Dark" />
+                    <img loading="lazy" src={BBLogo2Dark} alt="BBLogo2Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo3Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={BBLogo3Dark} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo4Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={BBLogo4Dark} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo5Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={BBLogo5Dark} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo6Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={BBLogo6Dark} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -210,7 +215,11 @@ const EventMarketing = () => {
                 </p>
               </div>
               <div className="platform-stats-img">
-                <img src={LocalStartupImg} alt="LocalStartupImg" />
+                <img
+                  loading="lazy"
+                  src={LocalStartupImg}
+                  alt="LocalStartupImg"
+                />
               </div>
             </div>
             <div className="platform-stats-text-grid">
@@ -370,7 +379,11 @@ const EventMarketing = () => {
                 </div>
               </div>
               <div className="sj-bull-elevator-img-box">
-                <img src={BullElevatorImg} alt="BullElevatorImg" />
+                <img
+                  loading="lazy"
+                  src={BullElevatorImg}
+                  alt="BullElevatorImg"
+                />
               </div>
             </div>
           </div>

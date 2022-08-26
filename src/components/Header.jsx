@@ -45,7 +45,7 @@ const Header = (props) => {
           </div>
           <a href="#">Results</a>
           <div className="bookmark-link">
-            <img src={BookmarkGreen} alt="BookmarkGreen" />
+            <img loading="lazy" src={BookmarkGreen} alt="BookmarkGreen" />
             <a href="#">Careers</a>
           </div>
           <a href="#">Events</a>

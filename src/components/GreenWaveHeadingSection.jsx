@@ -11,7 +11,7 @@ import BigThingsWave from "../assets/img/big-things-wave.svg";
 const GreenWaveHeadingSection = (props) => {
   return (
     <section className="big-things-section">
-      <img src={BigThingsWave} alt="BigThingsWave" />
+      <img loading="lazy" src={BigThingsWave} alt="BigThingsWave" />
       <div>
         <h4>{props.smallText}</h4>
         <h2>{props.bigText}</h2>

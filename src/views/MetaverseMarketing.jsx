@@ -79,7 +79,12 @@ const MetaverseMarketing = () => {
               </div>
             </div>
           </div>
-          <img className="im-hero-img" src={MmHeroImg} alt="MmHeroImg" />
+          <img
+            loading="lazy"
+            className="im-hero-img"
+            src={MmHeroImg}
+            alt="MmHeroImg"
+          />
         </section>
         <section className="service-description-section">
           <div className="box">
@@ -92,7 +97,7 @@ const MetaverseMarketing = () => {
             </div>
             <div className="service-description-grid">
               <div className="sd-grid-card mm-sd-grid-card-1">
-                <img src={BoyMetaverse} alt="BoyMetaverse" />
+                <img loading="lazy" src={BoyMetaverse} alt="BoyMetaverse" />
                 <h5>
                   Establish brands presence in the Metaverse with
                   <b>exclusive interactive experience</b>
@@ -104,8 +109,12 @@ const MetaverseMarketing = () => {
                   leading platforms
                 </h3>
                 <div className="egc2-img-grid">
-                  <img src={LogoDecentralized} alt="companyLogo" />
-                  <img src={companyLogo15} alt="companyLogo" />
+                  <img
+                    loading="lazy"
+                    src={LogoDecentralized}
+                    alt="companyLogo"
+                  />
+                  <img loading="lazy" src={companyLogo15} alt="companyLogo" />
                 </div>
               </div>
               <div className="sd-grid-card mm-sd-grid-card-3">
@@ -151,7 +160,7 @@ const MetaverseMarketing = () => {
                 </ul>
               </div>
               <div className="sd-grid-card mm-sd-grid-card-4">
-                <img src={MMSD4thImg} alt="MMSD4thImg" />
+                <img loading="lazy" src={MMSD4thImg} alt="MMSD4thImg" />
               </div>
             </div>
           </div>
@@ -168,34 +177,34 @@ const MetaverseMarketing = () => {
             <div className="service-description-grid">
               <div className="sd-grid-card mm-sd-grid-card-2-1">
                 <div className="mm-info-small-grid-box">
-                  <img src={CrownImg} alt="CrownImg" />
+                  <img loading="lazy" src={CrownImg} alt="CrownImg" />
                   <h5>Introduce exclusive NFTs</h5>
                 </div>
                 <div className="mm-info-small-grid-box">
-                  <img src={ConnectionImg} alt="ConnectionImg" />
+                  <img loading="lazy" src={ConnectionImg} alt="ConnectionImg" />
                   <h5>Provide networking events</h5>
                 </div>
                 <div className="mm-info-small-grid-box">
-                  <img src={ShowcaseImg} alt="ShowcaseImg" />
+                  <img loading="lazy" src={ShowcaseImg} alt="ShowcaseImg" />
                   <h5>Showcase new products</h5>
                 </div>
                 <div className="mm-info-small-grid-box">
-                  <img src={TRArrowImg} alt="TRArrowImg" />
+                  <img loading="lazy" src={TRArrowImg} alt="TRArrowImg" />
                   <h5>Tap into venture capital</h5>
                 </div>
               </div>
               <div className="sd-grid-card mm-sd-grid-card-4">
-                <img src={MMSD2ndImg2} alt="MMSD4thImg" />
+                <img loading="lazy" src={MMSD2ndImg2} alt="MMSD4thImg" />
               </div>
               <div className="sd-grid-card mm-sd-grid-card-3-2">
-                <img src={BonsaiImg} alt="BonsaiImg" />
+                <img loading="lazy" src={BonsaiImg} alt="BonsaiImg" />
                 <h5>
                   <b> Achieve the holistic growth</b> by integrating your
                   business in Metaverse
                 </h5>
               </div>
               <div className="sd-grid-card mm-sd-grid-card-4">
-                <img src={MMSD4thImg2} alt="MMSD4thImg" />
+                <img loading="lazy" src={MMSD4thImg2} alt="MMSD4thImg" />
               </div>
             </div>
           </div>
@@ -379,7 +388,11 @@ const MetaverseMarketing = () => {
                 </div>
               </div>
               <div className="sj-bull-elevator-img-box">
-                <img src={BullElevatorImg} alt="BullElevatorImg" />
+                <img
+                  loading="lazy"
+                  src={BullElevatorImg}
+                  alt="BullElevatorImg"
+                />
               </div>
             </div>
           </div>

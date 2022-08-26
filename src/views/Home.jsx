@@ -88,7 +88,12 @@ const Home = () => {
     <main className="app">
       <div className="home-page">
         <section className="hero-section">
-          <img className="hero-bull" src={HeroBull} alt="HeroBull" />
+          <img
+            loading="lazy"
+            className="hero-bull"
+            src={HeroBull}
+            alt="HeroBull"
+          />
           <img
             className="hero-blue-overlay"
             src={HeroBlueOverlay}
@@ -127,24 +132,24 @@ const Home = () => {
           <div className="box">
             <div className="our-mission-content">
               <div className="our-mission-left">
-                <img src={OurMissionImg} alt="OurMissionImg" />
+                <img loading="lazy" src={OurMissionImg} alt="OurMissionImg" />
               </div>
               <div className="our-mission-right">
                 <h2>Our Mission</h2>
                 <div className="mission-text-img-box">
-                  <img src={MissionIcon1} alt="MissionIcon1" />
+                  <img loading="lazy" src={MissionIcon1} alt="MissionIcon1" />
                   <h5>
                     Enable <b>industry solutions</b> designed for innovators
                   </h5>
                 </div>
                 <div className="mission-text-img-box">
-                  <img src={MissionIcon2} alt="MissionIcon2" />
+                  <img loading="lazy" src={MissionIcon2} alt="MissionIcon2" />
                   <h5>
                     Become the premier <b>marketing trendsetter</b>
                   </h5>
                 </div>
                 <div className="mission-text-img-box">
-                  <img src={MissionIcon3} alt="MissionIcon3" />
+                  <img loading="lazy" src={MissionIcon3} alt="MissionIcon3" />
                   <h5>
                     Leverage <b>date science</b> to deliver results{" "}
                   </h5>
@@ -162,7 +167,11 @@ const Home = () => {
                   <h2>
                     Influencer <br /> <span>Marketing</span>
                   </h2>
-                  <img src={MaleInfluencer} alt="MaleInfluencer" />
+                  <img
+                    loading="lazy"
+                    src={MaleInfluencer}
+                    alt="MaleInfluencer"
+                  />
                 </div>
                 <h5>
                   #1 international content studio supported by{" "}
@@ -179,8 +188,8 @@ const Home = () => {
                   <b>with interactive experiences</b>
                 </h5>
                 <div className="egc2-img-grid">
-                  <img src={companyLogo14} alt="companyLogo14" />
-                  <img src={companyLogo15} alt="companyLogo11" />
+                  <img loading="lazy" src={companyLogo14} alt="companyLogo14" />
+                  <img loading="lazy" src={companyLogo15} alt="companyLogo11" />
                 </div>
               </div>
               <div className="expertise-grid-card expertise-grid-card-2">
@@ -193,8 +202,8 @@ const Home = () => {
                   <b>scaling and growth</b>
                 </h5>
                 <div className="egc2-img-grid">
-                  <img src={companyLogo2} alt="companyLogo14" />
-                  <img src={companyLogo8} alt="companyLogo11" />
+                  <img loading="lazy" src={companyLogo2} alt="companyLogo14" />
+                  <img loading="lazy" src={companyLogo8} alt="companyLogo11" />
                 </div>
               </div>
               <div className="expertise-grid-card expertise-grid-card-1">
@@ -203,7 +212,7 @@ const Home = () => {
                     Event
                     <br /> <span>Marketing</span>
                   </h2>
-                  <img src={OnlineMeeting} alt="OnlineMeeting" />
+                  <img loading="lazy" src={OnlineMeeting} alt="OnlineMeeting" />
                 </div>
                 <h5>
                   <b>We guide brands</b> through event planning of any magnitude
@@ -216,7 +225,11 @@ const Home = () => {
           <div className="box box-p">
             <div className="section-heading-box">
               <div className="up-twitter-name">
-                <img src={IconTwitterFilled} alt="IconTwitterFilled" />
+                <img
+                  loading="lazy"
+                  src={IconTwitterFilled}
+                  alt="IconTwitterFilled"
+                />
                 <p>@UptrendAgency</p>
               </div>
               <button className="ut-btn-md ut-btn-lightgray">FOLLOW</button>
@@ -287,32 +300,32 @@ const Home = () => {
               >
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo1} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo1} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo2} alt="BBLogo2" />
+                    <img loading="lazy" src={BBLogo2} alt="BBLogo2" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo3} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo3} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo4} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo4} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo5} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo5} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo6} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo6} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -336,7 +349,7 @@ const Home = () => {
               <div className="highly-regarded-grid-card">
                 <div className="hrgc-top">
                   <div className="hrgc-head">
-                    <img src={Nico} alt="Nico" />
+                    <img loading="lazy" src={Nico} alt="Nico" />
                     <div className="hrgc-head-name">
                       <h4>Nico Verderosa </h4>
                       <h6>@nico1991</h6>
@@ -351,7 +364,11 @@ const Home = () => {
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img src={companyLogo16} alt="companyLogo16" />
+                    <img
+                      loading="lazy"
+                      src={companyLogo16}
+                      alt="companyLogo16"
+                    />
                     <div className="hrgc-head-name">
                       <h6>Kephi Gallery</h6>
                       <p>Chief Operation Officer</p>
@@ -362,7 +379,7 @@ const Home = () => {
               <div className="highly-regarded-grid-card">
                 <div className="hrgc-top">
                   <div className="hrgc-head">
-                    <img src={Tony} alt="Tony" />
+                    <img loading="lazy" src={Tony} alt="Tony" />
                     <div className="hrgc-head-name">
                       <h4>Tony Spilotro </h4>
                       <h6>@black.m</h6>
@@ -378,7 +395,11 @@ const Home = () => {
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img src={companyLogo17} alt="companyLogo17" />
+                    <img
+                      loading="lazy"
+                      src={companyLogo17}
+                      alt="companyLogo17"
+                    />
                     <div className="hrgc-head-name">
                       <h6>Bitcoinist</h6>
                       <p>Editorial Director</p>
@@ -389,7 +410,7 @@ const Home = () => {
               <div className="highly-regarded-grid-card">
                 <div className="hrgc-top">
                   <div className="hrgc-head">
-                    <img src={Danny} alt="Danny" />
+                    <img loading="lazy" src={Danny} alt="Danny" />
                     <div className="hrgc-head-name">
                       <h4>Danny Les </h4>
                       <h6>@black.m</h6>
@@ -405,7 +426,11 @@ const Home = () => {
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img src={companyLogo18} alt="companyLogo18" />
+                    <img
+                      loading="lazy"
+                      src={companyLogo18}
+                      alt="companyLogo18"
+                    />
                     <div className="hrgc-head-name">
                       <h6>Content Tap</h6>
                       <p>Founder of The Content Tap</p>
@@ -463,7 +488,11 @@ const Home = () => {
                 <button className="ut-btn-green">SEND</button>
               </div>
               <div className="bull-elevator-img-box">
-                <img src={BullElevatorImg} alt="BullElevatorImg" />
+                <img
+                  loading="lazy"
+                  src={BullElevatorImg}
+                  alt="BullElevatorImg"
+                />
               </div>
             </div>
           </div>
@@ -494,13 +523,21 @@ const Home = () => {
               >
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img src={UTNFTImg1} alt="UTNFTImg" />
+                    <img loading="lazy" src={UTNFTImg1} alt="UTNFTImg" />
                     <div className="nft-details">
-                      <img src={NFTProfileImg1} alt="NFTProfileImg1" />
+                      <img
+                        loading="lazy"
+                        src={NFTProfileImg1}
+                        alt="NFTProfileImg1"
+                      />
                       <p>Charlie Chaplin</p>
                       <h6>by John Smith</h6>
                       <span>
-                        <img src={IconDiamond} alt="IconDiamond" />
+                        <img
+                          loading="lazy"
+                          src={IconDiamond}
+                          alt="IconDiamond"
+                        />
                         0.023
                       </span>
                     </div>
@@ -508,13 +545,21 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img src={UTNFTImg2} alt="UTNFTImg" />
+                    <img loading="lazy" src={UTNFTImg2} alt="UTNFTImg" />
                     <div className="nft-details">
-                      <img src={NFTProfileImg2} alt="NFTProfileImg2" />
+                      <img
+                        loading="lazy"
+                        src={NFTProfileImg2}
+                        alt="NFTProfileImg2"
+                      />
                       <p>Dark Home</p>
                       <h6>by John Smith</h6>
                       <span>
-                        <img src={IconDiamond} alt="IconDiamond" />
+                        <img
+                          loading="lazy"
+                          src={IconDiamond}
+                          alt="IconDiamond"
+                        />
                         0.023
                       </span>
                     </div>
@@ -522,13 +567,21 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img src={UTNFTImg3} alt="UTNFTImg" />
+                    <img loading="lazy" src={UTNFTImg3} alt="UTNFTImg" />
                     <div className="nft-details">
-                      <img src={NFTProfileImg3} alt="NFTProfileImg3" />
+                      <img
+                        loading="lazy"
+                        src={NFTProfileImg3}
+                        alt="NFTProfileImg3"
+                      />
                       <p>Charlie Chaplin</p>
                       <h6>by John Smith</h6>
                       <span>
-                        <img src={IconDiamond} alt="IconDiamond" />
+                        <img
+                          loading="lazy"
+                          src={IconDiamond}
+                          alt="IconDiamond"
+                        />
                         0.023
                       </span>
                     </div>
@@ -536,13 +589,21 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img src={UTNFTImg4} alt="UTNFTImg" />
+                    <img loading="lazy" src={UTNFTImg4} alt="UTNFTImg" />
                     <div className="nft-details">
-                      <img src={NFTProfileImg4} alt="NFTProfileImg4" />
+                      <img
+                        loading="lazy"
+                        src={NFTProfileImg4}
+                        alt="NFTProfileImg4"
+                      />
                       <p>Katty Cat</p>
                       <h6>by John Smith</h6>
                       <span>
-                        <img src={IconDiamond} alt="IconDiamond" />
+                        <img
+                          loading="lazy"
+                          src={IconDiamond}
+                          alt="IconDiamond"
+                        />
                         0.023
                       </span>
                     </div>
@@ -553,14 +614,18 @@ const Home = () => {
           </div>
         </section>
         <section className="ut-store-section">
-          <img src={StorefrontImg} alt="StorefrontImg" />
+          <img loading="lazy" src={StorefrontImg} alt="StorefrontImg" />
           <div className="ut-store-details">
             <h2>UPTREND STORE</h2>
-            <img src={LimitedEditionImg} alt="LimitedEditionImg" />
+            <img
+              loading="lazy"
+              src={LimitedEditionImg}
+              alt="LimitedEditionImg"
+            />
             <button className="ut-btn-green">SEND</button>
           </div>
           <div className="ut-store-wave-box">
-            <img src={UtStoreWave} alt="UtStoreWave" />
+            <img loading="lazy" src={UtStoreWave} alt="UtStoreWave" />
             <h2>
               <span>OFFICE IN</span> <br />
               SANDBOX
@@ -583,7 +648,7 @@ const Home = () => {
             </div>
             <div className="journal-grid">
               <div className="journal-grid-card">
-                <img src={JournalImg1} alt="JournalImg1" />
+                <img loading="lazy" src={JournalImg1} alt="JournalImg1" />
                 <div className="jgc-details">
                   <h6>
                     Working With Leading YouTube Influencers: A How To Guide
@@ -591,7 +656,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img src={JournalImg2} alt="JournalImg2" />
+                <img loading="lazy" src={JournalImg2} alt="JournalImg2" />
                 <div className="jgc-details">
                   <h6>
                     3 Proven Strategies To Building Brand Awareness in 2022
@@ -599,7 +664,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img src={JournalImg3} alt="JournalImg" />
+                <img loading="lazy" src={JournalImg3} alt="JournalImg" />
                 <div className="jgc-details">
                   <h6>
                     Top 5 Influencer Marketing Software Solutions To Boost Brand
@@ -614,13 +679,13 @@ const Home = () => {
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img src={JournalImg4} alt="JournalImg" />
+                <img loading="lazy" src={JournalImg4} alt="JournalImg" />
                 <div className="jgc-details">
                   <h6>New Local Region? Tips To Get Started</h6>
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img src={JournalImg5} alt="JournalImg" />
+                <img loading="lazy" src={JournalImg5} alt="JournalImg" />
                 <div className="jgc-details">
                   <h6>The Art of SEO: Proven Search Engine Strategies</h6>
                 </div>

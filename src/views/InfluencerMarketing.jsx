@@ -66,7 +66,12 @@ const InfluencerMarketing = () => {
               </div>
             </div>
           </div>
-          <img className="im-hero-img" src={ImHeroImg} alt="ImHeroImg" />
+          <img
+            loading="lazy"
+            className="im-hero-img"
+            src={ImHeroImg}
+            alt="ImHeroImg"
+          />
         </section>
         <section className="service-description-section">
           <div className="box">
@@ -98,7 +103,11 @@ const InfluencerMarketing = () => {
                     </div>
                   </div>
                 </div>
-                <img src={WinnertrophyImg} alt="WinnertrophyImg" />
+                <img
+                  loading="lazy"
+                  src={WinnertrophyImg}
+                  alt="WinnertrophyImg"
+                />
               </div>
               <div className="sd-grid-card sd-grid-card-2">
                 <div className="sdgc2-details">
@@ -106,46 +115,90 @@ const InfluencerMarketing = () => {
                     <span> ACROSS ALL</span>
                     PLATFORMS
                   </h3>
-                  <img src={SpeakerImg} alt="SpeakerImg" />
+                  <img loading="lazy" src={SpeakerImg} alt="SpeakerImg" />
                 </div>
                 <div className="all-platforms-grid">
                   <div className="apg-box">
-                    <img src={PlatformLogo1} alt="PlatformLogo1" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo1}
+                      alt="PlatformLogo1"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo2} alt="PlatformLogo2" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo2}
+                      alt="PlatformLogo2"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo3} alt="PlatformLogo3" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo3}
+                      alt="PlatformLogo3"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo4} alt="PlatformLogo4" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo4}
+                      alt="PlatformLogo4"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo5} alt="PlatformLogo5" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo5}
+                      alt="PlatformLogo5"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo6} alt="PlatformLogo6" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo6}
+                      alt="PlatformLogo6"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo7} alt="PlatformLogo7" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo7}
+                      alt="PlatformLogo7"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo8} alt="PlatformLogo8" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo8}
+                      alt="PlatformLogo8"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo9} alt="PlatformLogo9" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo9}
+                      alt="PlatformLogo9"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo10} alt="PlatformLogo10" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo10}
+                      alt="PlatformLogo10"
+                    />
                   </div>
                   <div className="apg-box">
-                    <img src={PlatformLogo11} alt="PlatformLogo11" />
+                    <img
+                      loading="lazy"
+                      src={PlatformLogo11}
+                      alt="PlatformLogo11"
+                    />
                   </div>
                 </div>
               </div>
               <div className="sd-grid-card sd-grid-card-3">
-                <img src={UTPartners} alt="UTPartners" />
+                <img loading="lazy" src={UTPartners} alt="UTPartners" />
                 <p className="ut-partners-username">@ricky</p>
                 <div className="sdgc3-details">
                   <h3>
@@ -163,7 +216,11 @@ const InfluencerMarketing = () => {
                 </div>
               </div>
               <div className="sd-grid-card sd-grid-card-4">
-                <img src={IndustriesPlanetImg} alt="IndustriesPlanetImg" />
+                <img
+                  loading="lazy"
+                  src={IndustriesPlanetImg}
+                  alt="IndustriesPlanetImg"
+                />
                 <div className="sdgc3-details">
                   <h3>
                     <span> across all</span>
@@ -187,12 +244,16 @@ const InfluencerMarketing = () => {
             <div className="cp-grid">
               <div className="cp-details">
                 <h6>Content Distribution</h6>
-                <img src={CPBeeImg} alt="CPBeeImg" />
+                <img loading="lazy" src={CPBeeImg} alt="CPBeeImg" />
                 <h2>Cross-Polination</h2>
                 <h4>Premier Content Distribution</h4>
               </div>
               <div className="cp-img-box">
-                <img src={CrossPolinationImg} alt="CrossPolinationImg" />
+                <img
+                  loading="lazy"
+                  src={CrossPolinationImg}
+                  alt="CrossPolinationImg"
+                />
               </div>
             </div>
           </div>
@@ -216,7 +277,11 @@ const InfluencerMarketing = () => {
                 </p>
               </div>
               <div className="platform-stats-img">
-                <img src={PlatformStatsImg} alt="PlatformStatsImg" />
+                <img
+                  loading="lazy"
+                  src={PlatformStatsImg}
+                  alt="PlatformStatsImg"
+                />
               </div>
             </div>
             <div className="platform-stats-text-grid">
@@ -381,7 +446,11 @@ const InfluencerMarketing = () => {
                 </div>
               </div>
               <div className="sj-bull-elevator-img-box">
-                <img src={BullElevatorImg} alt="BullElevatorImg" />
+                <img
+                  loading="lazy"
+                  src={BullElevatorImg}
+                  alt="BullElevatorImg"
+                />
               </div>
             </div>
           </div>

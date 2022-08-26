@@ -46,32 +46,32 @@ const BackedByLogosSwiper = (props) => {
               >
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo1Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={BBLogo1Dark} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo2Dark} alt="BBLogo2Dark" />
+                    <img loading="lazy" src={BBLogo2Dark} alt="BBLogo2Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo3Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={BBLogo3Dark} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo4Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={BBLogo4Dark} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo5Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={BBLogo5Dark} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo6Dark} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo6Dark} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
               </Swiper>
@@ -95,32 +95,32 @@ const BackedByLogosSwiper = (props) => {
               >
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo1} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo1} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo2} alt="BBLogo2" />
+                    <img loading="lazy" src={BBLogo2} alt="BBLogo2" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo3} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo3} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo4} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo4} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo5} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo5} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img src={BBLogo6} alt="BBLogo1" />
+                    <img loading="lazy" src={BBLogo6} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
               </Swiper>
