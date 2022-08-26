@@ -70,6 +70,9 @@
   margin: 0 auto;
   padding: 0 5rem;
 }
+.box.box-p {
+  padding: 0 8.5rem;
+}
 :root {
   font-size: 10px;
 
@@ -118,8 +121,11 @@
 .app a {
   text-decoration: none;
 }
-b {
-  font-weight: 700;
+.app b {
+  font-weight: 800;
+}
+.app button {
+  cursor: pointer;
 }
 .ut-btn-lightgray {
   background-color: var(--main-light1);
@@ -141,7 +147,7 @@ b {
   border-radius: 0.5rem;
   border: 0;
   outline: 0;
-  padding: 1rem 2.5rem;
+  padding: 0.85rem 2.5rem;
   cursor: pointer;
   transition: 0.35s;
 }
@@ -167,7 +173,7 @@ b {
   width: 100%;
   border: 2px solid transparent;
   outline: 0;
-  padding: 1.5rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   background-color: var(--main-light1);
   font-size: 1.65rem;
   color: var(--main-dark1);
@@ -187,10 +193,47 @@ b {
 .heading-sublink-box a {
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
 }
 .heading-sublink-box h2 {
   text-align: center;
   width: 100%;
   margin: 0 0 1.5rem 0;
   text-transform: uppercase;
+}
+.ut-dropdown button {
+  background-color: unset;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  box-shadow: unset !important;
+  color: var(--white);
+  transition: 0.25s;
+}
+.ut-dropdown button:hover,
+.ut-dropdown button:focus,
+.ut-dropdown button:active {
+  background-color: unset;
+  outline: 0;
+  border: 0;
+  padding: 0;
+  box-shadow: unset !important;
+}
+.ut-dropdown button::after {
+  display: none;
+}
+.ut-dropdown {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head-subhead span {
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.head-subhead {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
 }

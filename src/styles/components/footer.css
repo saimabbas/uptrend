@@ -29,21 +29,22 @@ footer {
 .footer-grid-card-2 a,
 .footer-grid-card-3 a {
   font-size: 1.5rem;
-  color: var(--white);
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 400;
+  transition: 0.25s;
   margin: 0 0 1rem 0;
   text-decoration: none;
 }
 .footer-grid-card-4 p {
   font-size: 1.5rem;
-  color: var(--white);
+  color: rgba(255, 255, 255, 0.75);
   font-weight: 400;
 }
 .footer-subscribe-box {
   width: 100%;
-  margin: 2.5rem 0;
+  margin: 5rem 0;
   background-color: var(--main-dark1);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2.5rem;
   border-radius: 0.75rem;
   display: flex;
   align-items: center;
@@ -54,7 +55,7 @@ footer {
   background-color: unset;
   border: 0;
   outline: 0;
-  padding: 1.25rem 0;
+  padding: 1rem 2.5rem 1rem 0;
   font-size: 1.65rem;
   color: var(--white);
 }
@@ -86,7 +87,12 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0 1.5rem 0 0;
+  transition: 0.25s;
 }
 .footer-icons-box a svg {
   width: 1.85rem;
+}
+.footer-grid-card-2 a:hover,
+.footer-grid-card-3 a:hover {
+  color: var(--main-color);
 }

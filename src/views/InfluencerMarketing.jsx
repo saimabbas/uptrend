@@ -3,7 +3,7 @@ import React from "react";
 // Styles
 import "../styles/reset.css";
 import "../styles/globals.css";
-import "../styles/views/influencer-marketing.css";
+import "../styles/views/marketing-views.css";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -44,21 +44,20 @@ import Header from "../components/Header";
 import TrustedByCompanies from "../components/TrustedByCompanies";
 import Accordion from "react-bootstrap/Accordion";
 import Footer from "../components/Footer";
+import GreenWaveHeadingSection from "../components/GreenWaveHeadingSection";
 
 const InfluencerMarketing = () => {
   return (
     <main className="app">
       <div className="influencer-marketing-page">
         <section className="im-hero-section">
-          <div className="influencer-marketing-content">
-            <Header lightHeader={false} />
-            <div className="box">
+          <div className="box">
+            <div className="influencer-marketing-content">
+              <Header lightHeader={false} />
               <div className="im-hero-headings">
                 <h1>Influencer Marketing</h1>
                 <h3>Outstanding opportunity to dominate the market</h3>
               </div>
-            </div>
-            <div className="box">
               <div className="im-hero-explore">
                 <a href="#">
                   <span>explore</span>
@@ -82,7 +81,7 @@ const InfluencerMarketing = () => {
               <div className="sd-grid-card sd-grid-card-1">
                 <div className="sdgc1-details">
                   <h3>
-                    <span> #1 INTERNALTIONAL</span> <br />
+                    <span> #1 INTERNALTIONAL</span>
                     CONTENT STUDIO
                   </h3>
                   <div className="supported-by-box">
@@ -104,7 +103,7 @@ const InfluencerMarketing = () => {
               <div className="sd-grid-card sd-grid-card-2">
                 <div className="sdgc2-details">
                   <h3>
-                    <span> ACROSS ALL</span> <br />
+                    <span> ACROSS ALL</span>
                     PLATFORMS
                   </h3>
                   <img src={SpeakerImg} alt="SpeakerImg" />
@@ -150,7 +149,7 @@ const InfluencerMarketing = () => {
                 <p className="ut-partners-username">@ricky</p>
                 <div className="sdgc3-details">
                   <h3>
-                    <span> UPTREND</span> <br />
+                    <span> UPTREND</span>
                     PARTNERS
                   </h3>
                   <div className="ut-tags">
@@ -167,8 +166,8 @@ const InfluencerMarketing = () => {
                 <img src={IndustriesPlanetImg} alt="IndustriesPlanetImg" />
                 <div className="sdgc3-details">
                   <h3>
-                    <span> UPTREND</span> <br />
-                    PARTNERS
+                    <span> across all</span>
+                    industries
                   </h3>
                   <div className="ut-tags">
                     <span>Influencers</span>
@@ -199,7 +198,9 @@ const InfluencerMarketing = () => {
           </div>
         </section>
         <section className="im-trusted-by">
-          <TrustedByCompanies trustedByLight={false} />
+          <div className="box">
+            <TrustedByCompanies trustedByLight={false} />
+          </div>
         </section>
         <section className="platform-stats-section">
           <div className="box">
@@ -240,14 +241,12 @@ const InfluencerMarketing = () => {
             </div>
           </div>
         </section>
-        <section className="big-things-section">
-          <img src={BigThingsWave} alt="BigThingsWave" />
-          <div>
-            <h4>READY FOR</h4>
-            <h2>BIG THINGS?</h2>
-            <a href="#">LET'S TALK!</a>
-          </div>
-        </section>
+        <GreenWaveHeadingSection
+          smallText="ready for"
+          bigText="big things?"
+          linkText="let's talk!"
+          linkOfText="#"
+        />
         <section className="faq-section">
           <div className="box">
             <h3>
@@ -377,7 +376,7 @@ const InfluencerMarketing = () => {
                   Get an exclusive marketing digest from industry growth experts
                 </h3>
                 <div className="sj-input-box">
-                  <input type="text" />
+                  <input type="text" placeholder="Email" />
                   <button>SUBSCRIBE TO OUR JOURNAL</button>
                 </div>
               </div>

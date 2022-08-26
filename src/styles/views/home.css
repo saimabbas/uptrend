@@ -4,11 +4,10 @@
 .hero-section {
   width: 100%;
   position: relative;
-  height: 100vh;
-  padding: 2.5rem 0 5rem 0;
   background-color: var(--main-dark3);
   overflow: hidden;
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -18,6 +17,39 @@
   width: 100%;
   position: relative;
   z-index: 10;
+  height: 100vh;
+  padding: 2.5rem 0 5rem 0;
+}
+.hero-icons-line-box {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  top: 10rem;
+  right: 0;
+  z-index: 1000;
+}
+.hero-icons-line-box > div {
+  width: 1px;
+  height: 7.5rem;
+  background-color: var(--white);
+}
+.hero-icons-line-box a svg {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+  transition: 0.25s;
+}
+.hero-icons-line-box > * {
+  margin: 0 0 2.5rem 0;
+}
+.hero-icons-line-box a svg:hover {
+  stroke: var(--main-color) !important;
+}
+.hero-content .box {
+  position: relative;
 }
 .hero-bull {
   width: max-content;
@@ -52,9 +84,11 @@
 }
 .trusted-by-light .hero-bottom h4 {
   color: var(--white);
+  text-transform: uppercase;
 }
 .trusted-by-dark .hero-bottom h4 {
   color: var(--black);
+  text-transform: uppercase;
 }
 .trusted-by-light .hero-bottom h4::after {
   background-color: var(--white);
@@ -81,6 +115,14 @@
   transform: translate(-110%, 0);
 }
 .hero-company-logo-box {
+  width: max-content;
+}
+.bb-logo-box {
+  width: max-content;
+}
+.bb-logo-box img {
+  height: 4rem;
+  object-fit: contain;
   width: max-content;
 }
 .hero-company-logos-swiper .swiper-slide {
@@ -136,7 +178,7 @@
 }
 .expertise-section {
   width: 100%;
-  background-color: var(--main-dark3);
+  background-color: var(--black);
   padding: 7.5rem 0;
 }
 .expertise-section h2.expertise-heading {
@@ -185,9 +227,14 @@
 .expertise-grid-card h2 {
   text-transform: uppercase;
   padding: 2.5rem 0 0 0;
+  display: flex;
+  font-size: 6.5rem;
+  font-weight: 800;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .expertise-grid-card h5 {
-  font-weight: 400;
+  font-weight: 300;
 }
 .expertise-grid-card-2 {
   width: 100%;
@@ -203,8 +250,8 @@
   justify-content: flex-start;
 }
 .egc2-img-grid img {
-  height: 4rem;
-  margin: 0 5rem 0 0;
+  height: 4.5rem;
+  margin: 0 3.5rem 0 0;
 }
 .twitter-section {
   width: 100%;
@@ -258,11 +305,16 @@
 .twitter-section h6 {
   text-align: justify;
 }
+.twitter-section h4 {
+  font-weight: 500;
+}
 .small-tweets-grid h6 {
   font-size: 1.75rem;
+  font-weight: 400;
 }
 .small-tweets-grid p {
   font-size: 1.35rem;
+  text-transform: uppercase;
 }
 .big-tweet {
   width: 100%;
@@ -271,20 +323,18 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-.our-partners-section {
+.backedby-section {
   width: 100%;
   padding: 5rem 0;
+}
+.backedby-section-light {
+  background-color: var(--white);
+}
+.backedby-section-dark {
   background-color: var(--main-dark3);
 }
-.head-subhead span {
-  font-weight: 400;
-  font-size: 3.25rem;
-}
-.head-subhead {
-  text-transform: uppercase;
-}
-
-.our-partners-logos-swiper .swiper-slide {
+.our-partners-logos-swiper .swiper-slide,
+.bb-logos-swiper .swiper-slide {
   width: max-content;
   display: flex;
   align-items: center;
@@ -293,12 +343,17 @@
 .our-partners-logos-swiper .swiper-slide img {
   height: 3rem;
 }
-.our-partners-section .head-subhead {
-  margin: 0 0 10rem 0;
-  color: var(--white);
+.backedby-section .head-subhead {
+  margin: 0 0 7.5rem 0;
 }
 .highly-regarded-section .head-subhead {
   color: var(--black);
+}
+.backedby-section-light .head-subhead {
+  color: var(--black);
+}
+.backedby-section-dark .head-subhead {
+  color: var(--white);
 }
 .highly-regarded-section {
   width: 100%;
@@ -309,7 +364,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 5rem;
+  grid-gap: 0;
 }
 .highly-regarded-grid-card {
   width: 100%;
@@ -318,7 +373,7 @@
   align-items: flex-start;
   justify-content: space-between;
   border-radius: 1.5rem;
-  padding: 5rem;
+  padding: 4rem;
   transition: 0.5s;
 }
 .highly-regarded-grid-card:hover {
@@ -335,20 +390,24 @@
   justify-content: flex-start;
 }
 .hrgc-top .hrgc-head img {
-  width: 10rem;
-  height: 10rem;
+  width: 8.5rem;
+  height: 8.5rem;
   margin: 0 2.5rem 0 0;
   border-radius: 50%;
 }
 .hrgc-top .hrgc-head h4 {
-  font-weight: 700;
-  margin: 0 0 0.75rem 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.hrgc-top .hrgc-head h6 {
+  font-weight: 300;
 }
 .hrgc-top > h6 {
   width: 100%;
   text-align: justify;
   margin: 5rem 0 0 0;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.85rem;
 }
 .hrgc-bottom {
   width: 100%;
@@ -360,10 +419,11 @@
   margin: 0 1.5rem 0 0;
 }
 .hrgc-bottom h6 {
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .hrgc-bottom p {
+  font-weight: 400;
   font-size: 1.5rem;
 }
 
@@ -412,6 +472,7 @@
 .ueg-right h5 {
   color: var(--white);
   margin: 2.5rem 0 7.5rem 0;
+  font-weight: 300;
 }
 .ready-to-start-section {
   width: 100%;
@@ -430,6 +491,7 @@
 }
 .rts-form h3 {
   text-transform: uppercase;
+  font-weight: 800;
 }
 .rts-form-grid {
   width: 100%;
@@ -449,7 +511,7 @@
   margin: -12.5rem 0 0 0;
 }
 .ready-to-start-section button {
-  min-width: 17.5rem;
+  min-width: 20rem;
 }
 .uptrend-nfts-section {
   width: 100%;
@@ -457,9 +519,10 @@
   background-color: var(--main-dark1);
 }
 .uptrend-nfts-section .section-heading-box p {
-  font-size: 1.5rem;
   color: var(--white);
   margin: 1.5rem 0 0 0;
+  font-weight: 300;
+  font-size: 2rem;
 }
 .uptrend-nfts-section .section-heading-box div {
   max-width: 50%;
@@ -479,8 +542,8 @@
   width: 100%;
 }
 .ut-nft-card > img {
-  width: 37.5rem;
-  height: 37.5rem;
+  width: 40rem;
+  height: 40rem;
   border-radius: 1.5rem;
   object-fit: cover;
   position: relative;
@@ -618,13 +681,15 @@
 .journal-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 2.75fr;
+  grid-template-columns: 1fr 1fr 2.25fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 2.5rem;
   margin: 7.5rem 0 0 0;
 }
 .journal-grid-card {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: var(--main-dark1);
   border-radius: 1rem;
   overflow: hidden;
@@ -632,10 +697,11 @@
 }
 .journal-grid-card img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .jgc-details {
-  padding: 2.5rem;
+  padding: 2rem;
 }
 .journal-grid-card:nth-child(3) {
   height: 100%;
@@ -645,7 +711,8 @@
 .jgc-details h6 {
   color: var(--white);
   font-weight: 600;
-  font-size: 1.85rem;
+  text-transform: uppercase;
+  font-size: 1.65rem;
 }
 .jgc-details p {
   color: var(--white);

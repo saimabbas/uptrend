@@ -26,7 +26,7 @@ header {
   display: grid;
   grid-template-columns: repeat(7, max-content);
   grid-template-rows: auto;
-  grid-gap: 3.5rem;
+  grid-gap: 2.5rem;
   /* display: flex;
   align-items: center;
   justify-content: center; */
@@ -39,6 +39,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 400;
   position: relative;
 }
 .bookmark-link {
@@ -79,14 +80,6 @@ header {
   font-size: 1.75rem;
   margin: 0 2.5rem 0 0;
 }
-.header-light .header-center a,
-.header-light .header-right p {
-  color: var(--white);
-}
-.header-dark .header-center a,
-.header-dark .header-right p {
-  color: var(--black);
-}
 
 a.talk-to-us {
   font-weight: 700;
@@ -102,4 +95,57 @@ a.talk-to-us span {
 }
 a.talk-to-us:hover {
   color: var(--main-color);
+}
+
+header .ut-dropdown button {
+  font-size: 1.65rem;
+  text-decoration: none;
+  transition: 0.25s;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  position: relative;
+}
+header .ut-dropdown button svg {
+  font-size: 2rem;
+  transition: 0.25s;
+  margin: 0 0 0 0.25rem;
+}
+header .ut-dropdown .dropdown-menu {
+  background-color: var(--white);
+  padding: 0.75rem 0;
+}
+header .ut-dropdown .dropdown-menu a {
+  color: var(--main-dark3);
+  padding: 0.5rem 3.5rem 0.5rem 2.5rem;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+}
+header .ut-dropdown .dropdown-menu a:hover {
+  color: var(--main-dark3);
+  background-color: rgba(196, 196, 196, 0.25);
+  transform: unset;
+}
+
+.header-light .header-center a,
+.header-light .header-center .ut-dropdown button,
+.header-light .header-center .ut-dropdown button svg,
+.header-light .header-right p {
+  color: var(--white);
+}
+.header-dark .header-center a,
+.header-dark .header-center .ut-dropdown button,
+.header-light .header-center .ut-dropdown button svg,
+.header-dark .header-right p {
+  color: var(--black);
+}
+header .ut-dropdown button:hover,
+header .ut-dropdown button:focus,
+header .ut-dropdown button:active,
+header .ut-dropdown button:hover svg,
+header .ut-dropdown button:focus svg,
+header .ut-dropdown button:active svg {
+  color: var(--main-color) !important;
 }

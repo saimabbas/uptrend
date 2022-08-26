@@ -27,6 +27,14 @@ import companyLogo13 from "../assets/img/logo-amazon.svg";
 import companyLogo14 from "../assets/img/logo-meta.svg";
 import companyLogo15 from "../assets/img/logo-sandbox.svg";
 import companyLogo16 from "../assets/img/logo-kephi.svg";
+import companyLogo17 from "../assets/img/logo-bitcoinist.svg";
+import companyLogo18 from "../assets/img/logo-tct.svg";
+import BBLogo1 from "../assets/img/backedby-logo-1.svg";
+import BBLogo2 from "../assets/img/backedby-logo-2.svg";
+import BBLogo3 from "../assets/img/backedby-logo-3.svg";
+import BBLogo4 from "../assets/img/backedby-logo-4.svg";
+import BBLogo5 from "../assets/img/backedby-logo-5.svg";
+import BBLogo6 from "../assets/img/backedby-logo-6.svg";
 import OurMissionImg from "../assets/img/our-mission-img.svg";
 import MissionIcon1 from "../assets/img/mission-icon-1.svg";
 import MissionIcon2 from "../assets/img/mission-icon-2.svg";
@@ -34,18 +42,37 @@ import MissionIcon3 from "../assets/img/mission-icon-3.svg";
 import OnlineMeeting from "../assets/img/online-meeting.svg";
 import MaleInfluencer from "../assets/img/male-social-media-influencer.svg";
 import IconTwitterFilled from "../assets/img/icon-twitter-filled.svg";
-import PersonImgCirclular from "../assets/img/person-img-circular.png";
-import EventImg from "../assets/img/event-img.png";
+import Nico from "../assets/img/nico.png";
+import Tony from "../assets/img/tony.png";
+import Danny from "../assets/img/danny.svg";
+import EventImg1 from "../assets/img/event-img-1.png";
 import BullElevatorImg from "../assets/img/bull-elevator-img.png";
-import UTNFTImg from "../assets/img/ut-nft.png";
+import UTNFTImg1 from "../assets/img/ut-nft-1.png";
+import UTNFTImg2 from "../assets/img/ut-nft-2.png";
+import UTNFTImg3 from "../assets/img/ut-nft-3.png";
+import UTNFTImg4 from "../assets/img/ut-nft-4.png";
+import NFTProfileImg1 from "../assets/img/nft-profile-1.png";
+import NFTProfileImg2 from "../assets/img/nft-profile-2.png";
+import NFTProfileImg3 from "../assets/img/nft-profile-3.png";
+import NFTProfileImg4 from "../assets/img/nft-profile-4.png";
+import JournalImg1 from "../assets/img/journal-img-1.svg";
+import JournalImg2 from "../assets/img/journal-img-2.svg";
+import JournalImg3 from "../assets/img/journal-img-3.svg";
+import JournalImg4 from "../assets/img/journal-img-4.svg";
+import JournalImg5 from "../assets/img/journal-img-5.svg";
 import IconDiamond from "../assets/img/icon-diamond.svg";
 import StorefrontImg from "../assets/img/storefront-img.png";
 import LimitedEditionImg from "../assets/img/limited-edition-img.svg";
 import UtStoreWave from "../assets/img/ut-store-wave.svg";
 import JournalImg from "../assets/img/journal-img.png";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
-import { MdArrowForward } from "react-icons/md";
+import { MdArrowForward, MdArrowDropDown } from "react-icons/md";
 
 // Components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -53,6 +80,8 @@ import Header from "../components/Header";
 import { FreeMode } from "swiper";
 import Footer from "../components/Footer";
 import TrustedByCompanies from "../components/TrustedByCompanies";
+import UpTrendsEvents from "../components/UpTrendsEvents";
+import BackedByLogosSwiper from "../components/BackedByLogosSwiper";
 
 const Home = () => {
   return (
@@ -65,99 +94,33 @@ const Home = () => {
             src={HeroBlueOverlay}
             alt="HeroBlueOverlay"
           />
-          <div className="hero-content">
-            <Header lightHeader={true} />
-            <div className="box">
+          <div className="box">
+            <div className="hero-content">
+              <Header lightHeader={true} />
               <h1>
                 LEADING MARKETING PARTNER <br /> BUILDING{" "}
                 <span>BRAND IMPACT</span>
               </h1>
-            </div>
-            {/* <div className="trusted-by">
-              <div className="box">
-                <div className="hero-bottom">
-                  <h4>
-                    Trusted by Fortune 500s <br /> and startups
-                  </h4>
-                  <div className="hero-company-logos-swiper">
-                    <Swiper
-                      slidesPerView={"auto"}
-                      spaceBetween={50}
-                      freeMode={true}
-                      modules={[FreeMode]}
-                      className="mySwiper"
-                    >
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo1} alt="companyLogo1" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo2} alt="companyLogo2" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo3} alt="companyLogo3" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo4} alt="companyLogo4" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo5} alt="companyLogo5" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo6} alt="companyLogo6" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo7} alt="companyLogo7" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo8} alt="companyLogo8" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo9} alt="companyLogo9" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo10} alt="companyLogo10" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo11} alt="companyLogo11" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo12} alt="companyLogo12" />
-                        </div>
-                      </SwiperSlide>
-                      <SwiperSlide>
-                        <div className="hero-company-logo-box">
-                          <img src={companyLogo13} alt="companyLogo13" />
-                        </div>
-                      </SwiperSlide>
-                    </Swiper>
-                  </div>
-                </div>
+              <div className="hero-icons-line-box">
+                <div></div>
+                <a href="#">
+                  <IconWhatsapp color="#fff" />
+                </a>
+                <a href="#">
+                  <IconTwitter color="#fff" />
+                </a>
+                <a href="#">
+                  <IconLinkedIn color="#fff" />
+                </a>
+                <a href="#">
+                  <IconInstagram color="#fff" />
+                </a>
+                <a href="#">
+                  <IconFacebook color="#fff" />
+                </a>
               </div>
-            </div> */}
-            <TrustedByCompanies trustedByLight={true} />
+              <TrustedByCompanies trustedByLight={true} />
+            </div>
           </div>
         </section>
         <section className="our-mission-section">
@@ -191,7 +154,7 @@ const Home = () => {
           </div>
         </section>
         <section className="expertise-section">
-          <div className="box">
+          <div className="box box-p">
             <h2 className="expertise-heading">Expertise</h2>
             <div className="expertise-grid">
               <div className="expertise-grid-card expertise-grid-card-1">
@@ -250,7 +213,7 @@ const Home = () => {
           </div>
         </section>
         <section className="twitter-section">
-          <div className="box">
+          <div className="box box-p">
             <div className="section-heading-box">
               <div className="up-twitter-name">
                 <img src={IconTwitterFilled} alt="IconTwitterFilled" />
@@ -275,7 +238,7 @@ const Home = () => {
                     marketers, and influencers .
                   </h6>
 
-                  <p>12 HOURS AGO</p>
+                  <p>1 WEEK AGO</p>
                 </div>
                 <div className="small-tweets-grid-card">
                   <h6>
@@ -293,7 +256,7 @@ const Home = () => {
                     marketers, and influencers .
                   </h6>
 
-                  <p>12 HOURS AGO</p>
+                  <p>2 weeks AGO</p>
                 </div>
                 <div className="small-tweets-grid-card">
                   <h6>
@@ -308,13 +271,13 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section className="our-partners-section">
-          <div className="box">
+        {/* <section className="our-partners-section">
+          <div className="box box-p">
             <h3 className="head-subhead">
               Our partners are backed <br />
               <span>by venture capital’s elite</span>
             </h3>
-            <div className="our-partners-logos-swiper">
+            <div className="bb-logos-swiper">
               <Swiper
                 slidesPerView={"auto"}
                 spaceBetween={100}
@@ -323,80 +286,46 @@ const Home = () => {
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo1} alt="companyLogo1" />
+                  <div className="bb-logo-box">
+                    <img src={BBLogo1} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo2} alt="companyLogo2" />
+                  <div className="bb-logo-box">
+                    <img src={BBLogo2} alt="BBLogo2" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo3} alt="companyLogo3" />
+                  <div className="bb-logo-box">
+                    <img src={BBLogo3} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo4} alt="companyLogo4" />
+                  <div className="bb-logo-box">
+                    <img src={BBLogo4} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo5} alt="companyLogo5" />
+                  <div className="bb-logo-box">
+                    <img src={BBLogo5} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo6} alt="companyLogo6" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo7} alt="companyLogo7" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo8} alt="companyLogo8" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo9} alt="companyLogo9" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo10} alt="companyLogo10" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo11} alt="companyLogo11" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo12} alt="companyLogo12" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="hero-company-logo-box">
-                    <img src={companyLogo13} alt="companyLogo13" />
+                  <div className="bb-logo-box">
+                    <img src={BBLogo6} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
               </Swiper>
             </div>
           </div>
-        </section>
+        </section> */}
+        <BackedByLogosSwiper backedByLight={false} />
         <section className="highly-regarded-section">
-          <div className="box">
+          <div className="box box-p">
             <div className="section-heading-box">
               <h3 className="head-subhead">
-                Our partners are backed <br />
-                <span>by venture capital’s elite</span>
+                highly regarded <br />
+                <span>by industry partners</span>
               </h3>
               <a href="#" className="arrow-link">
                 <span>MORE</span>
@@ -407,7 +336,7 @@ const Home = () => {
               <div className="highly-regarded-grid-card">
                 <div className="hrgc-top">
                   <div className="hrgc-head">
-                    <img src={PersonImgCirclular} alt="PersonImgCirclular" />
+                    <img src={Nico} alt="Nico" />
                     <div className="hrgc-head-name">
                       <h4>Nico Verderosa </h4>
                       <h6>@nico1991</h6>
@@ -433,25 +362,26 @@ const Home = () => {
               <div className="highly-regarded-grid-card">
                 <div className="hrgc-top">
                   <div className="hrgc-head">
-                    <img src={PersonImgCirclular} alt="PersonImgCirclular" />
+                    <img src={Tony} alt="Tony" />
                     <div className="hrgc-head-name">
-                      <h4>Nico Verderosa </h4>
-                      <h6>@nico1991</h6>
+                      <h4>Tony Spilotro </h4>
+                      <h6>@black.m</h6>
                     </div>
                   </div>
                   <h6>
-                    Choosing Uptrend to handle our marketing campaign, was one
-                    of the best decisions we could make. Their service was
-                    really efficient and they got us a great deal with top
-                    influencers.
+                    I had the pleasure of working with the Uptrend team on
+                    various marketing projects. The agency took my projects very
+                    seriously and worked closely to achieve my unique KPIs. I
+                    highly recommend them and look forward to working with
+                    Uptrend on my next major project.
                   </h6>
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img src={companyLogo16} alt="companyLogo16" />
+                    <img src={companyLogo17} alt="companyLogo17" />
                     <div className="hrgc-head-name">
-                      <h6>Kephi Gallery</h6>
-                      <p>Chief Operation Officer</p>
+                      <h6>Bitcoinist</h6>
+                      <p>Editorial Director</p>
                     </div>
                   </div>
                 </div>
@@ -459,25 +389,26 @@ const Home = () => {
               <div className="highly-regarded-grid-card">
                 <div className="hrgc-top">
                   <div className="hrgc-head">
-                    <img src={PersonImgCirclular} alt="PersonImgCirclular" />
+                    <img src={Danny} alt="Danny" />
                     <div className="hrgc-head-name">
-                      <h4>Nico Verderosa </h4>
-                      <h6>@nico1991</h6>
+                      <h4>Danny Les </h4>
+                      <h6>@black.m</h6>
                     </div>
                   </div>
                   <h6>
-                    Choosing Uptrend to handle our marketing campaign, was one
-                    of the best decisions we could make. Their service was
-                    really efficient and they got us a great deal with top
-                    influencers.
+                    When working on more complex contracts we are often required
+                    to seek external support. On many occasions we have enlisted
+                    the assistance of Uptrend. We have always found them to be
+                    professional and incredibly efficient and our clients are
+                    always happy at the conclusion of the engagement.
                   </h6>
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img src={companyLogo16} alt="companyLogo16" />
+                    <img src={companyLogo18} alt="companyLogo18" />
                     <div className="hrgc-head-name">
-                      <h6>Kephi Gallery</h6>
-                      <p>Chief Operation Officer</p>
+                      <h6>Content Tap</h6>
+                      <p>Founder of The Content Tap</p>
                     </div>
                   </div>
                 </div>
@@ -487,24 +418,7 @@ const Home = () => {
         </section>
         <section className="events-section">
           <div className="box">
-            <div className="uptrends-events-grid">
-              <div className="uptrends-events-img-grid">
-                <img src={EventImg} alt="EventImg" />
-                <img src={EventImg} alt="EventImg" />
-                <img src={EventImg} alt="EventImg" />
-              </div>
-              <div className="ueg-right">
-                <h3>UPTREND EVENTS</h3>
-                <h5>
-                  Influental names gather to share <br /> insights with industry
-                  innovators
-                </h5>
-                <a href="#" className="arrow-link">
-                  <span>READ MORE </span>
-                  <MdArrowForward />
-                </a>
-              </div>
-            </div>
+            <UpTrendsEvents />
           </div>
         </section>
         <section className="ready-to-start-section">
@@ -580,9 +494,9 @@ const Home = () => {
               >
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img src={UTNFTImg} alt="UTNFTImg" />
+                    <img src={UTNFTImg1} alt="UTNFTImg" />
                     <div className="nft-details">
-                      <img src={PersonImgCirclular} alt="PersonImgCirclular" />
+                      <img src={NFTProfileImg1} alt="NFTProfileImg1" />
                       <p>Charlie Chaplin</p>
                       <h6>by John Smith</h6>
                       <span>
@@ -594,9 +508,23 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img src={UTNFTImg} alt="UTNFTImg" />
+                    <img src={UTNFTImg2} alt="UTNFTImg" />
                     <div className="nft-details">
-                      <img src={PersonImgCirclular} alt="PersonImgCirclular" />
+                      <img src={NFTProfileImg2} alt="NFTProfileImg2" />
+                      <p>Dark Home</p>
+                      <h6>by John Smith</h6>
+                      <span>
+                        <img src={IconDiamond} alt="IconDiamond" />
+                        0.023
+                      </span>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="ut-nft-card">
+                    <img src={UTNFTImg3} alt="UTNFTImg" />
+                    <div className="nft-details">
+                      <img src={NFTProfileImg3} alt="NFTProfileImg3" />
                       <p>Charlie Chaplin</p>
                       <h6>by John Smith</h6>
                       <span>
@@ -608,52 +536,10 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img src={UTNFTImg} alt="UTNFTImg" />
+                    <img src={UTNFTImg4} alt="UTNFTImg" />
                     <div className="nft-details">
-                      <img src={PersonImgCirclular} alt="PersonImgCirclular" />
-                      <p>Charlie Chaplin</p>
-                      <h6>by John Smith</h6>
-                      <span>
-                        <img src={IconDiamond} alt="IconDiamond" />
-                        0.023
-                      </span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="ut-nft-card">
-                    <img src={UTNFTImg} alt="UTNFTImg" />
-                    <div className="nft-details">
-                      <img src={PersonImgCirclular} alt="PersonImgCirclular" />
-                      <p>Charlie Chaplin</p>
-                      <h6>by John Smith</h6>
-                      <span>
-                        <img src={IconDiamond} alt="IconDiamond" />
-                        0.023
-                      </span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="ut-nft-card">
-                    <img src={UTNFTImg} alt="UTNFTImg" />
-                    <div className="nft-details">
-                      <img src={PersonImgCirclular} alt="PersonImgCirclular" />
-                      <p>Charlie Chaplin</p>
-                      <h6>by John Smith</h6>
-                      <span>
-                        <img src={IconDiamond} alt="IconDiamond" />
-                        0.023
-                      </span>
-                    </div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="ut-nft-card">
-                    <img src={UTNFTImg} alt="UTNFTImg" />
-                    <div className="nft-details">
-                      <img src={PersonImgCirclular} alt="PersonImgCirclular" />
-                      <p>Charlie Chaplin</p>
+                      <img src={NFTProfileImg4} alt="NFTProfileImg4" />
+                      <p>Katty Cat</p>
                       <h6>by John Smith</h6>
                       <span>
                         <img src={IconDiamond} alt="IconDiamond" />
@@ -697,7 +583,7 @@ const Home = () => {
             </div>
             <div className="journal-grid">
               <div className="journal-grid-card">
-                <img src={JournalImg} alt="JournalImg" />
+                <img src={JournalImg1} alt="JournalImg1" />
                 <div className="jgc-details">
                   <h6>
                     Working With Leading YouTube Influencers: A How To Guide
@@ -705,15 +591,15 @@ const Home = () => {
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img src={JournalImg} alt="JournalImg" />
+                <img src={JournalImg2} alt="JournalImg2" />
                 <div className="jgc-details">
                   <h6>
-                    Working With Leading YouTube Influencers: A How To Guide
+                    3 Proven Strategies To Building Brand Awareness in 2022
                   </h6>
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img src={JournalImg} alt="JournalImg" />
+                <img src={JournalImg3} alt="JournalImg" />
                 <div className="jgc-details">
                   <h6>
                     Top 5 Influencer Marketing Software Solutions To Boost Brand
@@ -728,19 +614,15 @@ const Home = () => {
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img src={JournalImg} alt="JournalImg" />
+                <img src={JournalImg4} alt="JournalImg" />
                 <div className="jgc-details">
-                  <h6>
-                    Working With Leading YouTube Influencers: A How To Guide
-                  </h6>
+                  <h6>New Local Region? Tips To Get Started</h6>
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img src={JournalImg} alt="JournalImg" />
+                <img src={JournalImg5} alt="JournalImg" />
                 <div className="jgc-details">
-                  <h6>
-                    Working With Leading YouTube Influencers: A How To Guide
-                  </h6>
+                  <h6>The Art of SEO: Proven Search Engine Strategies</h6>
                 </div>
               </div>
             </div>
