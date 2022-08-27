@@ -261,6 +261,12 @@
   color: var(--white);
 }
 
+.pc-element {
+  display: block;
+}
+.mob-element {
+  display: none;
+}
 @media screen and (max-width: 1250px) {
   .box,
   .box.box-p {
@@ -288,5 +294,11 @@
   .arrow-link svg {
     width: 1.75rem;
     height: 1.75rem;
+  }
+  .pc-element {
+    display: none;
+  }
+  .mob-element {
+    display: block;
   }
 }

@@ -42,7 +42,7 @@ footer {
 }
 .footer-subscribe-box {
   width: 100%;
-  margin: 5rem 0;
+  margin: 5rem 0 2.5rem 0;
   background-color: var(--main-dark1);
   padding: 0.5rem 2.5rem;
   border-radius: 0.75rem;

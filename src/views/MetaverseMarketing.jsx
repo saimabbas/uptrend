@@ -234,7 +234,9 @@ const MetaverseMarketing = () => {
                   audience of 19,400 visitors.
                 </p>
               </div>
-              <div className="fashion-brand-img-box"></div>
+              <div className="platform-stats-img fashion-brand-img-box">
+                <img src={FashionBrandImg} alt="FashionBrandImg" />
+              </div>
             </div>
             <div className="platform-stats-text-grid">
               <div className="ps-box">
@@ -384,7 +386,9 @@ const MetaverseMarketing = () => {
                 </h3>
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
-                  <button>SUBSCRIBE TO OUR JOURNAL</button>
+                  <button>
+                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                  </button>
                 </div>
               </div>
               <div className="sj-bull-elevator-img-box">

@@ -23,16 +23,13 @@
 }
 .im-hero-img {
   width: max-content;
-  height: 75vh;
+  max-width: 47.5%;
   object-fit: contain;
   position: absolute;
   bottom: 0%;
   right: 0;
   transform: translate(0, -1.5rem);
   z-index: 50;
-}
-.event-marketing-page .im-hero-img,
-.metaverse-marketing-page .im-hero-img {
   transform: translate(0, 5rem);
   height: 90vh;
 }
@@ -42,10 +39,12 @@
   align-items: flex-start;
   justify-content: center;
   width: 55%;
+  z-index: 100;
+  position: relative;
 }
 .im-hero-headings h1 {
   font-size: 6.5rem;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0 0 2.5rem 0;
 }
 .im-hero-headings h3 {
@@ -88,6 +87,7 @@
 }
 .sd-grid-card {
   width: 100%;
+  position: relative;
 }
 .sd-grid-card-1 {
   background-color: var(--white);
@@ -95,6 +95,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  position: relative;
 }
 .sd-grid-card-1 > img {
   width: 27.5rem;
@@ -244,11 +245,13 @@
   position: relative;
 }
 .sd-grid-card-4 > img {
-  width: 35%;
+  width: 50%;
+  object-fit: contain;
+  object-position: right;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10;
+  z-index: 3;
 }
 .cross-polination-section {
   width: 100%;
@@ -292,6 +295,9 @@
 }
 .cp-img-box {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cp-img-box img {
   width: 100%;
@@ -305,7 +311,7 @@
   width: 100%;
   background-color: var(--black);
   position: relative;
-  padding: 7.5rem 5rem;
+  padding: 7.5rem 0;
 }
 .platform-stats-grid {
   width: 100%;
@@ -380,6 +386,14 @@
   width: 100%;
   height: 100%;
 }
+.fashion-brand-img-box img {
+  display: none;
+}
+.platform-stats-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .platform-stats-img img {
   width: 100%;
   object-fit: contain;
@@ -394,6 +408,7 @@
   top: 0;
   right: 0;
   object-position: right bottom;
+  min-height: 47.5rem;
 }
 .big-things-section {
   width: 100%;
@@ -419,7 +434,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 3.5rem 0 7.5rem 0;
+  padding: 3.5rem 0 6.5rem 0;
   text-transform: uppercase;
 }
 .big-things-section div h4 {
@@ -534,6 +549,9 @@
 }
 .sj-bull-elevator-img-box {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .sj-bull-elevator-img-box img {
   width: 100%;
@@ -548,6 +566,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  padding: 5rem 0;
 }
 .sj-grid-left h3 {
   color: var(--white);
@@ -564,7 +583,6 @@
   overflow: hidden;
 }
 .sj-input-box input {
-  min-width: 25rem;
   width: 100%;
   border: 0;
   outline: 0;
@@ -580,7 +598,7 @@
   font-size: 1.5rem;
   height: 5rem;
   background-color: var(--main-color);
-  padding: 0 3.5rem;
+  padding: 0 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -657,6 +675,7 @@
 }
 .em-sd-grid-card-4 img {
   width: 50%;
+  max-height: 85%;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -835,4 +854,284 @@
 }
 .platform-stats-grid.fashion-brand-grid {
   margin: 0 0 15rem 0;
+}
+@media screen and (max-width: 1150px) {
+  .service-description-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .faq-box {
+    width: 85%;
+  }
+  .platform-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sd-grid-card {
+    min-height: 45rem;
+  }
+  .subs-journal-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .sj-bull-elevator-img-box img {
+    width: 35%;
+    object-fit: contain;
+    max-height: 60rem;
+    margin: -15rem 0 0 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .em-sd-grid-card-2 img,
+  .mm-sd-grid-card-4 img {
+    object-fit: cover;
+  }
+  .platform-stats-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .platform-stats-img img {
+    width: 50%;
+  }
+  .fashion-brand-img {
+    display: none;
+  }
+  .fashion-brand-img-box img {
+    display: block;
+    width: 100%;
+  }
+  .cp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 750px) {
+  .influencer-marketing-content {
+    min-height: 65vh;
+    padding: 2rem 0;
+  }
+  .im-hero-img {
+    object-position: bottom;
+    transform: translate(0, 0);
+  }
+  .im-hero-headings h1 {
+    font-size: 3.5rem;
+    margin: 0 0 1rem 0;
+  }
+  .im-hero-headings h3,
+  .em-sd-grid-card-4 h4 {
+    font-size: 2rem;
+  }
+  .im-hero-headings {
+    width: 75%;
+  }
+  .service-description-grid {
+    margin: 5rem 0 0 0;
+  }
+  .em-sd-grid-card-3,
+  .em-sd-grid-card-4,
+  .em-sd-grid-card-1,
+  .sd-grid-card-1,
+  .sd-grid-card-2,
+  .sdgc3-details,
+  .sdgc4-details,
+  .mm-info-small-grid-box,
+  .mm-sd-grid-card-3-2,
+  .mm-sd-grid-card-1,
+  .mm-sd-grid-card-2,
+  .mm-sd-grid-card-3 {
+    padding: 2rem;
+  }
+  .sd-grid-card,
+  .mm-sd-grid-card-1,
+  .mm-sd-grid-card-2,
+  .mm-sd-grid-card-3,
+  .mm-sd-grid-card-4 {
+    height: max-content;
+    min-height: unset;
+  }
+  .mm-sd-grid-card-2-1 {
+    grid-template-columns: 1fr;
+  }
+  .faq-box {
+    width: 100%;
+  }
+  .sj-input-box button span {
+    display: none;
+  }
+  .sj-input-box {
+    width: 100%;
+  }
+  .platform-stats-text-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ps-box:not(:last-child) {
+    margin: 0 0 5rem 0;
+  }
+  .sb-box-grid {
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  .sd-grid-card-1 > img {
+    width: 40%;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  .sd-grid-card h3 span {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  .sdgc2-details img {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 7.5rem;
+  }
+  .apg-box {
+    width: 4rem;
+    height: 4rem;
+  }
+  .apg-box img {
+    width: 2.25rem;
+  }
+  .ut-tags span {
+    margin: 0.75rem 0.75rem 0 0;
+    padding: 0.5rem 2rem;
+    font-size: 1.25rem;
+  }
+  .cp-details img {
+    margin: 2.5rem 0;
+    width: 5rem;
+  }
+  .cp-img-box img {
+    margin: 0 -2rem;
+    width: 95vw;
+  }
+  .cross-polination-section,
+  .platform-stats-section {
+    padding: 3.5rem 0;
+  }
+  .faq-section {
+    padding: 5rem 0 25rem 0;
+  }
+  .cp-details h6,
+  .platform-stats-details,
+  .platform-stats-details h6,
+  .big-things-section div h4,
+  .cp-details h4 {
+    font-size: 1.65rem;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .cp-details h2 {
+    font-size: 3.5rem;
+  }
+  .im-trusted-by {
+    padding: 3.5rem 0;
+  }
+  .cp-details {
+    align-items: center;
+    text-align: center;
+  }
+  .platform-stats-details h3,
+  .platform-stats-details h4 {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+  .platform-stats-details h5 {
+    margin: 0 0 0.5rem 0;
+  }
+  .platform-stats-details p {
+    font-size: 1.65rem;
+  }
+  .platform-stats-img img {
+    width: 85%;
+  }
+  .ps-box {
+    align-items: center;
+    text-align: center;
+  }
+  .ps-box h3 svg {
+    font-size: 2.5rem;
+  }
+  .platform-stats-details h5 {
+    font-size: 1.65rem;
+    text-align: center;
+  }
+  .sj-bull-elevator-img-box img {
+    width: 100%;
+    height: 30rem;
+  }
+  .sj-grid-left {
+    padding: 0 0 5rem 0;
+  }
+  .sj-grid-left h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 2.5rem 0;
+  }
+  .faq-box {
+    margin: 5rem auto 0 auto;
+  }
+  .fashion-brand-img-box img {
+    width: 100%;
+  }
+  .em-sd-grid-card-1 img {
+    width: 10rem;
+  }
+  .em-sd-grid-card-1 h4 {
+    font-size: 1.75rem;
+  }
+  .em-sd-grid-card-3 h6,
+  .accordion-body p,
+  .accordion-button .faq-box-head p {
+    font-size: 1.75rem;
+  }
+  .em-sd-grid-card-3 h2 {
+    font-size: 3.5rem;
+  }
+  .em-sd-grid-card-3 {
+    min-height: 20rem;
+  }
+  .li-line {
+    height: 3rem;
+  }
+  .sd-grid-card ul li p {
+    font-size: 1.65rem;
+  }
+  .faq-box .accordion-body {
+    padding: 1.5rem 0 0 0;
+  }
+  .faq-box-head .fb-icon-box {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+  }
+  .mm-sd-grid-card-3-2 h5,
+  .mm-info-small-grid-box h5,
+  .mm-sd-grid-card-1 h5 {
+    font-size: 1.65rem;
+  }
+  .mm-sd-grid-card-3-2,
+  .mm-sd-grid-card-1 {
+    min-height: 20rem;
+  }
+  .mm-info-small-grid-box img {
+    width: 2.5rem;
+    margin: 0 1rem 0 0;
+  }
+  .mm-info-small-grid-box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .sb-box p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
 }

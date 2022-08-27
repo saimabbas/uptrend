@@ -264,7 +264,7 @@ const InfluencerMarketing = () => {
           </div>
         </section>
         <section className="platform-stats-section">
-          <div className="box">
+          <div className="box box-p">
             <div className="platform-stats-grid">
               <div className="platform-stats-details">
                 <h6>Proof of Work</h6>
@@ -442,7 +442,9 @@ const InfluencerMarketing = () => {
                 </h3>
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
-                  <button>SUBSCRIBE TO OUR JOURNAL</button>
+                  <button>
+                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                  </button>
                 </div>
               </div>
               <div className="sj-bull-elevator-img-box">
