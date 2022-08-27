@@ -273,9 +273,20 @@
     padding: 0 2rem;
   }
   .app h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+  }
+  .app h3 {
+    font-size: 2.5rem;
   }
   .ut-btn-lightgray {
     padding: 0.65rem 2rem;
+  }
+  .arrow-link span {
+    font-size: 1.5rem;
+    max-width: 0 0.5rem 0 0;
+  }
+  .arrow-link svg {
+    width: 1.75rem;
+    height: 1.75rem;
   }
 }

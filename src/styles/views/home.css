@@ -548,6 +548,9 @@
   font-weight: 300;
   font-size: 2rem;
 }
+.section-heading-box div {
+  width: 100%;
+}
 .uptrend-nfts-section .section-heading-box div {
   max-width: 50%;
   color: var(--white);
@@ -557,6 +560,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 2.5rem 0 0;
 }
 .ut-nfts-swiper {
   width: 100%;
@@ -807,7 +811,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 750px) {
   .our-mission-content,
   .tweets-main-grid,
   .highly-regarded-grid,
@@ -817,18 +821,24 @@
   }
   .our-mission-section,
   .twitter-section,
+  .highly-regarded-section,
+  .events-section,
+  .ut-journal-section,
+  .rts-form,
   .backedby-section,
+  .uptrend-nfts-section,
   .expertise-section {
     padding: 3.5rem 0;
   }
   .expertise-grid-card h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .mission-text-img-box h5,
   .twitter-section h4 {
     font-size: 1.75rem;
   }
   .small-tweets-grid h6,
+  .uptrend-nfts-section .section-heading-box p,
   .head-subhead span {
     font-size: 1.65rem;
   }
@@ -862,6 +872,16 @@
   }
   .ueg-right {
     order: 1;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 0;
+  }
+  .ut-nfts-swiper,
+  .journal-grid {
+    margin: 3.5rem 0 0 0;
+  }
+  .uptrends-events-grid {
+    grid-gap: 2.5rem;
   }
   .highly-regarded-grid-card {
     padding: 0;
@@ -873,13 +893,13 @@
     padding: 2rem;
   }
   .highly-regarded-grid {
-    grid-gap: 5rem;
+    grid-gap: 2.5rem;
   }
   .hero-company-logos-swiper .swiper-slide {
     margin: 0 2.5rem 0 0;
   }
   .hero-content {
-    padding: 2rem 0;
+    padding: 2rem 0 3.5rem 0;
   }
   .hero-section h1 {
     font-size: 2.25rem;
@@ -926,7 +946,7 @@
     padding: 2rem;
   }
   .expertise-grid-card h2 span {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .egc2-img-grid img:not(:last-child) {
     margin: 0 2.5rem 0 0;
@@ -961,12 +981,91 @@
   .bb-logos-swiper .swiper-slide {
     margin: 0 2.5rem 0 0;
   }
-  .bb-logo-box img {
-    height: 2.75rem;
-  }
   .rts-form-grid {
     grid-template-columns: 1fr;
   }
-}
-@media screen and (max-width: 750px) {
+  .hrgc-top .hrgc-head img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1.5rem 0 0;
+  }
+  .hrgc-top .hrgc-head h4 {
+    font-size: 2rem;
+  }
+  .hrgc-top .hrgc-head h6,
+  .ueg-right h5,
+  .hrgc-top > h6,
+  .hrgc-bottom h6 {
+    font-size: 1.65rem;
+  }
+
+  .hrgc-top > h6 {
+    margin: 3.5rem 0 0 0;
+  }
+  .hrgc-bottom .hrgc-head img {
+    width: 3.5rem;
+  }
+  .highly-regarded-grid-card:hover {
+    background-color: unset;
+    transform: translate(0, 0);
+  }
+  .highly-regarded-grid-card:nth-child(2),
+  .highly-regarded-grid-card:nth-child(2):hover {
+    background-color: var(--main-light1);
+  }
+  .uptrends-events-img-grid img,
+  .uptrends-events-img-grid img:nth-child(1) {
+    height: max-content;
+    border-radius: 1rem;
+  }
+  .rts-form-grid {
+    margin: 3.5rem 0;
+  }
+  .section-heading-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .uptrend-nfts-section .section-heading-box div {
+    max-width: 100%;
+  }
+  .uptrend-nfts-section .section-heading-box p,
+  .ueg-right h5 {
+    margin: 0.5rem 0 0 0;
+  }
+  .ut-nft-card > img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 1rem;
+  }
+  .nft-details > img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  .nft-details {
+    margin: -3.75rem 0 0 0;
+  }
+  .nft-details h6 {
+    margin: 0.25rem 0;
+  }
+  .ut-nfts-swiper .swiper-slide {
+    margin: 0 1.5rem 0 0;
+  }
+  .section-heading-box .arrow-link,
+  .ueg-right .arrow-link {
+    margin: 2.5rem 0 0 0;
+  }
+  .journal-grid {
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+  .jgc-details {
+    padding: 1.5rem;
+  }
+  .jgc-details h6 {
+    font-size: 1.25rem;
+  }
+  .journal-grid-card:nth-child(3) {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
 }

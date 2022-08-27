@@ -468,7 +468,6 @@ const Home = () => {
             <div className="ut-nfts-swiper">
               <Swiper
                 slidesPerView={"auto"}
-                spaceBetween={25}
                 freeMode={true}
                 modules={[FreeMode]}
                 className="mySwiper"
