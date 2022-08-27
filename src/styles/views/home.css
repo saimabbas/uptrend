@@ -149,6 +149,9 @@
 }
 .our-mission-left {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .our-mission-left img {
   width: 100%;
@@ -552,7 +555,7 @@
   width: 100%;
 }
 .uptrend-nfts-section .section-heading-box div {
-  max-width: 50%;
+  max-width: 65%;
   color: var(--white);
 }
 .ut-nfts-swiper .swiper-slide {
@@ -624,6 +627,7 @@
 .ut-store-section > img {
   width: 100%;
   object-fit: cover;
+  min-height: 75rem;
 }
 
 .ut-store-details {
@@ -697,7 +701,13 @@
   color: var(--black);
   z-index: 13;
 }
-
+.twitter-section .section-heading-box {
+  flex-direction: row;
+  align-items: center;
+}
+.section-heading-box div.up-twitter-name {
+  width: max-content;
+}
 .ut-journal-section h2 {
   color: var(--white);
 }
@@ -752,8 +762,6 @@
 @media screen and (max-width: 1250px) {
   .our-mission-content {
     padding: 0;
-  }
-  .our-mission-content {
     grid-template-columns: 1fr 1fr;
   }
   .mission-text-img-box:not(:last-child) {
@@ -811,15 +819,58 @@
     display: none;
   }
 }
+@media screen and (max-width: 1000px) {
+  .hero-section h1 {
+    font-size: 4.5rem;
+    line-height: 5.5rem;
+  }
+  .hero-section h1 span {
+    padding: 0 0.75rem;
+  }
+  .our-mission-content {
+    grid-template-columns: 1fr;
+  }
+  .our-mission-left img {
+    width: 50%;
+  }
+  .our-mission-section {
+    padding: 2.5rem 0 7.5rem 0;
+  }
+  .our-mission-right h2 {
+    margin: 0 0 5rem 0;
+  }
+  .tweets-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .small-tweets-grid {
+    border-left: 0;
+    border-top: 1px solid var(--main-dark2);
+    grid-template-columns: 1fr;
+    padding: 5rem 0 0 0;
+  }
+  .highly-regarded-grid-card {
+    padding: 2.5rem;
+    border-radius: 1rem;
+  }
+  .bull-elevator-img-box {
+    display: none;
+  }
+  .rts-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .rts-form h3 br {
+    display: none;
+  }
+  .rts-content {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 750px) {
-  .our-mission-content,
-  .tweets-main-grid,
   .highly-regarded-grid,
   .uptrends-events-grid,
   .rts-content {
     grid-template-columns: 1fr;
   }
-  .our-mission-section,
   .twitter-section,
   .highly-regarded-section,
   .events-section,
@@ -830,10 +881,15 @@
   .expertise-section {
     padding: 3.5rem 0;
   }
-  .expertise-grid-card h2 {
+  .our-mission-section {
+    padding: 1.5rem 0 3.5rem 0;
+  }
+  .expertise-grid-card h2,
+  .ut-store-wave-box h2 {
     font-size: 3rem;
   }
   .mission-text-img-box h5,
+  .ut-store-wave-box h2 span,
   .twitter-section h4 {
     font-size: 1.75rem;
   }
@@ -845,15 +901,23 @@
   .backedby-section .head-subhead {
     font-size: 2rem;
   }
+  .ut-store-wave-box {
+    justify-content: flex-start;
+    padding: 2.5rem 2rem 3.5rem 2rem;
+  }
+  .ut-store-wave-box > img {
+    left: 10%;
+    width: 200vw;
+  }
+  .ut-store-wave-box h2 {
+    text-align: left;
+  }
   .backedby-section .head-subhead {
     margin: 0 0 3.5rem 0;
   }
   .tweets-main-grid p {
     font-size: 1.35rem;
     margin: 1.5rem 0 0 0;
-  }
-  .bull-elevator-img-box {
-    display: none;
   }
   .small-tweets-grid {
     padding: 3.5rem 0 0 0;
@@ -981,9 +1045,6 @@
   .bb-logos-swiper .swiper-slide {
     margin: 0 2.5rem 0 0;
   }
-  .rts-form-grid {
-    grid-template-columns: 1fr;
-  }
   .hrgc-top .hrgc-head img {
     width: 5rem;
     height: 5rem;
@@ -1067,5 +1128,15 @@
   .journal-grid-card:nth-child(3) {
     grid-row: 1/2;
     grid-column: 1/2;
+  }
+  .our-mission-left img {
+    width: 100%;
+  }
+  .ut-store-right-arrow svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .ut-store-section > img {
+    min-height: 65rem;
   }
 }
