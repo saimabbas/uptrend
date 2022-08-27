@@ -96,3 +96,33 @@ footer {
 .footer-grid-card-3 a:hover {
   color: var(--main-color);
 }
+@media screen and (max-width: 1250px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem 0;
+  }
+  .footer-grid-card-2 {
+    order: 3;
+  }
+  .footer-grid-card-3 {
+    order: 4;
+  }
+  .footer-grid-card-4 {
+    order: 2;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .footer-grid-card-2 {
+    order: 2;
+  }
+  .footer-grid-card-3 {
+    order: 3;
+  }
+  .footer-grid-card-4 {
+    order: 4;
+  }
+}

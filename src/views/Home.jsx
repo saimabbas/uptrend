@@ -284,54 +284,6 @@ const Home = () => {
             </div>
           </div>
         </section>
-        {/* <section className="our-partners-section">
-          <div className="box box-p">
-            <h3 className="head-subhead">
-              Our partners are backed <br />
-              <span>by venture capital’s elite</span>
-            </h3>
-            <div className="bb-logos-swiper">
-              <Swiper
-                slidesPerView={"auto"}
-                spaceBetween={100}
-                freeMode={true}
-                modules={[FreeMode]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo1} alt="BBLogo1" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo2} alt="BBLogo2" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo3} alt="BBLogo1" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo4} alt="BBLogo1" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo5} alt="BBLogo1" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo6} alt="BBLogo1" />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
-        </section> */}
         <BackedByLogosSwiper backedByLight={false} />
         <section className="highly-regarded-section">
           <div className="box box-p">

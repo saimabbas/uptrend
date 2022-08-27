@@ -260,3 +260,22 @@
 .links-page a:hover {
   color: var(--white);
 }
+
+@media screen and (max-width: 1250px) {
+  .box,
+  .box.box-p {
+    padding: 0 3.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .box,
+  .box.box-p {
+    padding: 0 2rem;
+  }
+  .app h2 {
+    font-size: 3.5rem;
+  }
+  .ut-btn-lightgray {
+    padding: 0.65rem 2rem;
+  }
+}

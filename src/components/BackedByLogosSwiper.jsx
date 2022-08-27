@@ -39,7 +39,6 @@ const BackedByLogosSwiper = (props) => {
             <div className="bb-logos-swiper">
               <Swiper
                 slidesPerView={"auto"}
-                spaceBetween={100}
                 freeMode={true}
                 modules={[FreeMode]}
                 className="mySwiper"
@@ -88,7 +87,6 @@ const BackedByLogosSwiper = (props) => {
             <div className="bb-logos-swiper">
               <Swiper
                 slidesPerView={"auto"}
-                spaceBetween={100}
                 freeMode={true}
                 modules={[FreeMode]}
                 className="mySwiper"

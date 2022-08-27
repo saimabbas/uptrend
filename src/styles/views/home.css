@@ -130,6 +130,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 5rem 0 0;
+}
+.hero-company-logos-swiper .swiper-wrapper {
+  align-items: center;
 }
 .our-mission-section {
   width: 100%;
@@ -199,6 +203,7 @@
   width: 100%;
   padding: 5rem;
   border-radius: 1.5rem;
+  position: relative;
 }
 .expertise-grid-card:nth-child(1),
 .expertise-grid-card:nth-child(2) {
@@ -214,21 +219,36 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  width: 100%;
 }
 .egc1-top img {
-  min-height: 35rem;
-  max-height: 35rem;
+  height: 35rem;
   width: max-content;
   transition: 0.5s;
+  object-fit: contain;
+  position: absolute;
+  top: 5rem;
+  right: 3.5rem;
+  z-index: 10;
+}
+.expertise-grid-card-1 h5,
+.expertise-grid-card-4 h5 {
+  margin: 20rem 0 0 0;
+}
+.expertise-grid-card-1 h2,
+.expertise-grid-card-4 h2 {
+  position: relative;
+  z-index: 15;
 }
 .expertise-grid-card h2 span {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 .expertise-grid-card h2 {
   text-transform: uppercase;
   padding: 2.5rem 0 0 0;
   display: flex;
-  font-size: 6.5rem;
+  font-size: 5.5rem;
   font-weight: 800;
   flex-direction: column;
   align-items: flex-start;
@@ -248,9 +268,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .egc2-img-grid img {
-  height: 4.5rem;
+  height: 3rem;
+}
+.egc2-img-grid img:not(:last-child) {
   margin: 0 3.5rem 0 0;
 }
 .twitter-section {
@@ -339,6 +362,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 10rem 0 0;
 }
 .our-partners-logos-swiper .swiper-slide img {
   height: 3rem;
@@ -719,4 +743,230 @@
   font-weight: 400;
   font-size: 1.5rem;
   margin: 2.5rem 0 0 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .our-mission-content {
+    padding: 0;
+  }
+  .our-mission-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  .mission-text-img-box:not(:last-child) {
+    margin: 0 0 3.5rem 0;
+  }
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+  .expertise-grid-card {
+    padding: 3.5rem;
+  }
+  .expertise-grid-card h2 {
+    padding: 0;
+  }
+  .expertise-grid-card h5 {
+    width: 85%;
+  }
+  .expertise-grid-card-2 h5,
+  .expertise-grid-card-3 h5 {
+    margin: 5rem 0 7.5rem 0;
+  }
+  .tweets-main-grid {
+    grid-gap: 3.5rem;
+  }
+  .small-tweets-grid {
+    grid-gap: 3.5rem;
+    padding: 0 0 0 3.5rem;
+  }
+  .twitter-section h4 {
+    font-size: 2.25rem;
+  }
+  .highly-regarded-grid-card {
+    padding: 3.5rem;
+  }
+  .highly-regarded-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .uptrends-events-grid {
+    grid-gap: 1.5rem;
+  }
+  .rts-content {
+    grid-gap: 3.5rem;
+  }
+  .journal-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .journal-grid-card:nth-child(3) {
+    grid-row: 1/2;
+    grid-column: 1/3;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .hero-icons-line-box {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .our-mission-content,
+  .tweets-main-grid,
+  .highly-regarded-grid,
+  .uptrends-events-grid,
+  .rts-content {
+    grid-template-columns: 1fr;
+  }
+  .our-mission-section,
+  .twitter-section,
+  .backedby-section,
+  .expertise-section {
+    padding: 3.5rem 0;
+  }
+  .expertise-grid-card h2 {
+    font-size: 3.5rem;
+  }
+  .mission-text-img-box h5,
+  .twitter-section h4 {
+    font-size: 1.75rem;
+  }
+  .small-tweets-grid h6,
+  .head-subhead span {
+    font-size: 1.65rem;
+  }
+  .backedby-section .head-subhead {
+    font-size: 2rem;
+  }
+  .backedby-section .head-subhead {
+    margin: 0 0 3.5rem 0;
+  }
+  .tweets-main-grid p {
+    font-size: 1.35rem;
+    margin: 1.5rem 0 0 0;
+  }
+  .bull-elevator-img-box {
+    display: none;
+  }
+  .small-tweets-grid {
+    padding: 3.5rem 0 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--main-dark2);
+    grid-template-columns: 1fr;
+  }
+  .uptrends-events-img-grid {
+    order: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .uptrends-events-img-grid img:nth-child(1) {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .ueg-right {
+    order: 1;
+  }
+  .highly-regarded-grid-card {
+    padding: 0;
+  }
+  .highly-regarded-grid-card:nth-child(2) {
+    border-radius: 0;
+    margin: 0 -2rem;
+    width: 100vw;
+    padding: 2rem;
+  }
+  .highly-regarded-grid {
+    grid-gap: 5rem;
+  }
+  .hero-company-logos-swiper .swiper-slide {
+    margin: 0 2.5rem 0 0;
+  }
+  .hero-content {
+    padding: 2rem 0;
+  }
+  .hero-section h1 {
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 20vh;
+  }
+  .hero-section h1 span {
+    padding: 0 0.75rem;
+  }
+  .hero-bull {
+    height: 65vh;
+    right: 0;
+  }
+  .hero-blue-overlay {
+    top: 50%;
+    left: 50%;
+    width: 250vw;
+    transform: translate(-50%, -50%);
+  }
+  .hero-bottom h4 {
+    font-size: 1.75rem;
+    margin: 0 0 2.5rem 0;
+  }
+  .our-mission-content {
+    grid-gap: 5rem;
+  }
+  .our-mission-right h2,
+  .section-heading-box,
+  .expertise-section h2.expertise-heading {
+    margin: 0 0 3.5rem 0;
+  }
+  .mission-text-img-box:not(:last-child) {
+    margin: 0 0 2.5rem 0;
+  }
+  .mission-text-img-box img {
+    width: 5rem;
+    margin: 0 1.5rem 0 0;
+  }
+  .expertise-grid-card {
+    padding: 2rem;
+  }
+  .expertise-grid-card h2 span {
+    font-size: 2.5rem;
+  }
+  .egc2-img-grid img:not(:last-child) {
+    margin: 0 2.5rem 0 0;
+  }
+  .egc2-img-grid img {
+    height: 2.5rem;
+  }
+  .egc1-top img {
+    height: 22.5rem;
+    top: 2rem;
+    right: 2rem;
+  }
+  .expertise-grid-card h5 {
+    width: 100%;
+    font-size: 1.75rem;
+  }
+  .expertise-grid-card-1 h5,
+  .expertise-grid-card-4 h5 {
+    margin: 15rem 0 0 0;
+  }
+  .expertise-grid-card-2 h5,
+  .expertise-grid-card-3 h5 {
+    margin: 1.5rem 0 10rem 0;
+  }
+  .expertise-grid {
+    grid-gap: 2rem;
+  }
+  .expertise-grid {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .our-partners-logos-swiper .swiper-slide,
+  .bb-logos-swiper .swiper-slide {
+    margin: 0 2.5rem 0 0;
+  }
+  .bb-logo-box img {
+    height: 2.75rem;
+  }
+  .rts-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 750px) {
 }

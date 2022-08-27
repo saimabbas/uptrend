@@ -53,7 +53,6 @@ const TrustedByCompanies = (props) => {
           <div className="hero-company-logos-swiper">
             <Swiper
               slidesPerView={"auto"}
-              spaceBetween={50}
               freeMode={true}
               modules={[FreeMode]}
               className="mySwiper"
@@ -129,7 +128,6 @@ const TrustedByCompanies = (props) => {
           <div className="hero-company-logos-swiper">
             <Swiper
               slidesPerView={"auto"}
-              spaceBetween={50}
               freeMode={true}
               modules={[FreeMode]}
               className="mySwiper"

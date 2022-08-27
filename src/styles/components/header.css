@@ -15,6 +15,7 @@ header {
 }
 .header-left svg {
   height: 4rem;
+  width: max-content;
 }
 .header-center {
   height: 100%;
@@ -148,4 +149,10 @@ header .ut-dropdown button:hover svg,
 header .ut-dropdown button:focus svg,
 header .ut-dropdown button:active svg {
   color: var(--main-color) !important;
+}
+@media screen and (max-width: 1150px) {
+  .header-center,
+  .header-right p {
+    display: none;
+  }
 }
