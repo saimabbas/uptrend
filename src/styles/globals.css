@@ -1,60 +1,80 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-100.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-100.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-100.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-100.woff2") format("woff2");
   font-style: normal;
   font-weight: 100;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-200.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-200.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-200.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-200.woff2") format("woff2");
   font-style: normal;
   font-weight: 200;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-300.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-300.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-300.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-300.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-400.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-400.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-400.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-400.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-500.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-500.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-500.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-500.woff2") format("woff2");
   font-style: normal;
   font-weight: 500;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-600.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-600.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-600.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-600.woff2") format("woff2");
   font-style: normal;
   font-weight: 600;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-700.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-700.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-700.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-700.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-800.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-800.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-800.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-800.woff2") format("woff2");
   font-style: normal;
   font-weight: 800;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-900.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-900.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-900.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-900.woff2") format("woff2");
   font-style: normal;
   font-weight: 900;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url("../assets/fonts/Gilroy-1000.ttf") format("ttf");
+  src: url("../assets/fonts/ttf/Gilroy-1000.ttf") format("ttf"),
+    url("../assets/fonts/woff/Gilroy-1000.woff") format("woff"),
+    url("../assets/fonts/woff2/Gilroy-1000.woff2") format("woff2");
   font-style: normal;
   font-weight: 1000;
 }
@@ -365,7 +385,6 @@
   }
   .ddd-cube {
     height: max-content;
-    background-color: red;
     height: 3.25rem;
   }
 }
