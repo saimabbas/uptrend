@@ -24,7 +24,7 @@ import BBLogo6 from "../assets/img/backedby-logo-6.svg";
 
 // Components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper";
+import { FreeMode, Autoplay } from "swiper";
 
 const BackedByLogosSwiper = (props) => {
   return (
@@ -40,8 +40,14 @@ const BackedByLogosSwiper = (props) => {
               <Swiper
                 slidesPerView={"auto"}
                 freeMode={true}
-                modules={[FreeMode]}
+                modules={[Autoplay, FreeMode]}
                 className="mySwiper"
+                loop={true}
+                speed={5000}
+                autoplay={{
+                  delay: 1,
+                  disableOnInteraction: true,
+                }}
               >
                 <SwiperSlide>
                   <div className="bb-logo-box">
@@ -88,8 +94,13 @@ const BackedByLogosSwiper = (props) => {
               <Swiper
                 slidesPerView={"auto"}
                 freeMode={true}
-                modules={[FreeMode]}
+                modules={[Autoplay, FreeMode]}
                 className="mySwiper"
+                loop={true}
+                speed={5000}
+                autoplay={{
+                  delay: 1,
+                }}
               >
                 <SwiperSlide>
                   <div className="bb-logo-box">

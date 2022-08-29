@@ -17,9 +17,15 @@ const UpTrendsEvents = () => {
   return (
     <div className="uptrends-events-grid">
       <div className="uptrends-events-img-grid">
-        <img loading="lazy" src={EventImg1} alt="EventImg" />
-        <img loading="lazy" src={EventImg2} alt="EventImg" />
-        <img loading="lazy" src={EventImg3} alt="EventImg" />
+        <div>
+          <img loading="lazy" src={EventImg1} alt="EventImg" />
+        </div>
+        <div>
+          <img loading="lazy" src={EventImg2} alt="EventImg" />
+        </div>
+        <div>
+          <img loading="lazy" src={EventImg3} alt="EventImg" />
+        </div>
       </div>
       <div className="ueg-right">
         <h3>UPTREND EVENTS</h3>

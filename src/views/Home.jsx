@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // Styles
 import "../styles/reset.css";
@@ -11,30 +11,13 @@ import "swiper/css/pagination";
 // Images
 import HeroBull from "../assets/img/hero-bull.svg";
 import HeroBlueOverlay from "../assets/img/hero-blue-overlay.svg";
-import companyLogo1 from "../assets/img/logo-samsung.svg";
 import companyLogo2 from "../assets/img/logo-swissborg.svg";
-import companyLogo3 from "../assets/img/logo-binance.svg";
-import companyLogo4 from "../assets/img/logo-cointelegraphy.svg";
-import companyLogo5 from "../assets/img/logo-kardiachain.svg";
-import companyLogo6 from "../assets/img/logo-vechain.svg";
-import companyLogo7 from "../assets/img/logo-kusama.svg";
 import companyLogo8 from "../assets/img/logo-compound.svg";
-import companyLogo9 from "../assets/img/logo-celsius.svg";
-import companyLogo10 from "../assets/img/logo-ford.svg";
-import companyLogo11 from "../assets/img/logo-citibank.svg";
-import companyLogo12 from "../assets/img/logo-oracle.svg";
-import companyLogo13 from "../assets/img/logo-amazon.svg";
 import companyLogo14 from "../assets/img/logo-meta.svg";
 import companyLogo15 from "../assets/img/logo-sandbox.svg";
 import companyLogo16 from "../assets/img/logo-kephi.svg";
 import companyLogo17 from "../assets/img/logo-bitcoinist.svg";
 import companyLogo18 from "../assets/img/logo-tct.svg";
-import BBLogo1 from "../assets/img/backedby-logo-1.svg";
-import BBLogo2 from "../assets/img/backedby-logo-2.svg";
-import BBLogo3 from "../assets/img/backedby-logo-3.svg";
-import BBLogo4 from "../assets/img/backedby-logo-4.svg";
-import BBLogo5 from "../assets/img/backedby-logo-5.svg";
-import BBLogo6 from "../assets/img/backedby-logo-6.svg";
 import OurMissionImg from "../assets/img/our-mission-img.svg";
 import MissionIcon1 from "../assets/img/mission-icon-1.svg";
 import MissionIcon2 from "../assets/img/mission-icon-2.svg";
@@ -45,7 +28,6 @@ import IconTwitterFilled from "../assets/img/icon-twitter-filled.svg";
 import Nico from "../assets/img/nico.png";
 import Tony from "../assets/img/tony.png";
 import Danny from "../assets/img/danny.svg";
-import EventImg1 from "../assets/img/event-img-1.png";
 import BullElevatorImg from "../assets/img/bull-elevator-img.png";
 import UTNFTImg1 from "../assets/img/ut-nft-1.png";
 import UTNFTImg2 from "../assets/img/ut-nft-2.png";
@@ -64,7 +46,6 @@ import IconDiamond from "../assets/img/icon-diamond.svg";
 import StorefrontImg from "../assets/img/storefront-img.png";
 import LimitedEditionImg from "../assets/img/limited-edition-img.svg";
 import UtStoreWave from "../assets/img/ut-store-wave.svg";
-import JournalImg from "../assets/img/journal-img.png";
 import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
@@ -77,15 +58,191 @@ import { MdArrowForward, MdArrowDropDown } from "react-icons/md";
 // Components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Header from "../components/Header";
-import { FreeMode } from "swiper";
+import { Autoplay, FreeMode } from "swiper";
 import Footer from "../components/Footer";
 import TrustedByCompanies from "../components/TrustedByCompanies";
 import UpTrendsEvents from "../components/UpTrendsEvents";
 import BackedByLogosSwiper from "../components/BackedByLogosSwiper";
+import { gsap } from "gsap";
+import {
+  Back,
+  Power3,
+  Power1,
+  Power2,
+  Power4,
+  Linear,
+  Expo,
+  Circ,
+} from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import UTLogo from "../assets/icons/UTLogo";
+import $ from "jquery";
 
 const Home = () => {
+  gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
+  useEffect(() => {
+    const heroHeadAimInit = () => {
+      HH1BoxANim.play();
+    };
+    // Text Spliting
+    const HomeHeroHeading = new SplitText(".hero-content h1", {
+      type: "chars, words,lines",
+    });
+    const HomeHeroHeadingChars = HomeHeroHeading.chars;
+    const HomeHeroHeadingLines = HomeHeroHeading.lines;
+    const HomeHeroHeadingWords = HomeHeroHeading.words;
+    var HH1BoxANim = gsap.timeline({
+      repeat: -1,
+      paused: true,
+    });
+    HH1BoxANim.fromTo(
+      ".head-box-green-inner",
+      {
+        width: 0,
+      },
+      {
+        duration: 3,
+        width: "100%",
+        ease: Power1.easeInOut,
+        left: 0,
+      }
+    )
+      .to(".head-box-green-inner", {
+        duration: 0,
+        left: "unset",
+        right: 0,
+      })
+      .to(".head-box-green-inner", {
+        duration: 3,
+        width: 0,
+        ease: Power1.easeInOut,
+      });
+    let LoaderFadeAnimationHome = gsap.timeline({
+      paused: true,
+      onComplete: heroHeadAimInit,
+    });
+    LoaderFadeAnimationHome.fromTo(
+      ".loading-screen",
+      {
+        opacity: "1",
+      },
+      {
+        opacity: "0",
+        duration: 0.5,
+        ease: Linear.easeInOut,
+      }
+    )
+
+      .fromTo(
+        HomeHeroHeadingLines,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 2,
+          stagger: {
+            each: 0.05,
+            from: "start",
+          },
+          ease: Power4.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".hero-bull",
+        {
+          opacity: 0,
+          y: 150,
+          x: 150,
+        },
+        {
+          y: 0,
+          x: 0,
+          opacity: 1,
+          duration: 3,
+          ease: Power4.easeInOut,
+        },
+        "<0"
+      )
+
+      .fromTo(
+        ".hero-company-logo-box",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 1,
+          ease: Power4.easeInOut,
+        },
+        "<0.75"
+      )
+      .fromTo(
+        ".hero-icons-line-box a",
+        {
+          opacity: 0,
+          scale: 0.5,
+        },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 1,
+          stagger: {
+            each: 0.1,
+            from: "start",
+          },
+          ease: Power4.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".hero-icons-line-box > div",
+        {
+          height: 0,
+        },
+        {
+          height: "7.5rem",
+          duration: 2,
+          ease: Power4.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".hero-blue-overlay",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 2.5,
+          ease: Linear.easeInOut,
+        },
+        "<0.85"
+      )
+      .fromTo(
+        ".loading-screen",
+        {
+          height: "100vh",
+        },
+        {
+          height: "0",
+          duration: 0.01,
+        },
+        "<0"
+      );
+    $(window).on("load", function () {
+      LoaderFadeAnimationHome.play();
+    });
+  }, []);
+
   return (
     <main className="app">
+      <div className="loading-screen">
+        <UTLogo color="#fff" />
+      </div>
       <div className="home-page">
         <section className="hero-section">
           <img
@@ -102,9 +259,15 @@ const Home = () => {
           <div className="box">
             <div className="hero-content">
               <Header lightHeader={true} />
+
               <h1>
-                LEADING MARKETING PARTNER <br /> BUILDING{" "}
-                <span>BRAND IMPACT</span>
+                LEADING MARKETING PARTNER <br /> BUILDING
+                <span>
+                  <div className="head-box-green">
+                    <div className="head-box-green-inner"></div>
+                  </div>
+                  <i>BRAND IMPACT</i>
+                </span>
               </h1>
               <div className="hero-icons-line-box">
                 <div></div>
@@ -160,13 +323,26 @@ const Home = () => {
         </section>
         <section className="expertise-section">
           <div className="box box-p">
-            <h2 className="expertise-heading">Expertise</h2>
+            <h2 className="expertise-heading">EXPERTISE</h2>
             <div className="expertise-grid">
-              <div className="expertise-grid-card expertise-grid-card-1">
+              <div className="expertise-grid-card expertise-grid-card-1 ddd-cube-p">
                 <div className="egc1-top">
-                  <h2>
-                    Influencer <br /> <span>Marketing</span>
-                  </h2>
+                  <div>
+                    <div className="ddd-cube">
+                      <div className="ddd-f">
+                        <h2>
+                          Influencer <br />
+                        </h2>
+                      </div>
+                      <div className="ddd-b">
+                        <h2>
+                          Influencer <br />
+                        </h2>
+                      </div>
+                    </div>
+                    <span>Marketing</span>
+                  </div>
+
                   <img
                     loading="lazy"
                     src={MaleInfluencer}
@@ -178,11 +354,22 @@ const Home = () => {
                   <b>120,000+ target influencers</b> in 185 countries
                 </h5>
               </div>
-              <div className="expertise-grid-card expertise-grid-card-2">
-                <h2>
-                  MetaVerse <br />
-                  <span>Promotion</span>
-                </h2>
+              <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
+                <div>
+                  <div className="ddd-cube">
+                    <div className="ddd-f">
+                      <h2>
+                        metaverse <br />
+                      </h2>
+                    </div>
+                    <div className="ddd-b">
+                      <h2>
+                        metaverse <br />
+                      </h2>
+                    </div>
+                  </div>
+                  <span>promotion</span>
+                </div>
                 <h5>
                   Establish brand presence in the Metaverse{" "}
                   <b>with interactive experiences</b>
@@ -192,11 +379,22 @@ const Home = () => {
                   <img loading="lazy" src={companyLogo15} alt="companyLogo11" />
                 </div>
               </div>
-              <div className="expertise-grid-card expertise-grid-card-2">
-                <h2>
-                  Investment <br />
+              <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
+                <div>
+                  <div className="ddd-cube">
+                    <div className="ddd-f">
+                      <h2>
+                        Investment <br />
+                      </h2>
+                    </div>
+                    <div className="ddd-b">
+                      <h2>
+                        Investment <br />
+                      </h2>
+                    </div>
+                  </div>
                   <span>Relationships</span>
-                </h2>
+                </div>
                 <h5>
                   Uptrend Venture partners assist brands with{" "}
                   <b>scaling and growth</b>
@@ -206,12 +404,23 @@ const Home = () => {
                   <img loading="lazy" src={companyLogo8} alt="companyLogo11" />
                 </div>
               </div>
-              <div className="expertise-grid-card expertise-grid-card-1">
+              <div className="expertise-grid-card expertise-grid-card-1 ddd-cube-p">
                 <div className="egc1-top">
-                  <h2>
-                    Event
-                    <br /> <span>Marketing</span>
-                  </h2>
+                  <div>
+                    <div className="ddd-cube">
+                      <div className="ddd-f">
+                        <h2>
+                          EVENT <br />
+                        </h2>
+                      </div>
+                      <div className="ddd-b">
+                        <h2>
+                          EVENT <br />
+                        </h2>
+                      </div>
+                    </div>
+                    <span>MARKETING</span>
+                  </div>
                   <img loading="lazy" src={OnlineMeeting} alt="OnlineMeeting" />
                 </div>
                 <h5>
@@ -469,12 +678,19 @@ const Home = () => {
               <Swiper
                 slidesPerView={"auto"}
                 freeMode={true}
-                modules={[FreeMode]}
+                modules={[Autoplay, FreeMode]}
                 className="mySwiper"
+                loop={true}
+                speed={10000}
+                autoplay={{
+                  delay: 1,
+                }}
               >
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img loading="lazy" src={UTNFTImg1} alt="UTNFTImg" />
+                    <div className="ut-nft-card-img">
+                      <img loading="lazy" src={UTNFTImg1} alt="UTNFTImg" />
+                    </div>
                     <div className="nft-details">
                       <img
                         loading="lazy"
@@ -496,7 +712,9 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img loading="lazy" src={UTNFTImg2} alt="UTNFTImg" />
+                    <div className="ut-nft-card-img">
+                      <img loading="lazy" src={UTNFTImg2} alt="UTNFTImg" />
+                    </div>
                     <div className="nft-details">
                       <img
                         loading="lazy"
@@ -518,7 +736,10 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img loading="lazy" src={UTNFTImg3} alt="UTNFTImg" />
+                    {" "}
+                    <div className="ut-nft-card-img">
+                      <img loading="lazy" src={UTNFTImg3} alt="UTNFTImg" />
+                    </div>
                     <div className="nft-details">
                       <img
                         loading="lazy"
@@ -540,7 +761,9 @@ const Home = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="ut-nft-card">
-                    <img loading="lazy" src={UTNFTImg4} alt="UTNFTImg" />
+                    <div className="ut-nft-card-img">
+                      <img loading="lazy" src={UTNFTImg4} alt="UTNFTImg" />
+                    </div>
                     <div className="nft-details">
                       <img
                         loading="lazy"
@@ -599,7 +822,9 @@ const Home = () => {
             </div>
             <div className="journal-grid">
               <div className="journal-grid-card">
-                <img loading="lazy" src={JournalImg1} alt="JournalImg1" />
+                <div className="jgc-img-box">
+                  <img loading="lazy" src={JournalImg1} alt="JournalImg1" />
+                </div>
                 <div className="jgc-details">
                   <h6>
                     Working With Leading YouTube Influencers: A How To Guide
@@ -607,7 +832,9 @@ const Home = () => {
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img loading="lazy" src={JournalImg2} alt="JournalImg2" />
+                <div className="jgc-img-box">
+                  <img loading="lazy" src={JournalImg2} alt="JournalImg2" />
+                </div>
                 <div className="jgc-details">
                   <h6>
                     3 Proven Strategies To Building Brand Awareness in 2022
@@ -615,7 +842,9 @@ const Home = () => {
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img loading="lazy" src={JournalImg3} alt="JournalImg" />
+                <div className="jgc-img-box">
+                  <img loading="lazy" src={JournalImg3} alt="JournalImg" />
+                </div>
                 <div className="jgc-details">
                   <h6>
                     Top 5 Influencer Marketing Software Solutions To Boost Brand
@@ -630,13 +859,17 @@ const Home = () => {
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img loading="lazy" src={JournalImg4} alt="JournalImg" />
+                <div className="jgc-img-box">
+                  <img loading="lazy" src={JournalImg4} alt="JournalImg" />
+                </div>
                 <div className="jgc-details">
                   <h6>New Local Region? Tips To Get Started</h6>
                 </div>
               </div>
               <div className="journal-grid-card">
-                <img loading="lazy" src={JournalImg5} alt="JournalImg" />
+                <div className="jgc-img-box">
+                  <img loading="lazy" src={JournalImg5} alt="JournalImg" />
+                </div>
                 <div className="jgc-details">
                   <h6>The Art of SEO: Proven Search Engine Strategies</h6>
                 </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // Styles
 import "../styles/reset.css";
@@ -38,9 +38,40 @@ import companyLogo13Dark from "../assets/img/logo-amazon-dark.svg";
 
 // Components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper";
+import { Autoplay, FreeMode } from "swiper";
+import { gsap } from "gsap";
+import {
+  Back,
+  Power3,
+  Power1,
+  Power2,
+  Power4,
+  Linear,
+  Expo,
+  Circ,
+} from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const TrustedByCompanies = (props) => {
+  /* useEffect(() => {
+    let abc = gsap.timeline();
+    abc.fromTo(
+      ".hero-company-logo-box",
+      {
+        opacity: 0,
+        rotateY: 45,
+        x: 50,
+      },
+      {
+        x: 0,
+        rotateY: 0,
+        opacity: 1,
+        duration: 0.5,
+        stagger: 0.1,
+      }
+    );
+  }, []); */
+
   return (
     <div
       className={props.trustedByLight ? "trusted-by-light" : "trusted-by-dark"}
@@ -54,8 +85,14 @@ const TrustedByCompanies = (props) => {
             <Swiper
               slidesPerView={"auto"}
               freeMode={true}
-              modules={[FreeMode]}
+              modules={[Autoplay, FreeMode]}
               className="mySwiper"
+              loop={true}
+              centeredSlides={true}
+              speed={5000}
+              autoplay={{
+                delay: 1,
+              }}
             >
               <SwiperSlide>
                 <div className="hero-company-logo-box">
@@ -129,8 +166,14 @@ const TrustedByCompanies = (props) => {
             <Swiper
               slidesPerView={"auto"}
               freeMode={true}
-              modules={[FreeMode]}
+              modules={[Autoplay, FreeMode]}
               className="mySwiper"
+              loop={true}
+              speed={5000}
+              centeredSlides={true}
+              autoplay={{
+                delay: 1,
+              }}
             >
               <SwiperSlide>
                 <div className="hero-company-logo-box">

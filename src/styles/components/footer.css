@@ -34,6 +34,27 @@ footer {
   transition: 0.25s;
   margin: 0 0 1rem 0;
   text-decoration: none;
+  position: relative;
+}
+.footer-grid-card-2 a::after,
+.footer-grid-card-3 a::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, 0);
+  transition: 0.35s;
+}
+.footer-grid-card-2 a:hover::after,
+.footer-grid-card-3 a:hover::after {
+  width: 100%;
+}
+.footer-grid-card-2 a:hover,
+.footer-grid-card-3 a:hover {
+  color: rgba(255, 255, 255, 0.75);
 }
 .footer-grid-card-4 p {
   font-size: 1.5rem;
@@ -47,8 +68,16 @@ footer {
   padding: 0.5rem 2.5rem;
   border-radius: 0.75rem;
   display: flex;
+  transition: 0.5s;
   align-items: center;
   justify-content: center;
+  border: 2px solid transparent;
+}
+.footer-subscribe-box:hover {
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+.footer-subscribe-box:focus-within {
+  border: 2px solid rgba(255, 255, 255, 0.15);
 }
 .footer-subscribe-box input {
   width: 100%;
@@ -91,10 +120,10 @@ footer {
 }
 .footer-icons-box a svg {
   width: 1.85rem;
+  transition: 0.5s;
 }
-.footer-grid-card-2 a:hover,
-.footer-grid-card-3 a:hover {
-  color: var(--main-color);
+.footer-icons-box a:hover {
+  stroke: var(--main-color);
 }
 @media screen and (max-width: 1250px) {
   .footer-grid {

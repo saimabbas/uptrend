@@ -43,6 +43,20 @@ header {
   font-weight: 400;
   position: relative;
 }
+.header-center a:not(.talk-to-us):after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0, -1rem);
+  transition: 0.35s;
+}
+.header-center a:hover::after {
+  width: 100%;
+}
 .bookmark-link {
   position: relative;
 }
@@ -59,17 +73,20 @@ header {
 .header-center a:hover {
   color: var(--white);
 }
-.header-center a:hover {
-  transform: translate(0, -0.5rem);
-}
 .menu-icon-box {
   width: 4.5rem;
   height: 4.5rem;
   background-color: rgba(196, 196, 196, 0.25);
   border-radius: 1rem;
+  transition: 0.35s;
+  cursor: pointer;
 }
 .menu-icon-box svg {
+  transition: 0.35s;
   width: 2.25rem;
+}
+.menu-icon-box:hover {
+  background-color: rgba(196, 196, 196, 0.35);
 }
 .header-right {
   width: max-content;

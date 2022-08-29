@@ -33,20 +33,20 @@
 }
 .hero-icons-line-box > div {
   width: 1px;
-  height: 7.5rem;
+  height: 0;
   background-color: var(--white);
 }
 .hero-icons-line-box a svg {
   width: 2.25rem;
   height: 2.25rem;
   object-fit: contain;
-  transition: 0.25s;
+  transition: 0.35s;
 }
 .hero-icons-line-box > * {
   margin: 0 0 2.5rem 0;
 }
 .hero-icons-line-box a svg:hover {
-  stroke: var(--main-color) !important;
+  transform: scale(1.15);
 }
 .hero-content .box {
   position: relative;
@@ -72,10 +72,35 @@
   color: var(--white);
   font-weight: 700;
   line-height: 7.5rem;
+  position: relative;
 }
 .hero-section h1 span {
+  position: relative;
+  z-index: 10;
+  margin: 0 0 0 2.5rem;
+}
+.head-box-green {
+  width: 104%;
+  height: 97%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.head-box-green-inner {
+  width: 100%;
+  height: 97%;
   background-color: var(--main-color);
-  padding: 0 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-section h1 span i {
+  font-style: normal;
+  z-index: 10;
+  position: relative;
 }
 .trusted-by-light,
 .trusted-by-dark {
@@ -103,7 +128,7 @@
   font-size: 2rem;
   font-weight: 700;
   position: relative;
-  margin: 0 0 3.5rem 0;
+  margin: 0 0 1.5rem 0;
 }
 .hero-bottom h4::after {
   content: "";
@@ -125,12 +150,23 @@
   object-fit: contain;
   width: max-content;
 }
+.hero-company-logos-swiper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .hero-company-logos-swiper .swiper-slide {
   width: max-content;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 5rem 0 0;
+  transition: 0.35s;
+  padding: 1.5rem 0 0 0;
+}
+.hero-company-logos-swiper .swiper-slide:hover {
+  transform: scale(1.15);
 }
 .hero-company-logos-swiper .swiper-wrapper {
   align-items: center;
@@ -176,12 +212,16 @@
 .mission-text-img-box img {
   width: 6.5rem;
   margin: 0 4rem 0 0;
+  transition: 0.5s;
 }
 .mission-text-img-box h5 {
   font-weight: 400;
 }
 .mission-text-img-box:not(:last-child) {
   margin: 0 0 5rem 0;
+}
+.mission-text-img-box:hover img {
+  transform: scale(1.2);
 }
 .expertise-section {
   width: 100%;
@@ -205,6 +245,7 @@
 .expertise-grid-card {
   width: 100%;
   padding: 5rem;
+  transition: 0.5s;
   border-radius: 1.5rem;
   position: relative;
 }
@@ -233,9 +274,15 @@
   top: 5rem;
   right: 3.5rem;
   z-index: 10;
+  transition: 0.5s;
+}
+.expertise-grid-card-1:hover img {
+  transform: scale(1.1);
 }
 .expertise-grid-card-1 h5,
 .expertise-grid-card-4 h5 {
+  z-index: 15;
+  position: relative;
   margin: 20rem 0 0 0;
 }
 .expertise-grid-card-1 h2,
@@ -243,18 +290,28 @@
   position: relative;
   z-index: 15;
 }
-.expertise-grid-card h2 span {
+.expertise-grid-card span {
+  transition: 0.5s;
   font-size: 3.5rem;
   font-weight: 600;
+  display: block;
+  text-transform: uppercase;
 }
 .expertise-grid-card h2 {
   text-transform: uppercase;
-  padding: 2.5rem 0 0 0;
+  /* padding: 2.5rem 0 0 0; */
   display: flex;
   font-size: 5.5rem;
   font-weight: 800;
   flex-direction: column;
   align-items: flex-start;
+  transition: 0.5s;
+}
+.expertise-grid-card:hover h2 {
+  letter-spacing: 7px;
+}
+.expertise-grid-card:hover span {
+  letter-spacing: 3px;
 }
 .expertise-grid-card h5 {
   font-weight: 300;
@@ -473,13 +530,23 @@
   grid-template-rows: 1fr 1fr;
   grid-gap: 1.5rem;
 }
-.uptrends-events-img-grid img {
+.uptrends-events-img-grid div {
   width: 100%;
   border-radius: 0.75rem;
   object-fit: cover;
   height: 17.5rem;
+  overflow: hidden;
 }
-.uptrends-events-img-grid img:nth-child(1) {
+.uptrends-events-img-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.uptrends-events-img-grid div:hover img {
+  transform: scale(1.025);
+}
+.uptrends-events-img-grid div:nth-child(1) {
   grid-row: 1/3;
   border-radius: 1.5rem;
   height: 36.5rem;
@@ -570,15 +637,25 @@
   margin: 7.5rem 0 0 0;
 }
 .ut-nft-card {
+  transition: 0.5s;
   width: 100%;
 }
-.ut-nft-card > img {
+.ut-nft-card-img {
   width: 40rem;
   height: 40rem;
   border-radius: 1.5rem;
-  object-fit: cover;
+  overflow: hidden;
   position: relative;
   z-index: 5;
+}
+.ut-nft-card img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+}
+.ut-nft-card:hover img {
+  transform: scale(1.05);
 }
 .nft-details {
   width: 100%;
@@ -730,13 +807,23 @@
   flex-direction: column;
   background-color: var(--main-dark1);
   border-radius: 1rem;
+  transition: 0.5s;
   overflow: hidden;
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.jgc-img-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.journal-grid-card:hover {
+  transform: translate(0, -1rem);
 }
 .journal-grid-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.5s;
 }
 .jgc-details {
   padding: 2rem;
@@ -930,7 +1017,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
-  .uptrends-events-img-grid img:nth-child(1) {
+  .uptrends-events-img-grid div:nth-child(1) {
     grid-column: 1/-1;
     grid-row: 1/2;
   }
@@ -989,7 +1076,6 @@
   }
   .hero-bottom h4 {
     font-size: 1.75rem;
-    margin: 0 0 2.5rem 0;
   }
   .our-mission-content {
     grid-gap: 5rem;
@@ -1074,8 +1160,8 @@
   .highly-regarded-grid-card:nth-child(2):hover {
     background-color: var(--main-light1);
   }
-  .uptrends-events-img-grid img,
-  .uptrends-events-img-grid img:nth-child(1) {
+  .uptrends-events-img-grid div,
+  .uptrends-events-img-grid div:nth-child(1) {
     height: max-content;
     border-radius: 1rem;
   }

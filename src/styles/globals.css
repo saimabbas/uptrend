@@ -139,6 +139,13 @@
   cursor: pointer;
   transition: 0.35s;
 }
+.ut-btn-lightgray:hover {
+  background-color: #eeeeee;
+}
+.ut-btn-lightgray:active,
+.ut-btn-green:active {
+  transform: scale(0.95);
+}
 .ut-btn-green {
   background-color: var(--main-color);
   font-size: 1.65rem;
@@ -151,6 +158,9 @@
   cursor: pointer;
   transition: 0.35s;
 }
+.ut-btn-green:hover {
+  background-color: #1cb66e;
+}
 .arrow-link {
   width: max-content;
   display: flex;
@@ -158,9 +168,16 @@
   justify-content: center;
   text-decoration: none;
 }
+.arrow-link:hover svg {
+  transform: rotate(-45deg) scale(1.1);
+}
+.arrow-link:hover span {
+  letter-spacing: 2px;
+}
 .arrow-link span {
   font-size: 1.75rem;
   color: var(--main-color);
+  transition: 0.35s;
   font-weight: 700;
   margin: 0 1rem 0 0;
 }
@@ -168,6 +185,7 @@
   width: 2rem;
   height: 2rem;
   color: var(--main-color);
+  transition: 0.35s;
 }
 .ut-input {
   width: 100%;
@@ -179,6 +197,9 @@
   color: var(--main-dark1);
   border-radius: 0.5rem;
   transition: 0.5s;
+}
+.ut-input:hover {
+  border: 2px solid rgba(0, 0, 0, 0.05);
 }
 .ut-input::placeholder {
   color: rgba(0, 0, 0, 0.5);
@@ -301,4 +322,45 @@
   .mob-element {
     display: block;
   }
+}
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+/* Set-up */
+.ddd-cube {
+  width: max-content;
+  text-align: center;
+  height: 6.5rem;
+  transition: transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.ddd-f {
+  transform: translateZ(3.25rem);
+}
+.ddd-b {
+  transform: rotateX(-90deg) translateZ(-5rem);
+}
+.ddd-cube-p:hover .ddd-cube {
+  transform: rotateX(90deg);
+}
+.loading-screen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+  background-color: var(--main-dark3);
+  overflow: hidden;
+}
+.loading-screen svg {
+  height: 5rem;
+  object-fit: contain;
+  width: 75%;
 }
