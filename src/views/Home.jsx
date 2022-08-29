@@ -120,7 +120,6 @@ const Home = () => {
         ease: Power1.easeInOut,
       });
     let LoaderFadeAnimationHome = gsap.timeline({
-      paused: true,
       onComplete: heroHeadAimInit,
     });
     LoaderFadeAnimationHome.fromTo(
@@ -233,9 +232,9 @@ const Home = () => {
         },
         "<0"
       );
-    $(window).on("load", function () {
+    /* $(window).on("load", function () {
       LoaderFadeAnimationHome.play();
-    });
+    }); */
   }, []);
 
   return (
