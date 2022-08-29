@@ -241,6 +241,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 2.5rem;
+  overflow: hidden;
 }
 .expertise-grid-card {
   width: 100%;
@@ -718,8 +719,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.ut-store-details > div {
+  width: 17.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 .ut-store-details img {
-  height: 6.5rem;
+  width: 17.5rem;
+  object-fit: contain;
 }
 .ut-store-details button {
   min-width: 17.5rem;

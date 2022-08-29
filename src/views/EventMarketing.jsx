@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // Styles
 import "../styles/reset.css";
@@ -40,15 +40,308 @@ import TrustedByCompanies from "../components/TrustedByCompanies";
 import Accordion from "react-bootstrap/Accordion";
 import Footer from "../components/Footer";
 import UpTrendsEvents from "../components/UpTrendsEvents";
-
-// Components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode } from "swiper";
 import GreenWaveHeadingSection from "../components/GreenWaveHeadingSection";
 import BackedByLogosSwiper from "../components/BackedByLogosSwiper";
+import { gsap } from "gsap";
+import {
+  Back,
+  Power3,
+  Power1,
+  Power2,
+  Power4,
+  Linear,
+  Expo,
+  Circ,
+} from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import UTLogo from "../assets/icons/UTLogo";
+import $ from "jquery";
+
 const EventMarketing = () => {
+  gsap.registerPlugin(
+    ScrollTrigger,
+    SplitText,
+    ScrollSmoother,
+    ScrambleTextPlugin
+  );
+  useEffect(() => {
+    // Text Spliting
+    const marketingHeading = new SplitText(".im-hero-headings h1", {
+      type: "chars, words,lines",
+    });
+    const marketingHeadingChars = marketingHeading.chars;
+    const marketingHeadingLines = marketingHeading.lines;
+    const marketingHeadingWords = marketingHeading.words;
+
+    let marketingLandingAnim = gsap.timeline();
+    marketingLandingAnim
+      .fromTo(
+        ".loading-screen",
+        {
+          opacity: "1",
+        },
+        {
+          opacity: "0",
+          delay: 1,
+          duration: 0.5,
+          ease: Linear.easeInOut,
+        }
+      )
+      .fromTo(
+        marketingHeadingChars,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.25,
+          stagger: {
+            each: 0.05,
+          },
+        }
+      )
+      .fromTo(
+        ".im-hero-headings h3",
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".loading-screen",
+        {
+          height: "100vh",
+        },
+        {
+          height: "0",
+          duration: 0.01,
+        },
+        "<0"
+      );
+    gsap.fromTo(
+      ".im-hero-explore svg",
+      {
+        y: 3,
+      },
+      {
+        y: -3,
+        ease: Linear.easeInOut,
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
+      }
+    );
+    let homeExpertiseAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service-description-grid",
+        start: "top 50%",
+      },
+    });
+    homeExpertiseAnim
+      .fromTo(
+        ".em-sd-grid-card-1-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        }
+      )
+      .fromTo(
+        ".em-sd-grid-card-2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-3-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-4-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-1 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".em-sd-grid-card-1 h4",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-2 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-3 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-3 h2",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-3 h6",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-4 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-4 h4",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".em-sd-grid-card-4 ul",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      );
+    let scrambleTextStats = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".platform-stats-section",
+        start: "top 50%",
+      },
+    });
+    scrambleTextStats
+      .to(".ps-box-1 h3 span", {
+        duration: 3,
+        scrambleText: {
+          text: "2.3",
+          chars: "0 1 2 3 4 5 6 7 8 9",
+          revealDelay: 0.5,
+          speed: 1,
+          delay: 3,
+        },
+      })
+      .to(
+        ".ps-box-2 h3 span",
+        {
+          duration: 3,
+          scrambleText: {
+            text: "64",
+            chars: "0 1 2 3 4 5 6 7 8 9",
+            revealDelay: 0.5,
+            speed: 1,
+            delay: 3,
+          },
+        },
+        0
+      )
+      .to(
+        ".ps-box-3 h3 span",
+        {
+          duration: 3,
+          scrambleText: {
+            text: "448",
+            chars: "0 1 2 3 4 5 6 7 8 9",
+            revealDelay: 0.5,
+            speed: 1,
+            delay: 3,
+          },
+        },
+        0
+      );
+  }, []);
+
   return (
     <main className="app">
+      <div className="loading-screen">
+        <UTLogo color="#fff" />
+      </div>
       <div className="event-marketing-page">
         <section className="im-hero-section">
           <div className="box">
@@ -84,20 +377,24 @@ const EventMarketing = () => {
             </div>
             <div className="service-description-grid">
               <div className="sd-grid-card em-sd-grid-card-1">
+                <div className="em-sd-grid-card-1-bg"></div>
                 <img loading="lazy" src={PhotoImg} alt="PhotoImg" />
                 <h4>
                   We shape <b>memorable and impactful experiences</b>
                 </h4>
               </div>
               <div className="sd-grid-card em-sd-grid-card-2">
+                <div className="em-sd-grid-card-2-bg"></div>
                 <img loading="lazy" src={EMSD2ndImg} alt="EMSD2ndImg" />
               </div>
               <div className="sd-grid-card em-sd-grid-card-3">
+                <div className="em-sd-grid-card-3-bg"></div>
                 <img loading="lazy" src={EMSD3rdImg} alt="EMSD3rdImg" />
                 <h2>277%</h2>
                 <h6>Organic Traffic </h6>
               </div>
               <div className="sd-grid-card em-sd-grid-card-4">
+                <div className="em-sd-grid-card-4-bg"></div>
                 <img loading="lazy" src={KnotImg} alt="KnotImg" />
                 <h4>Enhance attention surrounding iconic brands</h4>
                 <ul>
@@ -155,52 +452,6 @@ const EventMarketing = () => {
             </div>
           </div>
         </section>
-        {/* <section className="em-backed-by-section">
-          <div className="box">
-            <h3>Our partners are backed</h3>
-            <h4>by venture capital’s elite</h4>
-            <div className="em-backed-by-swiper">
-              <Swiper
-                slidesPerView={"auto"}
-                spaceBetween={50}
-                freeMode={true}
-                modules={[FreeMode]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo1Dark} alt="BBLogo1Dark" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo2Dark} alt="BBLogo2Dark" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo3Dark} alt="BBLogo1Dark" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo4Dark} alt="BBLogo1Dark" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo5Dark} alt="BBLogo1Dark" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo6Dark} alt="BBLogo1Dark" />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
-        </section> */}
         <BackedByLogosSwiper backedByLight={true} />
         <section className="platform-stats-section">
           <div className="box">
@@ -223,28 +474,33 @@ const EventMarketing = () => {
               </div>
             </div>
             <div className="platform-stats-text-grid">
-              <div className="ps-box">
-                <h3>
-                  <MdArrowUpward /> 2.3X
-                </h3>
-                <p>ROAs</p>
+              <div className="ps-box ps-box-1">
+                <div className="ps-box-content">
+                  <h3>
+                    <MdArrowUpward /> <span>2.3</span> X
+                  </h3>
+                  <p>ROAs</p>
+                </div>
               </div>
-              <div className="ps-box">
-                <h3>
-                  <MdArrowUpward /> 64%
-                </h3>
-                <p>Revenue Growth</p>
+              <div className="ps-box ps-box-2">
+                <div className="ps-box-content">
+                  <h3>
+                    <MdArrowUpward /> <span>64</span> %
+                  </h3>
+                  <p>Revenue Growth</p>
+                </div>
               </div>
-              <div className="ps-box">
-                <h3>
-                  <MdArrowUpward /> 448%
-                </h3>
-                <p>Traffic</p>
+              <div className="ps-box ps-box-3">
+                <div className="ps-box-content">
+                  <h3>
+                    <MdArrowUpward /> <span>448</span> %
+                  </h3>
+                  <p>Traffic</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-
         <GreenWaveHeadingSection
           smallText="ready to start"
           bigText="a new trend?"

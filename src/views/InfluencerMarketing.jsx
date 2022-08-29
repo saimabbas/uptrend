@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // Styles
 import "../styles/reset.css";
@@ -39,16 +39,315 @@ import {
   MdRemove,
   MdAdd,
 } from "react-icons/md";
+
 // Components
 import Header from "../components/Header";
 import TrustedByCompanies from "../components/TrustedByCompanies";
 import Accordion from "react-bootstrap/Accordion";
 import Footer from "../components/Footer";
 import GreenWaveHeadingSection from "../components/GreenWaveHeadingSection";
+import { gsap } from "gsap";
+import {
+  Back,
+  Power3,
+  Power1,
+  Power2,
+  Power4,
+  Linear,
+  Expo,
+  Circ,
+} from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import UTLogo from "../assets/icons/UTLogo";
+import $ from "jquery";
 
 const InfluencerMarketing = () => {
+  gsap.registerPlugin(
+    ScrollTrigger,
+    SplitText,
+    ScrollSmoother,
+    ScrambleTextPlugin
+  );
+  useEffect(() => {
+    // Text Spliting
+    const marketingHeading = new SplitText(".im-hero-headings h1", {
+      type: "chars, words,lines",
+    });
+    const marketingHeadingChars = marketingHeading.chars;
+    const marketingHeadingLines = marketingHeading.lines;
+    const marketingHeadingWords = marketingHeading.words;
+
+    let marketingLandingAnim = gsap.timeline();
+    marketingLandingAnim
+      .fromTo(
+        ".loading-screen",
+        {
+          opacity: "1",
+        },
+        {
+          opacity: "0",
+          delay: 1,
+          duration: 0.5,
+          ease: Linear.easeInOut,
+        }
+      )
+      .fromTo(
+        marketingHeadingChars,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.25,
+          stagger: {
+            each: 0.05,
+          },
+        }
+      )
+      .fromTo(
+        ".im-hero-headings h3",
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".loading-screen",
+        {
+          height: "100vh",
+        },
+        {
+          height: "0",
+          duration: 0.01,
+        },
+        "<0"
+      );
+    gsap.fromTo(
+      ".im-hero-explore svg",
+      {
+        y: 3,
+      },
+      {
+        y: -3,
+        ease: Linear.easeInOut,
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
+      }
+    );
+    gsap.fromTo(
+      ".cp-details img",
+      {
+        y: 10,
+        rotate: 5,
+      },
+      {
+        rotate: -5,
+        y: -10,
+        ease: Linear.easeInOut,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+      }
+    );
+    let homeExpertiseAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service-description-grid",
+        start: "top 50%",
+      },
+    });
+    homeExpertiseAnim
+      .fromTo(
+        ".sd-grid-card-1-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        }
+      )
+      .fromTo(
+        ".sd-grid-card-2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-4-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-3-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-1 > img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".sdgc1-details",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sdgc2-details",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".all-platforms-grid",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-4 > img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sdgc3-details",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-3 > img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-3 > p",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      );
+    let scrambleTextStats = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".platform-stats-section",
+        start: "top 50%",
+      },
+    });
+    scrambleTextStats
+      .to(".ps-box-1 h3 span", {
+        duration: 3,
+        scrambleText: {
+          text: "690",
+          chars: "0 1 2 3 4 5 6 7 8 9",
+          revealDelay: 0.5,
+          speed: 1,
+          delay: 5,
+        },
+      })
+      .to(
+        ".ps-box-2 h3 span",
+        {
+          duration: 3,
+          scrambleText: {
+            text: "64",
+            chars: "0 1 2 3 4 5 6 7 8 9",
+            revealDelay: 0.5,
+            speed: 1,
+            delay: 5,
+          },
+        },
+        0
+      )
+      .to(
+        ".ps-box-3 h3",
+        {
+          duration: 3,
+          scrambleText: {
+            text: "14 320 344",
+            chars: "0 1 2 3 4 5 6 7 8 9",
+            revealDelay: 0.5,
+            speed: 1,
+            delay: 5,
+          },
+        },
+        0
+      );
+  }, []);
+
   return (
     <main className="app">
+      <div className="loading-screen">
+        <UTLogo color="#fff" />
+      </div>
       <div className="influencer-marketing-page">
         <section className="im-hero-section">
           <div className="box">
@@ -59,7 +358,7 @@ const InfluencerMarketing = () => {
                 <h3>Outstanding opportunity to dominate the market</h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#">
+                <a href="#service-description">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
@@ -73,7 +372,10 @@ const InfluencerMarketing = () => {
             alt="ImHeroImg"
           />
         </section>
-        <section className="service-description-section">
+        <section
+          className="service-description-section"
+          id="service-description"
+        >
           <div className="box">
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
@@ -84,6 +386,7 @@ const InfluencerMarketing = () => {
             </div>
             <div className="service-description-grid">
               <div className="sd-grid-card sd-grid-card-1">
+                <div className="sd-grid-card-1-bg"></div>
                 <div className="sdgc1-details">
                   <h3>
                     <span> #1 INTERNALTIONAL</span>
@@ -110,6 +413,7 @@ const InfluencerMarketing = () => {
                 />
               </div>
               <div className="sd-grid-card sd-grid-card-2">
+                <div className="sd-grid-card-2-bg"></div>
                 <div className="sdgc2-details">
                   <h3>
                     <span> ACROSS ALL</span>
@@ -198,6 +502,7 @@ const InfluencerMarketing = () => {
                 </div>
               </div>
               <div className="sd-grid-card sd-grid-card-3">
+                <div className="sd-grid-card-3-bg"></div>
                 <img loading="lazy" src={UTPartners} alt="UTPartners" />
                 <p className="ut-partners-username">@ricky</p>
                 <div className="sdgc3-details">
@@ -216,6 +521,7 @@ const InfluencerMarketing = () => {
                 </div>
               </div>
               <div className="sd-grid-card sd-grid-card-4">
+                <div className="sd-grid-card-4-bg"></div>
                 <img
                   loading="lazy"
                   src={IndustriesPlanetImg}
@@ -285,23 +591,29 @@ const InfluencerMarketing = () => {
               </div>
             </div>
             <div className="platform-stats-text-grid">
-              <div className="ps-box">
-                <h3>
-                  <MdArrowUpward /> 690%
-                </h3>
-                <p>Growth In New User Sign-Ups</p>
+              <div className="ps-box ps-box-1">
+                <div className="ps-box-content">
+                  <h3>
+                    <MdArrowUpward /> <span></span>%
+                  </h3>
+                  <p>Growth In New User Sign-Ups</p>
+                </div>
               </div>
-              <div className="ps-box">
-                <h3>
-                  <MdArrowUpward /> 64%
-                </h3>
-                <p>LTV Increase</p>
+              <div className="ps-box ps-box-2">
+                <div className="ps-box-content">
+                  <h3>
+                    <MdArrowUpward /> <span></span> %
+                  </h3>
+                  <p>LTV Increase</p>
+                </div>
               </div>
-              <div className="ps-box">
-                <h3>
-                  <MdArrowUpward /> 14 320 344
-                </h3>
-                <p>Campaign Engagement</p>
+              <div className="ps-box ps-box-3">
+                <div className="ps-box-content">
+                  <h3>
+                    <MdArrowUpward /> <span></span>
+                  </h3>
+                  <p>Campaign Engagement</p>
+                </div>
               </div>
             </div>
           </div>

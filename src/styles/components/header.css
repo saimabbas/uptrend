@@ -40,21 +40,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
 }
-.header-center a:not(.talk-to-us):after {
+.header-center > a:not(.talk-to-us):after {
   content: "";
   width: 0%;
-  height: 1px;
-  background-color: var(--white);
+  height: 0.75px;
   position: absolute;
   bottom: 0;
   left: 0;
   transform: translate(0, -1rem);
   transition: 0.35s;
 }
-.header-center a:hover::after {
+.header-center > a:hover::after {
   width: 100%;
 }
 .bookmark-link {
@@ -158,6 +157,12 @@ header .ut-dropdown .dropdown-menu a:hover {
 .header-dark .header-center .ut-dropdown button svg,
 .header-dark .header-right p {
   color: var(--black);
+}
+.header-light .header-center a:not(.talk-to-us):after {
+  background-color: var(--white);
+}
+.header-dark .header-center a:not(.talk-to-us):after {
+  background-color: var(--main-dark3);
 }
 header .ut-dropdown button:hover,
 header .ut-dropdown button:focus,

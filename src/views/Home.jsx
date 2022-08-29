@@ -93,6 +93,12 @@ const Home = () => {
     const HomeHeroHeadingChars = HomeHeroHeading.chars;
     const HomeHeroHeadingLines = HomeHeroHeading.lines;
     const HomeHeroHeadingWords = HomeHeroHeading.words;
+    const UTStoreHead = new SplitText(".ut-store-details h2", {
+      type: "chars, words,lines",
+    });
+    const UTStoreHeadChars = UTStoreHead.chars;
+    const UTStoreHeadWords = UTStoreHead.words;
+
     var HH1BoxANim = gsap.timeline({
       repeat: -1,
       paused: true,
@@ -119,21 +125,22 @@ const Home = () => {
         width: 0,
         ease: Power1.easeInOut,
       });
-    let LoaderFadeAnimationHome = gsap.timeline({
+    let homeLandingAnim = gsap.timeline({
       onComplete: heroHeadAimInit,
     });
-    LoaderFadeAnimationHome.fromTo(
-      ".loading-screen",
-      {
-        opacity: "1",
-      },
-      {
-        opacity: "0",
-        delay: 1,
-        duration: 0.5,
-        ease: Linear.easeInOut,
-      }
-    )
+    homeLandingAnim
+      .fromTo(
+        ".loading-screen",
+        {
+          opacity: "1",
+        },
+        {
+          opacity: "0",
+          delay: 1,
+          duration: 0.5,
+          ease: Linear.easeInOut,
+        }
+      )
 
       .fromTo(
         HomeHeroHeadingLines,
@@ -233,8 +240,101 @@ const Home = () => {
         "<0"
       );
     /* $(window).on("load", function () {
-      LoaderFadeAnimationHome.play();
+      homeLandingAnim.play();
     }); */
+    let homeExpertiseAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".expertise-section",
+        start: "top 50%",
+      },
+    });
+    homeExpertiseAnim.fromTo(
+      ".expertise-grid-card",
+      {
+        opacity: 0,
+        // y: 100,
+        scale: 0.85,
+      },
+      {
+        // y: 0,
+        scale: 1,
+        opacity: 1,
+        ease: Linear.easeInOut,
+        stagger: {
+          ease: Linear.easeInOut,
+          each: 0.15,
+        },
+      }
+    );
+    let highlyRegardedAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".highly-regarded-section",
+        start: "top 50%",
+      },
+    });
+    highlyRegardedAnim.fromTo(
+      ".highly-regarded-grid-card",
+      {
+        opacity: 0,
+        // y: 100,
+        scale: 0.85,
+      },
+      {
+        // y: 0,
+        scale: 1,
+        opacity: 1,
+        ease: Linear.easeInOut,
+        stagger: {
+          ease: Linear.easeInOut,
+          each: 0.15,
+        },
+      }
+    );
+    let uptrendStoreAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ut-store-section",
+        start: "top 50%",
+      },
+    });
+    uptrendStoreAnim
+      .fromTo(
+        UTStoreHeadChars,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.75,
+          stagger: {
+            each: 0.1,
+            from: "center",
+          },
+        }
+      )
+      .fromTo(
+        ".ut-store-details > div",
+        {
+          width: 0,
+        },
+        {
+          duration: 0.5,
+          width: "17.5rem",
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".ut-store-details button",
+        {
+          opacity: 0,
+          scale: 0.5,
+        },
+        {
+          scale: 1,
+          duration: 0.5,
+          opacity: 1,
+        },
+        "<0"
+      );
   }, []);
 
   return (
@@ -785,11 +885,13 @@ const Home = () => {
           <img loading="lazy" src={StorefrontImg} alt="StorefrontImg" />
           <div className="ut-store-details">
             <h2>UPTREND STORE</h2>
-            <img
-              loading="lazy"
-              src={LimitedEditionImg}
-              alt="LimitedEditionImg"
-            />
+            <div>
+              <img
+                loading="lazy"
+                src={LimitedEditionImg}
+                alt="LimitedEditionImg"
+              />
+            </div>
             <button className="ut-btn-green">SEND</button>
           </div>
           <div className="ut-store-wave-box">
