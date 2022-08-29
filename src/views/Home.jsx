@@ -244,12 +244,7 @@ const Home = () => {
       </div>
       <div className="home-page">
         <section className="hero-section">
-          <img
-            loading="lazy"
-            className="hero-bull"
-            src={HeroBull}
-            alt="HeroBull"
-          />
+          <img className="hero-bull" src={HeroBull} alt="HeroBull" />
           <img
             className="hero-blue-overlay"
             src={HeroBlueOverlay}
