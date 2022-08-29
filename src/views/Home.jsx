@@ -147,8 +147,7 @@ const Home = () => {
             from: "start",
           },
           ease: Power4.easeInOut,
-        },
-        "<0"
+        }
       )
       .fromTo(
         ".hero-bull",
