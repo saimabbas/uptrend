@@ -288,47 +288,11 @@
 .mob-element {
   display: none;
 }
-@media screen and (max-width: 1250px) {
-  .box,
-  .box.box-p {
-    padding: 0 3.5rem;
-  }
-}
-@media screen and (max-width: 750px) {
-  .box,
-  .box.box-p {
-    padding: 0 2rem;
-  }
-  .app h2 {
-    font-size: 3rem;
-  }
-  .app h3 {
-    font-size: 2.5rem;
-  }
-  .ut-btn-lightgray {
-    padding: 0.65rem 2rem;
-  }
-  .arrow-link span {
-    font-size: 1.5rem;
-    max-width: 0 0.5rem 0 0;
-  }
-  .arrow-link svg {
-    width: 1.75rem;
-    height: 1.75rem;
-  }
-  .pc-element {
-    display: none;
-  }
-  .mob-element {
-    display: block;
-  }
-}
 .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   -o-transition-timing-function: linear !important;
   transition-timing-function: linear !important;
 }
-/* Set-up */
 .ddd-cube {
   width: max-content;
   text-align: center;
@@ -363,4 +327,45 @@
   height: 5rem;
   object-fit: contain;
   width: 75%;
+}
+
+@media screen and (max-width: 1250px) {
+  .box,
+  .box.box-p {
+    padding: 0 3.5rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .box,
+  .box.box-p {
+    padding: 0 2rem;
+  }
+  .app h2 {
+    font-size: 3rem;
+  }
+  .app h3 {
+    font-size: 2.5rem;
+  }
+  .ut-btn-lightgray {
+    padding: 0.65rem 2rem;
+  }
+  .arrow-link span {
+    font-size: 1.5rem;
+    max-width: 0 0.5rem 0 0;
+  }
+  .arrow-link svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .pc-element {
+    display: none;
+  }
+  .mob-element {
+    display: block;
+  }
+  .ddd-cube {
+    height: max-content;
+    background-color: red;
+    height: 3.25rem;
+  }
 }

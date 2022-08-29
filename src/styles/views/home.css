@@ -1095,7 +1095,7 @@
   .expertise-grid-card {
     padding: 2rem;
   }
-  .expertise-grid-card h2 span {
+  .expertise-grid-card span {
     font-size: 2rem;
   }
   .egc2-img-grid img:not(:last-child) {
@@ -1224,5 +1224,11 @@
   }
   .ut-store-section > img {
     min-height: 65rem;
+  }
+  .hero-section h1 span {
+    margin: 0 0 0 1.5rem;
+  }
+  .hero-content {
+    height: 90vh;
   }
 }
