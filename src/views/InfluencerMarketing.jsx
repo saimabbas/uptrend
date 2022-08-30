@@ -332,7 +332,7 @@ const InfluencerMarketing = () => {
         {
           duration: 3,
           scrambleText: {
-            text: "14 320 344",
+            text: "14,320,344",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
             speed: 1,
@@ -380,7 +380,7 @@ const InfluencerMarketing = () => {
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
               <a href="#" className="arrow-link">
-                <span>READ MORE </span>
+                <span>GET STARTED</span>
                 <MdArrowForward />
               </a>
             </div>
@@ -533,12 +533,13 @@ const InfluencerMarketing = () => {
                     industries
                   </h3>
                   <div className="ut-tags">
-                    <span>Influencers</span>
-                    <span>Celebrities</span>
-                    <span>Athletes</span>
-                    <span>Artists</span>
-                    <span>Streamers</span>
-                    <span>Producers</span>
+                    <span>Technology</span>
+                    <span>Crypto</span>
+                    <span>Gaming</span>
+                    <span>E-commerce</span>
+                    <span>Finance</span>
+                    <span>Fashion</span>
+                    <span>Metaverse</span>
                   </div>
                 </div>
               </div>
@@ -648,14 +649,17 @@ const InfluencerMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      Uptrend influencer marketing services include Discovery
+                      Phase, Recruitment of Talent, Influencer Relationship
+                      Management, Content Review, Campaign Management &
+                      Reporting, Influencer Analysis, Audience Analysis,
+                      E-commerce Tools, Forms & Compliance, Fake Follower &
+                      Fraud Detection, Payment Processing, and more.
+                      <br />
+                      <br />
+                      Supported social media platforms include Twitch, Twitter,
+                      YouTube, Tiktok, Instagram, Facebook, Linkedin, Snapchat,
+                      Weibo, Wechat, Kakaotalk, and others.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -675,14 +679,13 @@ const InfluencerMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      Uptrend is the #1 international content studio supported
+                      by 120,000+ influencers across 220 countries. Uptrend
+                      partners include celebrities, artists, athletes,
+                      producers, streamers, and more. Combined with Uptrend's
+                      unique expertise, our clients dominate in popular
+                      categories like technology, crypto, gaming, e-commerce,
+                      fashion, and the metaverse.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -703,14 +706,13 @@ const InfluencerMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      At Uptrend, we leverage influencer marketing as a key
+                      channel, delivering consistent growth. Long-term
+                      partnerships are strategically established with leading
+                      influencers who actively promote Uptrend brands to a
+                      highly engaged audience. We have spent years carefully
+                      curating a range of respected talent and experimenting
+                      with successful social media collaborations.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -730,14 +732,10 @@ const InfluencerMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      Influencers are known for creating content that resonates
+                      with their audience, establishing them as powerful social
+                      media entities. Brands can leverage this quality to convey
+                      their messages to their target audience.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>

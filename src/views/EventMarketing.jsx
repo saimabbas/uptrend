@@ -371,7 +371,7 @@ const EventMarketing = () => {
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
               <a href="#" className="arrow-link">
-                <span>READ MORE </span>
+                <span>GET STARTED</span>
                 <MdArrowForward />
               </a>
             </div>
@@ -528,14 +528,10 @@ const EventMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      Promotional event marketing is a type of experiential
+                      marketing service, aimed at creating memorable experiences
+                      and meaningful connections between a brand's
+                      representatives and its audience.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -553,18 +549,35 @@ const EventMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      The event, the lead-up, and buzz after will help build
+                      brand presence, generate sales leads, increase customer
+                      engagement, or even help promote a specific product or
+                      service.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
+                  <Accordion.Header>
+                    <div className="faq-box-head">
+                      <p>What Makes Event Marketing Successful?</p>
+                      <div className="fb-plus-box fb-icon-box">
+                        <MdAdd />
+                      </div>
+                      <div className="fb-minus-box fb-icon-box">
+                        <MdRemove />
+                      </div>
+                    </div>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <p>
+                      In today's fast-paced world, it is critical for businesses
+                      to stand out from the crowd. Event marketing is the ideal
+                      method, providing ample networking opportunities and new
+                      channels to connect with future and returning customers.
+                    </p>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="3">
                   <Accordion.Header>
                     <div className="faq-box-head">
                       <p>
@@ -580,41 +593,10 @@ const EventMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
-                    </p>
-                  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="3">
-                  <Accordion.Header>
-                    <div className="faq-box-head">
-                      <p>
-                        Why is it important to work with leading influencers?
-                      </p>
-                      <div className="fb-plus-box fb-icon-box">
-                        <MdAdd />
-                      </div>
-                      <div className="fb-minus-box fb-icon-box">
-                        <MdRemove />
-                      </div>
-                    </div>
-                  </Accordion.Header>
-                  <Accordion.Body>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      Experiential marketing events come in many formats: live,
+                      virtual, or a combination of both. Uptrend develops
+                      engaging experiences through inspiring stories that
+                      captivate audience no matter where they happen to be.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>

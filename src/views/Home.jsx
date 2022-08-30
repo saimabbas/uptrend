@@ -892,7 +892,7 @@ const Home = () => {
                 alt="LimitedEditionImg"
               />
             </div>
-            <button className="ut-btn-green">SEND</button>
+            <button className="ut-btn-green">SHOW IT!</button>
           </div>
           <div className="ut-store-wave-box">
             <img loading="lazy" src={UtStoreWave} alt="UtStoreWave" />

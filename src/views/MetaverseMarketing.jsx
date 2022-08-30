@@ -395,7 +395,7 @@ const MetaverseMarketing = () => {
         {
           duration: 3,
           scrambleText: {
-            text: "19 400",
+            text: "19,400",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
             speed: 1,
@@ -454,7 +454,7 @@ const MetaverseMarketing = () => {
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
               <a href="#" className="arrow-link">
-                <span>READ MORE </span>
+                <span>Get Started </span>
                 <MdArrowForward />
               </a>
             </div>
@@ -537,7 +537,7 @@ const MetaverseMarketing = () => {
             <div className="heading-sublink-box">
               <h2>Engage With Uptrend In The Metaverse</h2>
               <a href="#" className="arrow-link">
-                <span>Get Started </span>
+                <span>Learn More</span>
                 <MdArrowForward />
               </a>
             </div>
@@ -612,7 +612,7 @@ const MetaverseMarketing = () => {
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span>217</span> %
+                    <MdArrowUpward /> <span> </span> %
                   </h3>
                   <p>Brand Mentions</p>
                 </div>
@@ -620,7 +620,7 @@ const MetaverseMarketing = () => {
               <div className="ps-box ps-box-2">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span>19 400</span>
+                    <MdArrowUpward /> <span> </span>
                   </h3>
                   <p>Metaverse Event Attendees</p>
                 </div>
@@ -628,7 +628,7 @@ const MetaverseMarketing = () => {
               <div className="ps-box ps-box-3">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span>83</span> %
+                    <MdArrowUpward /> <span> </span> %
                   </h3>
                   <p>Organic Traffic</p>
                 </div>
@@ -663,14 +663,11 @@ const MetaverseMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      Metaverse is a term used to describe a distinct
+                      combination of virtual and mixed reality worlds, accessed
+                      through a web browswer or VR headset, which allows users
+                      to have real-time interactions and experiences across
+                      great distances.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -688,14 +685,12 @@ const MetaverseMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      The Metaverse is an immersive, 360-degree digital world
+                      where users can create avatars, own virtual assets, and
+                      more, using blockchain-based web 3.0 technology. The
+                      emerging technology has companies like Facebook,
+                      Microsoft, Sony, and more scrambling for the first-mover
+                      advantage.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -713,14 +708,12 @@ const MetaverseMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      Although the Metaverse is a new concept, multiple top
+                      consumer brands have begun to sell digital items that
+                      integrate into the growing virtual worlds. Iconic brands
+                      like Nike, Zara, Philipp Plein, Adidas have already
+                      embraced the Metaverse with more brands planning to
+                      follow.
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -738,14 +731,24 @@ const MetaverseMarketing = () => {
                   </Accordion.Header>
                   <Accordion.Body>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      Duis aute irure dolor in reprehenderit in voluptate velit
-                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                      sint occaecat cupidatat non proident, sunt in culpa qui
-                      officia deserunt mollit anim id est laborum.
+                      Uptrend designers construct exclusive interactive
+                      experiences to build brand presence in the Metaverse.
+                      <br />
+                      <br />
+                      Interactive Metaverse advertising include:
+                      <br />
+                      <br />
+                      Virtual showrooms
+                      <br />
+                      Exclusive merch
+                      <br />
+                      Web 3 events
+                      <br />
+                      Interactive Metaverse assets
+                      <br />
+                      3D & AR models
+                      <br />
+                      And much more!
                     </p>
                   </Accordion.Body>
                 </Accordion.Item>

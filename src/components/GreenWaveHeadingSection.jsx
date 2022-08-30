@@ -39,7 +39,7 @@ const GreenWaveHeadingSection = (props) => {
     let greenWaveAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".big-things-section",
-        start: "top 70%",
+        start: "top 80%",
       },
     });
     greenWaveAnim
