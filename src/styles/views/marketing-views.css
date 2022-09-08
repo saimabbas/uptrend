@@ -1236,6 +1236,75 @@
 .platform-stats-grid.fashion-brand-grid {
   margin: 0 0 15rem 0;
 }
+
+.Event-marketing-section {
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.Event-marketing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+.EM-grid-left img {
+  width: 100%;
+  height: 100%;
+}
+.EM-grid-right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.con-to-comp h5 {
+  font-size: 2.5rem;
+  color: #101216;
+  font-weight: 800;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.con-to-comp p {
+  font-size: 2.5rem;
+  color: #101216;
+  font-weight: 400;
+}
+.con-to-comp-points {
+  display: flex;
+  margin: 1rem 0 0 0;
+}
+.con-to-comp-points span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 0.65rem 1rem;
+  background-color: #f7f7f7;
+  border-radius: 1000px;
+  font-size: 1.6rem;
+  color: #101216;
+  font-weight: 400;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+.con-to-comp svg {
+  font-size: 3.25rem;
+  margin: 0 0.75rem 0 0;
+}
+.con-to-comp.cc-margin-box {
+  margin: 5.5rem 0;
+}
+.Event-marketing-section .section-heading-box {
+  margin: 0 0 2.5rem 0;
+}
+.event-marketing-mob {
+  display: none;
+}
+
 @media screen and (max-width: 1150px) {
   .service-description-grid {
     grid-template-columns: 1fr;
@@ -1262,6 +1331,12 @@
     max-height: 60rem;
     margin: -15rem 0 0 0;
   }
+  .Event-marketing-grid {
+    grid-gap: 2rem;
+  }
+  .con-to-comp.cc-margin-box {
+    margin: 2.5rem 0;
+  }
 }
 @media screen and (max-width: 1000px) {
   .em-sd-grid-card-2 img,
@@ -1284,6 +1359,18 @@
   }
   .cp-grid {
     grid-template-columns: 1fr;
+  }
+  .Event-marketing-grid {
+    grid-template-columns: 1fr;
+  }
+  .event-marketing-desk {
+    display: none;
+  }
+  .event-marketing-mob {
+    display: block;
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 750px) {

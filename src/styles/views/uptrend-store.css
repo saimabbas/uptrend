@@ -8,3 +8,111 @@
 .ut-store-merch-section .heading-sublink-box h2 {
   color: var(--white);
 }
+.ut-store-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem 1rem;
+  padding: 4rem 0 0 0;
+}
+.ut-store-grid-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.ut-gc-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50rem;
+  background-color: #191c22;
+  margin: 0 0 1.5rem 0;
+}
+.ut-gc-box img {
+  width: 75%;
+  height: 100%;
+  object-fit: contain;
+}
+.ut-store-grid-content h5 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 800;
+}
+.ut-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 0 0;
+  width: 95%;
+}
+.ut-price p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+.nft-gallery-section {
+  padding: 5rem 0;
+}
+.nft-gallery-section .section-heading-box {
+  margin: 0 0 2rem 0;
+}
+.nft-gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5rem 2rem;
+}
+.nft-gallery-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.nft-gallery-content img {
+  width: 100%;
+  height: 100%;
+}
+.nft-para {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 1rem 0 0 0;
+}
+.nft-para h5 {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 800;
+}
+.nft-para p {
+  font-size: 1.6rem;
+  color: #000000;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1150px) {
+  .ut-gc-box {
+    height: 35rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ut-store-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nft-gallery-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .ut-store-grid {
+    grid-template-columns: 1fr;
+  }
+  .nft-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}

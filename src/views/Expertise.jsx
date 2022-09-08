@@ -38,6 +38,8 @@ import SdWhiteWave from "../assets/img/sd-white-wave.svg";
 import BoyMetaverse from "../assets/img/boy-experiencing-metaverse.png";
 import RoundTree from "../assets/img/round-tree.svg";
 import MMSD4thImg from "../assets/img/mm-sd-4th-img.png";
+import EventMarketingImg from "../assets/img/EM-img.png";
+import EventMarketingImgMob from "../assets/img/event-img-1.png";
 
 // Icons
 import {
@@ -398,6 +400,63 @@ const Expertise = () => {
               <div className="sd-grid-card mm-sd-grid-card-4 msgc4">
                 <div className="msgc4-bg"></div>
                 <img loading="lazy" src={MMSD4thImg} alt="MMSD4thImg" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="Event-marketing-section">
+          <div className="box">
+            <div className="section-heading-box">
+              <h3 className="head-subhead">
+                Event Marketing <br />
+                <span>We shape memorable and impactful experiences</span>
+              </h3>
+              <a href="#" className="arrow-link">
+                <span>GET STARTED</span>
+                <MdArrowForward />
+              </a>
+            </div>
+            <div className="Event-marketing-grid">
+              <div className="EM-grid-left">
+                <img
+                  loading="lazy"
+                  src={EventMarketingImg}
+                  alt="EventMarketingImg"
+                  className="event-marketing-desk"
+                />
+                <img
+                  loading="lazy"
+                  src={EventMarketingImgMob}
+                  alt="EventMarketing"
+                  className="event-marketing-mob"
+                />
+              </div>
+              <div className="EM-grid-right">
+                <div className="con-to-comp">
+                  <h5>From concept to completion</h5>
+                  <p>
+                    we guide brands through event planning of <br /> any
+                    magnitude
+                  </p>
+                </div>
+                <div className="con-to-comp cc-margin-box">
+                  <h5>Enhance attention surrounding iconic brands</h5>
+                  <div className="con-to-comp-points">
+                    <span>Brand Meetups and Conferences</span>
+                    <span>Press Events </span>
+                    <span>Web Panels</span>
+                  </div>
+                  <div className="con-to-comp-points">
+                    <span>Live Streams</span>
+                    <span>Online Webinars</span>
+                  </div>
+                </div>
+                <div className="con-to-comp">
+                  <h5>
+                    <MdArrowUpward /> 277%
+                  </h5>
+                  <p>Organic Traffic</p>
+                </div>
               </div>
             </div>
           </div>

@@ -395,11 +395,26 @@ const Media = () => {
                   </div>
                 </div>
                 <div className="media-grid-card-right">
+                  <img
+                    src={BeInCrypto}
+                    alt="BeInCrypto"
+                    className="mg-img-mob"
+                  />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
                   <img src={MediaArticle} alt="MediaArticle" />
+                  <div className="traf-pric-mob">
+                    <div className="mgc-text-box-mob">
+                      <span>traffic</span>
+                      <h3>3.600.000</h3>
+                    </div>
+                    <div className="mgc-text-box-mob">
+                      <span>price</span>
+                      <h3>$1950</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="media-grid-card">
@@ -417,11 +432,26 @@ const Media = () => {
                   </div>
                 </div>
                 <div className="media-grid-card-right">
+                  <img
+                    src={BeInCrypto}
+                    alt="BeInCrypto"
+                    className="mg-img-mob"
+                  />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
                   <img src={MediaArticle} alt="MediaArticle" />
+                  <div className="traf-pric-mob">
+                    <div className="mgc-text-box-mob">
+                      <span>traffic</span>
+                      <h3>3.600.000</h3>
+                    </div>
+                    <div className="mgc-text-box-mob">
+                      <span>price</span>
+                      <h3>$1950</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="media-grid-card">
@@ -439,11 +469,26 @@ const Media = () => {
                   </div>
                 </div>
                 <div className="media-grid-card-right">
+                  <img
+                    src={BeInCrypto}
+                    alt="BeInCrypto"
+                    className="mg-img-mob"
+                  />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
                   <img src={MediaArticle} alt="MediaArticle" />
+                  <div className="traf-pric-mob">
+                    <div className="mgc-text-box-mob">
+                      <span>traffic</span>
+                      <h3>3.600.000</h3>
+                    </div>
+                    <div className="mgc-text-box-mob">
+                      <span>price</span>
+                      <h3>$1950</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="media-grid-card">
@@ -461,11 +506,26 @@ const Media = () => {
                   </div>
                 </div>
                 <div className="media-grid-card-right">
+                  <img
+                    src={BeInCrypto}
+                    alt="BeInCrypto"
+                    className="mg-img-mob"
+                  />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
                   <img src={MediaArticle} alt="MediaArticle" />
+                  <div className="traf-pric-mob">
+                    <div className="mgc-text-box-mob">
+                      <span>traffic</span>
+                      <h3>3.600.000</h3>
+                    </div>
+                    <div className="mgc-text-box-mob">
+                      <span>price</span>
+                      <h3>$1950</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="media-grid-card">
@@ -483,11 +543,26 @@ const Media = () => {
                   </div>
                 </div>
                 <div className="media-grid-card-right">
+                  <img
+                    src={BeInCrypto}
+                    alt="BeInCrypto"
+                    className="mg-img-mob"
+                  />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
                   <img src={MediaArticle} alt="MediaArticle" />
+                  <div className="traf-pric-mob">
+                    <div className="mgc-text-box-mob">
+                      <span>traffic</span>
+                      <h3>3.600.000</h3>
+                    </div>
+                    <div className="mgc-text-box-mob">
+                      <span>price</span>
+                      <h3>$1950</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="media-grid-card">
@@ -505,11 +580,26 @@ const Media = () => {
                   </div>
                 </div>
                 <div className="media-grid-card-right">
+                  <img
+                    src={BeInCrypto}
+                    alt="BeInCrypto"
+                    className="mg-img-mob"
+                  />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
                   <img src={MediaArticle} alt="MediaArticle" />
+                  <div className="traf-pric-mob">
+                    <div className="mgc-text-box-mob">
+                      <span>traffic</span>
+                      <h3>3.600.000</h3>
+                    </div>
+                    <div className="mgc-text-box-mob">
+                      <span>price</span>
+                      <h3>$1950</h3>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -16,6 +16,17 @@ import BullElevatorImg from "../assets/img/bull-elevator-img.png";
 import PhotoImg from "../assets/img/photo-img.svg";
 import EMSD2ndImg from "../assets/img/em-sd-2nd-img.png";
 import EMSD3rdImg from "../assets/img/em-sd-3rd-img.png";
+import UTJacket from "../assets/img/ut-jacket.png";
+import UTRaincoat from "../assets/img/UTRaincoat.png";
+import TShirt from "../assets/img/tshirt.png";
+import UTBag from "../assets/img/utbag.png";
+import UTCap from "../assets/img/utcap.png";
+import UTBrac from "../assets/img/utbrac.png";
+import NFTGal1 from "../assets/img/nft-gall-1.png";
+import NFTGal2 from "../assets/img/nft-gall-2.png";
+import NFTGal3 from "../assets/img/nft-gall-3.png";
+import NFTGal4 from "../assets/img/nft-gall-4.png";
+import NFTGal5 from "../assets/img/nft-gall-5.png";
 import KnotImg from "../assets/img/knot-img.svg";
 import TrImg from "../assets/img/tr.svg";
 import ECImg from "../assets/img/ec.svg";
@@ -371,6 +382,130 @@ const UpTrendStore = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>Exclusive Merch</h2>
+            </div>
+            <div className="ut-store-grid">
+              <div className="ut-store-grid-content">
+                <div className="ut-gc-box">
+                  <img loading="lazy" src={UTJacket} alt="UTJacket" />
+                </div>
+                <h5>UPTREND HOODIE</h5>
+                <div className="ut-price">
+                  <p>$ 25</p>
+                  <a href="#" className="arrow-link">
+                    <span>ORDER</span>
+                    <MdArrowForward />
+                  </a>
+                </div>
+              </div>
+              <div className="ut-store-grid-content">
+                <div className="ut-gc-box">
+                  <img loading="lazy" src={UTRaincoat} alt="Raincoat" />
+                </div>
+                <h5>UPTREND CLOAK</h5>
+                <div className="ut-price">
+                  <p>$ 30</p>
+                  <a href="#" className="arrow-link">
+                    <span>ORDER</span>
+                    <MdArrowForward />
+                  </a>
+                </div>
+              </div>
+              <div className="ut-store-grid-content">
+                <div className="ut-gc-box">
+                  <img loading="lazy" src={TShirt} alt="TShirt" />
+                </div>
+                <h5>UPTREND T-SHIRT</h5>
+                <div className="ut-price">
+                  <p>$ 15</p>
+                  <a href="#" className="arrow-link">
+                    <span>ORDER</span>
+                    <MdArrowForward />
+                  </a>
+                </div>
+              </div>
+              <div className="ut-store-grid-content">
+                <div className="ut-gc-box">
+                  <img loading="lazy" src={UTBag} alt="Bag" />
+                </div>
+                <h5>UPTREND BAG</h5>
+                <div className="ut-price">
+                  <p>$ 10</p>
+                  <a href="#" className="arrow-link">
+                    <span>ORDER</span>
+                    <MdArrowForward />
+                  </a>
+                </div>
+              </div>
+              <div className="ut-store-grid-content">
+                <div className="ut-gc-box">
+                  <img loading="lazy" src={UTCap} alt="Cap" />
+                </div>
+                <h5>UPTREND CAP</h5>
+                <div className="ut-price">
+                  <p>$ 10</p>
+                  <a href="#" className="arrow-link">
+                    <span>ORDER</span>
+                    <MdArrowForward />
+                  </a>
+                </div>
+              </div>
+              <div className="ut-store-grid-content">
+                <div className="ut-gc-box">
+                  <img loading="lazy" src={UTBrac} alt="Bracelet" />
+                </div>
+                <h5>UPTREND BRACELET</h5>
+                <div className="ut-price">
+                  <p>$ 15</p>
+                  <a href="#" className="arrow-link">
+                    <span>ORDER</span>
+                    <MdArrowForward />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="nft-gallery-section">
+          <div className="box">
+            <div className="section-heading-box">
+              <h3 className="head-subhead">Nft Gallery</h3>
+            </div>
+            <div className="nft-gallery-grid">
+              <div className="nft-gallery-content">
+                <img src={NFTGal1} alt="NFT" />
+                <div className="nft-para">
+                  <h5>SKULLTOON 3211</h5>
+                  <p>0.07 ETH</p>
+                </div>
+              </div>
+              <div className="nft-gallery-content">
+                <img src={NFTGal2} alt="NFT" />
+                <div className="nft-para">
+                  <h5>SKULLTOON 3211</h5>
+                  <p>0.07 ETH</p>
+                </div>
+              </div>
+              <div className="nft-gallery-content">
+                <img src={NFTGal3} alt="NFT" />
+                <div className="nft-para">
+                  <h5>SKULLTOON 3211</h5>
+                  <p>0.07 ETH</p>
+                </div>
+              </div>
+              <div className="nft-gallery-content">
+                <img src={NFTGal4} alt="NFT" />
+                <div className="nft-para">
+                  <h5>SKULLTOON 3211</h5>
+                  <p>0.07 ETH</p>
+                </div>
+              </div>
+              <div className="nft-gallery-content">
+                <img src={NFTGal5} alt="NFT" />
+                <div className="nft-para">
+                  <h5>SKULLTOON 3211</h5>
+                  <p>0.07 ETH</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
