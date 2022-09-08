@@ -5,6 +5,11 @@ import Home from "./views/Home";
 import LinksPage from "./views/Links";
 import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
+import TalkToUs from "./views/TalkToUs";
+import UptrendGrowthStories from "./views/UptrendGrowthStories";
+import InvestmentRelationships from "./views/InvestmentRelationships";
+import Expertise from "./views/Expertise";
+import Media from "./views/Media";
 
 function App() {
   return (
@@ -24,6 +29,19 @@ function App() {
             path="/metaversemarketing"
             element={<MetaverseMarketing />}
           />
+          <Route exact path="/talktous" element={<TalkToUs />} />
+          <Route
+            exact
+            path="/uptrendgrowthstories"
+            element={<UptrendGrowthStories />}
+          />
+          <Route
+            exact
+            path="/investmentrelationships"
+            element={<InvestmentRelationships />}
+          />
+          <Route exact path="/expertise" element={<Expertise />} />
+          <Route exact path="/media" element={<Media />} />
         </Routes>
       </Switch>
     </>

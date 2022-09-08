@@ -911,6 +911,10 @@
   }
 }
 @media screen and (max-width: 1150px) {
+  .ready-to-start-section.ready-to-start-section .rts-content {
+    grid-template-columns: 1fr;
+    padding: 0 0 15rem 0;
+  }
   .hero-icons-line-box {
     display: none;
   }

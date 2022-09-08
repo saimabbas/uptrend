@@ -19,6 +19,21 @@ const Links = () => {
       <Link to="/metaversemarketing">
         04. <span>Metaverse Marketing</span>
       </Link>
+      <Link to="/talktous">
+        05. <span>Talk to Us</span>
+      </Link>
+      <Link to="/uptrendgrowthstories">
+        06. <span>Uptrend Growth Stories</span>
+      </Link>
+      <Link to="/investmentrelationships">
+        07. <span>Investment Relationships</span>
+      </Link>
+      <Link to="/expertise">
+        08. <span>Expertise</span>
+      </Link>
+      <Link to="/media">
+        09. <span>Media</span>
+      </Link>
     </div>
   );
 };
