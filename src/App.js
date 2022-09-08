@@ -10,6 +10,7 @@ import UptrendGrowthStories from "./views/UptrendGrowthStories";
 import InvestmentRelationships from "./views/InvestmentRelationships";
 import Expertise from "./views/Expertise";
 import Media from "./views/Media";
+import UpTrendStore from "./views/UpTrendStore";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
           />
           <Route exact path="/expertise" element={<Expertise />} />
           <Route exact path="/media" element={<Media />} />
+          <Route exact path="/uptrendstore" element={<UpTrendStore />} />
         </Routes>
       </Switch>
     </>

@@ -35,6 +35,18 @@
   transform: translate(0, 5rem);
   height: 90vh;
 }
+.ups-hero-img {
+  width: max-content;
+  object-fit: contain;
+  position: absolute;
+  max-width: 70%;
+  bottom: 0%;
+  right: 0;
+  transform: translate(0, -1.5rem);
+  z-index: 5;
+  transform: translate(0, 5rem);
+  height: 60vh;
+}
 .im-hero-headings {
   display: flex;
   flex-direction: column;
@@ -1280,6 +1292,10 @@
     padding: 2rem 0;
   }
   .im-hero-img {
+    object-position: bottom;
+    transform: translate(0, 0);
+  }
+  .ups-hero-img {
     object-position: bottom;
     transform: translate(0, 0);
   }

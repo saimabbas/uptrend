@@ -1,3 +1,109 @@
 .media-page {
   width: 100%;
 }
+.media-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+  margin: 5rem 0 2.5rem 0;
+}
+.media-grid-card {
+  width: 100%;
+  padding: 3.5rem;
+  border-radius: 1rem;
+  background-color: var(--main-dark1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+  transition: 0.35s;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+.media-grid-card:hover {
+  background-color: var(--main-dark3);
+}
+.media-grid-card-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.media-grid-card-left img {
+  height: 3.5rem;
+  object-fit: contain;
+}
+.mgc-text-box span {
+  font-size: 1.5rem;
+}
+.mgc-text-box:nth-child(1) span,
+.mgc-text-box:nth-child(1) h3 {
+  color: var(--white);
+}
+.mgc-text-box:nth-child(2) {
+  margin: 1.5rem 0 0 0;
+}
+.mgc-text-box:nth-child(2) span,
+.mgc-text-box:nth-child(2) h3 {
+  color: var(--main-color);
+}
+.edia-grid-card-right {
+  width: 100%;
+}
+.mgcr-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mgcr-top p {
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+}
+.mgcr-top img {
+  width: 2.5rem;
+}
+.media-grid-card-right > img {
+  width: 100%;
+  object-fit: contain;
+  margin: 1.5rem 0 0 0;
+}
+.ut-breadcrumbs-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ut-breadcrumbs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.ut-breadcrumbs-box {
+  width: 4.25rem;
+  height: 4.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.35s;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--main-dark3);
+  cursor: pointer;
+}
+.ut-breadcrumbs-box:hover {
+  background-color: var(--main-dark1);
+}
+.ut-breadcrumbs-box.ut-breadcrumbs-box-active {
+  background-color: var(--white);
+  color: var(--main-dark3);
+  font-weight: 700;
+}
+.ut-breadcrumbs-box-inactive.ut-breadcrumbs-box:hover {
+  cursor: default;
+  background-color: var(--main-dark3);
+}

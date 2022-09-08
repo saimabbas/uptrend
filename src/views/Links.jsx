@@ -34,6 +34,9 @@ const Links = () => {
       <Link to="/media">
         09. <span>Media</span>
       </Link>
+      <Link to="/uptrendstore">
+        10. <span>UpTrend Store</span>
+      </Link>
     </div>
   );
 };

@@ -4,13 +4,13 @@ import React, { useState, useEffect } from "react";
 import "../styles/reset.css";
 import "../styles/globals.css";
 import "../styles/views/marketing-views.css";
-import "../styles/views/media.css";
+import "../styles/views/uptrend-store.css";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // Images
-import EmHeroImg from "../assets/img/em-hero-img.svg";
+import EmHeroImg from "../assets/img/uptrend-store-hero-img.svg";
 import LocalStartupImg from "../assets/img/local-startup-img.svg";
 import BullElevatorImg from "../assets/img/bull-elevator-img.png";
 import PhotoImg from "../assets/img/photo-img.svg";
@@ -25,9 +25,6 @@ import BBLogo3Dark from "../assets/img/backedby-logo-3-dark.svg";
 import BBLogo4Dark from "../assets/img/backedby-logo-4-dark.svg";
 import BBLogo5Dark from "../assets/img/backedby-logo-5-dark.svg";
 import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";
-import BeInCrypto from "../assets/img/be-in-crypto.svg";
-import UM from "../assets/img/um.svg";
-import MediaArticle from "../assets/img/media-article.svg";
 
 // Icons
 import {
@@ -66,7 +63,7 @@ import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
 
-const Media = () => {
+const UpTrendStore = () => {
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -343,10 +340,10 @@ const Media = () => {
 
   return (
     <main className="app">
-      {/* <div className="loading-screen">
+      <div className="loading-screen">
         <UTLogo color="#fff" />
-      </div> */}
-      <div className="media-page">
+      </div>
+      <div className="event-marketing-page">
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
@@ -365,177 +362,46 @@ const Media = () => {
           </div>
           <img
             loading="lazy"
-            className="im-hero-img"
+            className="ups-hero-img"
             src={EmHeroImg}
             alt="EmHeroImg"
           />
         </section>
-        <section className="service-description-section">
+        <section className="ut-store-merch-section">
           <div className="box">
             <div className="heading-sublink-box">
-              <h2>FINANCE MEDIA</h2>
-              <a href="#" className="arrow-link">
-                <span>GET STARTED</span>
-                <MdArrowForward />
-              </a>
+              <h2>Exclusive Merch</h2>
             </div>
-            <div className="media-grid">
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>3.600.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1950</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
+          </div>
+        </section>
+        <section className="subs-journal-section">
+          <div className="box">
+            <div className="subs-journal-grid">
+              <div className="sj-grid-left">
+                <h3>
+                  Get an exclusive marketing digest from industry growth experts
+                </h3>
+                <div className="sj-input-box">
+                  <input type="text" placeholder="Email" />
+                  <button>
+                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                  </button>
                 </div>
               </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>3.600.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1950</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
-                </div>
-              </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>3.600.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1950</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
-                </div>
-              </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>3.600.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1950</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
-                </div>
-              </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>3.600.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1950</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
-                </div>
-              </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>3.600.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1950</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
-                </div>
-              </div>
-            </div>
-            <div className="ut-breadcrumbs-section">
-              <div className="ut-breadcrumbs">
-                <div className="ut-breadcrumbs-box ut-breadcrumbs-box-active">
-                  1
-                </div>
-                <div className="ut-breadcrumbs-box">2</div>
-                <div className="ut-breadcrumbs-box">3</div>
-                <div className="ut-breadcrumbs-box ut-breadcrumbs-box-inactive">
-                  ...
-                </div>
-                <div className="ut-breadcrumbs-box">10</div>
-                <div className="ut-breadcrumbs-box">
-                  <MdArrowForward />
-                </div>
+              <div className="sj-bull-elevator-img-box">
+                <img
+                  loading="lazy"
+                  src={BullElevatorImg}
+                  alt="BullElevatorImg"
+                />
               </div>
             </div>
           </div>
         </section>
-
         <Footer />
       </div>
     </main>
   );
 };
 
-export default Media;
+export default UpTrendStore;
