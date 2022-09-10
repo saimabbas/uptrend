@@ -1318,6 +1318,9 @@
 .expertise-page .backedby-section {
   padding: 5rem 0 0 0;
 }
+/* .expertise-page .bb-logos-swiper .swiper-slide {
+  margin: 0 5rem 0 0;
+} */
 .expertise-page .sj-bull-elevator-img-box {
   position: relative;
   z-index: 1000;
@@ -1383,6 +1386,12 @@
   .con-to-comp.cc-margin-box {
     margin: 2.5rem 0;
   }
+  .expertise-page .bb-logos-swiper .swiper {
+    width: 100%;
+  }
+  .expertise-page .backedby-section {
+    padding: 5rem 0 15rem 0;
+  }
 }
 @media screen and (max-width: 1000px) {
   .em-sd-grid-card-2 img,
@@ -1417,6 +1426,9 @@
     border-radius: 1rem;
     height: 100%;
     width: 100%;
+  }
+  .backedby-section.backedby-section-light .box {
+    padding: 0;
   }
 }
 @media screen and (max-width: 750px) {
@@ -1668,5 +1680,14 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+  .con-to-comp p {
+    font-size: 1.75rem;
+  }
+  .expertise-page .bb-logo-box img {
+    height: 2rem;
+  }
+  .expertise-hero-headings.im-hero-headings h1 {
+    font-size: 3rem;
   }
 }

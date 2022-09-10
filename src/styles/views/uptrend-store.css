@@ -63,6 +63,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 5rem 2rem;
+  padding: 0 0 15rem 0;
 }
 .nft-gallery-content {
   display: flex;
@@ -85,12 +86,12 @@
 .nft-para h5 {
   font-size: 2rem;
   color: #000000;
-  font-weight: 800;
+  font-weight: 400;
 }
 .nft-para p {
   font-size: 1.6rem;
   color: #000000;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1150px) {
