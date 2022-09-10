@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 
 // Images
 import ImHeroImg from "../assets/img/im-hero-img.png";
+import ImHeroVideo from "../assets/videos/im-hero-video.mp4";
 import WinnertrophyImg from "../assets/img/winner-trophy.svg";
 import SpeakerImg from "../assets/img/speaker-img-orange.png";
 import PlatformLogo1 from "../assets/icons/twitch-logo-2.svg";
@@ -365,12 +366,15 @@ const InfluencerMarketing = () => {
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
-            src={ImHeroImg}
+            src={ImHeroVideo}
             alt="ImHeroImg"
-          />
+          /> */}
+          <video className="im-hero-img" muted autoPlay loop>
+            <source src={ImHeroVideo} type="video/mp4"></source>
+          </video>
         </section>
         <section
           className="service-description-section"

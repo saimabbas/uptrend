@@ -70,11 +70,47 @@
 .expertise-hero-headings.im-hero-headings h1 {
   font-size: 5rem;
 }
-.expertise-hero-headings.im-hero-headings h1 span {
-  background-color: var(--black);
-  color: var(--white);
-  padding: 0 1rem;
+.expertise-hero-headings span {
+  z-index: 10;
+  position: relative;
 }
+.expertise-hero-headings span i {
+  font-style: normal;
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 10;
+  color: var(--white) !important;
+}
+.expertise-hero-headings span b {
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  z-index: 5;
+  color: var(--black) !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.head-box-black {
+  width: 104%;
+  height: 97%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.head-box-black-inner {
+  width: 100%;
+  height: 97%;
+  background-color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .im-hero-explore a {
   width: max-content;
   display: flex;
@@ -1353,6 +1389,9 @@
 }
 .hero-c-icons-box a:hover {
   transform: translate(0, -0.35rem);
+}
+.expertise-page .bb-logo-box img {
+  height: 3rem;
 }
 @media screen and (max-width: 1150px) {
   .service-description-grid {

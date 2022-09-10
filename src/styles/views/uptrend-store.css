@@ -34,6 +34,10 @@
   width: 75%;
   height: 100%;
   object-fit: contain;
+  transition: 0.5s;
+}
+.ut-gc-box:hover img {
+  scale: 1.05;
 }
 .ut-store-grid-content h5 {
   font-size: 2rem;
@@ -68,13 +72,18 @@
 .nft-gallery-content {
   display: flex;
   flex-direction: column;
+  transition: 0.5s;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
 }
 .nft-gallery-content img {
   width: 100%;
+  transition: 0.5s;
   height: 100%;
+}
+.nft-gallery-content:hover {
+  transform: translate(0, -1rem);
 }
 .nft-para {
   display: flex;

@@ -11,27 +11,12 @@ import "swiper/css/pagination";
 
 // Images
 import EmHeroImg from "../assets/img/em-hero-img.svg";
-import LocalStartupImg from "../assets/img/local-startup-img.svg";
-import BullElevatorImg from "../assets/img/bull-elevator-img.png";
-import PhotoImg from "../assets/img/photo-img.svg";
-import EMSD2ndImg from "../assets/img/em-sd-2nd-img.png";
-import EMSD3rdImg from "../assets/img/em-sd-3rd-img.png";
-import KnotImg from "../assets/img/knot-img.svg";
-import TrImg from "../assets/img/tr.svg";
-import ECImg from "../assets/img/ec.svg";
-import BBLogo1Dark from "../assets/img/backedby-logo-1-dark.svg";
-import BBLogo2Dark from "../assets/img/backedby-logo-2-dark.svg";
-import BBLogo3Dark from "../assets/img/backedby-logo-3-dark.svg";
-import BBLogo4Dark from "../assets/img/backedby-logo-4-dark.svg";
-import BBLogo5Dark from "../assets/img/backedby-logo-5-dark.svg";
-import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";
 import BeInCrypto from "../assets/img/be-in-crypto.svg";
 import Coinspeaker from "../assets/img/Coinspeaker.svg";
 import Koinpost from "../assets/img/Koinpost.svg";
 import Zycrypto from "../assets/img/zycrypto.svg";
 import techtime from "../assets/img/techtime.svg";
 import coingape from "../assets/img/coingape.svg";
-
 import UM from "../assets/img/um.svg";
 import MediaArticle from "../assets/img/media-article.svg";
 import Article1 from "../assets/img/article1.svg";
@@ -39,6 +24,10 @@ import Article4 from "../assets/img/article4.svg";
 import Article3 from "../assets/img/article3.svg";
 import Article5 from "../assets/img/article5.svg";
 import Article6 from "../assets/img/article6.svg";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
 
 // Icons
 import {
@@ -114,7 +103,7 @@ const Media = () => {
         },
         {
           opacity: 1,
-          duration: 0.25,
+          duration: 0.1,
           stagger: {
             each: 0.05,
           },
@@ -130,7 +119,19 @@ const Media = () => {
           y: 0,
           opacity: 1,
         },
-        "<0"
+        "<0.5"
+      )
+      .fromTo(
+        ".hero-c-icons-box a",
+        {
+          opacity: 0,
+          x: 50,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          stagger: 0.1,
+        }
       )
       .fromTo(
         ".loading-screen",
@@ -363,8 +364,22 @@ const Media = () => {
             <div className="influencer-marketing-content">
               <Header lightHeader={false} />
               <div className="im-hero-headings">
-                <h1>Event Marketing</h1>
-                <h3>We guide brands through event planning of any magnitude</h3>
+                <h1>Leading Media Outlets Boosting Brand Profile</h1>
+                <h3>Contact us uo start promotion today!</h3>
+                <div className="hero-c-icons-box">
+                  <a href="#">
+                    <IconLinkedIn color="#000" />
+                  </a>
+                  <a href="#">
+                    <IconFacebook color="#000" />
+                  </a>
+                  <a href="#">
+                    <IconInstagram color="#000" />
+                  </a>
+                  <a href="#">
+                    <IconTwitter color="#000" />
+                  </a>
+                </div>
               </div>
               <div className="im-hero-explore">
                 <a href="#">

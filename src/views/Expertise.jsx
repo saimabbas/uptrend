@@ -76,8 +76,560 @@ import $ from "jquery";
 import FuelBrandGrowthSwiper from "../components/FuelBrandGrowthSwiper";
 
 const Expertise = () => {
+  gsap.registerPlugin(
+    ScrollTrigger,
+    SplitText,
+    ScrollSmoother,
+    ScrambleTextPlugin
+  );
+  useEffect(() => {
+    const heroHeadAimInit = () => {
+      HH1BoxANim.play();
+    };
+    // Text Spliting
+    const marketingHeading = new SplitText(".im-hero-headings h1", {
+      type: "chars, words,lines",
+    });
+    const marketingHeadingChars = marketingHeading.chars;
+    const marketingHeadingLines = marketingHeading.lines;
+    const marketingHeadingWords = marketingHeading.words;
+
+    let marketingLandingAnim = gsap.timeline({
+      onComplete: heroHeadAimInit,
+    });
+    marketingLandingAnim
+      .fromTo(
+        ".loading-screen",
+        {
+          opacity: "1",
+        },
+        {
+          opacity: "0",
+          delay: 1,
+          duration: 0.5,
+          ease: Linear.easeInOut,
+        }
+      )
+      .fromTo(
+        marketingHeadingChars,
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.25,
+          stagger: {
+            each: 0.05,
+          },
+        }
+      )
+      .fromTo(
+        ".im-hero-headings h3",
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".loading-screen",
+        {
+          height: "100vh",
+        },
+        {
+          height: "0",
+          duration: 0.01,
+        },
+        "<0"
+      );
+    gsap.fromTo(
+      ".im-hero-explore svg",
+      {
+        y: 3,
+      },
+      {
+        y: -3,
+        ease: Linear.easeInOut,
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
+      }
+    );
+    var HH1BoxANim = gsap.timeline({
+      repeat: -1,
+      paused: true,
+    });
+    HH1BoxANim.fromTo(
+      ".head-box-black-inner",
+      {
+        width: 0,
+      },
+      {
+        duration: 3,
+        width: "100%",
+        ease: Power1.easeInOut,
+        left: 0,
+      }
+    )
+      .to(".head-box-black-inner", {
+        duration: 0,
+        left: "unset",
+        right: 0,
+      })
+      .to(".head-box-black-inner", {
+        duration: 3,
+        width: 0,
+        ease: Power1.easeInOut,
+      });
+    let homeExpertiseAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service-description-grid-1",
+        start: "top 50%",
+      },
+    });
+    homeExpertiseAnim
+      .fromTo(
+        ".sd-grid-card-1-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        }
+      )
+      .fromTo(
+        ".sd-grid-card-2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-4-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-3-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-1 > img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".sdgc1-details",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sdgc2-details",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".all-platforms-grid",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-4 > img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sdgc3-details",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-3 > img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".sd-grid-card-3 > p",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      );
+
+    let homeExpertiseAnim2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service-description-grid-2",
+        start: "top 50%",
+      },
+    });
+    homeExpertiseAnim2
+      .fromTo(
+        ".irgc-1-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        }
+      )
+      .fromTo(
+        ".irgc-2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".irgc-3-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".irgc-4-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-1 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-1 h2",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-1 h5",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-2 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-2 h2",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-2 h6",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-3 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-3 h6",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-4 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-4 h2",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".ir-sd-grid-card-4 h6",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      );
+    let homeExpertiseAnim3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service-description-grid-3",
+        start: "top 50%",
+      },
+    });
+    homeExpertiseAnim3
+      .fromTo(
+        ".msgc1-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        }
+      )
+      .fromTo(
+        ".msgc2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc3-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc4-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+
+      .fromTo(
+        ".msgc1 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".msgc1 h5",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc2 h3",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc2 .egc2-img-grid",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc3 h3",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc3 ul",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc4 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      );
+  }, []);
+
   return (
     <main className="app">
+      <div className="loading-screen">
+        <UTLogo color="#fff" />
+      </div>
       <div className="expertise-page">
         <section className="im-hero-section">
           <div className="box">
@@ -86,7 +638,14 @@ const Expertise = () => {
               <div className="im-hero-headings expertise-hero-headings">
                 <h1>
                   Award-Winning Marketing Partner Deemed Skillful by{" "}
-                  <span>FORTUNE</span> 500 Brands
+                  <span>
+                    <i>FORTUNE</i>
+                    {/* <b>FORTUNE</b> */}
+                    <div className="head-box-black">
+                      <div className="head-box-black-inner"></div>
+                    </div>
+                  </span>{" "}
+                  500 Brands
                 </h1>
                 <h3>
                   Holistic solutions designed to accelerate growth potential
@@ -119,7 +678,7 @@ const Expertise = () => {
                 <MdArrowForward />
               </a>
             </div>
-            <div className="service-description-grid">
+            <div className="service-description-grid service-description-grid-1">
               <div className="sd-grid-card sd-grid-card-1">
                 <div className="sd-grid-card-1-bg"></div>
                 <div className="sdgc1-details">
@@ -290,7 +849,7 @@ const Expertise = () => {
                 <MdArrowForward />
               </a>
             </div>
-            <div className="service-description-grid">
+            <div className="service-description-grid service-description-grid-2">
               <div className="sd-grid-card ir-sd-grid-card-1">
                 <div className="irgc-1-bg"></div>
                 <img loading="lazy" src={MoneyPlant} alt="MoneyPlant" />
@@ -331,7 +890,7 @@ const Expertise = () => {
                 <MdArrowForward />
               </a>
             </div>
-            <div className="service-description-grid">
+            <div className="service-description-grid service-description-grid-3">
               <div className="sd-grid-card mm-sd-grid-card-1 msgc1">
                 <div className="msgc1-bg"></div>
                 <img loading="lazy" src={BoyMetaverse} alt="BoyMetaverse" />
@@ -405,7 +964,7 @@ const Expertise = () => {
             </div>
           </div>
         </section>
-        <section className="Event-marketing-section">
+        <section className="Event-marketing-section ">
           <div className="box">
             <div className="section-heading-box">
               <h3 className="head-subhead">

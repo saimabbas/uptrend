@@ -10,7 +10,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // Images
-import EmHeroImg from "../assets/img/em-hero-img.svg";
+import EmHeroImg from "../assets/img/influencers-hero-img.svg";
 import LocalStartupImg from "../assets/img/local-startup-img.svg";
 import BullElevatorImg from "../assets/img/bull-elevator-img.png";
 import PhotoImg from "../assets/img/photo-img.svg";
@@ -101,15 +101,15 @@ const Influencers = () => {
         }
       )
       .fromTo(
-        marketingHeadingChars,
+        marketingHeadingLines,
         {
           opacity: 0,
         },
         {
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.1,
           },
         }
       )
@@ -122,6 +122,19 @@ const Influencers = () => {
         {
           y: 0,
           opacity: 1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".hero-c-icons-box a",
+        {
+          opacity: 0,
+          x: 50,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          stagger: 0.1,
         },
         "<0"
       )
