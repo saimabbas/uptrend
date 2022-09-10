@@ -11,11 +11,7 @@ import "swiper/css/pagination";
 
 // Images
 import EmHeroImg from "../assets/img/uptrend-store-hero-img.svg";
-import LocalStartupImg from "../assets/img/local-startup-img.svg";
-import BullElevatorImg from "../assets/img/bull-elevator-img.png";
-import PhotoImg from "../assets/img/photo-img.svg";
-import EMSD2ndImg from "../assets/img/em-sd-2nd-img.png";
-import EMSD3rdImg from "../assets/img/em-sd-3rd-img.png";
+import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.svg";
 import UTJacket from "../assets/img/ut-jacket.png";
 import UTRaincoat from "../assets/img/UTRaincoat.png";
 import TShirt from "../assets/img/tshirt.png";
@@ -27,15 +23,7 @@ import NFTGal2 from "../assets/img/nft-gall-2.png";
 import NFTGal3 from "../assets/img/nft-gall-3.png";
 import NFTGal4 from "../assets/img/nft-gall-4.png";
 import NFTGal5 from "../assets/img/nft-gall-5.png";
-import KnotImg from "../assets/img/knot-img.svg";
-import TrImg from "../assets/img/tr.svg";
-import ECImg from "../assets/img/ec.svg";
-import BBLogo1Dark from "../assets/img/backedby-logo-1-dark.svg";
-import BBLogo2Dark from "../assets/img/backedby-logo-2-dark.svg";
-import BBLogo3Dark from "../assets/img/backedby-logo-3-dark.svg";
-import BBLogo4Dark from "../assets/img/backedby-logo-4-dark.svg";
-import BBLogo5Dark from "../assets/img/backedby-logo-5-dark.svg";
-import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";
+import NFTGal6 from "../assets/img/nftgal6.svg";
 
 // Icons
 import {
@@ -360,8 +348,8 @@ const UpTrendStore = () => {
             <div className="influencer-marketing-content">
               <Header lightHeader={false} />
               <div className="im-hero-headings">
-                <h1>Event Marketing</h1>
-                <h3>We guide brands through event planning of any magnitude</h3>
+                <h1>Uptrend Store</h1>
+                <h3>Limited Edition</h3>
               </div>
               <div className="im-hero-explore">
                 <a href="#">
@@ -474,36 +462,43 @@ const UpTrendStore = () => {
               <div className="nft-gallery-content">
                 <img src={NFTGal1} alt="NFT" />
                 <div className="nft-para">
-                  <h5>SKULLTOON 3211</h5>
-                  <p>0.07 ETH</p>
+                  <h5>UPTREND COIN</h5>
+                  <p>0.01 ETH</p>
                 </div>
               </div>
               <div className="nft-gallery-content">
                 <img src={NFTGal2} alt="NFT" />
                 <div className="nft-para">
-                  <h5>SKULLTOON 3211</h5>
-                  <p>0.07 ETH</p>
+                  <h5>UPTREND PLANET</h5>
+                  <p>0.125 ETH</p>
                 </div>
               </div>
               <div className="nft-gallery-content">
                 <img src={NFTGal3} alt="NFT" />
                 <div className="nft-para">
-                  <h5>SKULLTOON 3211</h5>
-                  <p>0.07 ETH</p>
+                  <h5>UPTREND PORTAL</h5>
+                  <p>0.12 ETH</p>
                 </div>
               </div>
               <div className="nft-gallery-content">
                 <img src={NFTGal4} alt="NFT" />
                 <div className="nft-para">
-                  <h5>SKULLTOON 3211</h5>
-                  <p>0.07 ETH</p>
+                  <h5>UPTREND ISLAND</h5>
+                  <p>0.12 ETH</p>
                 </div>
               </div>
               <div className="nft-gallery-content">
                 <img src={NFTGal5} alt="NFT" />
                 <div className="nft-para">
-                  <h5>SKULLTOON 3211</h5>
-                  <p>0.07 ETH</p>
+                  <h5>UPTREND BULL</h5>
+                  <p>0.2 ETH</p>
+                </div>
+              </div>
+              <div className="nft-gallery-content">
+                <img src={NFTGal6} alt="NFT" />
+                <div className="nft-para">
+                  <h5>UPTREND HORNS</h5>
+                  <p>0.25 ETH</p>
                 </div>
               </div>
             </div>
@@ -526,7 +521,7 @@ const UpTrendStore = () => {
               <div className="sj-bull-elevator-img-box">
                 <img
                   loading="lazy"
-                  src={BullElevatorImg}
+                  src={BullElevatorImg2}
                   alt="BullElevatorImg"
                 />
               </div>

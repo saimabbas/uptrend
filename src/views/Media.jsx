@@ -26,8 +26,19 @@ import BBLogo4Dark from "../assets/img/backedby-logo-4-dark.svg";
 import BBLogo5Dark from "../assets/img/backedby-logo-5-dark.svg";
 import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";
 import BeInCrypto from "../assets/img/be-in-crypto.svg";
+import Coinspeaker from "../assets/img/Coinspeaker.svg";
+import Koinpost from "../assets/img/Koinpost.svg";
+import Zycrypto from "../assets/img/zycrypto.svg";
+import techtime from "../assets/img/techtime.svg";
+import coingape from "../assets/img/coingape.svg";
+
 import UM from "../assets/img/um.svg";
 import MediaArticle from "../assets/img/media-article.svg";
+import Article1 from "../assets/img/article1.svg";
+import Article4 from "../assets/img/article4.svg";
+import Article3 from "../assets/img/article3.svg";
+import Article5 from "../assets/img/article5.svg";
+import Article6 from "../assets/img/article6.svg";
 
 // Icons
 import {
@@ -404,7 +415,7 @@ const Media = () => {
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
+                  <img src={Article1} alt="MediaArticle" />
                   <div className="traf-pric-mob">
                     <div className="mgc-text-box-mob">
                       <span>traffic</span>
@@ -419,24 +430,20 @@ const Media = () => {
               </div>
               <div className="media-grid-card">
                 <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
+                  <img src={coingape} alt="=Coingape" />
                   <div className="mgc-text-box-con">
                     <div className="mgc-text-box">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>1.300.000</h3>
                     </div>
                     <div className="mgc-text-box">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$1 500</h3>
                     </div>
                   </div>
                 </div>
                 <div className="media-grid-card-right">
-                  <img
-                    src={BeInCrypto}
-                    alt="BeInCrypto"
-                    className="mg-img-mob"
-                  />
+                  <img src={coingape} alt="=Coingape" className="mg-img-mob" />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
@@ -445,159 +452,147 @@ const Media = () => {
                   <div className="traf-pric-mob">
                     <div className="mgc-text-box-mob">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>1.300.000</h3>
                     </div>
                     <div className="mgc-text-box-mob">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$1 500</h3>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="media-grid-card">
                 <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
+                  <img src={Koinpost} alt="Koinpost" />
                   <div className="mgc-text-box-con">
                     <div className="mgc-text-box">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>109.000</h3>
                     </div>
                     <div className="mgc-text-box">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$750</h3>
                     </div>
                   </div>
                 </div>
                 <div className="media-grid-card-right">
-                  <img
-                    src={BeInCrypto}
-                    alt="BeInCrypto"
-                    className="mg-img-mob"
-                  />
+                  <img src={Koinpost} alt="Koinpost" className="mg-img-mob" />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
+                  <img src={Article3} alt="MediaArticle" />
                   <div className="traf-pric-mob">
                     <div className="mgc-text-box-mob">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>109.000</h3>
                     </div>
                     <div className="mgc-text-box-mob">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$750</h3>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="media-grid-card">
                 <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
+                  <img src={Zycrypto} alt="Zycrypto" />
                   <div className="mgc-text-box-con">
                     <div className="mgc-text-box">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>976.000</h3>
                     </div>
                     <div className="mgc-text-box">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$1 500</h3>
                     </div>
                   </div>
                 </div>
                 <div className="media-grid-card-right">
-                  <img
-                    src={BeInCrypto}
-                    alt="BeInCrypto"
-                    className="mg-img-mob"
-                  />
+                  <img src={Zycrypto} alt="Zycrypto" className="mg-img-mob" />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
+                  <img src={Article4} alt="MediaArticle" />
                   <div className="traf-pric-mob">
                     <div className="mgc-text-box-mob">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>976.000</h3>
                     </div>
                     <div className="mgc-text-box-mob">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$1 500</h3>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="media-grid-card">
                 <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
+                  <img src={Coinspeaker} alt="Coinspeaker" />
                   <div className="mgc-text-box-con">
                     <div className="mgc-text-box">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>130.000</h3>
                     </div>
                     <div className="mgc-text-box">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$1 200</h3>
                     </div>
                   </div>
                 </div>
                 <div className="media-grid-card-right">
                   <img
-                    src={BeInCrypto}
-                    alt="BeInCrypto"
+                    src={Coinspeaker}
+                    alt="Coinspeaker"
                     className="mg-img-mob"
                   />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
+                  <img src={Article5} alt="MediaArticle" />
                   <div className="traf-pric-mob">
                     <div className="mgc-text-box-mob">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>130.000</h3>
                     </div>
                     <div className="mgc-text-box-mob">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$1 200</h3>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="media-grid-card">
                 <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
+                  <img src={techtime} alt="Techtimes" />
                   <div className="mgc-text-box-con">
                     <div className="mgc-text-box">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>1.300.000</h3>
                     </div>
                     <div className="mgc-text-box">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$1 550</h3>
                     </div>
                   </div>
                 </div>
                 <div className="media-grid-card-right">
-                  <img
-                    src={BeInCrypto}
-                    alt="BeInCrypto"
-                    className="mg-img-mob"
-                  />
+                  <img src={techtime} alt="Techtimes" className="mg-img-mob" />
                   <div className="mgcr-top">
                     <p>Future Article</p>
                     <img src={UM} alt="UM" />
                   </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
+                  <img src={Article6} alt="MediaArticle" />
                   <div className="traf-pric-mob">
                     <div className="mgc-text-box-mob">
                       <span>traffic</span>
-                      <h3>3.600.000</h3>
+                      <h3>1.300.000</h3>
                     </div>
                     <div className="mgc-text-box-mob">
                       <span>price</span>
-                      <h3>$1950</h3>
+                      <h3>$1 550</h3>
                     </div>
                   </div>
                 </div>

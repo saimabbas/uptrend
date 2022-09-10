@@ -21,6 +21,13 @@ import BBLogo3 from "../assets/img/backedby-logo-3.svg";
 import BBLogo4 from "../assets/img/backedby-logo-4.svg";
 import BBLogo5 from "../assets/img/backedby-logo-5.svg";
 import BBLogo6 from "../assets/img/backedby-logo-6.svg";
+import Google from "../assets/img/google.svg";
+import Facebook from "../assets/img/facebook.svg";
+import Forbes from "../assets/img/forbes.svg";
+import Yahoo from "../assets/img/yahoo.svg";
+import Tiktok from "../assets/img/tiktok.svg";
+import Salesforce from "../assets/img/salesforce.svg";
+import Stream from "../assets/img/stream.svg";
 
 // Components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -33,8 +40,8 @@ const FuelBrandGrowthSwiper = (props) => {
         <section className="backedby-section backedby-section-light">
           <div className="box">
             <h3 className="head-subhead">
-              Our partners are backed <br />
-              <span>by venture capital’s elite</span>
+              The Partnerships and Expertise <br />
+              <span>that Fuel Brand Growth</span>
             </h3>
             <div className="bb-logos-swiper">
               <Swiper
@@ -51,32 +58,37 @@ const FuelBrandGrowthSwiper = (props) => {
               >
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo1Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={Google} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo2Dark} alt="BBLogo2Dark" />
+                    <img loading="lazy" src={Facebook} alt="BBLogo2Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo3Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={Forbes} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo4Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={Yahoo} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo5Dark} alt="BBLogo1Dark" />
+                    <img loading="lazy" src={Tiktok} alt="BBLogo1Dark" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="bb-logo-box">
-                    <img loading="lazy" src={BBLogo6Dark} alt="BBLogo1" />
+                    <img loading="lazy" src={Stream} alt="BBLogo1" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="bb-logo-box">
+                    <img loading="lazy" src={Salesforce} alt="BBLogo1" />
                   </div>
                 </SwiperSlide>
               </Swiper>
