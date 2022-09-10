@@ -12,6 +12,7 @@ import Expertise from "./views/Expertise";
 import Media from "./views/Media";
 import UpTrendStore from "./views/UpTrendStore";
 import Influencers from "./views/Influencers";
+import PressAndMedia from "./views/PressAndMedia";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route exact path="/media" element={<Media />} />
           <Route exact path="/uptrendstore" element={<UpTrendStore />} />
           <Route exact path="/influencers" element={<Influencers />} />
+          <Route exact path="/pressandmedia" element={<PressAndMedia />} />
         </Routes>
       </Switch>
     </>

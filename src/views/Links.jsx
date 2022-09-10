@@ -40,6 +40,9 @@ const Links = () => {
       <Link to="/influencers">
         11. <span>Influencers</span>
       </Link>
+      <Link to="/pressandmedia">
+        12. <span>Press cnd Media</span>
+      </Link>
     </div>
   );
 };

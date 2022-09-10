@@ -112,7 +112,7 @@ const Influencers = () => {
         }
       )
       .fromTo(
-        marketingHeadingLines,
+        marketingHeadingWords,
         {
           opacity: 0,
         },
@@ -371,9 +371,9 @@ const Influencers = () => {
 
   return (
     <main className="app">
-      {/* <div className="loading-screen">
+      <div className="loading-screen">
         <UTLogo color="#fff" />
-      </div> */}
+      </div>
       <div className="influencers-page">
         <section className="im-hero-section">
           <div className="box">
