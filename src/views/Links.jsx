@@ -19,9 +19,9 @@ const Links = () => {
       <Link to="/metaversemarketing">
         04. <span>Metaverse Marketing</span>
       </Link>
-      <Link to="/talktous">
+      {/* <Link to="/talktous">
         05. <span>Talk to Us</span>
-      </Link>
+      </Link> */}
       <Link to="/uptrendgrowthstories">
         06. <span>Uptrend Growth Stories</span>
       </Link>

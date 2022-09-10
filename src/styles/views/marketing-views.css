@@ -1472,8 +1472,22 @@
 }
 @media screen and (max-width: 750px) {
   .influencer-marketing-content {
-    min-height: 65vh;
+    min-height: 75vh;
     padding: 2rem 0;
+  }
+  .influencer-marketing-content.influencer-marketing-content-2 {
+    min-height: 95vh;
+    padding: 2rem 0;
+  }
+  .influencer-marketing-content.influencer-marketing-content-2
+    .im-hero-headings
+    h1 {
+    width: 100%;
+    font-size: 3.5rem;
+  }
+  .influencer-marketing-content.influencer-marketing-content-2
+    .im-hero-headings {
+    width: 100%;
   }
   .im-hero-img {
     object-position: bottom;

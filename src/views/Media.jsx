@@ -28,6 +28,9 @@ import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
+import Telegram from "../assets/icons/Telegram";
+import Email from "../assets/icons/Email";
+import Whatsapp from "../assets/icons/Whatsapp";
 
 // Icons
 import {
@@ -368,16 +371,16 @@ const Media = () => {
                 <h3>Contact us uo start promotion today!</h3>
                 <div className="hero-c-icons-box">
                   <a href="#">
-                    <IconLinkedIn color="#000" />
-                  </a>
-                  <a href="#">
-                    <IconFacebook color="#000" />
-                  </a>
-                  <a href="#">
-                    <IconInstagram color="#000" />
+                    <Whatsapp />
                   </a>
                   <a href="#">
                     <IconTwitter color="#000" />
+                  </a>
+                  <a href="#">
+                    <Telegram />
+                  </a>
+                  <a href="#">
+                    <Email />
                   </a>
                 </div>
               </div>
