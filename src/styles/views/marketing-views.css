@@ -1248,6 +1248,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 4rem;
+  margin: 2.5rem 0 5rem 0;
 }
 .EM-grid-left img {
   width: 100%;
@@ -1275,6 +1276,9 @@
 }
 .con-to-comp-points {
   display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   margin: 1rem 0 0 0;
 }
 .con-to-comp-points span {
@@ -1288,7 +1292,7 @@
   font-size: 1.6rem;
   color: #101216;
   font-weight: 400;
-  margin: 0 1rem 0 0;
+  margin: 0 1rem 1rem 0;
   cursor: pointer;
 }
 .con-to-comp svg {
@@ -1304,7 +1308,23 @@
 .event-marketing-mob {
   display: none;
 }
-
+.expertise-page {
+  width: 100%;
+}
+.expertise-page .bb-logos-swiper .swiper {
+  width: 75%;
+  margin: 0;
+}
+.expertise-page .backedby-section {
+  padding: 5rem 0 0 0;
+}
+.expertise-page .sj-bull-elevator-img-box {
+  position: relative;
+  z-index: 1000;
+}
+.expertise-page .sj-bull-elevator-img-box img {
+  margin: -15rem 0 0 0;
+}
 @media screen and (max-width: 1150px) {
   .service-description-grid {
     grid-template-columns: 1fr;

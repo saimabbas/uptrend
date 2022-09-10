@@ -73,11 +73,12 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import FuelBrandGrowthSwiper from "../components/FuelBrandGrowthSwiper";
 
 const Expertise = () => {
   return (
     <main className="app">
-      <div className="influencer-marketing-page">
+      <div className="expertise-page">
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
@@ -445,8 +446,6 @@ const Expertise = () => {
                     <span>Brand Meetups and Conferences</span>
                     <span>Press Events </span>
                     <span>Web Panels</span>
-                  </div>
-                  <div className="con-to-comp-points">
                     <span>Live Streams</span>
                     <span>Online Webinars</span>
                   </div>
@@ -459,6 +458,7 @@ const Expertise = () => {
                 </div>
               </div>
             </div>
+            <FuelBrandGrowthSwiper backedByLight={true} />
           </div>
         </section>
         <section className="subs-journal-section">
