@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import "../styles/reset.css";
 import "../styles/globals.css";
 import "../styles/views/marketing-views.css";
+import "../styles/influencers.css";
 import "../styles/views/media.css";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -69,6 +70,9 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import Telegram from "../assets/icons/Telegram";
+import Email from "../assets/icons/Email";
+import Whatsapp from "../assets/icons/Whatsapp";
 
 const Influencers = () => {
   gsap.registerPlugin(
@@ -360,16 +364,16 @@ const Influencers = () => {
                 <h3>Contact us to start promotion today!</h3>
                 <div className="hero-c-icons-box">
                   <a href="#">
-                    <IconLinkedIn color="#000" />
-                  </a>
-                  <a href="#">
-                    <IconFacebook color="#000" />
-                  </a>
-                  <a href="#">
-                    <IconInstagram color="#000" />
+                    <Whatsapp />
                   </a>
                   <a href="#">
                     <IconTwitter color="#000" />
+                  </a>
+                  <a href="#">
+                    <Telegram />
+                  </a>
+                  <a href="#">
+                    <Email />
                   </a>
                 </div>
               </div>
