@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Styles
 import "../styles/globals.css";
@@ -11,9 +11,14 @@ import BookmarkGreen from "../assets/img/bookmark-green.svg";
 
 // Components
 import Dropdown from "react-bootstrap/Dropdown";
-import { MdArrowDropDown } from "react-icons/md";
+import { MdArrowDropDown, MdClose } from "react-icons/md";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
 
 const Header = (props) => {
+  const [headerMobOpen, setHeaderMobOpen] = useState(false);
   return (
     <header className={props.lightHeader ? "header-light" : "header-dark"}>
       <div className="header-content">
@@ -59,7 +64,12 @@ const Header = (props) => {
           <p>
             No Fluff. <b>Just Results</b>
           </p>
-          <div className="menu-icon-box d-c-c">
+          <div
+            className="menu-icon-box d-c-c"
+            onClick={() => {
+              setHeaderMobOpen(true);
+            }}
+          >
             {props.lightHeader ? (
               <IconMenu color="#fff" />
             ) : (
@@ -68,6 +78,70 @@ const Header = (props) => {
           </div>
         </div>
       </div>
+      {headerMobOpen ? (
+        <div className="header-mob">
+          <div className="header-mob-top">
+            <div className="header-mob-head">
+              <UTLogo color="#fff" />
+              <div
+                onClick={() => {
+                  setHeaderMobOpen(false);
+                }}
+              >
+                <MdClose />
+              </div>
+            </div>
+            <div className="header-center-mob">
+              <div className="ut-dropdown">
+                <Dropdown>
+                  <Dropdown.Toggle id="dropdown-basic">
+                    Expertise <MdArrowDropDown />
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href="#/expertise-1">
+                      Event Marketing
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/expertise-2">
+                      Influencer Marketing
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/expertise-3">
+                      Metaverse Marketing
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
+              <a href="#">Results</a>
+              <div className="bookmark-link-mob">
+                <img loading="lazy" src={BookmarkGreen} alt="BookmarkGreen" />
+                <a href="#">Careers</a>
+              </div>
+              <a href="#">Events</a>
+              <a href="#">Store</a>
+              <a href="#">Journal</a>
+              <a className="talk-to-us" href="#">
+                <span>Talk To Us</span>
+              </a>
+            </div>
+          </div>
+          <div className="header-mob-bottom">
+            <button className="ut-btn-green">CONNECT YOUR BRAND</button>
+            <div className="header-mob-icons-box">
+              <a href="#">
+                <IconLinkedIn color="#000" />
+              </a>
+              <a href="#">
+                <IconFacebook color="#000" />
+              </a>
+              <a href="#">
+                <IconInstagram color="#000" />
+              </a>
+              <a href="#">
+                <IconTwitter color="#000" />
+              </a>
+            </div>
+          </div>
+        </div>
+      ) : null}
     </header>
   );
 };

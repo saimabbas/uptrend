@@ -53,7 +53,7 @@
   align-items: flex-start;
   justify-content: center;
   width: 55%;
-  z-index: 100;
+  z-index: 50;
   position: relative;
 }
 .im-hero-headings h1 {
@@ -1324,6 +1324,32 @@
 }
 .expertise-page .sj-bull-elevator-img-box img {
   margin: -15rem 0 0 0;
+}
+
+.hero-c-icons-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2.5rem 0 0 0;
+}
+.hero-c-icons-box a {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--main-light1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.5rem 0 0;
+  transition: 0.5s;
+}
+.hero-c-icons-box a svg {
+  width: 1.85rem;
+  transition: 0.5s;
+}
+.hero-c-icons-box a:hover {
+  transform: translate(0, -0.35rem);
 }
 @media screen and (max-width: 1150px) {
   .service-description-grid {

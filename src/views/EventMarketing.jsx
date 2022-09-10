@@ -613,9 +613,8 @@ const EventMarketing = () => {
                 </h3>
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
-                  <button>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
-                  </button>
+                  <div></div>
+                  <button>SUBSCRIBE TO OUR JOURNAL</button>
                 </div>
               </div>
               <div className="sj-bull-elevator-img-box">

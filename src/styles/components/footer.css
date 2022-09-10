@@ -116,14 +116,14 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0 1.5rem 0 0;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 .footer-icons-box a svg {
   width: 1.85rem;
   transition: 0.5s;
 }
 .footer-icons-box a:hover {
-  stroke: var(--main-color);
+  transform: translate(0, -0.35rem);
 }
 @media screen and (max-width: 1250px) {
   .footer-grid {

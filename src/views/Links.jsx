@@ -37,6 +37,9 @@ const Links = () => {
       <Link to="/uptrendstore">
         10. <span>UpTrend Store</span>
       </Link>
+      <Link to="/influencers">
+        11. <span>Influencers</span>
+      </Link>
     </div>
   );
 };

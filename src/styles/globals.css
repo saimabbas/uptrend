@@ -360,7 +360,7 @@
 @media screen and (max-width: 750px) {
   .box,
   .box.box-p {
-    padding: 0 2rem;
+    padding: 0 2.5rem;
   }
   .app h2 {
     font-size: 3rem;

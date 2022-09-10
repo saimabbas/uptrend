@@ -114,18 +114,9 @@
   display: none;
 }
 
-@media screen and (max-width: 1150px) {
-  .app h3 {
-    font-size: 2.5rem;
-  }
-}
-
 @media screen and (max-width: 1000px) {
   .media-grid {
     grid-template-columns: 1fr;
-  }
-  .app h3 {
-    font-size: 4rem;
   }
 }
 
