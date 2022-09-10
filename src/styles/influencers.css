@@ -1,0 +1,11 @@
+@media screen and (max-width: 1150px) {
+  .hero-c-icons-box {
+    margin: 2.5rem 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero-c-icons-box a {
+    margin: 0 1rem 0 0;
+  }
+}
