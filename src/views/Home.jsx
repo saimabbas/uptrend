@@ -51,6 +51,12 @@ import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
 import IconWhatsapp from "../assets/icons/IconWhatsapp";
+import NFTGal1 from "../assets/img/nft-gall-1.png";
+import NFTGal2 from "../assets/img/nft-gall-2.png";
+import NFTGal3 from "../assets/img/nft-gall-3.png";
+import NFTGal4 from "../assets/img/nft-gall-4.png";
+import NFTGal5 from "../assets/img/nft-gall-5.png";
+import NFTGal6 from "../assets/img/nftgal6.svg";
 
 // Icons
 import { MdArrowForward, MdArrowDropDown } from "react-icons/md";
@@ -478,16 +484,16 @@ const Home = () => {
                   <div className="ddd-cube">
                     <div className="ddd-f">
                       <h2>
-                        Investment <br />
+                        Investor <br />
                       </h2>
                     </div>
                     <div className="ddd-b">
                       <h2>
-                        Investment <br />
+                        Investor <br />
                       </h2>
                     </div>
                   </div>
-                  <span>Relationships</span>
+                  <span>Relations</span>
                 </div>
                 <h5>
                   Uptrend Venture partners assist brands with{" "}
@@ -595,10 +601,6 @@ const Home = () => {
                 highly regarded <br />
                 <span>by industry partners</span>
               </h3>
-              <a href="#" className="arrow-link">
-                <span>MORE</span>
-                <MdArrowForward />
-              </a>
             </div>
             <div className="highly-regarded-grid">
               <div className="highly-regarded-grid-card">
@@ -763,14 +765,10 @@ const Home = () => {
                   ideals
                 </p>
               </div>
-              <a href="#" className="arrow-link">
-                <span>PROMOTE YOUR NFT</span>
-                <MdArrowForward />
-              </a>
             </div>
             <div className="ut-nfts-swiper">
               <Swiper
-                slidesPerView={"auto"}
+                slidesPerView={4}
                 freeMode={true}
                 modules={[Autoplay, FreeMode]}
                 className="mySwiper"
@@ -781,99 +779,38 @@ const Home = () => {
                 }}
               >
                 <SwiperSlide>
-                  <div className="ut-nft-card">
-                    <div className="ut-nft-card-img">
-                      <img loading="lazy" src={UTNFTImg1} alt="UTNFTImg" />
-                    </div>
-                    <div className="nft-details">
-                      <img
-                        loading="lazy"
-                        src={NFTProfileImg1}
-                        alt="NFTProfileImg1"
-                      />
-                      <p>Charlie Chaplin</p>
-                      <h6>by John Smith</h6>
-                      <span>
-                        <img
-                          loading="lazy"
-                          src={IconDiamond}
-                          alt="IconDiamond"
-                        />
-                        0.023
-                      </span>
+                  <div className="nft-gallery-content-1">
+                    <img src={NFTGal2} alt="NFT" />
+                    <div className="nft-para-1">
+                      <h5>UPTREND PLANET</h5>
+                      <p>0.125 ETH</p>
                     </div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="ut-nft-card">
-                    <div className="ut-nft-card-img">
-                      <img loading="lazy" src={UTNFTImg2} alt="UTNFTImg" />
-                    </div>
-                    <div className="nft-details">
-                      <img
-                        loading="lazy"
-                        src={NFTProfileImg2}
-                        alt="NFTProfileImg2"
-                      />
-                      <p>Dark Home</p>
-                      <h6>by John Smith</h6>
-                      <span>
-                        <img
-                          loading="lazy"
-                          src={IconDiamond}
-                          alt="IconDiamond"
-                        />
-                        0.023
-                      </span>
+                  <div className="nft-gallery-content-1">
+                    <img src={NFTGal3} alt="NFT" />
+                    <div className="nft-para-1">
+                      <h5>UPTREND PORTAL</h5>
+                      <p>0.12 ETH</p>
                     </div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="ut-nft-card">
-                    {" "}
-                    <div className="ut-nft-card-img">
-                      <img loading="lazy" src={UTNFTImg3} alt="UTNFTImg" />
-                    </div>
-                    <div className="nft-details">
-                      <img
-                        loading="lazy"
-                        src={NFTProfileImg3}
-                        alt="NFTProfileImg3"
-                      />
-                      <p>Charlie Chaplin</p>
-                      <h6>by John Smith</h6>
-                      <span>
-                        <img
-                          loading="lazy"
-                          src={IconDiamond}
-                          alt="IconDiamond"
-                        />
-                        0.023
-                      </span>
+                  <div className="nft-gallery-content-1">
+                    <img src={NFTGal4} alt="NFT" />
+                    <div className="nft-para-1">
+                      <h5>UPTREND ISLAND</h5>
+                      <p>0.12 ETH</p>
                     </div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="ut-nft-card">
-                    <div className="ut-nft-card-img">
-                      <img loading="lazy" src={UTNFTImg4} alt="UTNFTImg" />
-                    </div>
-                    <div className="nft-details">
-                      <img
-                        loading="lazy"
-                        src={NFTProfileImg4}
-                        alt="NFTProfileImg4"
-                      />
-                      <p>Katty Cat</p>
-                      <h6>by John Smith</h6>
-                      <span>
-                        <img
-                          loading="lazy"
-                          src={IconDiamond}
-                          alt="IconDiamond"
-                        />
-                        0.023
-                      </span>
+                  <div className="nft-gallery-content-1">
+                    <img src={NFTGal5} alt="NFT" />
+                    <div className="nft-para-1">
+                      <h5>UPTREND BULL</h5>
+                      <p>0.2 ETH</p>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -947,10 +884,9 @@ const Home = () => {
                     Growth In 2022 (Part 1)
                   </h6>
                   <p>
-                    Before investing in cryptocurrency, it’s important to
-                    research reputable companies that provide exchange services.
-                    This will impact where you purchase crypto, how you trade,
-                    and the community you will become involved in.
+                    Check out this comprehensive guide to discovering the most
+                    powerful influencers using popular influencer marketing
+                    software based on Uptrend’s insights and experience.
                   </p>
                 </div>
               </div>

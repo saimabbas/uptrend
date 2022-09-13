@@ -29,7 +29,7 @@ import CrossPolinationImg from "../assets/img/cross-polination.svg";
 import CPBeeImg from "../assets/img/cp-bee-img.svg";
 import PlatformStatsImg from "../assets/img/platform-stats-img.svg";
 import BigThingsWave from "../assets/img/big-things-wave.svg";
-import BullElevatorImg from "../assets/img/bull-elevator-img.png";
+import BullElevatorImg from "../assets/img/bull-elevator-img-2.svg";
 import BoyMetaverse from "../assets/img/boy-experiencing-metaverse.png";
 import companyLogo14 from "../assets/img/logo-meta.svg";
 import companyLogo15 from "../assets/img/logo-sandbox.svg";

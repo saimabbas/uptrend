@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 // Images
 import EmHeroImg from "../assets/img/em-hero-img.svg";
 import LocalStartupImg from "../assets/img/local-startup-img.svg";
-import BullElevatorImg from "../assets/img/bull-elevator-img.png";
+import BullElevatorImg from "../assets/img/bull-elevator-img-2.svg";
 import PhotoImg from "../assets/img/photo-img.svg";
 import EMSD2ndImg from "../assets/img/em-sd-2nd-img.png";
 import EMSD3rdImg from "../assets/img/em-sd-3rd-img.png";

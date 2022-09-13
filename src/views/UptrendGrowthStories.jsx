@@ -34,7 +34,7 @@ import FashionBrandImg from "../assets/img/fashion-brand-img.svg";
 import PlatformStatsImg2 from "../assets/img/top-10-gaming-app.png";
 import PlatformStatsImg3 from "../assets/img/leading-health-app.png";
 import BigThingsWave from "../assets/img/big-things-wave.svg";
-import BullElevatorImg from "../assets/img/bull-elevator-img.png";
+import BullElevatorImg from "../assets/img/bull-elevator-img-2.svg";
 import Nico from "../assets/img/nico.png";
 import Tony from "../assets/img/tony.png";
 import Danny from "../assets/img/danny.svg";

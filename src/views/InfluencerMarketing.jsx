@@ -30,7 +30,7 @@ import CrossPolinationImg from "../assets/img/cross-polination.svg";
 import CPBeeImg from "../assets/img/cp-bee-img.svg";
 import PlatformStatsImg from "../assets/img/platform-stats-img.svg";
 import BigThingsWave from "../assets/img/big-things-wave.svg";
-import BullElevatorImg from "../assets/img/bull-elevator-img.png";
+import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.svg";
 
 // Icons
 import {
@@ -764,7 +764,7 @@ const InfluencerMarketing = () => {
               <div className="sj-bull-elevator-img-box">
                 <img
                   loading="lazy"
-                  src={BullElevatorImg}
+                  src={BullElevatorImg2}
                   alt="BullElevatorImg"
                 />
               </div>

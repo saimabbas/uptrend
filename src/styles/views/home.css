@@ -285,6 +285,7 @@
   z-index: 15;
   position: relative;
   margin: 20rem 0 0 0;
+  width: 75%;
 }
 .expertise-grid-card-1 h2,
 .expertise-grid-card-4 h2 {
@@ -520,54 +521,50 @@
 .uptrends-events-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 7.5rem;
+  grid-gap: 4rem;
+  padding: 0 0 7rem 0;
 }
 .uptrends-events-img-grid {
   width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.uptrends-events-img-grid div {
+.uptrends-events-img-grid h4 {
   width: 100%;
-  border-radius: 0.75rem;
-  object-fit: cover;
-  height: 17.5rem;
-  overflow: hidden;
+  color: #ffffff;
+  margin: 1.5rem 0 2rem 0;
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.uptrends-events-img-grid p {
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 400;
 }
 .uptrends-events-img-grid img {
+  border-radius: 0.75rem;
   width: 100%;
-  height: 100%;
+  height: unset;
   object-fit: cover;
   transition: 0.5s;
 }
 .uptrends-events-img-grid div:hover img {
   transform: scale(1.025);
 }
-.uptrends-events-img-grid div:nth-child(1) {
-  grid-row: 1/3;
-  border-radius: 1.5rem;
-  height: 36.5rem;
-}
 .ueg-right {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: right;
-  padding: 0 0 0 5rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5rem 0;
 }
 .ueg-right h3 {
   color: var(--white);
-}
-.ueg-right h5 {
-  color: var(--white);
-  margin: 2.5rem 0 7.5rem 0;
-  font-weight: 300;
 }
 .ready-to-start-section {
   width: 100%;
@@ -855,6 +852,42 @@
   margin: 2.5rem 0 0 0;
 }
 
+.nft-gallery-content-1 {
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.nft-gallery-content-1 img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.nft-gallery-content-1:hover {
+  transform: translate(0, -1rem);
+}
+.nft-para-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 1rem 0 0 0;
+}
+.nft-para-1 h5 {
+  font-size: 1.7rem;
+  color: #ffffff;
+  font-weight: 200;
+}
+.nft-para-1 p {
+  font-size: 1.6rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1250px) {
   .our-mission-content {
     padding: 0;
@@ -963,6 +996,13 @@
   }
   .rts-content {
     grid-template-columns: 1fr;
+  }
+  .uptrends-events-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 8rem;
+  }
+  .ueg-right {
+    padding: 0 0 3rem 0 !important;
   }
 }
 @media screen and (max-width: 750px) {
