@@ -7,8 +7,10 @@ import "../styles/views/home.css";
 
 // Images
 import EventImg1 from "../assets/img/event-img-1.png";
-import EventImg2 from "../assets/img/event-img-2.png";
-import EventImg3 from "../assets/img/event-img-3.png";
+import EventImg2 from "../assets/img/em2.svg";
+import EventImg3 from "../assets/img/em3.svg";
+import TrImg from "../assets/img/tr.svg";
+import ECImg from "../assets/img/ec.svg";
 
 // Icons
 import { MdArrowForward } from "react-icons/md";
@@ -21,8 +23,11 @@ const UpTrendsEvents = () => {
       </div>
       <div className="uptrends-events-grid">
         <div className="uptrends-events-img-grid">
+          <span>Meetup</span>
           <img loading="lazy" src={EventImg1} alt="EventImg" />
-          <h4>Meetup in Turkey 🇹🇷 </h4>
+          <h4>
+            Meetup in Turkey <img src={TrImg} alt="" />
+          </h4>
           <p>
             Our meetup attracted attention from finance influencers, business
             executives, and key industry leaders. The event was higly regarded
@@ -30,8 +35,11 @@ const UpTrendsEvents = () => {
           </p>
         </div>
         <div className="uptrends-events-img-grid">
-          <img loading="lazy" src={EventImg1} alt="EventImg" />
-          <h4>Event in Ecuador 🇪🇨 </h4>
+          <span>Meetup</span>
+          <img loading="lazy" src={EventImg2} alt="EventImg" />
+          <h4>
+            Event in Ecuador <img src={ECImg} alt="" />
+          </h4>
           <p>
             An engaging educational event was launched in Latin America,
             successfully introducing new audiences one-stop solutions in
@@ -39,7 +47,8 @@ const UpTrendsEvents = () => {
           </p>
         </div>
         <div className="uptrends-events-img-grid">
-          <img loading="lazy" src={EventImg1} alt="EventImg" />
+          <span>Conference</span>
+          <img loading="lazy" src={EventImg3} alt="EventImg" />
           <h4>Uptrend Brand Event</h4>
           <p>
             An exclusive Uptrend brand event designed to showcase our expertise

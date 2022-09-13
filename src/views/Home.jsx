@@ -777,6 +777,13 @@ const Home = () => {
                 autoplay={{
                   delay: 1,
                 }}
+                breakpoints={{
+                  // when window width is >= 650px
+                  650: {
+                    width: 650,
+                    slidesPerView: 1,
+                  },
+                }}
               >
                 <SwiperSlide>
                   <div className="nft-gallery-content-1">

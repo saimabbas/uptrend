@@ -532,6 +532,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .uptrends-events-img-grid h4 {
   width: 100%;
@@ -553,6 +554,19 @@
   object-fit: cover;
   transition: 0.5s;
 }
+.uptrends-events-img-grid span {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 4rem;
+  border-radius: 1000px;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  cursor: pointer;
+}
 .uptrends-events-img-grid div:hover img {
   transform: scale(1.025);
 }
@@ -562,6 +576,12 @@
   justify-content: flex-start;
   align-items: center;
   padding: 5rem 0;
+}
+.uptrends-events-img-grid h4 img {
+  width: 2.5rem;
+  margin: 0 0 0 1rem;
+  object-fit: contain;
+  border-radius: unset;
 }
 .ueg-right h3 {
   color: var(--white);
