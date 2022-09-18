@@ -69,7 +69,24 @@ import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
 
+//API
+import {hostname, dataAPI} from "../apiConnection/connect";
+
 const Media = () => {
+  const [media, setMedia] = useState(null)
+
+  useEffect(()=>{
+    !media &&
+    dataAPI.getMedia().then(data => {
+      if (data.success){
+        setMedia(data.data)
+      }else{
+        console.log("%c Error Getting Information.", 'color: red')
+      }
+    })
+  }, [media])
+
+
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -409,212 +426,52 @@ const Media = () => {
               </a>
             </div>
             <div className="media-grid">
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={BeInCrypto} alt="BeInCrypto" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>3.600.000</h3>
+
+              {media && media.map((md, key) => {
+                return(
+                    <div key={key} className="media-grid-card">
+                      <div className="media-grid-card-left">
+                        <img src={hostname+md.logoPath} alt="BeInCrypto" />
+                        <div className="mgc-text-box-con">
+                          <div className="mgc-text-box">
+                            <span>traffic</span>
+                            <h3>{md.traffic}</h3>
+                          </div>
+                          <div className="mgc-text-box">
+                            <span>price</span>
+                            <h3>${md.price}</h3>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="media-grid-card-right">
+                        <img
+                            src={hostname+md.logoPath}
+                            alt="BeInCrypto"
+                            className="mg-img-mob"
+                        />
+                        <div className="mgcr-top">
+                          <p>{md.title}</p>
+                          <p>{md.country}</p>
+                          {/*<img src={UM} alt="UM" />*/}
+                        </div>
+                        <img src={hostname+md.imagePath} alt="MediaArticle" />
+                        <div className="traf-pric-mob">
+                          <div className="mgc-text-box-mob">
+                            <span>traffic</span>
+                            <h3>{md.traffic}</h3>
+                          </div>
+                          <div className="mgc-text-box-mob">
+                            <span>price</span>
+                            <h3>${md.price}</h3>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1950</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <img
-                    src={BeInCrypto}
-                    alt="BeInCrypto"
-                    className="mg-img-mob"
-                  />
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={Article1} alt="MediaArticle" />
-                  <div className="traf-pric-mob">
-                    <div className="mgc-text-box-mob">
-                      <span>traffic</span>
-                      <h3>3.600.000</h3>
-                    </div>
-                    <div className="mgc-text-box-mob">
-                      <span>price</span>
-                      <h3>$1950</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={coingape} alt="=Coingape" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>1.300.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1 500</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <img src={coingape} alt="=Coingape" className="mg-img-mob" />
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={MediaArticle} alt="MediaArticle" />
-                  <div className="traf-pric-mob">
-                    <div className="mgc-text-box-mob">
-                      <span>traffic</span>
-                      <h3>1.300.000</h3>
-                    </div>
-                    <div className="mgc-text-box-mob">
-                      <span>price</span>
-                      <h3>$1 500</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={Koinpost} alt="Koinpost" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>109.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$750</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <img src={Koinpost} alt="Koinpost" className="mg-img-mob" />
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={Article3} alt="MediaArticle" />
-                  <div className="traf-pric-mob">
-                    <div className="mgc-text-box-mob">
-                      <span>traffic</span>
-                      <h3>109.000</h3>
-                    </div>
-                    <div className="mgc-text-box-mob">
-                      <span>price</span>
-                      <h3>$750</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={Zycrypto} alt="Zycrypto" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>976.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1 500</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <img src={Zycrypto} alt="Zycrypto" className="mg-img-mob" />
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={Article4} alt="MediaArticle" />
-                  <div className="traf-pric-mob">
-                    <div className="mgc-text-box-mob">
-                      <span>traffic</span>
-                      <h3>976.000</h3>
-                    </div>
-                    <div className="mgc-text-box-mob">
-                      <span>price</span>
-                      <h3>$1 500</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={Coinspeaker} alt="Coinspeaker" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>130.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1 200</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <img
-                    src={Coinspeaker}
-                    alt="Coinspeaker"
-                    className="mg-img-mob"
-                  />
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={Article5} alt="MediaArticle" />
-                  <div className="traf-pric-mob">
-                    <div className="mgc-text-box-mob">
-                      <span>traffic</span>
-                      <h3>130.000</h3>
-                    </div>
-                    <div className="mgc-text-box-mob">
-                      <span>price</span>
-                      <h3>$1 200</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="media-grid-card">
-                <div className="media-grid-card-left">
-                  <img src={techtime} alt="Techtimes" />
-                  <div className="mgc-text-box-con">
-                    <div className="mgc-text-box">
-                      <span>traffic</span>
-                      <h3>1.300.000</h3>
-                    </div>
-                    <div className="mgc-text-box">
-                      <span>price</span>
-                      <h3>$1 550</h3>
-                    </div>
-                  </div>
-                </div>
-                <div className="media-grid-card-right">
-                  <img src={techtime} alt="Techtimes" className="mg-img-mob" />
-                  <div className="mgcr-top">
-                    <p>Future Article</p>
-                    <img src={UM} alt="UM" />
-                  </div>
-                  <img src={Article6} alt="MediaArticle" />
-                  <div className="traf-pric-mob">
-                    <div className="mgc-text-box-mob">
-                      <span>traffic</span>
-                      <h3>1.300.000</h3>
-                    </div>
-                    <div className="mgc-text-box-mob">
-                      <span>price</span>
-                      <h3>$1 550</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                )
+              })}
+
+
             </div>
             <div className="ut-breadcrumbs-section">
               <div className="ut-breadcrumbs">

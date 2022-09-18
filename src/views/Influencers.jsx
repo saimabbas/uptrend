@@ -81,7 +81,29 @@ import Telegram from "../assets/icons/Telegram";
 import Email from "../assets/icons/Email";
 import Whatsapp from "../assets/icons/Whatsapp";
 
+//Data API
+import {dataAPI} from "../apiConnection/connect";
+
 const Influencers = () => {
+
+  //Getting data from API
+  const [influencers, setInfluencers] = useState(null)
+
+
+  useEffect(()=>{
+    !influencers &&
+    dataAPI.getInfluencers().then(data => {
+      if (data.success){
+        setInfluencers(data.data)
+      }else{
+        console.log("%c Error Getting Information.", 'color: red')
+      }
+    })
+  }, [influencers])
+
+
+  //Finish getting data
+
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -422,270 +444,50 @@ const Influencers = () => {
               </a>
             </div>
             <div className="influencers-grid">
-              <div className="influencers-grid-card">
-                <div className="igc-top">
-                  <div className="igc-top-img-box">
-                    <img className="igc-profile" src={IGCImg1} alt="IGCImg1" />
-                    <img
-                      className="igc-platform-icon"
-                      src={YTIcon}
-                      alt="YTIcon"
-                    />
-                  </div>
-                  <div className="igc-top-text-box">
-                    <div>
-                      <h4>CoinCheckTV</h4>
-                      <img src={DEImg} alt="DEImg " />
+
+              {influencers && influencers.map((inf, key) => {
+                return(<div className="influencers-grid-card" key={key}>
+                  <div className="igc-top">
+                    <div className="igc-top-img-box">
+                      <img className="igc-profile" src={inf.imagePath} alt={inf.title}/>
+
+                      {/*Please handle other images as well like tiktok and instagram*/}
+                      <img
+                          className="igc-platform-icon"
+                          src={inf.platform === "youtube" ? YTIcon : inf.platform === "tiktok" ? YTIcon : ""}
+                          alt="YTIcon"
+                      />
                     </div>
-                    <p>Organic integration</p>
-                  </div>
-                </div>
-                <div className="igc-bottom">
-                  <div className="igc-bottom-left">
-                    <div className="igc-bl-text-box">
-                      <span>followers</span>
-                      <h3>47,000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>deposits</span>
-                      <h3>$43,000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>price</span>
-                      <h3>$5,500</h3>
+                    <div className="igc-top-text-box">
+                      <div>
+                        <h4>{inf.title}</h4>
+                        {/*Flag emoji can be a part of the title*/}
+                        {/*<img src={DEImg} alt="DEImg "/>*/}
+                      </div>
+                      <p>{inf.subtitle}</p>
                     </div>
                   </div>
-                  <div className="igc-bottom-right">
-                    <iframe
-                      src="https://www.youtube.com/embed/UYpRE2d0EGo"
-                      title="Redragon Zeus H510 Review - The Best 50$ gaming headset"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-              <div className="influencers-grid-card">
-                <div className="igc-top">
-                  <div className="igc-top-img-box">
-                    <img className="igc-profile" src={IGCImg2} alt="IGCImg2" />
-                    <img
-                      className="igc-platform-icon"
-                      src={YTIcon}
-                      alt="YTIcon"
-                    />
-                  </div>
-                  <div className="igc-top-text-box">
-                    <div>
-                      <h4>Täglich Bitcoin & Crypto </h4>
-                      <img src={DEImg} alt="DEImg " />
+                  <div className="igc-bottom">
+                    <div className="igc-bottom-left">
+                      <div className="igc-bl-text-box">
+                        <span>followers</span>
+                        <h3>{inf.followers}</h3>
+                      </div>
+                      <div className="igc-bl-text-box">
+                        <span>deposits</span>
+                        <h3>${inf.deposits}</h3>
+                      </div>
+                      <div className="igc-bl-text-box">
+                        <span>price</span>
+                        <h3>${inf.price}</h3>
+                      </div>
                     </div>
-                    <p>Organic integration</p>
+                    <div className="igc-bottom-right" dangerouslySetInnerHTML={{__html: inf.videoURL}}/>
                   </div>
-                </div>
-                <div className="igc-bottom">
-                  <div className="igc-bottom-left">
-                    <div className="igc-bl-text-box">
-                      <span>followers</span>
-                      <h3>60 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>deposits</span>
-                      <h3>$31 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>price</span>
-                      <h3>$2 700 </h3>
-                    </div>
-                  </div>
-                  <div className="igc-bottom-right">
-                    <iframe
-                      src="https://www.youtube.com/embed/UYpRE2d0EGo"
-                      title="Redragon Zeus H510 Review - The Best 50$ gaming headset"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-              <div className="influencers-grid-card">
-                <div className="igc-top">
-                  <div className="igc-top-img-box">
-                    <img className="igc-profile" src={IGCImg3} alt="IGCImg3" />
-                    <img
-                      className="igc-platform-icon"
-                      src={YTIcon}
-                      alt="YTIcon"
-                    />
-                  </div>
-                  <div className="igc-top-text-box">
-                    <div>
-                      <h4>TestWerk</h4>
-                      <img src={DEImg} alt="DEImg " />
-                    </div>
-                    <p>Organic integration</p>
-                  </div>
-                </div>
-                <div className="igc-bottom">
-                  <div className="igc-bottom-left">
-                    <div className="igc-bl-text-box">
-                      <span>followers</span>
-                      <h3>23 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>deposits</span>
-                      <h3>$9 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>price</span>
-                      <h3>$1 200</h3>
-                    </div>
-                  </div>
-                  <div className="igc-bottom-right">
-                    <iframe
-                      src="https://www.youtube.com/embed/UYpRE2d0EGo"
-                      title="Redragon Zeus H510 Review - The Best 50$ gaming headset"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-              <div className="influencers-grid-card">
-                <div className="igc-top">
-                  <div className="igc-top-img-box">
-                    <img className="igc-profile" src={IGCImg4} alt="IGCImg4" />
-                    <img
-                      className="igc-platform-icon"
-                      src={YTIcon}
-                      alt="YTIcon"
-                    />
-                  </div>
-                  <div className="igc-top-text-box">
-                    <div>
-                      <h4>CryptoTuts</h4>
-                      <img src={DEImg} alt="DEImg " />
-                    </div>
-                    <p>Organic integration</p>
-                  </div>
-                </div>
-                <div className="igc-bottom">
-                  <div className="igc-bottom-left">
-                    <div className="igc-bl-text-box">
-                      <span>followers</span>
-                      <h3>35 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>deposits</span>
-                      <h3>$17 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>price</span>
-                      <h3>$2 300</h3>
-                    </div>
-                  </div>
-                  <div className="igc-bottom-right">
-                    <iframe
-                      src="https://www.youtube.com/embed/UYpRE2d0EGo"
-                      title="Redragon Zeus H510 Review - The Best 50$ gaming headset"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-              <div className="influencers-grid-card">
-                <div className="igc-top">
-                  <div className="igc-top-img-box">
-                    <img className="igc-profile" src={IGCImg5} alt="IGCImg5" />
-                    <img
-                      className="igc-platform-icon"
-                      src={YTIcon}
-                      alt="YTIcon"
-                    />
-                  </div>
-                  <div className="igc-top-text-box">
-                    <div>
-                      <h4>Hoss</h4>
-                      <img src={DEImg} alt="DEImg " />
-                    </div>
-                    <p>Organic integration</p>
-                  </div>
-                </div>
-                <div className="igc-bottom">
-                  <div className="igc-bottom-left">
-                    <div className="igc-bl-text-box">
-                      <span>followers</span>
-                      <h3>91 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>deposits</span>
-                      <h3>$86 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>price</span>
-                      <h3>$6 000</h3>
-                    </div>
-                  </div>
-                  <div className="igc-bottom-right">
-                    <iframe
-                      src="https://www.youtube.com/embed/UYpRE2d0EGo"
-                      title="Redragon Zeus H510 Review - The Best 50$ gaming headset"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-              <div className="influencers-grid-card">
-                <div className="igc-top">
-                  <div className="igc-top-img-box">
-                    <img className="igc-profile" src={IGCImg6} alt="IGCImg6" />
-                    <img
-                      className="igc-platform-icon"
-                      src={YTIcon}
-                      alt="YTIcon"
-                    />
-                  </div>
-                  <div className="igc-top-text-box">
-                    <div>
-                      <h4>Crypto Deutschland</h4>
-                      <img src={DEImg} alt="DEImg " />
-                    </div>
-                    <p>Organic integration</p>
-                  </div>
-                </div>
-                <div className="igc-bottom">
-                  <div className="igc-bottom-left">
-                    <div className="igc-bl-text-box">
-                      <span>followers</span>
-                      <h3>33 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>deposits</span>
-                      <h3>$74 000</h3>
-                    </div>
-                    <div className="igc-bl-text-box">
-                      <span>price</span>
-                      <h3>$5 500</h3>
-                    </div>
-                  </div>
-                  <div className="igc-bottom-right">
-                    <iframe
-                      src="https://www.youtube.com/embed/UYpRE2d0EGo"
-                      title="Redragon Zeus H510 Review - The Best 50$ gaming headset"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
+                </div>)
+              })}
+
+
             </div>
             <div className="ut-breadcrumbs-section">
               <div className="ut-breadcrumbs">
