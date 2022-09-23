@@ -13,6 +13,10 @@ import Media from "./views/Media";
 import UpTrendStore from "./views/UpTrendStore";
 import Influencers from "./views/Influencers";
 import PressAndMedia from "./views/PressAndMedia";
+import Blog from "./views/Blog";
+import Blog2 from "./views/Blog2";
+import Blog4 from "./views/Blog4";
+import Blog5 from "./views/Blog5";
 
 function App() {
   return (
@@ -48,6 +52,10 @@ function App() {
           <Route exact path="/uptrendstore" element={<UpTrendStore />} />
           <Route exact path="/influencers" element={<Influencers />} />
           <Route exact path="/pressandmedia" element={<PressAndMedia />} />
+          <Route exact path="/blog" element={<Blog />} />
+          <Route exact path="/blog2" element={<Blog2 />} />
+          <Route exact path="/blog4" element={<Blog4 />} />
+          <Route exact path="/blog5" element={<Blog5 />} />
         </Routes>
       </Switch>
     </>
