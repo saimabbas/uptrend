@@ -768,7 +768,7 @@ const Home = () => {
             </div>
             <div className="ut-nfts-swiper">
               <Swiper
-                slidesPerView={4}
+                slidesPerView={"auto"}
                 freeMode={true}
                 modules={[Autoplay, FreeMode]}
                 className="mySwiper"
@@ -776,13 +776,6 @@ const Home = () => {
                 speed={10000}
                 autoplay={{
                   delay: 1,
-                }}
-                breakpoints={{
-                  // when window width is >= 650px
-                  650: {
-                    width: 650,
-                    slidesPerView: 1,
-                  },
                 }}
               >
                 <SwiperSlide>
