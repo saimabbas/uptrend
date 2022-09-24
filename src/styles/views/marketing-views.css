@@ -9,7 +9,6 @@
   position: relative;
   background-color: var(--white);
   z-index: 100;
-  overflow: hidden;
   max-width: 100%;
 }
 .influencer-marketing-content {

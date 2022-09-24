@@ -24,331 +24,324 @@ const Blog2 = () => {
             <UTLogo color="#fff" />
           </div> */}
       <div className="blog-page">
-        <section className="im-hero-section">
+        <div className="blog-page-content">
           <div className="box">
-            <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
-              <div className="box box-p">
-                <div className="blog-img-para">
-                  <div className="bipara-left">
-                    <img src={Person} alt="" />
-                    <div className="bi-text">
-                      <h5>Alex Wanstein</h5>
-                      <p>10.06.2022</p>
-                    </div>
+            <Header lightHeader={false} />
+          </div>
+          <div className="blog-content-wrapper">
+            <div className="box box-p">
+              <div className="blog-img-para">
+                <div className="bipara-left">
+                  <img src={Person} alt="" />
+                  <div className="bi-text">
+                    <h5>Alex Wanstein</h5>
+                    <p>10.06.2022</p>
                   </div>
-                  <span>5 mint read</span>
                 </div>
-                <div className="blog-main-content">
-                  <h3>
-                    3 Proven Strategies To Building Brand Awareness In 2022
-                  </h3>
-                  <p>
-                    Have you ever wondered what makes a successful marketing
-                    campaign? Extensive coverage? Increased audience loyalty?
-                    Successful marketing is about getting everyone talking about
-                    your brand. But how can such results be achieved? In this
-                    article, we share our expertise and explain how brands can
-                    significantly increase their awareness and get the necessary
-                    reputation points for scale and growth. <br />
-                    <br />
-                    We share our experience to give marketers the valuable
-                    pieces of the puzzle they need to create a powerful strategy
-                    that works and delivers results. <br />
-                    <br />
-                    In our material, we will tell you about the five most
-                    effective strategies for creating awareness. This material
-                    summarizes the best practices that every brand needs to
-                    execute today!
-                  </p>
-                  <img src={JournalImg2} alt="BlogImg" />
-                  <h3>Brand Events</h3>
-                  <p>
-                    How can you attract the attention of a million people to
-                    your brand? Just organize an online event! Events organized
-                    by brands are especially popular among target audiences.
-                    <br /> <br />
-                    <b>How to create an event that will be valuable</b> <br />
-                  </p>
-                  <ol>
-                    <li>
-                      Determine the social media strategy for your brand's
-                      event. YouTube, Twitter, Twitch – use the platform where
-                      your primary audience is concentrated.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Prepare an event plan including the main topic and
-                      generate a PDF. It can be a Live Stream, Web Panel,
-                      Webinar, and much more!
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Make a list of partners with an audience who can share
-                      impactful insights.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Bloggers are your best friends. Invite the best
-                      influencers in your segment and offer them the opportunity
-                      to be speakers and attract additional audiences.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Make a content plan that includes promoting the event on
-                      all target social media platforms.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Confirm the content plan with influencers, partners, and
-                      participants. All participants should promote the event on
-                      their social media accounts. More bloggers mean more
-                      reach. Use the power of your charm and attract more
-                      influencers.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Prepare prizes for the most active participants of the
-                      event. It can be merch, discounts on your service, tours,
-                      and even Apple iPhones, Macbooks, and so on!
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      {" "}
-                      Promote your event through digital marketing channels.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      {" "}
-                      After the event was provided, thank all participants,
-                      partners, and bloggers on corporate social media.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Ask bloggers for a short summary of the event,
-                      re-emphasizing the strength of your brand.
-                    </li>
-                  </ol>
+                <span>5 mint read</span>
+              </div>
+              <div className="blog-main-content">
+                <h3>3 Proven Strategies To Building Brand Awareness In 2022</h3>
+                <p>
+                  Have you ever wondered what makes a successful marketing
+                  campaign? Extensive coverage? Increased audience loyalty?
+                  Successful marketing is about getting everyone talking about
+                  your brand. But how can such results be achieved? In this
+                  article, we share our expertise and explain how brands can
+                  significantly increase their awareness and get the necessary
+                  reputation points for scale and growth. <br />
+                  <br />
+                  We share our experience to give marketers the valuable pieces
+                  of the puzzle they need to create a powerful strategy that
+                  works and delivers results. <br />
+                  <br />
+                  In our material, we will tell you about the five most
+                  effective strategies for creating awareness. This material
+                  summarizes the best practices that every brand needs to
+                  execute today!
+                </p>
+                <img src={JournalImg2} alt="BlogImg" />
+                <h3>Brand Events</h3>
+                <p>
+                  How can you attract the attention of a million people to your
+                  brand? Just organize an online event! Events organized by
+                  brands are especially popular among target audiences.
+                  <br /> <br />
+                  <b>How to create an event that will be valuable</b> <br />
+                </p>
+                <ol>
+                  <li>
+                    Determine the social media strategy for your brand's event.
+                    YouTube, Twitter, Twitch – use the platform where your
+                    primary audience is concentrated.
+                  </li>
                   <br />
                   <br />
-                  <p>
-                    Perfect! Your brand is in the spotlight. You bring valuable
-                    knowledge to this world, invite famous people, and get
-                    enormous reach and reputation points that help you to grow
-                    your business.
-                  </p>
-                </div>
-                <div className="categories-box blog-2-cat">
-                  <div className="influ-type-box">
-                    <img src={InfluTypeImg} alt="" />
-                    <div className="influ-text">
-                      <h3>Metaverse Presence</h3>
-                      <p>
-                        New technologies create new opportunities. With the
-                        advent of the metaverse, there is an opportunity for
-                        brands to reach new audiences and make a huge buzz.{" "}
-                        <br />
-                        <br /> Metaverses allow brands to create objects and
-                        assets with exclusive interactive experiences.
-                      </p>
-                    </div>
-                  </div>
-                  <h3>
-                    How to create attention to your brand through Metaverses
-                  </h3>
-                  <ol>
-                    <li>
-                      Choose the metaverse that evokes your ideals. It's
-                      important to choose only tier-1 metaverses with a lot of
-                      active users, such as Decentraland, Sandbox, or Roblox.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Approve the concept of your brand's building. Only the
-                      most daring and creative buildings allow a brand to stand
-                      out and show uniqueness in the eyes of its customers.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Create a concept of your Web 3.0 merch. It should
-                      complement the appearance of the building and open up
-                      opportunities to fully enjoy your presence in the
-                      metaverse.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      After the buildout is done and the merch design is
-                      completed, it's time to transfer it to the real assets in
-                      the metaverse. Work with leading contractors to ensure
-                      your virtual office and merch completely match the real
-                      thing. Quality is key to the success of this campaign.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Invite a metaverse audience to join your office, organize
-                      the event, and announce the exclusive giveaway to engage
-                      your audience.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Place your assets in the metaverse marketplace. Your
-                      assets will be open to everyone who joins the marketplace.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      It's time to invite the leading journalists to write press
-                      releases and feature articles about your company and its
-                      presence in the metaverse. Don't hesitate to provide
-                      exclusive comments on the industry topics to leading
-                      journalists who will magnify the reach of your voice.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Invite influencers to make featured videos or tweets
-                      regarding your exclusive presence in the metaverse.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Be active! Talk with everyone who takes an interest in
-                      your metaverse office. Prove to everyone that your brand
-                      doesn't just keep up with trends; it creates them!
-                    </li>
-                    <br />
-                  </ol>
-                </div>
-                <div className="promo-box blog-2-promo">
-                  <h3>Influencer Marketing</h3>
-                  <p>
-                    Influencer marketing supports brand growth and has the
-                    potential to engage millions of people. At the same time,
-                    there are a vast amount of conventions and pitfalls that
-                    brands are unaware of, and they fail repeatedly. We share
-                    insights on how to maximize influencer marketing performance
-                    and build long-term success for your brand.
-                  </p>
-                  <h4>The ultimate influencer-marketing strategy</h4>
-                  <ol>
-                    <li>
-                      To approve the KPI of the promotion. It should comply with
-                      industry standards and be comparable with competitors'
-                      results. The understanding of the KPI is the first stage
-                      of future success.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Provide research and explore the influencers that are
-                      highly regarded by your competitors. Analyze the formats
-                      of content to ensure the most successful and engaging
-                      ideas.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      To maximize performance, brands should diversify their
-                      influencer marketing strategy by launching different
-                      formats, including live streams, organic integrations,
-                      dedicated videos, webinars, web panels, promotional
-                      tweets, and tutorials.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Attracting the attention of the audience from different
-                      geo-locations can help to increase campaign awareness and
-                      the results provided by influencer marketing.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Create the plan for launching the complex campaigns that
-                      include different types of content: integration + webinar,
-                      integration + live stream + web panel + dedicated videos,
-                      and so on!
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Use comprehensive software such as HypeAuditor to analyze
-                      the influencer's audience, reach, engagement rate, and
-                      fraud activity.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Discuss the content with each influencer and share ideas
-                      on improving the campaign, collecting feedback, and
-                      adjusting your strategy according to the influencer's
-                      vision and experience. Influencers understand their
-                      audience much more deeply.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Engage the influencer's audience by organizing the
-                      giveaway with exclusive incentives.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Send quality-made merch for influencers. They'll provide
-                      the content featuring your merchandise and help to
-                      increase brand trust.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Review influencers' performance each sprint, figure out
-                      how to improve it, and provide additional feedback from
-                      the clients.
-                    </li>
-                    <br />
-                    <br />
-                    <li>
-                      Build transparent relationships based on trust and mutual
-                      respect. This approach helps to get the benefits from any
-                      campaign you launch with influencers.
-                    </li>
-                  </ol>
-                </div>
-                <div className="conclusion-box">
-                  <div className="box box-p">
-                    <span>
-                      <OrangeBulb /> Conclusion
-                    </span>
+                  <li>
+                    Prepare an event plan including the main topic and generate
+                    a PDF. It can be a Live Stream, Web Panel, Webinar, and much
+                    more!
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Make a list of partners with an audience who can share
+                    impactful insights.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Bloggers are your best friends. Invite the best influencers
+                    in your segment and offer them the opportunity to be
+                    speakers and attract additional audiences.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Make a content plan that includes promoting the event on all
+                    target social media platforms.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Confirm the content plan with influencers, partners, and
+                    participants. All participants should promote the event on
+                    their social media accounts. More bloggers mean more reach.
+                    Use the power of your charm and attract more influencers.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Prepare prizes for the most active participants of the
+                    event. It can be merch, discounts on your service, tours,
+                    and even Apple iPhones, Macbooks, and so on!
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    {" "}
+                    Promote your event through digital marketing channels.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    {" "}
+                    After the event was provided, thank all participants,
+                    partners, and bloggers on corporate social media.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Ask bloggers for a short summary of the event,
+                    re-emphasizing the strength of your brand.
+                  </li>
+                </ol>
+                <br />
+                <br />
+                <p>
+                  Perfect! Your brand is in the spotlight. You bring valuable
+                  knowledge to this world, invite famous people, and get
+                  enormous reach and reputation points that help you to grow
+                  your business.
+                </p>
+              </div>
+              <div className="divide"></div>
+              <div className="categories-box blog-2-cat">
+                <div className="influ-type-box">
+                  <img src={InfluTypeImg} alt="" />
+                  <div className="influ-text">
+                    <h3>Metaverse Presence</h3>
                     <p>
-                      Influencer marketing can provide benefits for any company
-                      and produce incredible results that are not even close to
-                      comparable to other traffic sources. However, there are a
-                      lot of important aspects to consider when brands are
-                      planning an influencer marketing campaign. <br />
-                      <br /> Do everything to show your brand to the target
-                      audience, improve your marketing, and become the leading
-                      company dominating the market!
+                      New technologies create new opportunities. With the advent
+                      of the metaverse, there is an opportunity for brands to
+                      reach new audiences and make a huge buzz. <br />
+                      <br /> Metaverses allow brands to create objects and
+                      assets with exclusive interactive experiences.
                     </p>
                   </div>
                 </div>
+                <h3>
+                  How to create attention to your brand through Metaverses
+                </h3>
+                <ol>
+                  <li>
+                    Choose the metaverse that evokes your ideals. It's important
+                    to choose only tier-1 metaverses with a lot of active users,
+                    such as Decentraland, Sandbox, or Roblox.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Approve the concept of your brand's building. Only the most
+                    daring and creative buildings allow a brand to stand out and
+                    show uniqueness in the eyes of its customers.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Create a concept of your Web 3.0 merch. It should complement
+                    the appearance of the building and open up opportunities to
+                    fully enjoy your presence in the metaverse.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    After the buildout is done and the merch design is
+                    completed, it's time to transfer it to the real assets in
+                    the metaverse. Work with leading contractors to ensure your
+                    virtual office and merch completely match the real thing.
+                    Quality is key to the success of this campaign.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Invite a metaverse audience to join your office, organize
+                    the event, and announce the exclusive giveaway to engage
+                    your audience.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Place your assets in the metaverse marketplace. Your assets
+                    will be open to everyone who joins the marketplace.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    It's time to invite the leading journalists to write press
+                    releases and feature articles about your company and its
+                    presence in the metaverse. Don't hesitate to provide
+                    exclusive comments on the industry topics to leading
+                    journalists who will magnify the reach of your voice.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Invite influencers to make featured videos or tweets
+                    regarding your exclusive presence in the metaverse.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Be active! Talk with everyone who takes an interest in your
+                    metaverse office. Prove to everyone that your brand doesn't
+                    just keep up with trends; it creates them!
+                  </li>
+                  <br />
+                </ol>
+              </div>
+              <div className="promo-box blog-2-promo">
+                <h3>Influencer Marketing</h3>
+                <p>
+                  Influencer marketing supports brand growth and has the
+                  potential to engage millions of people. At the same time,
+                  there are a vast amount of conventions and pitfalls that
+                  brands are unaware of, and they fail repeatedly. We share
+                  insights on how to maximize influencer marketing performance
+                  and build long-term success for your brand.
+                </p>
+                <h4>The ultimate influencer-marketing strategy</h4>
+                <ol>
+                  <li>
+                    To approve the KPI of the promotion. It should comply with
+                    industry standards and be comparable with competitors'
+                    results. The understanding of the KPI is the first stage of
+                    future success.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Provide research and explore the influencers that are highly
+                    regarded by your competitors. Analyze the formats of content
+                    to ensure the most successful and engaging ideas.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    To maximize performance, brands should diversify their
+                    influencer marketing strategy by launching different
+                    formats, including live streams, organic integrations,
+                    dedicated videos, webinars, web panels, promotional tweets,
+                    and tutorials.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Attracting the attention of the audience from different
+                    geo-locations can help to increase campaign awareness and
+                    the results provided by influencer marketing.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Create the plan for launching the complex campaigns that
+                    include different types of content: integration + webinar,
+                    integration + live stream + web panel + dedicated videos,
+                    and so on!
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Use comprehensive software such as HypeAuditor to analyze
+                    the influencer's audience, reach, engagement rate, and fraud
+                    activity.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Discuss the content with each influencer and share ideas on
+                    improving the campaign, collecting feedback, and adjusting
+                    your strategy according to the influencer's vision and
+                    experience. Influencers understand their audience much more
+                    deeply.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Engage the influencer's audience by organizing the giveaway
+                    with exclusive incentives.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Send quality-made merch for influencers. They'll provide the
+                    content featuring your merchandise and help to increase
+                    brand trust.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Review influencers' performance each sprint, figure out how
+                    to improve it, and provide additional feedback from the
+                    clients.
+                  </li>
+                  <br />
+                  <br />
+                  <li>
+                    Build transparent relationships based on trust and mutual
+                    respect. This approach helps to get the benefits from any
+                    campaign you launch with influencers.
+                  </li>
+                </ol>
+              </div>
+              <div className="conclusion-box">
+                <span>
+                  <OrangeBulb /> Conclusion
+                </span>
+                <p>
+                  Influencer marketing can provide benefits for any company and
+                  produce incredible results that are not even close to
+                  comparable to other traffic sources. However, there are a lot
+                  of important aspects to consider when brands are planning an
+                  influencer marketing campaign. <br />
+                  <br /> Do everything to show your brand to the target
+                  audience, improve your marketing, and become the leading
+                  company dominating the market!
+                </p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <Footer />
       </div>
     </main>
