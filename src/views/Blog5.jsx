@@ -16,6 +16,8 @@ import JournalImg4 from "../assets/img/journal-img-4.svg";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";
 import OrangeBulb from "../assets/icons/OrangeBulb";
+import TargetImg from "../assets/img/target-icon.png";
+import OrangeBulbImg from "../assets/img/orange-bulb.png";
 
 const Blog5 = () => {
   return (
@@ -261,7 +263,7 @@ const Blog5 = () => {
               <div className="divider"></div>
               <div className="conclusion-box">
                 <span>
-                  <OrangeBulb /> Conclusion
+                  <img src={OrangeBulbImg} alt="OrangeBulbImg" /> Conclusion
                 </span>
                 <p>
                   SEO is the marketing strategy every website needs to include

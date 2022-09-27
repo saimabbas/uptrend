@@ -47,25 +47,31 @@ const Links = () => {
         13. <span>Blog Main Page</span>
       </Link>
       <Link to="/blog1">
-        14. <span>Blog 1 ✅</span>
+        14. <span>Blog 1</span>
       </Link>
       <Link to="/blog2">
-        15. <span>Blog 2 ✅</span>
+        15. <span>Blog 2</span>
       </Link>
       <Link to="/blog3">
-        16. <span>Blog 3 ✅</span>
+        16. <span>Blog 3</span>
       </Link>
       <Link to="/blog4">
-        17. <span>Blog 4 ✅</span>
+        17. <span>Blog 4</span>
       </Link>
       <Link to="/blog5">
-        18. <span>Blog 5 ✅</span>
+        18. <span>Blog 5</span>
       </Link>
       <Link to="/blog6">
-        19. <span>Blog 6 ✅</span>
+        19. <span>Blog 6</span>
       </Link>
       <Link to="/blog7">
         20. <span>Blog 7</span>
+      </Link>
+      <Link to="/events">
+        21. <span>Events</span>
+      </Link>
+      <Link to="/sandbox">
+        22. <span>Sandbox</span>
       </Link>
     </div>
   );

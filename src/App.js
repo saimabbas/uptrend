@@ -21,6 +21,8 @@ import Blog5 from "./views/Blog5";
 import Blog3 from "./views/Blog3";
 import Blog6 from "./views/Blog6";
 import Blog7 from "./views/Blog7";
+import Events from "./views/Events";
+import Sandbox from "./views/Sandbox";
 
 function App() {
   return (
@@ -64,6 +66,8 @@ function App() {
           <Route exact path="/blog5" element={<Blog5 />} />
           <Route exact path="/blog6" element={<Blog6 />} />
           <Route exact path="/blog7" element={<Blog7 />} />
+          <Route exact path="/events" element={<Events />} />
+          <Route exact path="/sandbox" element={<Sandbox />} />
         </Routes>
       </Switch>
     </>

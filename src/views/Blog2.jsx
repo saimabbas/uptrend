@@ -16,6 +16,8 @@ import JournalImg2 from "../assets/img/journal-img-2.svg";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";
 import OrangeBulb from "../assets/icons/OrangeBulb";
+import TargetImg from "../assets/img/target-icon.png";
+import OrangeBulbImg from "../assets/img/orange-bulb.png";
 
 const Blog2 = () => {
   return (
@@ -326,7 +328,7 @@ const Blog2 = () => {
               </div>
               <div className="conclusion-box">
                 <span>
-                  <OrangeBulb /> Conclusion
+                  <img src={OrangeBulbImg} alt="OrangeBulbImg" /> Conclusion
                 </span>
                 <p>
                   Influencer marketing can provide benefits for any company and

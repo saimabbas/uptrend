@@ -30,7 +30,7 @@
 }
 .moc-right-card {
   /* width: 75%; */
-  padding: 2.5rem 5rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
