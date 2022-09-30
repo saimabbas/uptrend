@@ -228,10 +228,30 @@
   background-color: var(--black);
   padding: 7.5rem 0;
 }
+.positions-section {
+  width: 100%;
+  background-color: var(--main-dark3);
+  padding: 7.5rem 0;
+}
 .expertise-section h2.expertise-heading {
   text-align: center;
   width: 100%;
   text-transform: uppercase;
+  color: var(--white);
+  margin: 0 0 7.5rem 0;
+}
+.uc-service-description-section.service-description-section {
+  padding: 5rem 0 0 0;
+}
+.positions-section h2.expertise-heading {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.positions-section h2.expertise-heading + p {
+  text-align: center;
+  width: 100%;
   color: var(--white);
   margin: 0 0 7.5rem 0;
 }

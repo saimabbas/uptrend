@@ -29,9 +29,8 @@
   position: absolute;
   bottom: 0%;
   right: 0;
-  transform: translate(0, -1.5rem);
   z-index: 5;
-  transform: translate(0, 5rem);
+  transform: translate(25%, 0);
   height: 90vh;
 }
 .ups-hero-img {
@@ -62,6 +61,12 @@
 }
 .im-hero-headings h3 {
   font-weight: 300;
+}
+.im-hero-headings.ap-hero-headings h1 {
+  color: var(--white);
+}
+.im-hero-headings.ap-hero-headings h3 {
+  color: var(--white);
 }
 .expertise-hero-headings.im-hero-headings {
   width: 75%;
@@ -127,6 +132,12 @@
   font-size: 2rem;
   color: var(--black);
   margin: 0.5rem 0 0 0;
+}
+.im-hero-explore.ap-hero-explore a span {
+  color: var(--white);
+}
+.im-hero-explore.ap-hero-explore a svg {
+  color: var(--white);
 }
 .service-description-section {
   width: 100%;
@@ -228,6 +239,41 @@
   left: 0;
   background-color: var(--white);
 }
+.uc-sd-grid-card-1-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #191c22;
+}
+.uc-sd-grid-card-4-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #101216;
+}
+.uc-sd-grid-card-5-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #191c22;
+}
+.uc-sd-grid-card-6-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.ucsdgc1-details-p {
+  padding: 5rem 3.5rem 3.5rem 3.5rem;
+}
 .sd-grid-card-2-bg {
   width: 100%;
   height: 100%;
@@ -328,6 +374,12 @@
 .em-sd-grid-card-3-bg,
 .em-sd-grid-card-4-bg,
 .sd-grid-card-1-bg,
+.uc-sd-grid-card-1-bg,
+.uc-sd-grid-card-2-bg,
+.uc-sd-grid-card-3-bg,
+.uc-sd-grid-card-4-bg,
+.uc-sd-grid-card-5-bg,
+.uc-sd-grid-card-6-bg,
 .sd-grid-card-2-bg,
 .sd-grid-card-3-bg,
 .sd-grid-card-5-bg {
@@ -362,6 +414,7 @@
 .sd-grid-card-2 > img,
 .sd-grid-card-4 > img,
 .sdgc1-details,
+.ucsdgc1-details,
 .sdgc4-details,
 .sdgc2-details {
   position: relative;
@@ -374,6 +427,27 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+}
+.ucsdgc1-details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.ucsdgc1-details h3 {
+  margin: 0 0 5rem 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  max-width: 80%;
+  color: var(--white);
+}
+.ucsdgc1-details h6 {
+  font-size: 2.25rem;
+  color: var(--white);
+  font-weight: 400;
+  max-width: 65%;
 }
 .sd-grid-card h3 {
   margin: 0 0 5rem 0;
@@ -1391,6 +1465,46 @@
 }
 .expertise-page .bb-logo-box img {
   height: 3rem;
+}
+.positions-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+}
+.positions-grid-card {
+  width: 100%;
+  padding: 7.5rem 3.5rem 3.5rem 3.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.positions-grid-card h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: var(--black);
+  font-weight: 800;
+}
+.positions-grid-card h2 span {
+  font-weight: 300;
+}
+.pgc-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15rem 0 0 0;
+}
+.pgc-bottom p {
+  font-size: 2rem;
+}
+.pgc-bottom a {
+  font-size: 2rem;
+  color: var(--black);
 }
 @media screen and (max-width: 1150px) {
   .service-description-grid {

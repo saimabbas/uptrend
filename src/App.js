@@ -23,6 +23,8 @@ import Blog6 from "./views/Blog6";
 import Blog7 from "./views/Blog7";
 import Events from "./views/Events";
 import Sandbox from "./views/Sandbox";
+import AngelsProgram from "./views/AngelsProgram";
+import UptrendCareer from "./views/UptrendCareer";
 
 function App() {
   return (
@@ -68,6 +70,8 @@ function App() {
           <Route exact path="/blog7" element={<Blog7 />} />
           <Route exact path="/events" element={<Events />} />
           <Route exact path="/sandbox" element={<Sandbox />} />
+          <Route exact path="/angelsprogram" element={<AngelsProgram />} />
+          <Route exact path="/uptrendcareer" element={<UptrendCareer />} />
         </Routes>
       </Switch>
     </>

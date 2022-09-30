@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 // Images
 import EmHeroImg from "../assets/img/em-hero-img.svg";
 import LocalStartupImg from "../assets/img/local-startup-img.svg";
-import BullElevatorImg from "../assets/img/bull-elevator-img-2.svg";
+import BullElevatorImg from "../assets/img/bull-elevator-img-2.svgz";
 import PhotoImg from "../assets/img/photo-img.svg";
 import EMSD2ndImg from "../assets/img/em-sd-2nd-img.png";
 import EMSD3rdImg from "../assets/img/em-sd-3rd-img.png";
@@ -61,8 +61,18 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/event-marketing.json";
 
 const EventMarketing = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -359,12 +369,20 @@ const EventMarketing = () => {
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
             src={EmHeroImg}
             alt="EmHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img">
+            <Lottie
+              className="im-hero-img"
+              options={defaultOptions}
+              height={750}
+              width={750}
+            />
+          </div>
         </section>
         <section className="service-description-section">
           <div className="box">

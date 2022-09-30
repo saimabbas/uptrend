@@ -73,6 +73,15 @@ const Links = () => {
       <Link to="/sandbox">
         22. <span>Sandbox</span>
       </Link>
+      <Link to="/angelsprogram">
+        23. <span>Angels Program</span>
+      </Link>
+      <Link to="/talktous">
+        24. <span>Talk to Us</span>
+      </Link>
+      <Link to="/uptrendcareer">
+        24. <span>Uptrend Career</span>
+      </Link>
     </div>
   );
 };

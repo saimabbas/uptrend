@@ -86,6 +86,12 @@
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .box {
   width: 100%;
   max-width: 2500px;
@@ -151,13 +157,13 @@
 }
 .ut-btn-lightgray {
   background-color: var(--main-light1);
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--main-color);
   border-radius: 0.5rem;
   border: 0;
   outline: 0;
-  padding: 1rem 2.5rem;
+  padding: 1rem 5rem;
   cursor: pointer;
   transition: 0.35s;
 }
@@ -170,13 +176,13 @@
 }
 .ut-btn-green {
   background-color: var(--main-color);
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--white);
   border-radius: 0.5rem;
   border: 0;
   outline: 0;
-  padding: 0.85rem 2.5rem;
+  padding: 0.85rem 5rem;
   cursor: pointer;
   transition: 0.35s;
 }

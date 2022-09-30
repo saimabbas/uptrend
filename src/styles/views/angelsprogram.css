@@ -1,0 +1,93 @@
+.angelsprogram-details {
+  width: 100%;
+  padding: 7.5rem 0;
+}
+.apd-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 7.5rem;
+  margin: 0 0 15rem 0;
+}
+.apd-grid-left {
+  width: 100%;
+}
+.apd-grid-left img {
+  width: 100%;
+  height: 100%;
+  max-height: 40rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.apd-grid-right {
+  width: 100%;
+}
+.apd-grid-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.apd-grid-right p {
+  font-size: 2rem;
+  margin: 2.5rem 0;
+}
+.ap-img-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+}
+.ap-img-grid img {
+  width: 100%;
+  height: 30rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+.angelsprogram-details .section-heading-box h3 {
+  text-align: center;
+}
+.join-angelprogram {
+}
+.modal.show .modal-dialog {
+  min-width: 65rem;
+}
+.modal.show .modal-body {
+  padding: 5rem;
+}
+
+.modal.show .modal-content {
+  border-radius: 3rem;
+}
+.join-angelprogram .rts-form-grid textarea {
+  grid-column: 1/3;
+  resize: vertical;
+  min-height: 15rem;
+}
+.join-angelprogram-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.join-angelprogram-heading h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  width: 85%;
+}
+.join-angelprogram-heading span svg {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.join-angelprogram .ut-btn-lightgray {
+  color: #177de5;
+}
+.ap-btn-grid {
+  width: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+}

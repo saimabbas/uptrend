@@ -617,3 +617,10 @@ const EventMarketing = () => {
 };
 
 export default EventMarketing;
+
+/* React Paginate */
+/* 
+localhost:3000/blog/blog1
+ahmadali05
+*/
+

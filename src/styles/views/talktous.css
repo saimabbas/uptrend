@@ -1,20 +1,102 @@
 .ttu-hero-section {
-  width: 50vw;
-  height: 100vh;
-  background-color: var(--main-dark3);
-  position: relative;
-}
-.ttu-hero-section div {
-  width: 100vw;
-  background-color: #fff;
-  position: absolute;
-  mix-blend-mode: difference;
-  top: 50%;
-  left: 0%;
-  transform: translate(0%, -50%);
-  font-size: 1.5rem;
-  padding: 2.5rem;
-}
-.talktous-page {
   width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 0;
+}
+.ttu-header {
+  position: relative;
+  z-index: 10000;
+  width: 100%;
+  padding: 2.5rem 0;
+}
+.w50-dark {
+  width: 100%;
+  background-color: var(--main-dark3);
+  z-index: 10;
+}
+.w50-light {
+  width: 100%;
+  background-color: var(--white);
+  z-index: 10;
+}
+/* .talktous-page .header-left svg {
+  filter: invert(1);
+}
+.talktous-page .header-center a:not(.talk-to-us) {
+  filter: invert(1);
+}
+.talktous-page .header-dark .header-center .ut-dropdown button {
+  filter: invert(1);
+}
+.talktous-page header .ut-dropdown .dropdown-menu a {
+  color: var(#000);
+} */
+.w50-dark-content {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem 15% 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.w50-light-content {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem 15% 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.gc-bottom h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  color: var(--white);
+}
+.gc-bottom h4::after {
+  background-color: var(--white);
+  content: "";
+  width: 10rem;
+  height: 1px;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  transform: translate(-110%, 0);
+}
+.good-company-grid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 3.5rem 0 0 0;
+}
+.good-company-grid img {
+  min-height: 1.75rem;
+  margin: 0 2.5rem 2.5rem 0;
+}
+.w50-dark-content h2 {
+  font-size: 5rem;
+  color: var(--white);
+}
+.w50-dark-content h6 {
+  color: var(--white);
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin: 5rem 0 7.5rem 0;
+}
+.ttu-form-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 2.5rem;
+  margin: 5rem 0 2.5rem 0;
 }
