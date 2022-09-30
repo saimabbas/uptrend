@@ -11,11 +11,11 @@ import "swiper/css/pagination";
 // Images
 import EmHeroImg from "../assets/img/em-hero-img.svg";
 import LocalStartupImg from "../assets/img/local-startup-img.svg";
-import BullElevatorImg from "../assets/img/bull-elevator-img-2.svgz";
-import PhotoImg from "../assets/img/photo-img.svg";
+import BullElevatorImg from "../assets/img/bull-elevator-img-2.png";
+import PhotoImg from "../assets/img/photo-img.png";
 import EMSD2ndImg from "../assets/img/em-sd-2nd-img.png";
 import EMSD3rdImg from "../assets/img/em-sd-3rd-img.png";
-import KnotImg from "../assets/img/knot-img.svg";
+import KnotImg from "../assets/img/knot-img.png";
 import TrImg from "../assets/img/tr.svg";
 import ECImg from "../assets/img/ec.svg";
 import BBLogo1Dark from "../assets/img/backedby-logo-1-dark.svg";

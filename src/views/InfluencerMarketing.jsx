@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 // Images
 import ImHeroImg from "../assets/img/im-hero-img.png";
 import ImHeroVideo from "../assets/videos/im-hero-video.mp4";
-import WinnertrophyImg from "../assets/img/winner-trophy.svg";
+import WinnertrophyImg from "../assets/img/winner-trophy.png";
 import SpeakerImg from "../assets/img/speaker-img-orange.png";
 import PlatformLogo1 from "../assets/icons/twitch-logo-2.svg";
 import PlatformLogo2 from "../assets/icons/twitter-logo-2.svg";
@@ -26,11 +26,11 @@ import PlatformLogo10 from "../assets/icons/wechat-logo-2.svg";
 import PlatformLogo11 from "../assets/icons/kakaotalk-logo-2.svg";
 import UTPartners from "../assets/img/ut-partners-img-red.png";
 import IndustriesPlanetImg from "../assets/img/industries-planet.png";
-import CrossPolinationImg from "../assets/img/cross-polination.svg";
-import CPBeeImg from "../assets/img/cp-bee-img.svg";
+import CrossPolinationImg from "../assets/img/cross-polination.png";
+import CPBeeImg from "../assets/img/cp-bee-img.png";
 import PlatformStatsImg from "../assets/img/platform-stats-img.svg";
 import BigThingsWave from "../assets/img/big-things-wave.svg";
-import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.svg";
+import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
 
 // Icons
 import {

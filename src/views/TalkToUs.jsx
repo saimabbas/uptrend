@@ -32,7 +32,7 @@ import {
   MdAdd,
 } from "react-icons/md";
 import Footer from "../components/Footer";
-import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.svg";
+import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
 import FuelBrandGrowthSwiper from "../components/FuelBrandGrowthSwiper";
 
 const TalkToUs = () => {

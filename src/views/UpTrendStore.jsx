@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 // Images
 import EmHeroImg from "../assets/img/uptrend-store-hero-img.svg";
-import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.svg";
+import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
 import UTJacket from "../assets/img/ut-jacket.png";
 import UTRaincoat from "../assets/img/UTRaincoat.png";
 import TShirt from "../assets/img/tshirt.png";

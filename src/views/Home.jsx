@@ -9,7 +9,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // Images
-import HeroBull from "../assets/img/hero-bull.svg";
+import HeroBull from "../assets/img/hero-bull.png";
 import HeroBlueOverlay from "../assets/img/hero-blue-overlay.svg";
 import companyLogo2 from "../assets/img/logo-swissborg.svg";
 import companyLogo8 from "../assets/img/logo-compound.svg";
@@ -18,12 +18,12 @@ import companyLogo15 from "../assets/img/logo-sandbox.svg";
 import companyLogo16 from "../assets/img/logo-kephi.svg";
 import companyLogo17 from "../assets/img/logo-bitcoinist.svg";
 import companyLogo18 from "../assets/img/logo-tct.svg";
-import OurMissionImg from "../assets/img/our-mission-img.svg";
+import OurMissionImg from "../assets/img/our-mission-img.png";
 import MissionIcon1 from "../assets/img/mission-icon-1.svg";
 import MissionIcon2 from "../assets/img/mission-icon-2.svg";
 import MissionIcon3 from "../assets/img/mission-icon-3.svg";
-import OnlineMeeting from "../assets/img/online-meeting.svg";
-import MaleInfluencer from "../assets/img/male-social-media-influencer.svg";
+import OnlineMeeting from "../assets/img/online-meeting.png";
+import MaleInfluencer from "../assets/img/male-social-media-influencer.png";
 import IconTwitterFilled from "../assets/img/icon-twitter-filled.svg";
 import Nico from "../assets/img/nico.png";
 import Tony from "../assets/img/tony.png";
