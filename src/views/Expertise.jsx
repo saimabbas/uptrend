@@ -74,6 +74,7 @@ import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
 import FuelBrandGrowthSwiper from "../components/FuelBrandGrowthSwiper";
+import { Link } from "react-router-dom";
 
 const Expertise = () => {
   gsap.registerPlugin(
@@ -654,7 +655,7 @@ const Expertise = () => {
                 </h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#service-description">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
@@ -668,17 +669,16 @@ const Expertise = () => {
             alt="ImHeroImg"
           />
         </section>
-        <section
-          className="service-description-section"
-          id="service-description"
-        >
+        <section className="service-description-section" id="explore">
           <div className="box">
             <div className="heading-sublink-box">
               <h2>INFLUENCER MARKETING</h2>
-              <a href="#" className="arrow-link">
-                <span>GET STARTED</span>
-                <MdArrowForward />
-              </a>
+              <Link to="/influencermarketing">
+                <a href="#" className="arrow-link">
+                  <span>GET STARTED</span>
+                  <MdArrowForward />
+                </a>
+              </Link>
             </div>
             <div className="service-description-grid service-description-grid-1">
               <div className="sd-grid-card sd-grid-card-1">

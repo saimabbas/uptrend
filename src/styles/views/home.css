@@ -1063,6 +1063,11 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .hero-section.im-hero-section h1 {
+    position: relative;
+    top: unset;
+    left: unset;
+  }
   .highly-regarded-grid,
   .uptrends-events-grid,
   .rts-content {

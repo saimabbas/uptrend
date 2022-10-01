@@ -45,6 +45,10 @@
   height: 30rem;
   border-radius: 2rem;
   object-fit: cover;
+  transition: 0.5s;
+}
+.ap-img-grid img:hover {
+  transform: translate(0, -1rem) !important;
 }
 .angelsprogram-details .section-heading-box h3 {
   text-align: center;
@@ -108,5 +112,8 @@
   .apd-grid-left img {
     height: unset;
     border-radius: 0.75rem;
+  }
+  .modal.show .modal-dialog {
+    min-width: unset;
   }
 }

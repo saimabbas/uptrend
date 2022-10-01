@@ -377,7 +377,7 @@ const EventMarketing = () => {
             src={EmHeroImg}
             alt="EmHeroImg"
           /> */}
-          <div className="im-hero-img">
+          <div className="im-hero-img ">
             <Lottie className="im-hero-img" options={defaultOptions} />
           </div>
         </section>

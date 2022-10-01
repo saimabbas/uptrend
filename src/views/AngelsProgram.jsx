@@ -101,8 +101,18 @@ import $ from "jquery";
 import Tabs from "react-bootstrap/Tabs";
 import BlogCard from "../components/BlogCard";
 import { Tab, Nav } from "react-bootstrap";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/angels-program.json";
 
 const Sandbox = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -378,6 +388,27 @@ const Sandbox = () => {
         },
         0
       );
+    let nftCardsAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ap-img-grid",
+        start: "top 75%",
+      },
+    });
+    nftCardsAnim.fromTo(
+      ".ap-img-grid img",
+      {
+        opacity: 0,
+        y: "5rem",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.35,
+        stagger: {
+          each: 0.15,
+        },
+      }
+    );
   }, []);
 
   return (
@@ -386,7 +417,7 @@ const Sandbox = () => {
         <UTLogo color="#fff" />
       </div> */}
       <div className="event-marketing-page angelsprogram-page">
-        <section className="hero-section">
+        <section className="hero-section im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
               <Header lightHeader={true} />
@@ -395,21 +426,24 @@ const Sandbox = () => {
                 <h3>Build a holistic marketing experience for everyone</h3>
               </div>
               <div className="im-hero-explore ap-hero-explore">
-                <a href="#">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
             src={EmHeroImg}
             alt="EmHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img ap-hero-img">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
-        <section className="angelsprogram-details">
+        <section className="angelsprogram-details" id="explore">
           <div className="box">
             <div className="apd-grid">
               <div className="apd-grid-left">
@@ -454,7 +488,8 @@ const Sandbox = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <button>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
                   </button>
                 </div>
               </div>

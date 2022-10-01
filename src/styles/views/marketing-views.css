@@ -1526,6 +1526,10 @@
 .sandbox-sds {
   padding: 5rem 0 25rem 0;
 }
+.im-hero-img.ap-hero-img {
+  transform: translate(40%, 15%);
+  max-width: unset;
+}
 @media screen and (max-width: 1150px) {
   .service-description-grid {
     grid-template-columns: 1fr;
@@ -1570,6 +1574,10 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .im-hero-img.ap-hero-img {
+    transform: translate(40%, 15%);
+    max-width: 65rem;
+  }
   .im-hero-img.events-hero-img {
     transform: translate(15%, 15%);
   }
