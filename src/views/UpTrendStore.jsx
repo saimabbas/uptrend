@@ -325,42 +325,54 @@ const UpTrendStore = () => {
               <div className="nft-gallery-content">
                 <img src={NFTGal1} alt="NFT" />
                 <div className="nft-para">
-                  <h5>UPTREND COIN</h5>
+                  <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/18160536772341705411817621612469804320917370074890825657283987523691427659777">
+                    UPTREND COIN
+                  </a>
                   <p>0.01 ETH</p>
                 </div>
               </div>
               <div className="nft-gallery-content">
                 <img src={NFTGal2} alt="NFT" />
                 <div className="nft-para">
-                  <h5>UPTREND PLANET</h5>
+                  <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/18160536772341705411817621612469804320917370074890825657283987525890450915329/">
+                    UPTREND PLANET
+                  </a>
                   <p>0.125 ETH</p>
                 </div>
               </div>
               <div className="nft-gallery-content">
                 <img src={NFTGal3} alt="NFT" />
                 <div className="nft-para">
-                  <h5>UPTREND PORTAL</h5>
+                  <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/18160536772341705411817621612469804320917370074890825657283987528089474170881/">
+                    UPTREND PORTAL
+                  </a>
                   <p>0.12 ETH</p>
                 </div>
               </div>
               <div className="nft-gallery-content">
                 <img src={NFTGal4} alt="NFT" />
                 <div className="nft-para">
-                  <h5>UPTREND ISLAND</h5>
+                  <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/18160536772341705411817621612469804320917370074890825657283987526989962543105/">
+                    UPTREND ISLAND
+                  </a>
                   <p>0.12 ETH</p>
                 </div>
               </div>
               <div className="nft-gallery-content">
                 <img src={NFTGal5} alt="NFT" />
                 <div className="nft-para">
-                  <h5>UPTREND BULL</h5>
+                  <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/18160536772341705411817621612469804320917370074890825657283987529188985798657/">
+                    UPTREND BULL
+                  </a>
                   <p>0.2 ETH</p>
                 </div>
               </div>
               <div className="nft-gallery-content">
                 <img src={NFTGal6} alt="NFT" />
                 <div className="nft-para">
-                  <h5>UPTREND HORNS</h5>
+                  <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/18160536772341705411817621612469804320917370074890825657283987524790939287553/">
+                    UPTREND HORNS
+                  </a>
                   <p>0.25 ETH</p>
                 </div>
               </div>

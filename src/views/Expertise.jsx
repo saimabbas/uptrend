@@ -846,7 +846,7 @@ const Expertise = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>INVESTOR RELATIONS</h2>
-              <a href="#" className="arrow-link">
+              <a href="/investmentrelationships" className="arrow-link">
                 <span>GET STARTED</span>
                 <MdArrowForward />
               </a>
@@ -887,7 +887,7 @@ const Expertise = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>Metaverse Marketing</h2>
-              <a href="#" className="arrow-link">
+              <a href="/metaversemarketing" className="arrow-link">
                 <span>Get Started </span>
                 <MdArrowForward />
               </a>
@@ -908,12 +908,16 @@ const Expertise = () => {
                   leading platforms
                 </h3>
                 <div className="egc2-img-grid">
-                  <img
-                    loading="lazy"
-                    src={LogoDecentralized}
-                    alt="companyLogo"
-                  />
-                  <img loading="lazy" src={companyLogo15} alt="companyLogo" />
+                  <a href="https://decentraland.org/">
+                    <img
+                      loading="lazy"
+                      src={LogoDecentralized}
+                      alt="companyLogo"
+                    />
+                  </a>
+                  <a href="https://www.sandbox.game/en/">
+                    <img loading="lazy" src={companyLogo15} alt="companyLogo" />
+                  </a>
                 </div>
               </div>
               <div className="sd-grid-card mm-sd-grid-card-3 msgc3">
@@ -966,14 +970,14 @@ const Expertise = () => {
             </div>
           </div>
         </section>
-        <section className="Event-marketing-section ">
+        <section className="Event-marketing-section bull-swiper-section">
           <div className="box">
             <div className="section-heading-box">
               <h3 className="head-subhead">
                 Event Marketing <br />
                 <span>We shape memorable and impactful experiences</span>
               </h3>
-              <a href="#" className="arrow-link">
+              <a href="/eventmarketing" className="arrow-link">
                 <span>GET STARTED</span>
                 <MdArrowForward />
               </a>

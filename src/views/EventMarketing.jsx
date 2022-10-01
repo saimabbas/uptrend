@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // Styles
 import "../styles/reset.css";
@@ -385,10 +386,13 @@ const EventMarketing = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
-              <a href="#" className="arrow-link">
-                <span>GET STARTED</span>
-                <MdArrowForward />
-              </a>
+              <Link to="/talktous">
+                {" "}
+                <a href="#" className="arrow-link">
+                  <span>GET STARTED</span>
+                  <MdArrowForward />
+                </a>
+              </Link>
             </div>
             <div className="service-description-grid">
               <div className="sd-grid-card em-sd-grid-card-1">
@@ -520,7 +524,7 @@ const EventMarketing = () => {
           smallText="ready to start"
           bigText="a new trend?"
           linkText="let's get started!"
-          linkOfText="#"
+          linkOfText="/talktous"
         />
         <section className="faq-section">
           <div className="box">

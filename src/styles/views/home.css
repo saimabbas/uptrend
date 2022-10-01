@@ -527,6 +527,7 @@
 .hrgc-bottom h6 {
   font-weight: 800;
   text-transform: uppercase;
+  color: #000;
 }
 .hrgc-bottom p {
   font-weight: 400;
@@ -933,7 +934,6 @@
   font-weight: 800;
   margin: 0.5rem 0 0 0;
 }
-
 @media screen and (max-width: 1250px) {
   .our-mission-content {
     padding: 0;
@@ -1251,8 +1251,15 @@
     height: 5rem;
     margin: 0 1.5rem 0 0;
   }
-  .hrgc-top .hrgc-head h4 {
+  .hrgc-top .hrgc-head a {
+    color: #000 !important;
+  }
+  .hrgc-head-name a {
+    color: #000 !important;
+  }
+  .hrgc-top .hrgc-head a h4 {
     font-size: 2rem;
+    color: #000 !important;
   }
   .hrgc-top .hrgc-head h6,
   .ueg-right h5,

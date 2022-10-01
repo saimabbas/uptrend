@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // Styles
 import "../styles/reset.css";
@@ -468,10 +469,13 @@ const MetaverseMarketing = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
-              <a href="#" className="arrow-link">
-                <span>Get Started </span>
-                <MdArrowForward />
-              </a>
+              <Link to="/talktous">
+                {" "}
+                <a href="#" className="arrow-link">
+                  <span>GET STARTED</span>
+                  <MdArrowForward />
+                </a>
+              </Link>
             </div>
             <div className="service-description-grid">
               <div className="sd-grid-card mm-sd-grid-card-1 msgc1">
@@ -489,12 +493,17 @@ const MetaverseMarketing = () => {
                   leading platforms
                 </h3>
                 <div className="egc2-img-grid">
-                  <img
-                    loading="lazy"
-                    src={LogoDecentralized}
-                    alt="companyLogo"
-                  />
-                  <img loading="lazy" src={companyLogo15} alt="companyLogo" />
+                  <a href="https://decentraland.org/">
+                    {" "}
+                    <img
+                      loading="lazy"
+                      src={LogoDecentralized}
+                      alt="companyLogo"
+                    />
+                  </a>
+                  <a href="https://www.sandbox.game/en/">
+                    <img loading="lazy" src={companyLogo15} alt="companyLogo" />
+                  </a>
                 </div>
               </div>
               <div className="sd-grid-card mm-sd-grid-card-3 msgc3">
@@ -551,10 +560,12 @@ const MetaverseMarketing = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>Engage With Uptrend In The Metaverse</h2>
-              <a href="#" className="arrow-link">
-                <span>Learn More</span>
-                <MdArrowForward />
-              </a>
+              <Link to="/sandbox">
+                <a href="#" className="arrow-link">
+                  <span>Learn More</span>
+                  <MdArrowForward />
+                </a>
+              </Link>
             </div>
             <div className="service-description-grid service-description-grid-2">
               <div className="sd-grid-card mm-sd-grid-card-2-1">
@@ -655,7 +666,7 @@ const MetaverseMarketing = () => {
           smallText="ready to start"
           bigText="a new trend?"
           linkText="Let's Get Started!"
-          linkOfText="#"
+          linkOfText="/talktous"
         />
         <section className="faq-section">
           <div className="box">

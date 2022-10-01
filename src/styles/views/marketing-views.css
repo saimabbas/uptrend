@@ -1062,8 +1062,11 @@
   position: relative;
   justify-content: flex-end;
 }
+.Event-marketing-section.bull-swiper-section {
+  padding: 5rem 0 8rem 0;
+}
 .em-sd-grid-card-1 img {
-  width: 12.5rem;
+  width: 19.5rem;
   object-fit: contain;
   margin: 0 0 2.5rem 0;
 }

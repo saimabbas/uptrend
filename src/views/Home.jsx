@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+// import { Link } from "react-router-dom";
 
 // Styles
 import "../styles/reset.css";
@@ -85,6 +86,7 @@ import { SplitText } from "gsap/SplitText";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
@@ -374,16 +376,16 @@ const Home = () => {
                 <a href="#">
                   <IconWhatsapp color="#fff" />
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/UptrendAgency">
                   <IconTwitter color="#fff" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/company/UptrendAgency">
                   <IconLinkedIn color="#fff" />
                 </a>
-                <a href="#">
+                <a href="http://instagram.com/uptrendagency">
                   <IconInstagram color="#fff" />
                 </a>
-                <a href="#">
+                <a href="https://facebook.com/UptrendAgency">
                   <IconFacebook color="#fff" />
                 </a>
               </div>
@@ -476,7 +478,13 @@ const Home = () => {
                 </h5>
                 <div className="egc2-img-grid">
                   <img loading="lazy" src={companyLogo14} alt="companyLogo14" />
-                  <img loading="lazy" src={companyLogo15} alt="companyLogo11" />
+                  <a href="https://www.sandbox.game/en/">
+                    <img
+                      loading="lazy"
+                      src={companyLogo15}
+                      alt="companyLogo11"
+                    />
+                  </a>
                 </div>
               </div>
               <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
@@ -534,11 +542,13 @@ const Home = () => {
           <div className="box box-p">
             <div className="section-heading-box">
               <div className="up-twitter-name">
-                <img
-                  loading="lazy"
-                  src={IconTwitterFilled}
-                  alt="IconTwitterFilled"
-                />
+                <a href="https://twitter.com/UptrendAgency">
+                  <img
+                    loading="lazy"
+                    src={IconTwitterFilled}
+                    alt="IconTwitterFilled"
+                  />
+                </a>
                 <p>@UptrendAgency</p>
               </div>
               <button className="ut-btn-md ut-btn-lightgray">FOLLOW</button>
@@ -608,7 +618,9 @@ const Home = () => {
                   <div className="hrgc-head">
                     <img loading="lazy" src={Nico} alt="Nico" />
                     <div className="hrgc-head-name">
-                      <h4>Nico Verderosa </h4>
+                      <a href="https://twitter.com/NicoVerderosa">
+                        <h4>Nico Verderosa </h4>
+                      </a>
                       <h6>@nico1991</h6>
                     </div>
                   </div>
@@ -627,7 +639,9 @@ const Home = () => {
                       alt="companyLogo16"
                     />
                     <div className="hrgc-head-name">
-                      <h6>Kephi Gallery</h6>
+                      <a href="https://www.kephi.io/">
+                        <h6>Kephi Gallery</h6>
+                      </a>
                       <p>Chief Operation Officer</p>
                     </div>
                   </div>
@@ -638,7 +652,9 @@ const Home = () => {
                   <div className="hrgc-head">
                     <img loading="lazy" src={Tony} alt="Tony" />
                     <div className="hrgc-head-name">
-                      <h4>Tony Spilotro </h4>
+                      <a href="https://twitter.com/tonyspilotroBTC">
+                        <h4>Tony Spilotro </h4>
+                      </a>
                       <h6>@black.m</h6>
                     </div>
                   </div>
@@ -658,7 +674,9 @@ const Home = () => {
                       alt="companyLogo17"
                     />
                     <div className="hrgc-head-name">
-                      <h6>Bitcoinist</h6>
+                      <a href="https://bitcoinist.com/">
+                        <h6>Bitcoinist</h6>
+                      </a>
                       <p>Editorial Director</p>
                     </div>
                   </div>
@@ -669,7 +687,9 @@ const Home = () => {
                   <div className="hrgc-head">
                     <img loading="lazy" src={Danny} alt="Danny" />
                     <div className="hrgc-head-name">
-                      <h4>Danny Les </h4>
+                      <a href="https://twitter.com/TheCryptoLes">
+                        <h4>Danny Les </h4>
+                      </a>
                       <h6>@black.m</h6>
                     </div>
                   </div>
@@ -689,7 +709,9 @@ const Home = () => {
                       alt="companyLogo18"
                     />
                     <div className="hrgc-head-name">
-                      <h6>Content Tap</h6>
+                      <a href="https://twitter.com/thecontenttap">
+                        <h6>Content Tap</h6>
+                      </a>
                       <p>Founder of The Content Tap</p>
                     </div>
                   </div>
@@ -829,7 +851,11 @@ const Home = () => {
                 alt="LimitedEditionImg"
               />
             </div>
-            <button className="ut-btn-green">SHOW IT!</button>
+
+            <Link to="/uptrendstore">
+              {" "}
+              <button className="ut-btn-green">SHOW IT!</button>
+            </Link>
           </div>
           <div className="ut-store-wave-box">
             <img loading="lazy" src={UtStoreWave} alt="UtStoreWave" />
@@ -848,10 +874,12 @@ const Home = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>Uptrend Journal</h2>
-              <a href="#" className="arrow-link">
-                <span>READ MORE </span>
-                <MdArrowForward />
-              </a>
+              <Link to="/blog">
+                <a href="#" className="arrow-link">
+                  <span>READ MORE </span>
+                  <MdArrowForward />
+                </a>
+              </Link>
             </div>
             <div className="journal-grid">
               <div className="journal-grid-card">
