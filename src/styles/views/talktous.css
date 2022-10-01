@@ -100,3 +100,30 @@
   grid-gap: 2.5rem;
   margin: 5rem 0 2.5rem 0;
 }
+
+@media screen and (max-width: 1140px) {
+  .w50-dark-content h2 {
+    font-size: 4rem;
+  }
+  .w50-light-content h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .ttu-hero-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .w50-dark-content h2 {
+    font-size: 3.5rem;
+  }
+  .w50-dark-content h6 {
+    font-size: 2rem;
+  }
+  .w50-light-content h2 {
+    font-size: 3.5rem;
+  }
+}

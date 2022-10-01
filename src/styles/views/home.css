@@ -916,7 +916,8 @@
 }
 .nft-para-1 {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
   margin: 1rem 0 0 0;
@@ -929,8 +930,8 @@
 .nft-para-1 p {
   font-size: 1.6rem;
   color: #ffffff;
-  font-weight: 700;
-  margin: 0 0 0 2rem;
+  font-weight: 800;
+  margin: 0.5rem 0 0 0;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1141,7 +1142,7 @@
     margin: 3.5rem 0 0 0;
   }
   .uptrends-events-grid {
-    grid-gap: 2.5rem;
+    grid-gap: 6rem;
   }
   .highly-regarded-grid-card {
     padding: 0;

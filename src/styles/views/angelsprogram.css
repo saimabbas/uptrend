@@ -1,6 +1,6 @@
 .angelsprogram-details {
   width: 100%;
-  padding: 7.5rem 0;
+  padding: 7.5rem 0 18rem 0;
 }
 .apd-grid {
   width: 100%;
@@ -90,4 +90,23 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .apd-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .ap-img-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .ap-img-grid img {
+    height: unset;
+    border-radius: unset;
+  }
+  .apd-grid-left img {
+    height: unset;
+    border-radius: 0.75rem;
+  }
 }

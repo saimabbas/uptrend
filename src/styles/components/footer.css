@@ -57,9 +57,9 @@ footer {
   color: rgba(255, 255, 255, 0.75);
 }
 .footer-grid-card-4 p {
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: 400;
+  font-size: 1.5rem !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-weight: 400 !important;
 }
 .footer-subscribe-box {
   width: 100%;
