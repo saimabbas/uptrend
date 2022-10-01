@@ -553,6 +553,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
+  transition: 0.5s;
+}
+.uptrends-events-img-grid:hover {
+  transform: translate(0, -1rem);
 }
 .uptrends-events-img-grid h4 {
   width: 100%;

@@ -24,14 +24,17 @@
 }
 .im-hero-img {
   width: max-content;
-  max-width: 47.5%;
   object-fit: contain;
   position: absolute;
   bottom: 0%;
   right: 0;
   z-index: 5;
-  transform: translate(25%, 0);
-  height: 90vh;
+  transform: translate(32%, 15%);
+  max-width: 75rem;
+  height: 75rem;
+}
+.im-hero-img-rotated {
+  transform: translate(32%, 15%) rotateY(180deg);
 }
 .ups-hero-img {
   width: max-content;
@@ -922,6 +925,11 @@
 .subs-journal-section {
   width: 100%;
   background-color: var(--main-dark3);
+  position: relative;
+  z-index: 1000;
+}
+.im-hero-img.events-hero-img {
+  transform: translate(0%, 15%);
 }
 .subs-journal-grid {
   width: 100%;
@@ -1461,7 +1469,7 @@
   transition: 0.5s;
 }
 .hero-c-icons-box a:hover {
-  transform: translate(0, -0.35rem);
+  transform: translate(0, -0.5rem) !important;
 }
 .expertise-page .bb-logo-box img {
   height: 3rem;
@@ -1482,15 +1490,23 @@
   align-items: flex-start;
   justify-content: space-between;
   background-color: #fff;
+  transition: 0.5s;
 }
 .positions-grid-card h2 {
   font-size: 3.5rem;
   text-transform: uppercase;
   color: var(--black);
+  transition: 0.5s;
   font-weight: 800;
 }
 .positions-grid-card h2 span {
   font-weight: 300;
+}
+.positions-grid-card:hover {
+  transform: translate(0, -1rem);
+}
+.positions-grid-card:hover .pgc-bottom a {
+  color: var(--main-color);
 }
 .pgc-bottom {
   width: 100%;
@@ -1503,13 +1519,21 @@
   font-size: 2rem;
 }
 .pgc-bottom a {
+  transition: 0.5s;
   font-size: 2rem;
   color: var(--black);
+}
+.sandbox-sds {
+  padding: 5rem 0 25rem 0;
 }
 @media screen and (max-width: 1150px) {
   .service-description-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+  }
+  .im-hero-img {
+    max-width: 65rem;
+    height: 65rem;
   }
   .faq-box {
     width: 85%;
@@ -1546,6 +1570,9 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .im-hero-img.events-hero-img {
+    transform: translate(15%, 15%);
+  }
   .em-sd-grid-card-2 img,
   .mm-sd-grid-card-4 img {
     object-fit: cover;
@@ -1584,9 +1611,17 @@
   }
 }
 @media screen and (max-width: 750px) {
+  .expertise-hero-headings.im-hero-headings {
+    width: 100%;
+  }
   .influencer-marketing-content {
     min-height: 75vh;
     padding: 2rem 0;
+  }
+  .im-hero-img {
+    max-width: 40rem;
+    object-position: bottom;
+    height: 40rem;
   }
   .influencer-marketing-content.influencer-marketing-content-2 {
     min-height: 95vh;
@@ -1602,10 +1637,6 @@
     .im-hero-headings {
     width: 100%;
   }
-  .im-hero-img {
-    object-position: bottom;
-    transform: translate(0, 0);
-  }
   .ups-hero-img {
     object-position: bottom;
     transform: translate(0, 0);
@@ -1620,6 +1651,8 @@
   }
   .im-hero-headings {
     width: 75%;
+    position: absolute;
+    top: 25%;
   }
   .service-description-grid {
     margin: 5rem 0 0 0;

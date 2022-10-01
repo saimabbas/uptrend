@@ -94,8 +94,18 @@ import $ from "jquery";
 import Tabs from "react-bootstrap/Tabs";
 import BlogCard from "../components/BlogCard";
 import { Tab, Nav } from "react-bootstrap";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/sandbox.json";
 
 const Sandbox = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -174,47 +184,37 @@ const Sandbox = () => {
         yoyo: true,
       }
     );
-    let homeExpertiseAnim = gsap.timeline({
+    let nftCardsAnim = gsap.timeline({
       scrollTrigger: {
-        trigger: ".service-description-grid",
+        trigger: ".web3-places",
         start: "top 50%",
       },
     });
-    homeExpertiseAnim
+    nftCardsAnim.fromTo(
+      ".web3-places-grid-card",
+      {
+        opacity: 0,
+        y: "10rem",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.4,
+        stagger: {
+          each: 0.15,
+        },
+      }
+    );
+
+    let homeExpertiseAnim2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service-description-grid-2",
+        start: "top 50%",
+      },
+    });
+    homeExpertiseAnim2
       .fromTo(
-        ".em-sd-grid-card-1-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        }
-      )
-      .fromTo(
-        ".em-sd-grid-card-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4-bg",
+        ".msgc2-2-bg",
         {
           width: 0,
         },
@@ -225,7 +225,30 @@ const Sandbox = () => {
         "<0"
       )
       .fromTo(
-        ".em-sd-grid-card-1 img",
+        ".msgc3-2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc4-2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+
+      .fromTo(
+        ".msgc2-2 img",
         {
           opacity: 0,
         },
@@ -236,7 +259,7 @@ const Sandbox = () => {
         "<0.5"
       )
       .fromTo(
-        ".em-sd-grid-card-1 h4",
+        ".msgc3-2 img",
         {
           opacity: 0,
         },
@@ -247,7 +270,7 @@ const Sandbox = () => {
         "<0"
       )
       .fromTo(
-        ".em-sd-grid-card-2 img",
+        ".msgc4-2 img",
         {
           opacity: 0,
         },
@@ -258,7 +281,7 @@ const Sandbox = () => {
         "<0"
       )
       .fromTo(
-        ".em-sd-grid-card-3 img",
+        ".msgc3-2 h5",
         {
           opacity: 0,
         },
@@ -267,106 +290,6 @@ const Sandbox = () => {
           duration: 0.5,
         },
         "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h2",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h6",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 ul",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      );
-    let scrambleTextStats = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".platform-stats-section",
-        start: "top 50%",
-      },
-    });
-    scrambleTextStats
-      .to(".ps-box-1 h3 span", {
-        duration: 3,
-        scrambleText: {
-          text: "2.3",
-          chars: "0 1 2 3 4 5 6 7 8 9",
-          revealDelay: 0.5,
-          speed: 1,
-          delay: 3,
-        },
-      })
-      .to(
-        ".ps-box-2 h3 span",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "64",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 3,
-          },
-        },
-        0
-      )
-      .to(
-        ".ps-box-3 h3 span",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "448",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 3,
-          },
-        },
-        0
       );
   }, []);
 
@@ -385,22 +308,24 @@ const Sandbox = () => {
                 <h3>Designed By An Award-Winning Marketing Partner</h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
             src={EmHeroImg}
             alt="EmHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
-        <div className="blog-content-wrapper"></div>
-        <section className="service-description-section">
+        <section className="service-description-section" id="explore">
           <div className="box">
             <div className="heading-sublink-box">
               <h2>A Venue For Education, Networking, And Growth</h2>
@@ -464,7 +389,7 @@ const Sandbox = () => {
             </div>
           </div>
         </section>
-        <section className="service-description-section service-description-section-2">
+        <section className="sandbox-sds service-description-section service-description-section-2">
           <div className="box">
             <div className="heading-sublink-box">
               <h2>Engage With Uptrend In The Metaverse</h2>
@@ -521,7 +446,8 @@ const Sandbox = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <button>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
                   </button>
                 </div>
               </div>

@@ -64,8 +64,18 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/influencer-marketing.json";
 
 const InfluencerMarketing = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -99,12 +109,14 @@ const InfluencerMarketing = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -173,7 +185,7 @@ const InfluencerMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -183,9 +195,9 @@ const InfluencerMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".sd-grid-card-4-bg",
@@ -194,9 +206,9 @@ const InfluencerMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".sd-grid-card-3-bg",
@@ -205,9 +217,9 @@ const InfluencerMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".sd-grid-card-1 > img",
@@ -305,24 +317,24 @@ const InfluencerMarketing = () => {
     });
     scrambleTextStats
       .to(".ps-box-1 h3 span", {
-        duration: 3,
+        duration: 2,
         scrambleText: {
           text: "690",
           chars: "0 1 2 3 4 5 6 7 8 9",
           revealDelay: 0.5,
-          speed: 1,
+          speed: 0.5,
           delay: 5,
         },
       })
       .to(
         ".ps-box-2 h3 span",
         {
-          duration: 3,
+          duration: 2,
           scrambleText: {
             text: "64",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
-            speed: 1,
+            speed: 0.5,
             delay: 5,
           },
         },
@@ -331,12 +343,12 @@ const InfluencerMarketing = () => {
       .to(
         ".ps-box-3 h3",
         {
-          duration: 3,
+          duration: 2,
           scrambleText: {
             text: "14,320,344",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
-            speed: 1,
+            speed: 0.5,
             delay: 5,
           },
         },
@@ -359,7 +371,7 @@ const InfluencerMarketing = () => {
                 <h3>Outstanding opportunity to dominate the market</h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#service-description">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
@@ -372,14 +384,11 @@ const InfluencerMarketing = () => {
             src={ImHeroVideo}
             alt="ImHeroImg"
           /> */}
-          <video className="im-hero-img" muted autoPlay loop>
-            <source src={ImHeroVideo} type="video/mp4"></source>
-          </video>
+          <div className="im-hero-img">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
-        <section
-          className="service-description-section"
-          id="service-description"
-        >
+        <section className="service-description-section" id="explore">
           <div className="box">
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
@@ -757,7 +766,8 @@ const InfluencerMarketing = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <button>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
                   </button>
                 </div>
               </div>

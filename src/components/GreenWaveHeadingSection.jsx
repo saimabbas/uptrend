@@ -50,7 +50,7 @@ const GreenWaveHeadingSection = (props) => {
         },
         {
           letterSpacing: 0,
-          duration: 1,
+          duration: 0.4,
         }
       )
       .fromTo(
@@ -60,7 +60,7 @@ const GreenWaveHeadingSection = (props) => {
         },
         {
           opacity: 1,
-          duration: 1,
+          duration: 0.4,
         },
         0
       );

@@ -69,8 +69,18 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/uptrend-career.json";
 
 const UptrendCareer = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -104,12 +114,14 @@ const UptrendCareer = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -389,26 +401,26 @@ const UptrendCareer = () => {
                 </h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#service-description">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
             src={ImHeroImg}
             alt="ImHeroImg"
-          />
-          {/* <video className="im-hero-img" muted autoPlay loop>
-            <source src={ImHeroVideo} type="video/mp4"></source>
-          </video> */}
+          /> */}
+          <div className="im-hero-img">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
         <section
           className="service-description-section uc-service-description-section"
-          id="service-description"
+          id="explore"
         >
           <div className="box">
             <div className="heading-sublink-box">
@@ -628,7 +640,8 @@ const UptrendCareer = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <button>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
                   </button>
                 </div>
               </div>

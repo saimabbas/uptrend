@@ -37,13 +37,16 @@ const Header = (props) => {
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item href="#/expertise-1">
-                  Event Marketing
+                  Influencer Marketing
                 </Dropdown.Item>
                 <Dropdown.Item href="#/expertise-2">
-                  Influencer Marketing
+                  Investor Relations
                 </Dropdown.Item>
                 <Dropdown.Item href="#/expertise-3">
                   Metaverse Marketing
+                </Dropdown.Item>
+                <Dropdown.Item href="#/expertise-3">
+                  Event Marketing
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
@@ -64,8 +67,15 @@ const Header = (props) => {
           <p>
             No Fluff. <b>Just Results</b>
           </p>
+          <div className="menu-icon-box d-c-c menu-icon-box-pc">
+            {props.lightHeader ? (
+              <IconMenu color="#fff" />
+            ) : (
+              <IconMenu color="#000" />
+            )}
+          </div>
           <div
-            className="menu-icon-box d-c-c"
+            className="menu-icon-box d-c-c menu-icon-box-mob"
             onClick={() => {
               setHeaderMobOpen(true);
             }}
@@ -99,13 +109,16 @@ const Header = (props) => {
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
                     <Dropdown.Item href="#/expertise-1">
-                      Event Marketing
+                      Influencer Marketing
                     </Dropdown.Item>
                     <Dropdown.Item href="#/expertise-2">
-                      Influencer Marketing
+                      Investor Relations
                     </Dropdown.Item>
                     <Dropdown.Item href="#/expertise-3">
                       Metaverse Marketing
+                    </Dropdown.Item>
+                    <Dropdown.Item href="#/expertise-3">
+                      Event Marketing
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>

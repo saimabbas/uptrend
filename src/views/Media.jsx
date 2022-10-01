@@ -68,8 +68,18 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/media.json";
 
 const Media = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -103,12 +113,14 @@ const Media = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.1,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -128,12 +140,13 @@ const Media = () => {
         ".hero-c-icons-box a",
         {
           opacity: 0,
-          x: 50,
+          y: 50,
         },
         {
-          x: 0,
+          y: 0,
           opacity: 1,
-          stagger: 0.1,
+          stagger: 0.075,
+          duration: 0.5,
         }
       )
       .fromTo(
@@ -174,7 +187,7 @@ const Media = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -184,9 +197,9 @@ const Media = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".em-sd-grid-card-3-bg",
@@ -195,9 +208,9 @@ const Media = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".em-sd-grid-card-4-bg",
@@ -206,9 +219,9 @@ const Media = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".em-sd-grid-card-1 img",
@@ -354,6 +367,112 @@ const Media = () => {
         },
         0
       );
+    let nftCardsAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service-description-section",
+        start: "top 50%",
+      },
+    });
+    nftCardsAnim.fromTo(
+      ".media-grid-card",
+      {
+        opacity: 0,
+        y: "10rem",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.4,
+        stagger: {
+          each: 0.15,
+        },
+      }
+    );
+    let homeExpertiseAnim2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".service-description-grid-2",
+        start: "top 50%",
+      },
+    });
+    homeExpertiseAnim2
+      .fromTo(
+        ".msgc2-2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc3-2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc4-2-bg",
+        {
+          width: 0,
+        },
+        {
+          width: "100%",
+          duration: 0.5,
+        },
+        "<0"
+      )
+
+      .fromTo(
+        ".msgc2-2 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".msgc3-2 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc4-2 img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".msgc3-2 h5",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0"
+      );
   }, []);
 
   return (
@@ -368,7 +487,7 @@ const Media = () => {
               <Header lightHeader={false} />
               <div className="im-hero-headings">
                 <h1>Leading Media Outlets Boosting Brand Profile</h1>
-                <h3>Contact us uo start promotion today!</h3>
+                <h3>Contact us to start promotion today!</h3>
                 <div className="hero-c-icons-box">
                   <a href="#">
                     <Whatsapp />
@@ -385,21 +504,24 @@ const Media = () => {
                 </div>
               </div>
               <div className="im-hero-explore">
-                <a href="#">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
             src={EmHeroImg}
             alt="EmHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
-        <section className="service-description-section">
+        <section className="service-description-section" id="explore">
           <div className="box">
             <div className="heading-sublink-box">
               <h2>FINANCE MEDIA</h2>

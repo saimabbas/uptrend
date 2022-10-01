@@ -61,8 +61,18 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/uptrend-store.json";
 
 const UpTrendStore = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -96,12 +106,14 @@ const UpTrendStore = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -141,200 +153,48 @@ const UpTrendStore = () => {
         yoyo: true,
       }
     );
-    let homeExpertiseAnim = gsap.timeline({
+    let merchCardsAnim = gsap.timeline({
       scrollTrigger: {
-        trigger: ".service-description-grid",
+        trigger: ".ut-store-merch-section",
         start: "top 50%",
       },
     });
-    homeExpertiseAnim
-      .fromTo(
-        ".em-sd-grid-card-1-bg",
-        {
-          width: 0,
+    merchCardsAnim.fromTo(
+      ".ut-store-grid-content",
+      {
+        opacity: 0,
+        y: "10rem",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.4,
+        stagger: {
+          each: 0.15,
         },
-        {
-          width: "100%",
-          duration: 0.5,
-        }
-      )
-      .fromTo(
-        ".em-sd-grid-card-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0.5"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-2 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h2",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h6",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 ul",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      );
-    let scrambleTextStats = gsap.timeline({
+      }
+    );
+    let nftCardsAnim = gsap.timeline({
       scrollTrigger: {
-        trigger: ".platform-stats-section",
+        trigger: ".nft-gallery-section",
         start: "top 50%",
       },
     });
-    scrambleTextStats
-      .to(".ps-box-1 h3 span", {
-        duration: 3,
-        scrambleText: {
-          text: "2.3",
-          chars: "0 1 2 3 4 5 6 7 8 9",
-          revealDelay: 0.5,
-          speed: 1,
-          delay: 3,
+    nftCardsAnim.fromTo(
+      ".nft-gallery-content",
+      {
+        opacity: 0,
+        y: "10rem",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.4,
+        stagger: {
+          each: 0.15,
         },
-      })
-      .to(
-        ".ps-box-2 h3 span",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "64",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 3,
-          },
-        },
-        0
-      )
-      .to(
-        ".ps-box-3 h3 span",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "448",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 3,
-          },
-        },
-        0
-      );
+      }
+    );
   }, []);
 
   return (
@@ -352,21 +212,24 @@ const UpTrendStore = () => {
                 <h3>Limited Edition</h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="ups-hero-img"
             src={EmHeroImg}
             alt="EmHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
-        <section className="ut-store-merch-section">
+        <section className="ut-store-merch-section" id="explore">
           <div className="box">
             <div className="heading-sublink-box">
               <h2>Exclusive Merch</h2>
@@ -514,7 +377,8 @@ const UpTrendStore = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <button>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
                   </button>
                 </div>
               </div>

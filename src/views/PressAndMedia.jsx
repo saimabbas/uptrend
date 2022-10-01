@@ -64,8 +64,18 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/press-and-media.json";
 
 const PressAndMedia = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -99,12 +109,14 @@ const PressAndMedia = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -338,6 +350,29 @@ const PressAndMedia = () => {
         },
         0
       );
+    let nftCardsAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ut-in-press",
+        start: "top 50%",
+      },
+    });
+    nftCardsAnim.fromTo(
+      ".in-press-grid-card",
+      {
+        opacity: 0,
+        y: "10rem",
+        scale: 0.85,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.4,
+        stagger: {
+          each: 0.15,
+        },
+      }
+    );
   }, []);
 
   return (
@@ -357,21 +392,24 @@ const PressAndMedia = () => {
                 </h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
             src={EmHeroImg}
             alt="EmHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
-        <section className="media-outlets">
+        <section className="media-outlets" id="explore">
           <div className="box">
             <div className="media-outlets-content">
               <div className="moc-left">
@@ -531,7 +569,10 @@ const PressAndMedia = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <div></div>
-                  <button>SUBSCRIBE TO OUR JOURNAL</button>
+                  <button>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
+                  </button>
                 </div>
               </div>
               <div className="sj-bull-elevator-img-box">

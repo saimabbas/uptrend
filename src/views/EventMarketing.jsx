@@ -106,12 +106,14 @@ const EventMarketing = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -165,7 +167,7 @@ const EventMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -175,9 +177,9 @@ const EventMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".em-sd-grid-card-3-bg",
@@ -186,9 +188,9 @@ const EventMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".em-sd-grid-card-4-bg",
@@ -197,9 +199,9 @@ const EventMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".em-sd-grid-card-1 img",
@@ -308,24 +310,24 @@ const EventMarketing = () => {
     });
     scrambleTextStats
       .to(".ps-box-1 h3 span", {
-        duration: 3,
+        duration: 2,
         scrambleText: {
           text: "2.3",
           chars: "0 1 2 3 4 5 6 7 8 9",
           revealDelay: 0.5,
-          speed: 1,
+          speed: 0.5,
           delay: 3,
         },
       })
       .to(
         ".ps-box-2 h3 span",
         {
-          duration: 3,
+          duration: 2,
           scrambleText: {
             text: "64",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
-            speed: 1,
+            speed: 0.5,
             delay: 3,
           },
         },
@@ -334,12 +336,12 @@ const EventMarketing = () => {
       .to(
         ".ps-box-3 h3 span",
         {
-          duration: 3,
+          duration: 2,
           scrambleText: {
             text: "448",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
-            speed: 1,
+            speed: 0.5,
             delay: 3,
           },
         },
@@ -362,7 +364,7 @@ const EventMarketing = () => {
                 <h3>We guide brands through event planning of any magnitude</h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
@@ -376,15 +378,10 @@ const EventMarketing = () => {
             alt="EmHeroImg"
           /> */}
           <div className="im-hero-img">
-            <Lottie
-              className="im-hero-img"
-              options={defaultOptions}
-              height={750}
-              width={750}
-            />
+            <Lottie className="im-hero-img" options={defaultOptions} />
           </div>
         </section>
-        <section className="service-description-section">
+        <section className="service-description-section" id="explore">
           <div className="box">
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
@@ -495,7 +492,7 @@ const EventMarketing = () => {
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span>2.3</span> X
+                    <MdArrowUpward /> <span>2.3</span>X
                   </h3>
                   <p>ROAs</p>
                 </div>
@@ -632,7 +629,10 @@ const EventMarketing = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <div></div>
-                  <button>SUBSCRIBE TO OUR JOURNAL</button>
+                  <button>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
+                  </button>
                 </div>
               </div>
               <div className="sj-bull-elevator-img-box">

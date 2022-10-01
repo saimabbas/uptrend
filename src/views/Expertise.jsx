@@ -114,12 +114,14 @@ const Expertise = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -199,7 +201,7 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -209,9 +211,9 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".sd-grid-card-4-bg",
@@ -220,9 +222,9 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".sd-grid-card-3-bg",
@@ -231,9 +233,9 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".sd-grid-card-1 > img",
@@ -338,7 +340,7 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -348,9 +350,9 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".irgc-3-bg",
@@ -359,9 +361,9 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".irgc-4-bg",
@@ -370,9 +372,9 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".ir-sd-grid-card-1 img",
@@ -509,7 +511,7 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -519,9 +521,9 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".msgc3-bg",
@@ -530,9 +532,9 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".msgc4-bg",
@@ -541,9 +543,9 @@ const Expertise = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
 
       .fromTo(

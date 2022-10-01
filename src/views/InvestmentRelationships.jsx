@@ -34,6 +34,8 @@ import RoundTree from "../assets/img/round-tree.png";
 import ShowcaseImg from "../assets/img/showcase-gallery.svg";
 import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";
 import FundingDistribution from "../assets/img/funding-distribution.svg";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/investor-relations.json";
 
 // Icons
 import {
@@ -73,6 +75,14 @@ import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
 
 const InvestmentRelationships = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -106,12 +116,14 @@ const InvestmentRelationships = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -165,7 +177,7 @@ const InvestmentRelationships = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -175,9 +187,9 @@ const InvestmentRelationships = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".irgc-3-bg",
@@ -186,9 +198,9 @@ const InvestmentRelationships = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".irgc-4-bg",
@@ -197,9 +209,9 @@ const InvestmentRelationships = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".ir-sd-grid-card-1 img",
@@ -366,24 +378,24 @@ const InvestmentRelationships = () => {
     });
     scrambleTextStats
       .to(".ps-box-1 h3 span", {
-        duration: 3,
+        duration: 2,
         scrambleText: {
           text: "$ 11,400,000",
           chars: "0 1 2 3 4 5 6 7 8 9",
           revealDelay: 0.5,
-          speed: 1,
+          speed: 0.5,
           delay: 3,
         },
       })
       .to(
         ".ps-box-2 h3 span",
         {
-          duration: 3,
+          duration: 2,
           scrambleText: {
             text: "8",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
-            speed: 1,
+            speed: 0.5,
             delay: 3,
           },
         },
@@ -392,12 +404,12 @@ const InvestmentRelationships = () => {
       .to(
         ".ps-box-3 h3 span",
         {
-          duration: 3,
+          duration: 2,
           scrambleText: {
             text: "90",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
-            speed: 1,
+            speed: 0.5,
             delay: 3,
           },
         },
@@ -422,19 +434,22 @@ const InvestmentRelationships = () => {
                 </h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
             src={EmHeroImg}
             alt="EmHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
         <section className="service-description-section">
           <div className="box">
@@ -445,7 +460,7 @@ const InvestmentRelationships = () => {
                 <MdArrowForward />
               </a>
             </div>
-            <div className="service-description-grid">
+            <div className="service-description-grid" id="explore">
               <div className="sd-grid-card ir-sd-grid-card-1">
                 <div className="irgc-1-bg"></div>
                 <img loading="lazy" src={MoneyPlant} alt="MoneyPlant" />
@@ -679,7 +694,7 @@ const InvestmentRelationships = () => {
                   <input type="text" placeholder="Email" />
                   <button>
                     <div></div>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                    SUBSCRIBE TO OUR JOURNAL
                   </button>
                 </div>
               </div>

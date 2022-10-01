@@ -78,8 +78,18 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/metaverse-marketing.json";
 
 const MetaverseMarketing = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -113,12 +123,14 @@ const MetaverseMarketing = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -173,7 +185,7 @@ const MetaverseMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -183,9 +195,9 @@ const MetaverseMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".msgc3-bg",
@@ -194,9 +206,9 @@ const MetaverseMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
       .fromTo(
         ".msgc4-bg",
@@ -205,9 +217,9 @@ const MetaverseMarketing = () => {
         },
         {
           width: "100%",
-          duration: 0.5,
+          duration: 0.35,
         },
-        "<0"
+        "<0.075"
       )
 
       .fromTo(
@@ -381,24 +393,24 @@ const MetaverseMarketing = () => {
     });
     scrambleTextStats
       .to(".ps-box-1 h3 span", {
-        duration: 3,
+        duration: 2,
         scrambleText: {
           text: "217",
           chars: "0 1 2 3 4 5 6 7 8 9",
           revealDelay: 0.5,
-          speed: 1,
+          speed: 0.5,
           delay: 3,
         },
       })
       .to(
         ".ps-box-2 h3 span",
         {
-          duration: 3,
+          duration: 2,
           scrambleText: {
             text: "19,400",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
-            speed: 1,
+            speed: 0.5,
             delay: 3,
           },
         },
@@ -407,12 +419,12 @@ const MetaverseMarketing = () => {
       .to(
         ".ps-box-3 h3 span",
         {
-          duration: 3,
+          duration: 2,
           scrambleText: {
             text: "83",
             chars: "0 1 2 3 4 5 6 7 8 9",
             revealDelay: 0.5,
-            speed: 1,
+            speed: 0.5,
             delay: 3,
           },
         },
@@ -435,21 +447,24 @@ const MetaverseMarketing = () => {
                 <h3>The bridge to brand success</h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
               </div>
             </div>
           </div>
-          <img
+          {/*  <img
             loading="lazy"
             className="im-hero-img"
             src={MmHeroImg}
             alt="MmHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img im-hero-img-rotated">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
-        <section className="service-description-section">
+        <section id="explore" className="service-description-section">
           <div className="box">
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
@@ -766,7 +781,8 @@ const MetaverseMarketing = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <button>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
                   </button>
                 </div>
               </div>

@@ -83,7 +83,7 @@
   padding: 2.5rem;
 }
 .in-press-grid-card:hover {
-  transform: translate(0, -1rem);
+  transform: translate(0, -1rem) !important;
   background-color: var(--main-light1);
 }
 .in-press-grid-card img {
