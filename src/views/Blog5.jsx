@@ -260,7 +260,6 @@ const Blog5 = () => {
                   regions.
                 </p>
               </div>
-              <div className="divider"></div>
               <div className="conclusion-box">
                 <span>
                   <img src={OrangeBulbImg} alt="OrangeBulbImg" /> Conclusion
