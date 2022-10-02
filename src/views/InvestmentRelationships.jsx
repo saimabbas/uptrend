@@ -10,7 +10,6 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // Images
-import EmHeroImg from "../assets/img/ir-hero-img.svg";
 import LocalStartupImg from "../assets/img/local-startup-img.svg";
 import BullElevatorImg from "../assets/img/bull-elevator-img-2.png";
 import PhotoImg from "../assets/img/photo-img.png";
@@ -29,7 +28,7 @@ import BonsaiImg from "../assets/img/bonsai.png";
 import MoneyPlant from "../assets/img/money-plant.png";
 import PlatformStatsImg3 from "../assets/img/leading-health-app.png";
 import DDDTopArrow from "../assets/img/3d-top-arrow.png";
-import SdWhiteWave from "../assets/img/sd-white-wave.svg";
+import SdWhiteWave from "../assets/img/sd-white-wave.png";
 import RoundTree from "../assets/img/round-tree.png";
 import ShowcaseImg from "../assets/img/showcase-gallery.svg";
 import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";

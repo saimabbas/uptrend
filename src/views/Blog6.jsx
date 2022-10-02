@@ -15,7 +15,7 @@ import TikTokIcon from "../assets/img/tiktok-white-bg.svg";
 import InstagramIcon from "../assets/img/instagram-white-bg.svg";
 import YouTubeIcon from "../assets/img/youtube-white-bg.svg";
 import Person from "../assets/img/blog-person.svg";
-import JournalImg3 from "../assets/img/journal-img-3.svg";
+import JournalImg3 from "../assets/img/journal-img-3.png";
 import InfluencerLogo from "../assets/img/influencer-logo.svg";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";

@@ -7,8 +7,8 @@ import "../styles/views/home.css";
 
 // Images
 import EventImg1 from "../assets/img/event-img-1.png";
-import EventImg2 from "../assets/img/em2.svg";
-import EventImg3 from "../assets/img/em3.svg";
+import EventImg2 from "../assets/img/em2.png";
+import EventImg3 from "../assets/img/em3.png";
 import TrImg from "../assets/img/tr.svg";
 import ECImg from "../assets/img/ec.svg";
 

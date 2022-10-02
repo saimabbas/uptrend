@@ -16,6 +16,7 @@ import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   const [headerMobOpen, setHeaderMobOpen] = useState(false);
@@ -23,11 +24,13 @@ const Header = (props) => {
     <header className={props.lightHeader ? "header-light" : "header-dark"}>
       <div className="header-content">
         <div className="header-left">
-          {props.lightHeader ? (
-            <UTLogo color="#fff" />
-          ) : (
-            <UTLogo color="#000" />
-          )}
+          <Link to="/">
+            {props.lightHeader ? (
+              <UTLogo color="#fff" />
+            ) : (
+              <UTLogo color="#000" />
+            )}
+          </Link>
         </div>
         <div className="header-center">
           <div className="ut-dropdown">

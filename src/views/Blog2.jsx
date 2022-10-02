@@ -12,7 +12,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import UTLogo from "../assets/icons/UTLogo";
 import Person from "../assets/img/blog-person.svg";
-import JournalImg2 from "../assets/img/journal-img-2.svg";
+import JournalImg2 from "../assets/img/journal-img-2.png";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";
 import OrangeBulb from "../assets/icons/OrangeBulb";

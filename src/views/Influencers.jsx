@@ -28,7 +28,7 @@ import BBLogo5Dark from "../assets/img/backedby-logo-5-dark.svg";
 import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";
 import BeInCrypto from "../assets/img/be-in-crypto.svg";
 import UM from "../assets/img/um.svg";
-import MediaArticle from "../assets/img/media-article.svg";
+import MediaArticle from "../assets/img/media-article.png";
 import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";

@@ -10,7 +10,6 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // Images
-import ImHeroImg from "../assets/img/utgs-hero-img.svg";
 import WinnertrophyImg from "../assets/img/winner-trophy.png";
 import SpeakerImg from "../assets/img/speaker-img-orange.png";
 import PlatformLogo1 from "../assets/icons/twitch-logo-2.svg";
@@ -38,7 +37,7 @@ import BullElevatorImg from "../assets/img/bull-elevator-img-2.png";
 import Nico from "../assets/img/nico.png";
 import Tony from "../assets/img/tony.png";
 import Danny from "../assets/img/danny.svg";
-import companyLogo16 from "../assets/img/logo-kephi.svg";
+import companyLogo16 from "../assets/img/logo-kephi.png";
 import companyLogo17 from "../assets/img/logo-bitcoinist.svg";
 import companyLogo18 from "../assets/img/logo-tct.svg";
 

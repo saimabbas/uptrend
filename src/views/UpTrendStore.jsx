@@ -10,7 +10,6 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // Images
-import EmHeroImg from "../assets/img/uptrend-store-hero-img.svg";
 import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
 import UTJacket from "../assets/img/ut-jacket.png";
 import UTRaincoat from "../assets/img/UTRaincoat.png";
@@ -23,7 +22,7 @@ import NFTGal2 from "../assets/img/nft-gall-2.png";
 import NFTGal3 from "../assets/img/nft-gall-3.png";
 import NFTGal4 from "../assets/img/nft-gall-4.png";
 import NFTGal5 from "../assets/img/nft-gall-5.png";
-import NFTGal6 from "../assets/img/nftgal6.svg";
+import NFTGal6 from "../assets/img/nftgal6.png";
 
 // Icons
 import {

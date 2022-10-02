@@ -34,7 +34,7 @@ import MoneyPlant from "../assets/img/money-plant.png";
 import LogoDecentralized from "../assets/img/logo-decentralized.svg";
 import DDDTopArrow from "../assets/img/3d-top-arrow.png";
 import companyLogo15 from "../assets/img/logo-sandbox.svg";
-import SdWhiteWave from "../assets/img/sd-white-wave.svg";
+import SdWhiteWave from "../assets/img/sd-white-wave.png";
 import BoyMetaverse from "../assets/img/boy-experiencing-metaverse.png";
 import RoundTree from "../assets/img/round-tree.png";
 import MMSD4thImg from "../assets/img/mm-sd-4th-img.png";

@@ -32,7 +32,7 @@ import PlatformStatsImg from "../assets/img/platform-stats-img.svg";
 import BigThingsWave from "../assets/img/big-things-wave.svg";
 import BullElevatorImg from "../assets/img/bull-elevator-img-2.png";
 import BoyMetaverse from "../assets/img/boy-experiencing-metaverse.png";
-import companyLogo14 from "../assets/img/logo-meta.svg";
+import companyLogo14 from "../assets/img/logo-meta.png";
 import companyLogo15 from "../assets/img/logo-sandbox.svg";
 import LogoDecentralized from "../assets/img/logo-decentralized.svg";
 import MMSD4thImg from "../assets/img/mm-sd-4th-img.png";

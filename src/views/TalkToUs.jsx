@@ -177,6 +177,8 @@ const TalkToUs = () => {
       </div>
       <div className="talktous-page">
         <div className="ttu-header">
+          <div className="ttuh-dark"></div>
+          <div className="ttuh-light"></div>
           <div className="box">
             <Header lightHeader={false} />
           </div>
