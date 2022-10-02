@@ -336,51 +336,6 @@ const UptrendCareer = () => {
         },
         "<0"
       );
-    let scrambleTextStats = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".platform-stats-section",
-        start: "top 50%",
-      },
-    });
-    scrambleTextStats
-      .to(".ps-box-1 h3 span", {
-        duration: 3,
-        scrambleText: {
-          text: "690",
-          chars: "0 1 2 3 4 5 6 7 8 9",
-          revealDelay: 0.5,
-          speed: 1,
-          delay: 5,
-        },
-      })
-      .to(
-        ".ps-box-2 h3 span",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "64",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 5,
-          },
-        },
-        0
-      )
-      .to(
-        ".ps-box-3 h3",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "14,320,344",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 5,
-          },
-        },
-        0
-      );
   }, []);
 
   return (

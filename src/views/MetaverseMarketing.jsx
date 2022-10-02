@@ -385,47 +385,37 @@ const MetaverseMarketing = () => {
         },
         "<0"
       );
-    let scrambleTextStats = gsap.timeline({
+    let nftCardsAnim1 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".platform-stats-section",
-        start: "top 50%",
+        trigger: ".ugs-pss-1",
+        start: "top 25%",
       },
     });
-    scrambleTextStats
-      .to(".ps-box-1 h3 span", {
-        duration: 2,
-        scrambleText: {
-          text: "217",
-          chars: "0 1 2 3 4 5 6 7 8 9",
-          revealDelay: 0.5,
-          speed: 0.5,
-          delay: 3,
-        },
-      })
-      .to(
-        ".ps-box-2 h3 span",
+    nftCardsAnim1
+      .fromTo(
+        ".ugs-pss-1 .fashion-brand-img",
         {
-          duration: 2,
-          scrambleText: {
-            text: "19,400",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 0.5,
-            delay: 3,
-          },
+          opacity: 0,
+          x: "20rem",
         },
-        0
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.65,
+        }
       )
-      .to(
-        ".ps-box-3 h3 span",
+      .fromTo(
+        ".ugs-pss-1 .ps-box",
         {
-          duration: 2,
-          scrambleText: {
-            text: "83",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 0.5,
-            delay: 3,
+          y: "5rem",
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.65,
+          stagger: {
+            each: 0.25,
           },
         },
         0
@@ -599,7 +589,7 @@ const MetaverseMarketing = () => {
             <TrustedByCompanies trustedByLight={false} />
           </div>
         </section>
-        <section className="platform-stats-section">
+        <section className="platform-stats-section ugs-pss-1">
           <img
             className="fashion-brand-img"
             src={FashionBrandImg}
@@ -627,7 +617,7 @@ const MetaverseMarketing = () => {
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span> </span> %
+                    <MdArrowUpward /> <span>217</span>%
                   </h3>
                   <p>Brand Mentions</p>
                 </div>
@@ -635,7 +625,7 @@ const MetaverseMarketing = () => {
               <div className="ps-box ps-box-2">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span> </span>
+                    <MdArrowUpward /> <span> 19400</span>
                   </h3>
                   <p>Metaverse Event Attendees</p>
                 </div>
@@ -643,7 +633,7 @@ const MetaverseMarketing = () => {
               <div className="ps-box ps-box-3">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span> </span> %
+                    <MdArrowUpward /> <span>83</span> %
                   </h3>
                   <p>Organic Traffic</p>
                 </div>

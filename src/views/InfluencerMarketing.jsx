@@ -309,47 +309,37 @@ const InfluencerMarketing = () => {
         },
         "<0"
       );
-    let scrambleTextStats = gsap.timeline({
+    let nftCardsAnim1 = gsap.timeline({
       scrollTrigger: {
-        trigger: ".platform-stats-section",
-        start: "top 50%",
+        trigger: ".ugs-pss-1",
+        start: "top 25%",
       },
     });
-    scrambleTextStats
-      .to(".ps-box-1 h3 span", {
-        duration: 2,
-        scrambleText: {
-          text: "690",
-          chars: "0 1 2 3 4 5 6 7 8 9",
-          revealDelay: 0.5,
-          speed: 0.5,
-          delay: 5,
-        },
-      })
-      .to(
-        ".ps-box-2 h3 span",
+    nftCardsAnim1
+      .fromTo(
+        ".ugs-pss-1 .platform-stats-img img",
         {
-          duration: 2,
-          scrambleText: {
-            text: "64",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 0.5,
-            delay: 5,
-          },
+          opacity: 0,
+          x: "20rem",
         },
-        0
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.65,
+        }
       )
-      .to(
-        ".ps-box-3 h3",
+      .fromTo(
+        ".ugs-pss-1 .ps-box",
         {
-          duration: 2,
-          scrambleText: {
-            text: "14,320,344",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 0.5,
-            delay: 5,
+          y: "5rem",
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.65,
+          stagger: {
+            each: 0.25,
           },
         },
         0
@@ -583,7 +573,7 @@ const InfluencerMarketing = () => {
             <TrustedByCompanies trustedByLight={false} />
           </div>
         </section>
-        <section className="platform-stats-section">
+        <section className="platform-stats-section ugs-pss-1">
           <div className="box box-p">
             <div className="platform-stats-grid">
               <div className="platform-stats-details">

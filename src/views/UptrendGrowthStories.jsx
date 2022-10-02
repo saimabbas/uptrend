@@ -74,10 +74,280 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/ut-growth-stories.json";
 
 const UptrendGrowthStories = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  gsap.registerPlugin(
+    ScrollTrigger,
+    SplitText,
+    ScrollSmoother,
+    ScrambleTextPlugin
+  );
+  useEffect(() => {
+    // Text Spliting
+    const marketingHeading = new SplitText(".im-hero-headings h1", {
+      type: "chars, words,lines",
+    });
+    const marketingHeadingChars = marketingHeading.chars;
+    const marketingHeadingLines = marketingHeading.lines;
+    const marketingHeadingWords = marketingHeading.words;
+
+    let marketingLandingAnim = gsap.timeline();
+    marketingLandingAnim
+      .fromTo(
+        ".loading-screen",
+        {
+          opacity: "1",
+        },
+        {
+          opacity: "0",
+          delay: 1,
+          duration: 0.65,
+          ease: Linear.easeInOut,
+        }
+      )
+      .fromTo(
+        marketingHeadingChars,
+        {
+          opacity: 0,
+          rotateY: 90,
+        },
+        {
+          rotateY: 0,
+          opacity: 1,
+          duration: 0.65,
+          stagger: {
+            each: 0.025,
+          },
+        }
+      )
+      .fromTo(
+        ".im-hero-headings h3",
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".loading-screen",
+        {
+          height: "100vh",
+        },
+        {
+          height: "0",
+          duration: 0.01,
+        },
+        "<0"
+      );
+    gsap.fromTo(
+      ".im-hero-explore svg",
+      {
+        y: 3,
+      },
+      {
+        y: -3,
+        ease: Linear.easeInOut,
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
+      }
+    );
+
+    let nftCardsAnim1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ugs-pss-1",
+        start: "top 25%",
+      },
+    });
+    nftCardsAnim1
+      .fromTo(
+        ".ugs-pss-1 .platform-stats-img img",
+        {
+          opacity: 0,
+          x: "20rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.65,
+        }
+      )
+      .fromTo(
+        ".ugs-pss-1 .ps-box",
+        {
+          y: "5rem",
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.65,
+          stagger: {
+            each: 0.25,
+          },
+        },
+        0
+      );
+    let nftCardsAnim2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ugs-pss-2",
+        start: "top 25%",
+      },
+    });
+    nftCardsAnim2
+      .fromTo(
+        ".ugs-pss-2 .platform-stats-img img",
+        {
+          opacity: 0,
+          x: "20rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.65,
+        }
+      )
+      .fromTo(
+        ".ugs-pss-2 .ps-box",
+        {
+          y: "5rem",
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.65,
+          stagger: {
+            each: 0.25,
+          },
+        },
+        0
+      );
+    let nftCardsAnim3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ugs-pss-3",
+        start: "top 25%",
+      },
+    });
+    nftCardsAnim3
+      .fromTo(
+        ".ugs-pss-3 .fashion-brand-img",
+        {
+          opacity: 0,
+          x: "20rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.65,
+        }
+      )
+      .fromTo(
+        ".ugs-pss-3 .ps-box",
+        {
+          y: "5rem",
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.65,
+          stagger: {
+            each: 0.25,
+          },
+        },
+        0
+      );
+    let nftCardsAnim4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ugs-pss-4",
+        start: "top 25%",
+      },
+    });
+    nftCardsAnim4
+      .fromTo(
+        ".ugs-pss-4 .platform-stats-img img",
+        {
+          opacity: 0,
+          x: "20rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.65,
+        }
+      )
+      .fromTo(
+        ".ugs-pss-4 .ps-box",
+        {
+          y: "5rem",
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.65,
+          stagger: {
+            each: 0.25,
+          },
+        },
+        0
+      );
+    let nftCardsAnim5 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ugs-pss-5",
+        start: "top 25%",
+      },
+    });
+    nftCardsAnim5
+      .fromTo(
+        ".ugs-pss-5 .platform-stats-img img",
+        {
+          opacity: 0,
+          x: "20rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.65,
+        }
+      )
+      .fromTo(
+        ".ugs-pss-5 .ps-box",
+        {
+          y: "5rem",
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.65,
+          stagger: {
+            each: 0.25,
+          },
+        },
+        0
+      );
+  }, []);
   return (
     <main className="app">
+      <div className="loading-screen">
+        <UTLogo color="#fff" />
+      </div>
       <div className="ut-growth-stories-page">
         <section className="im-hero-section">
           <div className="box">
@@ -88,21 +358,24 @@ const UptrendGrowthStories = () => {
                 <h3>Results-driven performance by proven experts</h3>
               </div>
               <div className="im-hero-explore">
-                <a href="#service-description">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
             src={ImHeroImg}
             alt="ImHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img ">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
-        <div className="ugs-pss-container">
+        <div className="ugs-pss-container" id="explore">
           <section className="platform-stats-section ugs-pss-1">
             <div className="box box-p">
               <div className="platform-stats-grid">
@@ -519,7 +792,8 @@ const UptrendGrowthStories = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <button>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
                   </button>
                 </div>
               </div>

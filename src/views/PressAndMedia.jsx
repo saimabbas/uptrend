@@ -305,51 +305,7 @@ const PressAndMedia = () => {
         },
         "<0"
       );
-    let scrambleTextStats = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".platform-stats-section",
-        start: "top 50%",
-      },
-    });
-    scrambleTextStats
-      .to(".ps-box-1 h3 span", {
-        duration: 3,
-        scrambleText: {
-          text: "2.3",
-          chars: "0 1 2 3 4 5 6 7 8 9",
-          revealDelay: 0.5,
-          speed: 1,
-          delay: 3,
-        },
-      })
-      .to(
-        ".ps-box-2 h3 span",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "64",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 3,
-          },
-        },
-        0
-      )
-      .to(
-        ".ps-box-3 h3 span",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "448",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 3,
-          },
-        },
-        0
-      );
+
     let nftCardsAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".ut-in-press",

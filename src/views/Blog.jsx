@@ -32,6 +32,8 @@ import JournalImg2 from "../assets/img/journal-img-2.svg";
 import JournalImg3 from "../assets/img/journal-img-3.svg";
 import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
 import JournalImg4 from "../assets/img/journal-img-4.svg";
+import Lottie from "react-lottie";
+import animationData from "./../assets/json/blog.json";
 
 // Icons
 import {
@@ -75,6 +77,14 @@ import BlogCard from "../components/BlogCard";
 import { Tab, Nav } from "react-bootstrap";
 
 const EventMarketing = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -108,12 +118,14 @@ const EventMarketing = () => {
         marketingHeadingChars,
         {
           opacity: 0,
+          rotateY: 90,
         },
         {
+          rotateY: 0,
           opacity: 1,
-          duration: 0.25,
+          duration: 0.5,
           stagger: {
-            each: 0.05,
+            each: 0.025,
           },
         }
       )
@@ -302,51 +314,49 @@ const EventMarketing = () => {
         },
         "<0"
       );
-    let scrambleTextStats = gsap.timeline({
+
+    let nftCardsAnim = gsap.timeline({
       scrollTrigger: {
-        trigger: ".platform-stats-section",
+        trigger: ".blog-cards-grid",
         start: "top 50%",
       },
     });
-    scrambleTextStats
-      .to(".ps-box-1 h3 span", {
-        duration: 3,
-        scrambleText: {
-          text: "2.3",
-          chars: "0 1 2 3 4 5 6 7 8 9",
-          revealDelay: 0.5,
-          speed: 1,
-          delay: 3,
+    nftCardsAnim.fromTo(
+      ".blog-cards-grid .blog-card",
+      {
+        opacity: 0,
+        y: "10rem",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.4,
+        stagger: {
+          each: 0.15,
         },
-      })
-      .to(
-        ".ps-box-2 h3 span",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "64",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 3,
-          },
+      }
+    );
+    let nftCardsAnim2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".top-stories-content",
+        start: "top 50%",
+      },
+    });
+    nftCardsAnim2.fromTo(
+      ".top-stories-content .blog-card",
+      {
+        opacity: 0,
+        y: "10rem",
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.4,
+        stagger: {
+          each: 0.15,
         },
-        0
-      )
-      .to(
-        ".ps-box-3 h3 span",
-        {
-          duration: 3,
-          scrambleText: {
-            text: "448",
-            chars: "0 1 2 3 4 5 6 7 8 9",
-            revealDelay: 0.5,
-            speed: 1,
-            delay: 3,
-          },
-        },
-        0
-      );
+      }
+    );
   }, []);
 
   return (
@@ -370,12 +380,15 @@ const EventMarketing = () => {
               </div>
             </div>
           </div>
-          <img
+          {/* <img
             loading="lazy"
             className="im-hero-img"
             src={EmHeroImg}
             alt="EmHeroImg"
-          />
+          /> */}
+          <div className="im-hero-img">
+            <Lottie className="im-hero-img" options={defaultOptions} />
+          </div>
         </section>
         <div className="blog-content-wrapper"></div>
         <section className="service-description-section">
@@ -596,7 +609,8 @@ const EventMarketing = () => {
                 <div className="sj-input-box">
                   <input type="text" placeholder="Email" />
                   <button>
-                    SUBSCRIBE <span> TO OUR JOURNAL</span>
+                    <div></div>
+                    SUBSCRIBE TO OUR JOURNAL
                   </button>
                 </div>
               </div>

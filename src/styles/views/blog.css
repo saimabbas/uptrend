@@ -647,7 +647,7 @@
   transition: 0.5s;
 }
 .blog-card:hover {
-  transform: translate(0, -1rem);
+  transform: translate(0, -1rem) !important;
 }
 .top-stories {
   width: 100%;
