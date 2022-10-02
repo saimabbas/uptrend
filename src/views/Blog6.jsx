@@ -122,7 +122,7 @@ const Blog6 = () => {
                             </a>
                           </div>
                           <div className="pbc-social-icon">
-                            <a href="#">
+                            <a href="http://instagram.com/uptrendagency">
                               <img src={InstagramIcon} alt="InstagramIcon" />
                               <p>Instagram</p>
                             </a>

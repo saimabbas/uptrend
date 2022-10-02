@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // Styles
 import "../styles/reset.css";
@@ -382,10 +383,13 @@ const InfluencerMarketing = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
-              <a href="#" className="arrow-link">
-                <span>GET STARTED</span>
-                <MdArrowForward />
-              </a>
+              <Link to="/talktous">
+                {" "}
+                <a href="#" className="arrow-link">
+                  <span>GET STARTED</span>
+                  <MdArrowForward />
+                </a>
+              </Link>
             </div>
             <div className="service-description-grid">
               <div className="sd-grid-card sd-grid-card-1">
@@ -626,7 +630,7 @@ const InfluencerMarketing = () => {
           smallText="ready for"
           bigText="big things?"
           linkText="let's talk!"
-          linkOfText="#"
+          linkOfText="/talktous"
         />
         <section className="faq-section">
           <div className="box">

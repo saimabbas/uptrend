@@ -522,7 +522,7 @@
 }
 .main-blog-grid-left p {
   color: #fff;
-  font-size: 1.85rem;
+  font-size: 2.25rem;
   font-weight: 400;
   line-height: 32px;
 }
@@ -682,7 +682,7 @@
   grid-template-rows: auto;
   grid-gap: 10rem;
   margin: 7.5rem 0 0 0;
-  padding: 0 0 25rem 0;
+  /* padding: 0 0 25rem 0; */
 }
 .upcoming-events-grid-card {
   width: 100%;
@@ -727,7 +727,7 @@
   font-size: 3.5rem;
   font-weight: 800;
   color: var(--white);
-  max-width: 65%;
+  max-width: 85%;
 }
 
 .uegc-content > p {
@@ -747,7 +747,7 @@
   grid-template-columns: max-content max-content max-content;
   grid-template-rows: auto;
   grid-gap: 0rem;
-  margin: 2.5rem 0;
+  margin: 2.5rem 0 7.5rem 0;
 }
 .ue-details-grid > div {
   margin: 0 1rem 1rem 0;

@@ -51,15 +51,15 @@ const Header = (props) => {
               </Dropdown.Menu>
             </Dropdown>
           </div>
-          <a href="#">Results</a>
+          <a href="/uptrendgrowthstories">Results</a>
           <div className="bookmark-link">
             <img loading="lazy" src={BookmarkGreen} alt="BookmarkGreen" />
-            <a href="#">Careers</a>
+            <a href="/uptrendcareer">Careers</a>
           </div>
-          <a href="#">Events</a>
-          <a href="#">Store</a>
-          <a href="#">Journal</a>
-          <a className="talk-to-us" href="#">
+          <a href="/events">Events</a>
+          <a href="/uptrendstore">Store</a>
+          <a href="/blog">Journal</a>
+          <a className="talk-to-us" href="/talktous">
             <span>Talk To Us</span>
           </a>
         </div>
@@ -123,15 +123,15 @@ const Header = (props) => {
                   </Dropdown.Menu>
                 </Dropdown>
               </div>
-              <a href="#">Results</a>
+              <a href="/uptrendgrowthstories">Results</a>
               <div className="bookmark-link-mob">
                 <img loading="lazy" src={BookmarkGreen} alt="BookmarkGreen" />
-                <a href="#">Careers</a>
+                <a href="/uptrendcareer">Careers</a>
               </div>
-              <a href="#">Events</a>
-              <a href="#">Store</a>
-              <a href="#">Journal</a>
-              <a className="talk-to-us" href="#">
+              <a href="/events">Events</a>
+              <a href="/uptrendstore">Store</a>
+              <a href="/blog">Journal</a>
+              <a className="talk-to-us" href="/talktous">
                 <span>Talk To Us</span>
               </a>
             </div>
@@ -139,16 +139,16 @@ const Header = (props) => {
           <div className="header-mob-bottom">
             <button className="ut-btn-green">CONNECT YOUR BRAND</button>
             <div className="header-mob-icons-box">
-              <a href="#">
+              <a href="https://www.linkedin.com/company/UptrendAgency">
                 <IconLinkedIn color="#000" />
               </a>
-              <a href="#">
+              <a href="https://facebook.com/UptrendAgency">
                 <IconFacebook color="#000" />
               </a>
-              <a href="#">
+              <a href="http://instagram.com/uptrendagency">
                 <IconInstagram color="#000" />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/UptrendAgency">
                 <IconTwitter color="#000" />
               </a>
             </div>

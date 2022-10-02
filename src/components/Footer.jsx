@@ -19,20 +19,20 @@ const Footer = () => {
           </div>
           <div className="footer-grid-card-2">
             <h6>Expertise</h6>
-            <a href="#">Influencer Marketing</a>
-            <a href="#">Metaverse Promotion</a>
-            <a href="#">Investor Relations</a>
-            <a href="#">Event Marketing</a>
+            <a href="/influencermarketing">Influencer Marketing</a>
+            <a href="/metaversemarketing">Metaverse Promotion</a>
+            <a href="/investmentrelationships">Investor Relations</a>
+            <a href="/eventmarketing">Event Marketing</a>
           </div>
           <div className="footer-grid-card-3">
             <h6>Features</h6>
-            <a href="#">About us</a>
-            <a href="#">Press and Media</a>
-            <a href="#">Case Studies</a>
-            <a href="#">Careers</a>
-            <a href="#">Events</a>
-            <a href="#">Merch</a>
-            <a href="#">Office in the Sandbox</a>
+            <a href="/expertise">About us</a>
+            <a href="/pressandmedia">Press and Media</a>
+            <a href="/uptrendgrowthstories">Case Studies</a>
+            <a href="/uptrendcareer">Careers</a>
+            <a href="/events">Events</a>
+            <a href="/uptrendstore">Merch</a>
+            <a href="/sandbox">Office in the Sandbox</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Public Offer Agreement</a>
           </div>
@@ -46,16 +46,16 @@ const Footer = () => {
               <button>Subscribe</button>
             </div>
             <div className="footer-icons-box">
-              <a href="#">
+              <a href="https://www.linkedin.com/company/UptrendAgency">
                 <IconLinkedIn color="#000" />
               </a>
-              <a href="#">
+              <a href="https://facebook.com/UptrendAgency">
                 <IconFacebook color="#000" />
               </a>
-              <a href="#">
+              <a href="http://instagram.com/uptrendagency">
                 <IconInstagram color="#000" />
               </a>
-              <a href="#">
+              <a href="https://twitter.com/UptrendAgency">
                 <IconTwitter color="#000" />
               </a>
             </div>

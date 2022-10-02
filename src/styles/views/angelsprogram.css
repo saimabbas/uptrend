@@ -116,4 +116,16 @@
   .modal.show .modal-dialog {
     min-width: unset;
   }
+  .modal.show .modal-body {
+    padding: 2rem;
+  }
+  .modal.show .modal-content {
+    border-radius: 0.75rem;
+  }
+  .join-angelprogram .rts-form-grid textarea {
+    grid-column: auto;
+  }
+  .join-angelprogram-heading h2 {
+    font-size: 2rem;
+  }
 }

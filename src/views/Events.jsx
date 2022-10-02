@@ -430,7 +430,9 @@ const Events = () => {
                       <p>10:00 - 11:00 UTC</p>
                     </div>
                     <div>
-                      <img src={YouTubeIcon} alt="" />
+                      <a href="https://www.youtube.com/channel/UChoWOblODaVznldgEFmZT4g">
+                        <img src={YouTubeIcon} alt="" />
+                      </a>
                     </div>
                   </div>
                   <h2>Lisa N Edwards</h2>
@@ -443,26 +445,28 @@ const Events = () => {
                 <div className="uegc-content">
                   <h6>Uptrend Webinar</h6>
                   <br />
-                  <h2>From Zero to One Million Followers:</h2>
-                  <p>
-                    The Ultimate Guide to Build Personal Brand on Social Media
-                    in 2022
-                  </p>
+                  <p>How to Establish Impactful Influencer</p>
+                  <h2>
+                    Marketing Campaign Based on Trust, Responsobility and
+                    Diligence{" "}
+                  </h2>
                   <div className="ue-details-grid">
                     <div>
-                      <h2>15 </h2> <span>AUG</span>
+                      <h2>10 </h2> <span>SEP</span>
                     </div>
                     <div>
                       <img src={ClockIcon} alt="ClockIcon" />
-                      <p>10:00 - 11:00 UTC</p>
+                      <p>12:00-13:00 UTC</p>
                     </div>
                     <div>
-                      <img src={YouTubeIcon} alt="" />
+                      <a href="https://www.youtube.com/channel/UChoWOblODaVznldgEFmZT4g">
+                        <img src={YouTubeIcon} alt="" />
+                      </a>
                     </div>
                   </div>
-                  <h2>Lisa N Edwards</h2>
-                  <p>Australian actress, producer, screenwriter and author</p>
-                  <span className="color-orange">Over €500 in prizes!</span>
+                  <h2>Nicolás Verderosa</h2>
+                  <p>CEO Kephi Gallery</p>
+                  <span className="color-orange">Over €800 in prizes!</span>
                 </div>
               </div>
             </div>

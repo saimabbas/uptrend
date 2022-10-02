@@ -448,7 +448,7 @@ const Media = () => {
                   <a href="#">
                     <Whatsapp />
                   </a>
-                  <a href="#">
+                  <a href="https://twitter.com/UptrendAgency">
                     <IconTwitter color="#000" />
                   </a>
                   <a href="#">

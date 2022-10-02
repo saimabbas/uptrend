@@ -378,11 +378,15 @@ const PressAndMedia = () => {
               </div>
               <div className="moc-right">
                 <div className="moc-right-card">
-                  <img src={MOCRImg1} alt="MOCRImg1" />
+                  <a href="https://drive.google.com/file/d/1M0Zwc4-yueQPkHeA0LCfVdDwjthigOwl/view?usp=sharing">
+                    <img src={MOCRImg1} alt="MOCRImg1" />
+                  </a>
                   <p>Uptrend Logo</p>
                 </div>
                 <div className="moc-right-card">
-                  <img src={MOCRImg2} alt="MOCRImg2" />
+                  <a href="https://drive.google.com/file/d/1DZUm4rQT2u6TtObvqQqHR1lBbSVBZdUC/view?usp=sharing">
+                    <img src={MOCRImg2} alt="MOCRImg2" />
+                  </a>
                   <p>Mock Up</p>
                 </div>
               </div>

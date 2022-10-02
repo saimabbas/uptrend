@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // Styles
 import "../styles/reset.css";
@@ -445,7 +446,7 @@ const InvestmentRelationships = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
-              <a href="#" className="arrow-link">
+              <a href="/talktous" className="arrow-link">
                 <span>GET STARTED</span>
                 <MdArrowForward />
               </a>
@@ -570,7 +571,7 @@ const InvestmentRelationships = () => {
           smallText="ready to start"
           bigText="a new trend?"
           linkText="let's get started!"
-          linkOfText="#"
+          linkOfText="/talktous"
         />
         <section className="faq-section">
           <div className="box">
