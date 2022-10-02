@@ -7,11 +7,11 @@ import "../styles/views/blog.css";
 const BlogCard = (props) => {
   return (
     <div
-      className={`blog-card ${
+      className={`blog-card  ${
         props.lightBlogCard ? "light-blog-card" : "dark-blog-card"
       }`}
     >
-      <div>
+      <div className="blog-card-content">
         <div className="blog-card-img-box">
           <img src={props.blogImg} alt="Blog Img" />
           <div className="blog-tags-box">

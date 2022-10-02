@@ -380,7 +380,7 @@ const UptrendGrowthStories = () => {
             <div className="box box-p">
               <div className="platform-stats-grid">
                 <div className="platform-stats-details">
-                  <h6>Proof of Work</h6>
+                  <h6>Case #1</h6>
                   <h3>#1 ONLINE EDUCATIONAL</h3>
                   <h4>PLATFORM IN EUROPE</h4>x{" "}
                   <h5>Growth Unlocked - Performance Guaranteed</h5>
@@ -429,13 +429,14 @@ const UptrendGrowthStories = () => {
             <div className="box box-p">
               <div className="platform-stats-grid">
                 <div className="platform-stats-details">
-                  <h6>Proof of Work</h6>
-                  <h3>#1 ONLINE EDUCATIONAL</h3>
-                  <h4>PLATFORM IN EUROPE</h4>x{" "}
-                  <h5>Growth Unlocked - Performance Guaranteed</h5>
+                  <h6>Case #2</h6>
+                  <h3>Top-10 Gaming App</h3>
+                  <h4>In Sweden</h4>x{" "}
+                  <h5>Strategies That Drive Revenue Growth</h5>
                   <p>
-                    By seamlessly integrating with Uptrend, our partner achieved
-                    unprecedented growth with influencer marketing service
+                    Uptrend growth strategies strategies helped propel Swedish
+                    gaming startup to the top ten list of gaming apps in the
+                    Apple App Store and increased client revenue.
                   </p>
                 </div>
                 <div className="platform-stats-img">
@@ -484,8 +485,8 @@ const UptrendGrowthStories = () => {
             <div className="box">
               <div className="platform-stats-grid fashion-brand-grid">
                 <div className="platform-stats-details">
-                  <h6>Proof of Work</h6>
-                  <h3>FORTUNE-500 FASHION BRAND </h3>
+                  <h6>Case #3</h6>
+                  <h3>FORTUNE-500 FASHION BRAND</h3>
                   <h4></h4> {/* Don't remove this h4. This is for margin */}
                   <h5>Iconic Brands Are Betting Big On The Metaverse </h5>
                   <p>
@@ -530,7 +531,7 @@ const UptrendGrowthStories = () => {
             <div className="box">
               <div className="platform-stats-grid">
                 <div className="platform-stats-details">
-                  <h6>Proof of Work</h6>
+                  <h6>Case #4</h6>
                   <h3>LOCAL TECH STARTUP</h3>
                   <h4></h4> {/* Don't remove this h4. This is for margin */}
                   <h5>Delivering results-driven event marketing success</h5>
@@ -578,13 +579,13 @@ const UptrendGrowthStories = () => {
             <div className="box box-p">
               <div className="platform-stats-grid">
                 <div className="platform-stats-details">
-                  <h6>Proof of Work</h6>
-                  <h3>#1 ONLINE EDUCATIONAL</h3>
-                  <h4>PLATFORM IN EUROPE</h4>x{" "}
-                  <h5>Growth Unlocked - Performance Guaranteed</h5>
+                  <h6>Case #5</h6>
+                  <h3>The Leading Health App </h3>
+                  <h4>In East Asia</h4>x{" "}
+                  <h5>Venture Capital Creates Value for Startups</h5>
                   <p>
-                    By seamlessly integrating with Uptrend, our partner achieved
-                    unprecedented growth with influencer marketing service
+                    We helped the #1 health startup in East Asia attract
+                    $11,400,000 venture capital in less than 90 days.
                   </p>
                 </div>
                 <div className="platform-stats-img">

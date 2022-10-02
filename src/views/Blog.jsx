@@ -481,8 +481,8 @@ const EventMarketing = () => {
                         heading="3 Proven Strategies To Building Brand Awareness in 2022"
                         description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
                         personImg={Person}
-                        personName="Emre Murry"
-                        date="18.06.2022"
+                        personName="Alex Wanstein"
+                        date="10.06.2022"
                         readTime="5 mint read"
                       >
                         <span>Gaming</span>
@@ -494,8 +494,8 @@ const EventMarketing = () => {
                         heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
                         description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
                         personImg={Person}
-                        personName="Emre Murry"
-                        date="18.06.2022"
+                        personName="Donna Wanstein"
+                        date="7.06.2022"
                         readTime="5 mint read"
                       >
                         <span>Gaming</span>
@@ -506,8 +506,8 @@ const EventMarketing = () => {
                         heading="3 Proven Strategies To Building Brand Awareness in 2022"
                         description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
                         personImg={Person}
-                        personName="Emre Murry"
-                        date="18.06.2022"
+                        personName="Donna Wanstein"
+                        date="7.06.2022"
                         readTime="5 mint read"
                       >
                         <span>News</span>
@@ -560,41 +560,42 @@ const EventMarketing = () => {
           <div className="box">
             <h2 className="ts-head">Top Stories</h2>
             <div className="top-stories-content">
+              <div className="topstories-right">
+                <BlogCard
+                  lightBlogCard={true}
+                  blogImg={JournalImg2}
+                  heading="Top-5 Influencer Marketing Software Solutions To Boost Your Brand in 2022 (Part 2)"
+                  personImg={Person}
+                  personName="Donna Wanstein"
+                  date="12.06.2022"
+                  readTime="10 mint read"
+                >
+                  <span>Gaming</span>
+                </BlogCard>
+                <BlogCard
+                  lightBlogCard={true}
+                  blogImg={JournalImg2}
+                  heading="Top Regions With The Best Marketing Performance"
+                  personImg={Person}
+                  personName="Sarah Evans"
+                  date="18.06.2022"
+                  readTime="5 mint read"
+                >
+                  <span>Gaming</span>
+                </BlogCard>
+              </div>
+
               <BlogCard
                 lightBlogCard={true}
                 blogImg={JournalImg2}
-                heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
-                description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                heading="New Local Region? Tips To Get Started"
+                description="The ultimate marketing plan for dominating local markets. Get the fundamental insights to impact your customers. We introduce essential marketing tips for brands to create the valuable experience."
                 personImg={Person}
                 personName="Emre Murry"
                 date="18.06.2022"
                 readTime="5 mint read"
               >
-                <span>Gaming</span>
-              </BlogCard>
-              <BlogCard
-                lightBlogCard={true}
-                blogImg={JournalImg2}
-                heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
-                description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
-                personImg={Person}
-                personName="Emre Murry"
-                date="18.06.2022"
-                readTime="5 mint read"
-              >
-                <span>Gaming</span>
-              </BlogCard>
-              <BlogCard
-                lightBlogCard={true}
-                blogImg={JournalImg2}
-                heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
-                description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
-                personImg={Person}
-                personName="Emre Murry"
-                date="18.06.2022"
-                readTime="5 mint read"
-              >
-                <span>Gaming</span>
+                <span>Influencer Marketing</span>
               </BlogCard>
             </div>
           </div>
