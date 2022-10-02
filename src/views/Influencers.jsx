@@ -225,7 +225,7 @@ const Influencers = () => {
                   <a href="#">
                     <Whatsapp />
                   </a>
-                  <a href="#">
+                  <a href="https://twitter.com/UptrendAgency">
                     <IconTwitter color="#000" />
                   </a>
                   <a href="#">
@@ -258,7 +258,7 @@ const Influencers = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>LOCAL YOUTUBE CRYPTO INFLUENCERS</h2>
-              <a href="#" className="arrow-link">
+              <a href="/influencermarketing" className="arrow-link">
                 <span>GET STARTED</span>
                 <MdArrowForward />
               </a>

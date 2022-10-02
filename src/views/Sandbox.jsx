@@ -327,9 +327,6 @@ const Sandbox = () => {
         </section>
         <section className="service-description-section" id="explore">
           <div className="box">
-            <div className="heading-sublink-box">
-              <h2>A Venue For Education, Networking, And Growth</h2>
-            </div>
             <div className="blog-tabs-content">
               <div className="main-blog-grid">
                 <div className="main-blog-grid-left">

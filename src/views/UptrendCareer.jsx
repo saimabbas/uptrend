@@ -443,8 +443,8 @@ const UptrendCareer = () => {
                 <div className="sd-grid-card-3-bg"></div>
                 <img loading="lazy" src={PurplePlanetImg} alt="UTPartners" />
                 <div className="ucsdgc1-details ucsdgc1-details-p">
-                  <h3>Explore The Globe</h3>
-                  <h6>Establish brand presence in various regions</h6>
+                  <h3>Work From Anywhere</h3>
+                  <h6>Easy way to get organized and stay productive</h6>
                 </div>
               </div>
               <div className="sd-grid-card sd-grid-card-3">
@@ -474,18 +474,22 @@ const UptrendCareer = () => {
                   <h6>Unleash the power of personal branding</h6>
                   <div className="all-platforms-grid">
                     <div className="apg-box">
-                      <img
-                        loading="lazy"
-                        src={PlatformLogo2}
-                        alt="PlatformLogo2"
-                      />
+                      <a href="https://twitter.com/UptrendAgency">
+                        <img
+                          loading="lazy"
+                          src={PlatformLogo2}
+                          alt="PlatformLogo2"
+                        />
+                      </a>
                     </div>
                     <div className="apg-box">
-                      <img
-                        loading="lazy"
-                        src={PlatformLogo6}
-                        alt="PlatformLogo6"
-                      />
+                      <a href="https://www.linkedin.com/company/UptrendAgency">
+                        <img
+                          loading="lazy"
+                          src={PlatformLogo6}
+                          alt="PlatformLogo6"
+                        />
+                      </a>
                     </div>
                     <div className="apg-box">
                       <img
@@ -495,18 +499,23 @@ const UptrendCareer = () => {
                       />
                     </div>
                     <div className="apg-box">
-                      <img
-                        loading="lazy"
-                        src={PlatformLogo8}
-                        alt="PlatformLogo8"
-                      />
+                      <a href="http://instagram.com/uptrendagency">
+                        <img
+                          loading="lazy"
+                          src={PlatformLogo8}
+                          alt="PlatformLogo8"
+                        />
+                      </a>
                     </div>
                     <div className="apg-box">
-                      <img
-                        loading="lazy"
-                        src={PlatformLogo9}
-                        alt="PlatformLogo9"
-                      />
+                      <a href="https://facebook.com/UptrendAgency">
+                        {" "}
+                        <img
+                          loading="lazy"
+                          src={PlatformLogo9}
+                          alt="PlatformLogo9"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -528,15 +537,15 @@ const UptrendCareer = () => {
         </section>
         <section className="positions-section">
           <div className="box box-p">
-            <h2 className="expertise-heading">EXPERTISE</h2>
+            <h2 className="expertise-heading">Positions</h2>
             <p>Current Job Openings</p>
             <div className="positions-grid">
               <div className="positions-grid-card">
-                <h2>
+                <a href="https://angel.co/company/uptrendagency/jobs/2376417-metaverse-designer">
                   <span>DESIGN</span>
                   <br />
                   metaverse designer
-                </h2>
+                </a>
                 <div className="pgc-bottom">
                   <p>Global</p>
                   <a href="#">
@@ -545,11 +554,11 @@ const UptrendCareer = () => {
                 </div>
               </div>
               <div className="positions-grid-card">
-                <h2>
+                <a href="https://angel.co/company/uptrendagency/jobs/2376402-business-development-manager">
                   <span>sales</span>
                   <br />
                   Business Development Manager
-                </h2>
+                </a>
                 <div className="pgc-bottom">
                   <p>Asia</p>
                   <a href="#">
@@ -558,11 +567,11 @@ const UptrendCareer = () => {
                 </div>
               </div>
               <div className="positions-grid-card">
-                <h2>
+                <a href="https://angel.co/company/uptrendagency/jobs/2376414-growth-strategist">
                   <span>Marketing</span>
                   <br />
                   Growth Strategist
-                </h2>
+                </a>
                 <div className="pgc-bottom">
                   <p>Europe</p>
                   <a href="#">
@@ -571,11 +580,11 @@ const UptrendCareer = () => {
                 </div>
               </div>
               <div className="positions-grid-card">
-                <h2>
+                <a href="https://angel.co/company/uptrendagency/jobs/2376399-community-manager">
                   <span>Execution</span>
                   <br />
                   Community Manager
-                </h2>
+                </a>
                 <div className="pgc-bottom">
                   <p>Europe</p>
                   <a href="#">
@@ -614,15 +623,10 @@ const UptrendCareer = () => {
                     type="text"
                     placeholder="Telegram or Whatsapp"
                   />
-                  <input
+                  <textarea
                     className="ut-input"
                     type="text"
-                    placeholder="Website"
-                  />
-                  <input
-                    className="ut-input"
-                    type="text"
-                    placeholder="How can we lend a helping hand?"
+                    placeholder="Cover Letter"
                   />
                 </div>
                 <button className="ut-btn-green">SEND</button>

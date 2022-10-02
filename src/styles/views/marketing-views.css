@@ -1495,14 +1495,17 @@
   background-color: #fff;
   transition: 0.5s;
 }
-.positions-grid-card h2 {
-  font-size: 3.5rem;
+.positions-grid-card a {
+  font-size: 4rem;
   text-transform: uppercase;
   color: var(--black);
   transition: 0.5s;
   font-weight: 800;
 }
-.positions-grid-card h2 span {
+.positions-grid-card a:hover {
+  color: var(--black);
+}
+.positions-grid-card a span {
   font-weight: 300;
 }
 .positions-grid-card:hover {
