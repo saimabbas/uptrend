@@ -482,7 +482,7 @@ const UptrendGrowthStories = () => {
               alt="FashionBrandImg"
             />
 
-            <div className="box">
+            <div className="box box-p">
               <div className="platform-stats-grid fashion-brand-grid">
                 <div className="platform-stats-details">
                   <h6>Case #3</h6>
@@ -528,7 +528,7 @@ const UptrendGrowthStories = () => {
             </div>
           </section>
           <section className="platform-stats-section ugs-pss-4">
-            <div className="box">
+            <div className="box box-p">
               <div className="platform-stats-grid">
                 <div className="platform-stats-details">
                   <h6>Case #4</h6>

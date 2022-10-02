@@ -33,11 +33,148 @@ import {
 } from "react-icons/md";
 import Footer from "../components/Footer";
 import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
+import FuelBrandGrowthSwiper from "../components/FuelBrandGrowthSwiper";
+import { gsap } from "gsap";
+import {
+  Back,
+  Power3,
+  Power1,
+  Power2,
+  Power4,
+  Linear,
+  Expo,
+  Circ,
+} from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import UTLogo from "../assets/icons/UTLogo";
 import BackedByLogosSwiper from "../components/BackedByLogosSwiper";
 
 const TalkToUs = () => {
+  gsap.registerPlugin(
+    ScrollTrigger,
+    SplitText,
+    ScrollSmoother,
+    ScrambleTextPlugin
+  );
+  useEffect(() => {
+    // Text Spliting
+    const marketingHeading = new SplitText(".im-hero-headings h1", {
+      type: "chars, words,lines",
+    });
+    const marketingHeadingChars = marketingHeading.chars;
+    const marketingHeadingLines = marketingHeading.lines;
+    const marketingHeadingWords = marketingHeading.words;
+
+    let marketingLandingAnim = gsap.timeline();
+    marketingLandingAnim
+      .fromTo(
+        ".loading-screen",
+        {
+          opacity: "1",
+        },
+        {
+          opacity: "0",
+          delay: 1,
+          duration: 0.65,
+          ease: Linear.easeInOut,
+        }
+      )
+      .fromTo(
+        marketingHeadingChars,
+        {
+          opacity: 0,
+          rotateY: 90,
+        },
+        {
+          rotateY: 0,
+          opacity: 1,
+          duration: 0.65,
+          stagger: {
+            each: 0.025,
+          },
+        }
+      )
+      .fromTo(
+        ".im-hero-headings h3",
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".loading-screen",
+        {
+          height: "100vh",
+        },
+        {
+          height: "0",
+          duration: 0.01,
+        },
+        "<0"
+      );
+    gsap.fromTo(
+      ".im-hero-explore svg",
+      {
+        y: 3,
+      },
+      {
+        y: -3,
+        ease: Linear.easeInOut,
+        duration: 1,
+        repeat: -1,
+        yoyo: true,
+      }
+    );
+
+    let nftCardsAnim1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ttu-pss-1",
+        start: "top 25%",
+      },
+    });
+    nftCardsAnim1
+      .fromTo(
+        ".ttu-pss-1 .platform-stats-img img",
+        {
+          opacity: 0,
+          x: "20rem",
+        },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.65,
+        }
+      )
+      .fromTo(
+        ".ttu-pss-1 .ps-box",
+        {
+          y: "5rem",
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.65,
+          stagger: {
+            each: 0.25,
+          },
+        },
+        0
+      );
+  }, []);
   return (
     <main className="app">
+      <div className="loading-screen">
+        <UTLogo color="#fff" />
+      </div>
       <div className="talktous-page">
         <div className="ttu-header">
           <div className="box">
@@ -112,7 +249,7 @@ const TalkToUs = () => {
             </div>
           </div>
         </section>
-        <section className="platform-stats-section">
+        <section className="platform-stats-section ttu-pss-1">
           <div className="box box-p">
             <div className="platform-stats-grid">
               <div className="platform-stats-details">
@@ -137,7 +274,7 @@ const TalkToUs = () => {
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span></span>% 690
+                    <MdArrowUpward /> <span>690</span>%
                   </h3>
                   <p>Growth In New User Sign-Ups</p>
                 </div>
@@ -145,7 +282,7 @@ const TalkToUs = () => {
               <div className="ps-box ps-box-2">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span></span> 64%
+                    <MdArrowUpward /> <span>64</span> %
                   </h3>
                   <p>LTV Increase</p>
                 </div>
@@ -153,7 +290,7 @@ const TalkToUs = () => {
               <div className="ps-box ps-box-3">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span></span>14 320 344
+                    <MdArrowUpward /> <span> 14 320 344</span>
                   </h3>
                   <p>Campaign Engagement</p>
                 </div>

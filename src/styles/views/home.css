@@ -265,6 +265,7 @@
 }
 .expertise-grid-card {
   width: 100%;
+  height: 100%;
   padding: 5rem;
   transition: 0.5s;
   border-radius: 1.5rem;
@@ -307,8 +308,8 @@
   margin: 20rem 0 0 0;
   width: 75%;
 }
-.expertise-grid-card-1 h2,
-.expertise-grid-card-4 h2 {
+.expertise-grid-card-1 a,
+.expertise-grid-card-4 a {
   position: relative;
   z-index: 15;
 }
@@ -319,7 +320,7 @@
   display: block;
   text-transform: uppercase;
 }
-.expertise-grid-card h2 {
+.expertise-grid-card a {
   text-transform: uppercase;
   /* padding: 2.5rem 0 0 0; */
   display: flex;
@@ -328,9 +329,19 @@
   flex-direction: column;
   align-items: flex-start;
   transition: 0.5s;
+  color: var(--black);
 }
-.expertise-grid-card:hover h2 {
-  letter-spacing: 7px;
+.expertise-grid-card:nth-child(3) a,
+.expertise-grid-card:nth-child(4) a,
+.expertise-grid-card:nth-child(3) a:hover,
+.expertise-grid-card:nth-child(4) a:hover {
+  color: var(--white);
+}
+.expertise-grid-card a:hover {
+  color: var(--black);
+}
+.expertise-grid-card:hover a {
+  text-decoration: underline;
 }
 .expertise-grid-card:hover span {
   letter-spacing: 3px;
