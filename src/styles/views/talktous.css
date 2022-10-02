@@ -100,6 +100,16 @@
   grid-gap: 2.5rem;
   margin: 5rem 0 2.5rem 0;
 }
+.talktous-page .bb-logos-swiper .swiper {
+  width: 75%;
+  margin: 0;
+}
+.Event-marketing-section.ems-1 {
+  padding: 5rem 0 1rem 0;
+}
+.subs-journal-section .sj-bull-elevator-img-box img {
+  margin: -21.5rem 0 0 5rem;
+}
 
 @media screen and (max-width: 1140px) {
   .w50-dark-content h2 {
@@ -113,6 +123,18 @@
 @media screen and (max-width: 850px) {
   .ttu-hero-section {
     grid-template-columns: 1fr;
+  }
+  .Event-marketing-section.ems-1 {
+    padding: 5rem 0 16rem 0;
+  }
+  .subs-journal-section .sj-bull-elevator-img-box img {
+    margin: -15rem 0 0 0;
+  }
+  .talktous-page .bb-logos-swiper .swiper {
+    width: 100%;
+  }
+  .w50-light-content {
+    padding: 5rem 0;
   }
 }
 

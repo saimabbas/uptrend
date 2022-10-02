@@ -33,7 +33,7 @@ import {
 } from "react-icons/md";
 import Footer from "../components/Footer";
 import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
-import FuelBrandGrowthSwiper from "../components/FuelBrandGrowthSwiper";
+import BackedByLogosSwiper from "../components/BackedByLogosSwiper";
 
 const TalkToUs = () => {
   return (
@@ -116,7 +116,7 @@ const TalkToUs = () => {
           <div className="box box-p">
             <div className="platform-stats-grid">
               <div className="platform-stats-details">
-                <h6>Proof of Work</h6>
+                <h6>Cases</h6>
                 <h3>#1 ONLINE EDUCATIONAL</h3>
                 <h4>PLATFORM IN EUROPE</h4>x{" "}
                 <h5>Growth Unlocked - Performance Guaranteed</h5>
@@ -137,7 +137,7 @@ const TalkToUs = () => {
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span></span>%
+                    <MdArrowUpward /> <span></span>% 690
                   </h3>
                   <p>Growth In New User Sign-Ups</p>
                 </div>
@@ -145,7 +145,7 @@ const TalkToUs = () => {
               <div className="ps-box ps-box-2">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span></span> %
+                    <MdArrowUpward /> <span></span> 64%
                   </h3>
                   <p>LTV Increase</p>
                 </div>
@@ -153,7 +153,7 @@ const TalkToUs = () => {
               <div className="ps-box ps-box-3">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span></span>
+                    <MdArrowUpward /> <span></span>14 320 344
                   </h3>
                   <p>Campaign Engagement</p>
                 </div>
@@ -161,9 +161,9 @@ const TalkToUs = () => {
             </div>
           </div>
         </section>
-        <section className="Event-marketing-section ">
+        <section className="Event-marketing-section ems-1">
           <div className="box">
-            <FuelBrandGrowthSwiper backedByLight={true} />
+            <BackedByLogosSwiper backedByLight={true} />
           </div>
         </section>
         <section className="subs-journal-section">
