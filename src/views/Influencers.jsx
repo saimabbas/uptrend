@@ -276,8 +276,9 @@ const Influencers = () => {
                   </div>
                   <div className="igc-top-text-box">
                     <div>
-                      <h4>CoinCheckTV</h4>
-                      <img src={DEImg} alt="DEImg " />
+                      <h4>
+                        CoinCheckTV <img src={DEImg} alt="DEImg " />
+                      </h4>
                     </div>
                     <p>Organic integration</p>
                   </div>
@@ -320,8 +321,10 @@ const Influencers = () => {
                   </div>
                   <div className="igc-top-text-box">
                     <div>
-                      <h4>Täglich Bitcoin & Crypto </h4>
-                      <img src={DEImg} alt="DEImg " />
+                      <h4>
+                        Täglich Bitcoin & Crypto{" "}
+                        <img src={DEImg} alt="DEImg " />
+                      </h4>
                     </div>
                     <p>Organic integration</p>
                   </div>
@@ -364,8 +367,9 @@ const Influencers = () => {
                   </div>
                   <div className="igc-top-text-box">
                     <div>
-                      <h4>TestWerk</h4>
-                      <img src={DEImg} alt="DEImg " />
+                      <h4>
+                        TestWerk <img src={DEImg} alt="DEImg " />
+                      </h4>
                     </div>
                     <p>Organic integration</p>
                   </div>
@@ -408,8 +412,9 @@ const Influencers = () => {
                   </div>
                   <div className="igc-top-text-box">
                     <div>
-                      <h4>CryptoTuts</h4>
-                      <img src={DEImg} alt="DEImg " />
+                      <h4>
+                        CryptoTuts <img src={DEImg} alt="DEImg " />
+                      </h4>
                     </div>
                     <p>Organic integration</p>
                   </div>
@@ -452,8 +457,9 @@ const Influencers = () => {
                   </div>
                   <div className="igc-top-text-box">
                     <div>
-                      <h4>Hoss</h4>
-                      <img src={DEImg} alt="DEImg " />
+                      <h4>
+                        Hoss <img src={DEImg} alt="DEImg " />
+                      </h4>
                     </div>
                     <p>Organic integration</p>
                   </div>
@@ -496,8 +502,9 @@ const Influencers = () => {
                   </div>
                   <div className="igc-top-text-box">
                     <div>
-                      <h4>Crypto Deutschland</h4>
-                      <img src={DEImg} alt="DEImg " />
+                      <h4>
+                        Crypto Deutschland <img src={DEImg} alt="DEImg " />
+                      </h4>
                     </div>
                     <p>Organic integration</p>
                   </div>

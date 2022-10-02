@@ -432,14 +432,18 @@ const Home = () => {
                   <div>
                     <div className="ddd-cube">
                       <div className="ddd-f">
-                        <h2>
-                          Influencer <br />
-                        </h2>
+                        <Link to="/influencermarketing">
+                          <a>
+                            Influencer <br />
+                          </a>
+                        </Link>
                       </div>
                       <div className="ddd-b">
-                        <h2>
-                          Influencer <br />
-                        </h2>
+                        <Link to="/influencermarketing">
+                          <a>
+                            Influencer <br />
+                          </a>
+                        </Link>
                       </div>
                     </div>
                     <span>Marketing</span>
@@ -456,18 +460,23 @@ const Home = () => {
                   <b>120,000+ target influencers</b> in 185 countries
                 </h5>
               </div>
+
               <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
                 <div>
                   <div className="ddd-cube">
                     <div className="ddd-f">
-                      <h2>
-                        metaverse <br />
-                      </h2>
+                      <Link to="/eventmarketing">
+                        <a>
+                          metaverse <br />
+                        </a>
+                      </Link>
                     </div>
                     <div className="ddd-b">
-                      <h2>
-                        metaverse <br />
-                      </h2>
+                      <Link to="/eventmarketing">
+                        <a>
+                          metaverse <br />
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <span>promotion</span>
@@ -487,18 +496,23 @@ const Home = () => {
                   </a>
                 </div>
               </div>
+
               <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
                 <div>
                   <div className="ddd-cube">
                     <div className="ddd-f">
-                      <h2>
-                        Investor <br />
-                      </h2>
+                      <Link to="/investmentrelationships">
+                        <h2>
+                          Investor <br />
+                        </h2>
+                      </Link>
                     </div>
                     <div className="ddd-b">
-                      <h2>
-                        Investor <br />
-                      </h2>
+                      <Link to="/investmentrelationships">
+                        <a>
+                          Investor <br />
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <span>Relations</span>
@@ -517,14 +531,18 @@ const Home = () => {
                   <div>
                     <div className="ddd-cube">
                       <div className="ddd-f">
-                        <h2>
-                          EVENT <br />
-                        </h2>
+                        <Link to="/eventmarketing">
+                          <a>
+                            EVENT <br />
+                          </a>
+                        </Link>
                       </div>
                       <div className="ddd-b">
-                        <h2>
-                          EVENT <br />
-                        </h2>
+                        <Link to="/eventmarketing">
+                          <a>
+                            EVENT <br />
+                          </a>
+                        </Link>
                       </div>
                     </div>
                     <span>MARKETING</span>

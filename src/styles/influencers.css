@@ -49,8 +49,11 @@
   left: 50%;
   transform: translate(-50%, 50%);
 }
+.igc-top-text-box {
+  width: 100%;
+}
 .igc-top-text-box div {
-  width: max-content;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;

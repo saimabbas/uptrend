@@ -43,7 +43,8 @@ header {
   font-weight: 500;
   position: relative;
 }
-.header-center > a:not(.talk-to-us):after {
+.header-center > a:not(.talk-to-us):after,
+.bookmark-link a:after {
   content: "";
   width: 0%;
   height: 0.75px;
@@ -53,7 +54,8 @@ header {
   transform: translate(0, -1rem);
   transition: 0.35s;
 }
-.header-center > a:hover::after {
+.header-center > a:hover::after,
+.bookmark-link a:hover::after {
   width: 100%;
 }
 .bookmark-link {
@@ -123,6 +125,7 @@ header .ut-dropdown button {
   justify-content: center;
   font-weight: 700;
   position: relative;
+  background-color: unset;
 }
 header .ut-dropdown button svg {
   font-size: 2rem;
