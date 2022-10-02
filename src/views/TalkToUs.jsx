@@ -50,6 +50,7 @@ import { SplitText } from "gsap/SplitText";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
+import BackedByLogosSwiper from "../components/BackedByLogosSwiper";
 
 const TalkToUs = () => {
   gsap.registerPlugin(
@@ -252,7 +253,7 @@ const TalkToUs = () => {
           <div className="box box-p">
             <div className="platform-stats-grid">
               <div className="platform-stats-details">
-                <h6>Proof of Work</h6>
+                <h6>Cases</h6>
                 <h3>#1 ONLINE EDUCATIONAL</h3>
                 <h4>PLATFORM IN EUROPE</h4>x{" "}
                 <h5>Growth Unlocked - Performance Guaranteed</h5>
@@ -297,9 +298,9 @@ const TalkToUs = () => {
             </div>
           </div>
         </section>
-        <section className="Event-marketing-section ">
+        <section className="Event-marketing-section ems-1">
           <div className="box">
-            <FuelBrandGrowthSwiper backedByLight={true} />
+            <BackedByLogosSwiper backedByLight={true} />
           </div>
         </section>
         <section className="subs-journal-section">
