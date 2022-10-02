@@ -365,6 +365,7 @@
 }
 .egc2-img-grid img {
   height: 3rem;
+  margin: 0 3.5rem 0 0;
 }
 .egc2-img-grid img:not(:last-child) {
   margin: 0 3.5rem 0 0;
