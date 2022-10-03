@@ -305,6 +305,9 @@ header .header-center-mob .ut-dropdown button {
 .menu-icon-box-mob {
   display: none;
 }
+.show.dropdown button svg {
+  transform: rotate(180deg);
+}
 @media screen and (max-width: 1150px) {
   .header-center,
   .header-right p {
@@ -315,5 +318,12 @@ header .header-center-mob .ut-dropdown button {
   }
   .menu-icon-box-mob {
     display: flex;
+  }
+  header .ut-dropdown .dropdown-menu {
+    background-color: #fff;
+    padding: 0 1.5rem;
+  }
+  .header-light .ut-dropdown .dropdown-menu a {
+    color: var(--black);
   }
 }

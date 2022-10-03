@@ -18,6 +18,10 @@ import BlueArrow from "../assets/icons/BlueArrow";
 import OrangeBulb from "../assets/icons/OrangeBulb";
 import TargetImg from "../assets/img/target-icon.png";
 import OrangeBulbImg from "../assets/img/orange-bulb.png";
+import BlogCard from "../components/BlogCard";
+import JournalImg1 from "../assets/img/journal-img-1.png";
+import JournalImg2 from "../assets/img/journal-img-2.png";
+import { MdArrowForward } from "react-icons/md";
 const Blog1 = () => {
   return (
     <main className="app">
@@ -39,7 +43,7 @@ const Blog1 = () => {
                     <p>18.06.2022</p>
                   </div>
                 </div>
-                <span>5 mint read</span>
+                <span>5 min read</span>
               </div>
               <div className="blog-main-content">
                 <h3>Working With Leading YouTube Influencers:A How To Guide</h3>
@@ -446,6 +450,68 @@ const Blog1 = () => {
             </div>
           </div>
         </div>
+        <section className="other-articles">
+          <div className="box">
+            <h2 className="oa-head">Check our other articles</h2>
+            <div className="blog-cards-grid">
+              <BlogCard
+                lightBlogCard={false}
+                blogImg={JournalImg1}
+                heading="3 Proven Strategies To Building Brand Awareness in 2022"
+                description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                personImg={Person}
+                personName="Alex Wanstein"
+                date="10.06.2022"
+                readTime="5 min read"
+              >
+                <span>Gaming</span>
+                <span>News</span>
+              </BlogCard>
+              <BlogCard
+                lightBlogCard={false}
+                blogImg={JournalImg2}
+                heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
+                description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                personImg={Person}
+                personName="Donna Wanstein"
+                date="7.06.2022"
+                readTime="5 min read"
+              >
+                <span>Gaming</span>
+              </BlogCard>
+              <BlogCard
+                lightBlogCard={false}
+                blogImg={JournalImg3}
+                heading="3 Proven Strategies To Building Brand Awareness in 2022"
+                description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                personImg={Person}
+                personName="Donna Wanstein"
+                date="7.06.2022"
+                readTime="5 min read"
+              >
+                <span>News</span>
+              </BlogCard>
+            </div>
+            <div className="blog-bcr">
+              <div className="ut-breadcrumbs-section">
+                <div className="ut-breadcrumbs">
+                  <div className="ut-breadcrumbs-box ut-breadcrumbs-box-active">
+                    1
+                  </div>
+                  <div className="ut-breadcrumbs-box">2</div>
+                  <div className="ut-breadcrumbs-box">3</div>
+                  <div className="ut-breadcrumbs-box ut-breadcrumbs-box-inactive">
+                    ...
+                  </div>
+                  <div className="ut-breadcrumbs-box">10</div>
+                  <div className="ut-breadcrumbs-box">
+                    <MdArrowForward />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <Footer />
       </div>
     </main>

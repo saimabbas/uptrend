@@ -84,9 +84,9 @@ const Expertise = () => {
     ScrambleTextPlugin
   );
   useEffect(() => {
-    const heroHeadAimInit = () => {
+    /* const heroHeadAimInit = () => {
       HH1BoxANim.play();
-    };
+    }; */
     // Text Spliting
     const marketingHeading = new SplitText(".im-hero-headings h1", {
       type: "chars, words,lines",
@@ -96,7 +96,7 @@ const Expertise = () => {
     const marketingHeadingWords = marketingHeading.words;
 
     let marketingLandingAnim = gsap.timeline({
-      onComplete: heroHeadAimInit,
+      // onComplete: heroHeadAimInit,
     });
     marketingLandingAnim
       .fromTo(
@@ -139,6 +139,19 @@ const Expertise = () => {
         "<0"
       )
       .fromTo(
+        ".head-box-black-inner",
+        {
+          width: 0,
+        },
+        {
+          duration: 3,
+          width: "100%",
+          ease: Power1.easeInOut,
+          left: 0,
+        },
+        "<0.5"
+      )
+      .fromTo(
         ".loading-screen",
         {
           height: "100vh",
@@ -162,7 +175,7 @@ const Expertise = () => {
         yoyo: true,
       }
     );
-    var HH1BoxANim = gsap.timeline({
+    /* var HH1BoxANim = gsap.timeline({
       repeat: -1,
       paused: true,
     });
@@ -187,7 +200,7 @@ const Expertise = () => {
         duration: 3,
         width: 0,
         ease: Power1.easeInOut,
-      });
+      }); */
     let homeExpertiseAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".service-description-grid-1",

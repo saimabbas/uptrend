@@ -63,6 +63,7 @@
 .for-inquiries-box a {
   color: var(--white);
   font-weight: 700;
+  cursor: pointer;
 }
 .ut-in-press {
   width: 100%;
@@ -87,8 +88,8 @@
   background-color: var(--main-light1);
 }
 .in-press-grid-card img {
-  max-height: 6.5rem;
-  max-width: 17.5rem;
+  max-height: 5rem;
+  max-width: 15rem;
   object-fit: contain;
 }
 .in-press-grid-card h6 {

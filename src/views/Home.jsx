@@ -90,10 +90,14 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(true);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+  };
   useEffect(() => {
-    const heroHeadAimInit = () => {
+    /* const heroHeadAimInit = () => {
       HH1BoxANim.play();
-    };
+    }; */
     // Text Spliting
     const HomeHeroHeading = new SplitText(".hero-content h1", {
       type: "chars, words,lines",
@@ -107,7 +111,7 @@ const Home = () => {
     const UTStoreHeadChars = UTStoreHead.chars;
     const UTStoreHeadWords = UTStoreHead.words;
 
-    var HH1BoxANim = gsap.timeline({
+    /* var HH1BoxANim = gsap.timeline({
       repeat: -1,
       paused: true,
     });
@@ -132,9 +136,9 @@ const Home = () => {
         duration: 3,
         width: 0,
         ease: Power1.easeInOut,
-      });
+      }); */
     let homeLandingAnim = gsap.timeline({
-      onComplete: heroHeadAimInit,
+      // onComplete: heroHeadAimInit,
     });
     homeLandingAnim
       .fromTo(
@@ -145,7 +149,7 @@ const Home = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.25,
           ease: Linear.easeInOut,
         }
       )
@@ -157,7 +161,7 @@ const Home = () => {
         },
         {
           opacity: 1,
-          duration: 2,
+          duration: 1,
           stagger: {
             each: 0.05,
             from: "start",
@@ -169,19 +173,32 @@ const Home = () => {
         ".hero-bull",
         {
           opacity: 0,
-          y: 150,
-          x: 150,
+          y: 100,
+          x: 100,
         },
         {
           y: 0,
           x: 0,
           opacity: 1,
-          duration: 3,
+          duration: 2,
           ease: Power4.easeInOut,
         },
         "<0"
       )
 
+      .fromTo(
+        ".head-box-green-inner",
+        {
+          width: 0,
+        },
+        {
+          duration: 3,
+          width: "100%",
+          ease: Power1.easeInOut,
+          left: 0,
+        },
+        "0.25"
+      )
       .fromTo(
         ".hero-company-logo-box",
         {
@@ -189,10 +206,10 @@ const Home = () => {
         },
         {
           opacity: 1,
-          duration: 1,
+          duration: 0.5,
           ease: Power4.easeInOut,
         },
-        "<0.75"
+        "<0"
       )
       .fromTo(
         ".hero-icons-line-box a",
@@ -203,7 +220,7 @@ const Home = () => {
         {
           scale: 1,
           opacity: 1,
-          duration: 1,
+          duration: 0.5,
           stagger: {
             each: 0.1,
             from: "start",
@@ -219,7 +236,7 @@ const Home = () => {
         },
         {
           height: "7.5rem",
-          duration: 2,
+          duration: 1,
           ease: Power4.easeInOut,
         },
         "<0"
@@ -231,10 +248,10 @@ const Home = () => {
         },
         {
           opacity: 1,
-          duration: 2.5,
+          duration: 1.5,
           ease: Linear.easeInOut,
         },
-        "<0.85"
+        "<0.5"
       )
       .fromTo(
         ".loading-screen",
@@ -360,7 +377,7 @@ const Home = () => {
           />
           <div className="box">
             <div className="hero-content">
-              <Header lightHeader={true} />
+              <Header lightHeader={true} showIconsBox={showIconsBox} />
 
               <h1>
                 LEADING MARKETING PARTNER <br /> BUILDING
@@ -371,24 +388,27 @@ const Home = () => {
                   <i>BRAND IMPACT</i>
                 </span>
               </h1>
-              <div className="hero-icons-line-box">
-                <div></div>
-                <a href="#">
-                  <IconWhatsapp color="#fff" />
-                </a>
-                <a href="https://twitter.com/UptrendAgency">
-                  <IconTwitter color="#fff" />
-                </a>
-                <a href="https://www.linkedin.com/company/UptrendAgency">
-                  <IconLinkedIn color="#fff" />
-                </a>
-                <a href="http://instagram.com/uptrendagency">
-                  <IconInstagram color="#fff" />
-                </a>
-                <a href="https://facebook.com/UptrendAgency">
-                  <IconFacebook color="#fff" />
-                </a>
-              </div>
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
+
               <TrustedByCompanies trustedByLight={true} />
             </div>
           </div>
@@ -430,22 +450,11 @@ const Home = () => {
               <div className="expertise-grid-card expertise-grid-card-1 ddd-cube-p">
                 <div className="egc1-top">
                   <div>
-                    <div className="ddd-cube">
-                      <div className="ddd-f">
-                        <Link to="/influencermarketing">
-                          <a>
-                            Influencer <br />
-                          </a>
-                        </Link>
-                      </div>
-                      <div className="ddd-b">
-                        <Link to="/influencermarketing">
-                          <a>
-                            Influencer <br />
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
+                    <Link to="/influencermarketing">
+                      <a>
+                        Influencer <br />
+                      </a>
+                    </Link>
                     <span>Marketing</span>
                   </div>
 
@@ -463,22 +472,11 @@ const Home = () => {
 
               <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
                 <div>
-                  <div className="ddd-cube">
-                    <div className="ddd-f">
-                      <Link to="/eventmarketing">
-                        <a>
-                          metaverse <br />
-                        </a>
-                      </Link>
-                    </div>
-                    <div className="ddd-b">
-                      <Link to="/eventmarketing">
-                        <a>
-                          metaverse <br />
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
+                  <Link to="/eventmarketing">
+                    <a>
+                      metaverse <br />
+                    </a>
+                  </Link>
                   <span>promotion</span>
                 </div>
                 <h5>
@@ -499,22 +497,11 @@ const Home = () => {
 
               <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
                 <div>
-                  <div className="ddd-cube">
-                    <div className="ddd-f">
-                      <Link to="/investmentrelationships">
-                        <h2>
-                          Investor <br />
-                        </h2>
-                      </Link>
-                    </div>
-                    <div className="ddd-b">
-                      <Link to="/investmentrelationships">
-                        <a>
-                          Investor <br />
-                        </a>
-                      </Link>
-                    </div>
-                  </div>
+                  <Link to="/investmentrelationships">
+                    <a>
+                      Investor <br />
+                    </a>
+                  </Link>
                   <span>Relations</span>
                 </div>
                 <h5>
@@ -529,22 +516,11 @@ const Home = () => {
               <div className="expertise-grid-card expertise-grid-card-1 ddd-cube-p">
                 <div className="egc1-top">
                   <div>
-                    <div className="ddd-cube">
-                      <div className="ddd-f">
-                        <Link to="/eventmarketing">
-                          <a>
-                            EVENT <br />
-                          </a>
-                        </Link>
-                      </div>
-                      <div className="ddd-b">
-                        <Link to="/eventmarketing">
-                          <a>
-                            EVENT <br />
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
+                    <Link to="/eventmarketing">
+                      <a>
+                        EVENT <br />
+                      </a>
+                    </Link>
                     <span>MARKETING</span>
                   </div>
                   <img loading="lazy" src={OnlineMeeting} alt="OnlineMeeting" />

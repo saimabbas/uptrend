@@ -373,7 +373,7 @@ const EventMarketing = () => {
                 <h1>Uptrend Journal</h1>
               </div>
               <div className="im-hero-explore">
-                <a href="#">
+                <a href="#explore">
                   <span>explore</span>
                   <MdArrowDownward />
                 </a>
@@ -391,7 +391,7 @@ const EventMarketing = () => {
           </div>
         </section>
         <div className="blog-content-wrapper"></div>
-        <section className="service-description-section">
+        <section className="service-description-section" id="explore">
           <div className="box">
             <div className="heading-sublink-box">
               <h2>Stories for Passion, Marketing, and Success</h2>
@@ -467,7 +467,7 @@ const EventMarketing = () => {
                               <p>18.06.2022</p>
                             </div>
                           </div>
-                          <span>5 mint read</span>
+                          <span>5 min read</span>
                         </div>
                       </div>
                       <div className="main-blog-grid-right">
@@ -483,7 +483,7 @@ const EventMarketing = () => {
                         personImg={Person}
                         personName="Alex Wanstein"
                         date="10.06.2022"
-                        readTime="5 mint read"
+                        readTime="5 min read"
                       >
                         <span>Gaming</span>
                         <span>News</span>
@@ -496,7 +496,7 @@ const EventMarketing = () => {
                         personImg={Person}
                         personName="Donna Wanstein"
                         date="7.06.2022"
-                        readTime="5 mint read"
+                        readTime="5 min read"
                       >
                         <span>Gaming</span>
                       </BlogCard>
@@ -508,7 +508,7 @@ const EventMarketing = () => {
                         personImg={Person}
                         personName="Donna Wanstein"
                         date="7.06.2022"
-                        readTime="5 mint read"
+                        readTime="5 min read"
                       >
                         <span>News</span>
                       </BlogCard>
@@ -568,7 +568,7 @@ const EventMarketing = () => {
                   personImg={Person}
                   personName="Donna Wanstein"
                   date="12.06.2022"
-                  readTime="10 mint read"
+                  readTime="10 min read"
                 >
                   <span>Gaming</span>
                 </BlogCard>
@@ -579,24 +579,25 @@ const EventMarketing = () => {
                   personImg={Person}
                   personName="Sarah Evans"
                   date="18.06.2022"
-                  readTime="5 mint read"
+                  readTime="5 min read"
                 >
                   <span>Gaming</span>
                 </BlogCard>
               </div>
-
-              <BlogCard
-                lightBlogCard={true}
-                blogImg={JournalImg2}
-                heading="New Local Region? Tips To Get Started"
-                description="The ultimate marketing plan for dominating local markets. Get the fundamental insights to impact your customers. We introduce essential marketing tips for brands to create the valuable experience."
-                personImg={Person}
-                personName="Emre Murry"
-                date="18.06.2022"
-                readTime="5 mint read"
-              >
-                <span>Influencer Marketing</span>
-              </BlogCard>
+              <div className="blog-card-big">
+                <BlogCard
+                  lightBlogCard={true}
+                  blogImg={JournalImg2}
+                  heading="New Local Region? Tips To Get Started"
+                  description="The ultimate marketing plan for dominating local markets. Get the fundamental insights to impact your customers. We introduce essential marketing tips for brands to create the valuable experience."
+                  personImg={Person}
+                  personName="Emre Murry"
+                  date="18.06.2022"
+                  readTime="5 min read"
+                >
+                  <span>Influencer Marketing</span>
+                </BlogCard>
+              </div>
             </div>
           </div>
         </section>

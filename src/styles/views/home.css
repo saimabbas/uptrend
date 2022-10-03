@@ -33,7 +33,7 @@
 }
 .hero-icons-line-box > div {
   width: 1px;
-  height: 0;
+  height: 7.5rem;
   background-color: var(--white);
 }
 .hero-icons-line-box a svg {
@@ -58,6 +58,7 @@
   bottom: 0;
   right: 10%;
   z-index: 2;
+  object-fit: contain;
 }
 .hero-blue-overlay {
   width: 85vw;
@@ -325,6 +326,7 @@
   /* padding: 2.5rem 0 0 0; */
   display: flex;
   font-size: 5.5rem;
+  line-height: 5rem;
   font-weight: 800;
   flex-direction: column;
   align-items: flex-start;
@@ -366,9 +368,13 @@
 .egc2-img-grid img {
   height: 3rem;
   margin: 0 3.5rem 0 0;
+  transition: 0.35s;
 }
 .egc2-img-grid img:not(:last-child) {
   margin: 0 3.5rem 0 0;
+}
+.egc2-img-grid img:hover {
+  transform: scale(1.1);
 }
 .twitter-section {
   width: 100%;
@@ -923,8 +929,8 @@
   width: 100%;
 }
 .nft-gallery-content-1 img {
-  width: 45rem;
-  height: 45rem;
+  width: 35rem;
+  height: 35rem;
   transition: 0.5s;
   object-fit: cover;
   border-radius: 2rem;

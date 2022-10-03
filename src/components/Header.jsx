@@ -70,7 +70,10 @@ const Header = (props) => {
           <p>
             No Fluff. <b>Just Results</b>
           </p>
-          <div className="menu-icon-box d-c-c menu-icon-box-pc">
+          <div
+            className="menu-icon-box d-c-c menu-icon-box-pc"
+            onClick={props.showIconsBox}
+          >
             {props.lightHeader ? (
               <IconMenu color="#fff" />
             ) : (
