@@ -35,7 +35,7 @@ const GreenWaveHeadingSection = (props) => {
     ScrollSmoother,
     ScrambleTextPlugin
   );
-  useEffect(() => {
+  /* useEffect(() => {
     let greenWaveAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".big-things-section",
@@ -64,7 +64,7 @@ const GreenWaveHeadingSection = (props) => {
         },
         0
       );
-  }, []);
+  }, []); */
 
   return (
     <section className="big-things-section">
