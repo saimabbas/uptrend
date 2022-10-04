@@ -398,15 +398,21 @@ const UptrendCareer = () => {
                 <div className="sd-grid-card-3-bg"></div>
                 <img loading="lazy" src={PurplePlanetImg} alt="UTPartners" />
                 <div className="ucsdgc1-details ucsdgc1-details-p">
-                  <h3>Work From Anywhere</h3>
-                  <h6>Easy way to get organized and stay productive</h6>
+                  <h3>
+                    Work From <br /> Anywhere
+                  </h3>
+                  <h6>
+                    Easy way to get organized <br /> and stay productive
+                  </h6>
                 </div>
               </div>
               <div className="sd-grid-card sd-grid-card-3">
                 <div className="sd-grid-card-3-bg"></div>
                 <img loading="lazy" src={ShokhiGirlImg} alt="UTPartners" />
                 <div className="ucsdgc1-details ucsdgc1-details-p">
-                  <h3>Exclusive Corporate Events</h3>
+                  <h3>
+                    Exclusive <br /> Corporate <br /> Events
+                  </h3>
                   <h6>Premier events with exclusive interactive experiences</h6>
                 </div>
               </div>
@@ -425,7 +431,9 @@ const UptrendCareer = () => {
               <div className="sd-grid-card sd-grid-card-2">
                 <div className="uc-sd-grid-card-5-bg"></div>
                 <div className="ucsdgc1-details">
-                  <h3>Upgrade Your Social Media </h3>
+                  <h3>
+                    Upgrade Your <br /> Social Media{" "}
+                  </h3>
                   <h6>Unleash the power of personal branding</h6>
                   <div className="all-platforms-grid">
                     <div className="apg-box">
@@ -554,9 +562,7 @@ const UptrendCareer = () => {
           <div className="box">
             <div className="rts-content">
               <div className="rts-form">
-                <h3>
-                  Ready to start a <br /> new Uptrend?
-                </h3>
+                <h3>Join Uptrend!</h3>
                 <div className="rts-form-grid">
                   <input
                     className="ut-input"

@@ -449,16 +449,6 @@ const EventMarketing = () => {
         <section className="em-events-section">
           <div className="box">
             <UpTrendsEvents />
-            <div className="events-names-box">
-              <div className="event-name-box">
-                <img loading="lazy" src={TrImg} alt="TrImg" />
-                <p>Turkey Meetup</p>
-              </div>
-              <div className="event-name-box">
-                <img loading="lazy" src={ECImg} alt="ECImg" />
-                <p>Ecuador Event</p>
-              </div>
-            </div>
           </div>
         </section>
         <BackedByLogosSwiper backedByLight={true} />

@@ -1,17 +1,21 @@
 .angelsprogram-details {
   width: 100%;
-  padding: 7.5rem 0 18rem 0;
+  padding: 7.5rem 0 26rem 0;
 }
 .apd-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.95fr 1fr;
   grid-template-rows: auto;
   grid-gap: 7.5rem;
   margin: 0 0 15rem 0;
 }
 .apd-grid-left {
   width: 100%;
+}
+.apd-grid-right h3 {
+  font-size: 3.5rem;
+  font-weight: 800;
 }
 .apd-grid-left img {
   width: 100%;
@@ -28,10 +32,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
 .apd-grid-right p {
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin: 2.5rem 0;
+  width: 90%;
 }
 .ap-img-grid {
   width: 100%;
@@ -127,5 +133,11 @@
   }
   .join-angelprogram-heading h2 {
     font-size: 2rem;
+  }
+  .apd-grid-right p {
+    width: 100%;
+  }
+  .angelsprogram-details {
+    padding: 7.5rem 0 18rem 0;
   }
 }

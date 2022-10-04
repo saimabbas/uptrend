@@ -358,7 +358,7 @@
   background-color: var(--white);
 }
 .sd-grid-card-1 > img {
-  width: 27.5rem;
+  width: 31.5rem;
   position: relative;
   z-index: 15;
   transition: 0.5s;
@@ -450,9 +450,29 @@
   font-size: 2.25rem;
   color: var(--white);
   font-weight: 400;
-  max-width: 65%;
+  max-width: 82%;
+}
+.sd-grid-card.mm-sd-grid-card-2.msgc2 h3 {
+  margin: 0 0 12rem 0;
+}
+.sd-grid-card.mm-sd-grid-card-2.msgc2 h3 span {
+  font-weight: 800;
+}
+.sd-grid-card .ucsdgc1-details h3 {
+  white-space: unset;
+  font-size: 4.15rem;
+  margin: 0 0 5rem 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: max-content;
 }
 .sd-grid-card h3 {
+  white-space: nowrap;
+  font-size: 4.15rem;
   margin: 0 0 5rem 0;
   font-weight: 800;
   text-transform: uppercase;
@@ -464,6 +484,7 @@
 }
 .sd-grid-card h3 span {
   font-size: 2.25rem;
+  font-weight: 600;
 }
 .supported-by-box > h6 {
   font-size: 1.85rem;
@@ -559,7 +580,7 @@
   padding: 5rem 3.5rem 3.5rem 3.5rem;
 }
 .ut-tags {
-  width: 100%;
+  width: 96%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -569,7 +590,7 @@
   width: max-content;
   white-space: nowrap;
   font-size: 1.75rem;
-  padding: 1.25rem 3.5rem;
+  padding: 1.05rem 3rem;
   cursor: pointer;
   margin: 1.5rem 1.5rem 0 0;
   background-color: var(--main-dark3);
@@ -1305,15 +1326,24 @@
   z-index: 10;
   position: relative;
   color: var(--black);
-  max-width: 70%;
+  max-width: 50%;
   font-size: 2.25rem;
 }
-.ir-sd-grid-card-1 h2,
+.ir-sd-grid-card-1 h2 {
+  color: var(--black);
+  z-index: 10;
+  position: relative;
+  max-width: 75%;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
 .ir-sd-grid-card-4 h2 {
   color: var(--black);
   z-index: 10;
   position: relative;
   max-width: 75%;
+  font-size: 4rem;
   font-weight: 800;
   text-transform: uppercase;
   margin: 0 0 1rem 0;
@@ -1496,7 +1526,7 @@
   transition: 0.5s;
 }
 .positions-grid-card a {
-  font-size: 4rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
   color: var(--black);
   transition: 0.5s;
@@ -1507,6 +1537,7 @@
 }
 .positions-grid-card a span {
   font-weight: 300;
+  font-size: 3.5rem;
 }
 .positions-grid-card:hover {
   transform: translate(0, -1rem);
@@ -1522,7 +1553,7 @@
   margin: 15rem 0 0 0;
 }
 .pgc-bottom p {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 .pgc-bottom a {
   transition: 0.5s;
@@ -1622,6 +1653,12 @@
   }
   .backedby-section.backedby-section-light .box {
     padding: 0;
+  }
+  .ucsdgc1-details br {
+    display: none;
+  }
+  .ucsdgc1-details h6 br {
+    display: none;
   }
 }
 @media screen and (max-width: 750px) {
@@ -1741,6 +1778,9 @@
   }
   .apg-box img {
     width: 2.25rem;
+  }
+  .ut-tags {
+    width: 100%;
   }
   .ut-tags span {
     margin: 0.75rem 0.75rem 0 0;
@@ -1915,5 +1955,20 @@
   .positions-grid-card {
     border-radius: 0.75rem;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+  }
+  .sd-grid-card h3 {
+    font-size: 3rem;
+  }
+  .sd-grid-card.mm-sd-grid-card-2.msgc2 h3 {
+    margin: 0 0 5rem 0;
+  }
+  .mm-sd-grid-card-1 h5 {
+    width: 65%;
+  }
+  .con-to-comp p br {
+    display: none;
+  }
+  .sd-grid-card .ucsdgc1-details h3 {
+    font-size: 3rem;
   }
 }

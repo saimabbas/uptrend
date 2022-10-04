@@ -39,16 +39,16 @@ const Header = (props) => {
                 Expertise <MdArrowDropDown />
               </Dropdown.Toggle>
               <Dropdown.Menu>
-                <Dropdown.Item href="#/expertise-1">
+                <Dropdown.Item href="/influencermarketing">
                   Influencer Marketing
                 </Dropdown.Item>
-                <Dropdown.Item href="#/expertise-2">
+                <Dropdown.Item href="/investmentrelationships">
                   Investor Relations
                 </Dropdown.Item>
-                <Dropdown.Item href="#/expertise-3">
+                <Dropdown.Item href="/metaversemarketing">
                   Metaverse Marketing
                 </Dropdown.Item>
-                <Dropdown.Item href="#/expertise-3">
+                <Dropdown.Item href="/eventmarketing">
                   Event Marketing
                 </Dropdown.Item>
               </Dropdown.Menu>

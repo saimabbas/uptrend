@@ -508,7 +508,7 @@ const Home = () => {
                   Uptrend Venture partners assist brands with{" "}
                   <b>scaling and growth</b>
                 </h5>
-                <div className="egc2-img-grid">
+                <div className="egc2-img-grid egc2-imgs">
                   <img loading="lazy" src={companyLogo2} alt="companyLogo14" />
                   <img loading="lazy" src={companyLogo8} alt="companyLogo11" />
                 </div>

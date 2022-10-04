@@ -602,7 +602,7 @@ const InfluencerMarketing = () => {
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span></span>%
+                    <MdArrowUpward /> <span></span> 690%
                   </h3>
                   <p>Growth In New User Sign-Ups</p>
                 </div>
@@ -610,7 +610,7 @@ const InfluencerMarketing = () => {
               <div className="ps-box ps-box-2">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span></span> %
+                    <MdArrowUpward /> <span></span> 64%
                   </h3>
                   <p>LTV Increase</p>
                 </div>
@@ -618,7 +618,7 @@ const InfluencerMarketing = () => {
               <div className="ps-box ps-box-3">
                 <div className="ps-box-content">
                   <h3>
-                    <MdArrowUpward /> <span></span>
+                    <MdArrowUpward /> <span></span> 14 320 344
                   </h3>
                   <p>Campaign Engagement</p>
                 </div>

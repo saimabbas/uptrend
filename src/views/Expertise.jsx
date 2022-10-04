@@ -698,7 +698,7 @@ const Expertise = () => {
                 <div className="sd-grid-card-1-bg"></div>
                 <div className="sdgc1-details">
                   <h3>
-                    <span> #1 INTERNALTIONAL</span>
+                    <span> #1 INTERNATIONAL</span>
                     CONTENT STUDIO
                   </h3>
                   <div className="supported-by-box">
@@ -911,7 +911,7 @@ const Expertise = () => {
                 <img loading="lazy" src={BoyMetaverse} alt="BoyMetaverse" />
                 <h5>
                   Establish brands presence in the Metaverse with
-                  <b>exclusive interactive experience</b>
+                  <b> exclusive interactive experience</b>
                 </h5>
               </div>
               <div className="sd-grid-card mm-sd-grid-card-2 msgc2">
@@ -920,7 +920,7 @@ const Expertise = () => {
                   <span> supporting</span>
                   leading platforms
                 </h3>
-                <div className="egc2-img-grid">
+                <div className="egc2-img-grid egc3-imgs">
                   <a href="https://decentraland.org/">
                     <img
                       loading="lazy"

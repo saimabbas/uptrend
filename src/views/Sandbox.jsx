@@ -333,8 +333,8 @@ const Sandbox = () => {
                   <div className="white-tag">Promo</div>
                   <h3>Explore Marketing In The Metaverse</h3>
                   <p>
-                    Uptrend designers construct a powerful brand presence in the
-                    Metaverse with innovative interactive experiences
+                    Uptrend Designers Construct A Powerful Brand Presence In The
+                    Metaverse With Innovative Interactive Experiences
                   </p>
                 </div>
                 <div className="main-blog-grid-right">

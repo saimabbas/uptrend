@@ -473,7 +473,7 @@ const MetaverseMarketing = () => {
                 <img loading="lazy" src={BoyMetaverse} alt="BoyMetaverse" />
                 <h5>
                   Establish brands presence in the Metaverse with
-                  <b>exclusive interactive experience</b>
+                  <b> exclusive interactive experience</b>
                 </h5>
               </div>
               <div className="sd-grid-card mm-sd-grid-card-2 msgc2">
@@ -482,7 +482,7 @@ const MetaverseMarketing = () => {
                   <span> supporting</span>
                   leading platforms
                 </h3>
-                <div className="egc2-img-grid">
+                <div className="egc2-img-grid egc3-imgs">
                   <a href="https://decentraland.org/">
                     {" "}
                     <img
@@ -552,7 +552,7 @@ const MetaverseMarketing = () => {
               <h2>Engage With Uptrend In The Metaverse</h2>
               <Link to="/sandbox">
                 <a href="#" className="arrow-link">
-                  <span>Learn More</span>
+                  <span>Get Started</span>
                   <MdArrowForward />
                 </a>
               </Link>
