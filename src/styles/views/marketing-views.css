@@ -1373,8 +1373,8 @@
   height: 95%;
   object-fit: contain;
   position: absolute;
-  bottom: 3rem;
-  right: 0;
+  bottom: 2rem;
+  right: -2rem;
   z-index: 10;
 }
 .mm-sd-grid-card-2 {
@@ -1394,7 +1394,18 @@
 .platform-stats-grid.fashion-brand-grid {
   margin: 0 0 15rem 0;
 }
-
+.sd-grid-card.sd-grid-card-1.sdg-img {
+  align-items: flex-start;
+}
+.sd-grid-card.sd-grid-card-1.sdg-img img {
+  width: 17rem;
+}
+.sd-grid-card.sd-grid-card-1.sdg-img-2 img {
+  width: 30rem;
+}
+.sd-grid-card.sd-grid-card-1.sdg-img-1 img {
+  width: 20rem;
+}
 .Event-marketing-section {
   padding: 5rem 0 18rem 0;
   display: flex;
@@ -1662,9 +1673,9 @@
     height: 100%;
     width: 100%;
   }
-  .backedby-section.backedby-section-light .box {
+  /* .backedby-section.backedby-section-light .box {
     padding: 0;
-  }
+  } */
   .ucsdgc1-details br {
     display: none;
   }
@@ -1994,5 +2005,21 @@
   }
   .mm-sd-grid-card-1 img {
     bottom: 0;
+    right: 0;
+  }
+  .sd-grid-card.sd-grid-card-1.sdg-img {
+    align-items: flex-end;
+  }
+  .sd-grid-card.sd-grid-card-1.sdg-img img {
+    width: 27%;
+  }
+  .sd-grid-card.sd-grid-card-1.sdg-img-2 img {
+    width: 27%;
+  }
+  .sd-grid-card.sd-grid-card-1.sdg-img-1 img {
+    width: 27%;
+  }
+  .sd-grid-card.sd-grid-card-1 .winner-img-mob {
+    width: 45%;
   }
 }

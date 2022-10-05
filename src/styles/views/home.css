@@ -971,6 +971,9 @@
   font-weight: 800;
   margin: 0.5rem 0 0 0;
 }
+.hrgc-head-name a {
+  color: #000 !important;
+}
 @media screen and (max-width: 1250px) {
   .our-mission-content {
     padding: 0;
@@ -1162,7 +1165,7 @@
     padding: 3.5rem 0 0 0;
     border-left: 0;
     border-top: 1px solid var(--main-dark2);
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .uptrends-events-img-grid {
     order: 2;

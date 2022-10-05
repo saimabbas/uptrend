@@ -67,7 +67,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 5rem 2rem;
-  padding: 0 0 15rem 0;
+  padding: 0 0 28rem 0;
 }
 .nft-gallery-content {
   display: flex;
@@ -126,5 +126,6 @@
   }
   .nft-gallery-grid {
     grid-template-columns: 1fr;
+    padding: 0 0 15rem 0;
   }
 }
