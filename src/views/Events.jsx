@@ -42,6 +42,11 @@ import UEBGImg1 from "../assets/img/ue-bg-img-1.png";
 import UEBGImg2 from "../assets/img/ue-bg-img-2.png";
 import Lottie from "react-lottie";
 import animationData from "./../assets/json/events.json";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -85,6 +90,13 @@ import BlogCard from "../components/BlogCard";
 import { Tab, Nav } from "react-bootstrap";
 
 const Events = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -118,7 +130,7 @@ const Events = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -131,7 +143,7 @@ const Events = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -145,6 +157,7 @@ const Events = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -189,9 +202,9 @@ const Events = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 0.4,
+        duration: 0.35,
         stagger: {
-          each: 0.15,
+          each: 0.1,
         },
       }
     );
@@ -210,9 +223,9 @@ const Events = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 0.4,
+        duration: 0.35,
         stagger: {
-          each: 0.15,
+          each: 0.1,
         },
       }
     );
@@ -227,7 +240,27 @@ const Events = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Uptrend Events</h1>
               </div>

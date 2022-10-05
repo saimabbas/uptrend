@@ -75,8 +75,20 @@ import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
 import Lottie from "react-lottie";
 import animationData from "./../assets/json/ut-growth-stories.json";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 const UptrendGrowthStories = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -99,6 +111,11 @@ const UptrendGrowthStories = () => {
     const marketingHeadingChars = marketingHeading.chars;
     const marketingHeadingLines = marketingHeading.lines;
     const marketingHeadingWords = marketingHeading.words;
+    const RTSHeading = new SplitText(".rts-form h3", {
+      type: "words,lines",
+    });
+    const RTSHeadingWords = RTSHeading.words;
+    const RTSHeadingLines = RTSHeading.lines;
 
     let marketingLandingAnim = gsap.timeline();
     marketingLandingAnim
@@ -110,7 +127,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.65,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -123,7 +140,7 @@ const UptrendGrowthStories = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -137,6 +154,7 @@ const UptrendGrowthStories = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -182,7 +200,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.65,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -194,7 +212,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.25,
           },
@@ -217,7 +235,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.65,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -229,7 +247,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.25,
           },
@@ -252,7 +270,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.65,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -264,7 +282,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.25,
           },
@@ -287,7 +305,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.65,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -299,7 +317,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.25,
           },
@@ -322,7 +340,7 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.65,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -334,12 +352,44 @@ const UptrendGrowthStories = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.25,
           },
         },
         0
+      );
+    let readyToStartAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ready-to-start-section",
+        start: "top 50%",
+      },
+    });
+    readyToStartAnim
+      .fromTo(
+        RTSHeadingWords,
+        {
+          y: "200%",
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.35,
+          stagger: {
+            each: 0.085,
+          },
+        }
+      )
+      .fromTo(
+        ".rts-form-grid",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.15,
+        }
       );
   }, []);
   return (
@@ -351,7 +401,27 @@ const UptrendGrowthStories = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Uptrend Growth Stories</h1>
                 <h3>Results-driven performance by proven experts</h3>
@@ -370,7 +440,7 @@ const UptrendGrowthStories = () => {
             src={ImHeroImg}
             alt="ImHeroImg"
           /> */}
-          <div className="im-hero-img ">
+          <div className="im-hero-img im-hero-img-r">
             <Lottie className="im-hero-img" options={defaultOptions} />
           </div>
         </section>

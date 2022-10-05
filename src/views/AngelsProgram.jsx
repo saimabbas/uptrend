@@ -57,6 +57,11 @@ import Web3Img6 from "../assets/img/w3-img-6.png";
 import APImg1 from "../assets/img/ap-img-1.png";
 import APImg2 from "../assets/img/ap-img-2.png";
 import APImg3 from "../assets/img/ap-img-3.png";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -105,6 +110,13 @@ import Lottie from "react-lottie";
 import animationData from "./../assets/json/angels-program.json";
 
 const Sandbox = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -141,7 +153,7 @@ const Sandbox = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -152,7 +164,7 @@ const Sandbox = () => {
         },
         {
           opacity: 1,
-          duration: 0.25,
+          duration: 0.35,
           stagger: {
             each: 0.05,
           },
@@ -166,6 +178,7 @@ const Sandbox = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -194,155 +207,6 @@ const Sandbox = () => {
         yoyo: true,
       }
     );
-    let homeExpertiseAnim = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".service-description-grid",
-        start: "top 50%",
-      },
-    });
-    homeExpertiseAnim
-      .fromTo(
-        ".em-sd-grid-card-1-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        }
-      )
-      .fromTo(
-        ".em-sd-grid-card-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0.5"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-2 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h2",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h6",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 ul",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      );
 
     let nftCardsAnim = gsap.timeline({
       scrollTrigger: {
@@ -361,7 +225,7 @@ const Sandbox = () => {
         y: 0,
         duration: 0.35,
         stagger: {
-          each: 0.15,
+          each: 0.1,
         },
       }
     );
@@ -376,7 +240,27 @@ const Sandbox = () => {
         <section className="hero-section im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={true} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="ap-hero-headings im-hero-headings">
                 <h1>Uptrend Angels Progam</h1>
                 <h3>Build a holistic marketing experience for everyone</h3>

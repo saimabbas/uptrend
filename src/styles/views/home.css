@@ -39,11 +39,27 @@
   height: 7.5rem;
   background-color: var(--black);
 }
+.hero-icons-line-box a {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: var(--main-dark3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.hero-icons-line-box.hero-icons-line-box-dark a {
+  background-color: unset;
+}
 .hero-icons-line-box a svg {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
   object-fit: contain;
   transition: 0.35s;
+}
+.hero-icons-line-box.hero-icons-line-box-dark a svg {
+  width: 2.25rem;
+  height: 2.25rem;
 }
 .hero-icons-line-box > * {
   margin: 0 0 2.5rem 0;
@@ -1396,5 +1412,62 @@
   }
   .rts-form-grid textarea {
     grid-column: unset;
+  }
+  .tweets-main-grid,
+  .highly-regarded-grid {
+    display: none;
+  }
+  .tweets-main-grid-swiper,
+  .highly-regarded-grid-swiper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+  .tweets-main-grid-swiper > span,
+  .highly-regarded-grid-swiper > span {
+    min-width: 3.5rem;
+    max-width: 3.5rem;
+    min-height: 3.5rem;
+    max-height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tweets-main-grid-swiper > span svg,
+  .highly-regarded-grid-swiper > span svg {
+    font-size: 2rem;
+  }
+  .tweets-main-grid-swiper-box {
+    width: calc(95% - 7rem);
+  }
+  .highly-regarded-grid-swiper-box {
+    width: 100%;
+    position: relative;
+  }
+  .hr-prev {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    z-index: 10;
+  }
+  .hr-next {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    z-index: 10;
+  }
+  .hrgc-head {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hrgc-top .hrgc-head img,
+  .hrgc-bottom .hrgc-head img {
+    margin: 0 0 1.5rem 0;
+  }
+  .hrgc-head-name {
+    text-align: center;
   }
 }

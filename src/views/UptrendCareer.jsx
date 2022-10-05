@@ -16,8 +16,6 @@ import PurplePlanetImg from "../assets/img/purple-planet-img.png";
 import ShokhiGirlImg from "../assets/img/shokhi-girl-img.png";
 import ExploreGlobeImg from "../assets/img/explore-globe-img.png";
 import MeetCelebritiesImg from "../assets/img/meet-celebrities-img.png";
-import SpeakerImg from "../assets/img/speaker-img-orange.png";
-import PlatformLogo1 from "../assets/icons/twitch-logo-2.svg";
 import PlatformLogo2 from "../assets/icons/twitter-logo-2.svg";
 import PlatformLogo3 from "../assets/icons/youtube-logo-2.svg";
 import PlatformLogo4 from "../assets/icons/snapchat-logo-2.svg";
@@ -36,6 +34,11 @@ import CPBeeImg from "../assets/img/cp-bee-img.png";
 import PlatformStatsImg from "../assets/img/platform-stats-img.svg";
 import BigThingsWave from "../assets/img/big-things-wave.svg";
 import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -73,6 +76,13 @@ import Lottie from "react-lottie";
 import animationData from "./../assets/json/uptrend-career.json";
 
 const UptrendCareer = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -95,6 +105,16 @@ const UptrendCareer = () => {
     const marketingHeadingChars = marketingHeading.chars;
     const marketingHeadingLines = marketingHeading.lines;
     const marketingHeadingWords = marketingHeading.words;
+    const UTStoreHead = new SplitText(".ut-store-details h2", {
+      type: "chars, words,lines",
+    });
+    const UTStoreHeadChars = UTStoreHead.chars;
+    const UTStoreHeadWords = UTStoreHead.words;
+    const RTSHeading = new SplitText(".rts-form h3", {
+      type: "words,lines",
+    });
+    const RTSHeadingWords = RTSHeading.words;
+    const RTSHeadingLines = RTSHeading.lines;
 
     let marketingLandingAnim = gsap.timeline();
     marketingLandingAnim
@@ -106,7 +126,7 @@ const UptrendCareer = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -119,7 +139,8 @@ const UptrendCareer = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
+
           stagger: {
             each: 0.025,
           },
@@ -133,6 +154,7 @@ const UptrendCareer = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -176,6 +198,38 @@ const UptrendCareer = () => {
         yoyo: true,
       }
     );
+    let readyToStartAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ready-to-start-section",
+        start: "top 50%",
+      },
+    });
+    readyToStartAnim
+      .fromTo(
+        RTSHeadingWords,
+        {
+          y: "200%",
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.35,
+          stagger: {
+            each: 0.085,
+          },
+        }
+      )
+      .fromTo(
+        ".rts-form-grid",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.15,
+        }
+      );
     let homeExpertiseAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".service-description-grid",
@@ -184,72 +238,17 @@ const UptrendCareer = () => {
     });
     homeExpertiseAnim
       .fromTo(
-        ".uc-sd-grid-card-1-bg",
+        ".ucsdgc1",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.5,
         }
       )
       .fromTo(
-        ".uc-sd-grid-card-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".uc-sd-grid-card-3-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".uc-sd-grid-card-4-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".uc-sd-grid-card-5-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".uc-sd-grid-card-6-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".sd-grid-card-1 > img",
+        ".ucsdgc2",
         {
           opacity: 0,
         },
@@ -257,10 +256,10 @@ const UptrendCareer = () => {
           opacity: 1,
           duration: 0.5,
         },
-        "<0.5"
+        "<0.1"
       )
       .fromTo(
-        ".sdgc1-details",
+        ".ucsdgc3",
         {
           opacity: 0,
         },
@@ -268,10 +267,10 @@ const UptrendCareer = () => {
           opacity: 1,
           duration: 0.5,
         },
-        "<0"
+        "<0.1"
       )
       .fromTo(
-        ".sdgc2-details",
+        ".ucsdgc4",
         {
           opacity: 0,
         },
@@ -279,10 +278,10 @@ const UptrendCareer = () => {
           opacity: 1,
           duration: 0.5,
         },
-        "<0"
+        "<0.1"
       )
       .fromTo(
-        ".all-platforms-grid",
+        ".ucsdgc5",
         {
           opacity: 0,
         },
@@ -290,10 +289,10 @@ const UptrendCareer = () => {
           opacity: 1,
           duration: 0.5,
         },
-        "<0"
+        "<0.1"
       )
       .fromTo(
-        ".sd-grid-card-4 > img",
+        ".ucsdgc6",
         {
           opacity: 0,
         },
@@ -301,40 +300,7 @@ const UptrendCareer = () => {
           opacity: 1,
           duration: 0.5,
         },
-        "<0"
-      )
-      .fromTo(
-        ".sdgc3-details",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".sd-grid-card-3 > img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".sd-grid-card-3 > p",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
+        "<0.1"
       );
   }, []);
 
@@ -347,7 +313,27 @@ const UptrendCareer = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Join the #1 Growth Agency in Europe</h1>
                 <h3>
@@ -369,7 +355,7 @@ const UptrendCareer = () => {
             src={ImHeroImg}
             alt="ImHeroImg"
           /> */}
-          <div className="im-hero-img">
+          <div className="im-hero-img im-hero-img-r">
             <Lottie className="im-hero-img" options={defaultOptions} />
           </div>
         </section>
@@ -382,7 +368,7 @@ const UptrendCareer = () => {
               <h2>Uptrend Benefits</h2>
             </div>
             <div className="service-description-grid">
-              <div className="sd-grid-card sd-grid-card-1">
+              <div className="ucsdgc1 sd-grid-card sd-grid-card-1">
                 <div className="uc-sd-grid-card-1-bg"></div>
                 <div className="ucsdgc1-details">
                   <h3>Flexible Work Schedule</h3>
@@ -394,7 +380,7 @@ const UptrendCareer = () => {
                   alt="WinnertrophyImg"
                 />
               </div>
-              <div className="sd-grid-card sd-grid-card-3">
+              <div className="ucsdgc2 sd-grid-card sd-grid-card-3">
                 <div className="sd-grid-card-3-bg"></div>
                 <img loading="lazy" src={PurplePlanetImg} alt="UTPartners" />
                 <div className="ucsdgc1-details ucsdgc1-details-p">
@@ -406,7 +392,7 @@ const UptrendCareer = () => {
                   </h6>
                 </div>
               </div>
-              <div className="sd-grid-card sd-grid-card-3">
+              <div className="ucsdgc3 sd-grid-card sd-grid-card-3">
                 <div className="sd-grid-card-3-bg"></div>
                 <img loading="lazy" src={ShokhiGirlImg} alt="UTPartners" />
                 <div className="ucsdgc1-details ucsdgc1-details-p">
@@ -416,7 +402,7 @@ const UptrendCareer = () => {
                   <h6>Premier events with exclusive interactive experiences</h6>
                 </div>
               </div>
-              <div className="sd-grid-card sd-grid-card-1 uc-etg">
+              <div className="ucsdgc4 sd-grid-card sd-grid-card-1 uc-etg">
                 <div className="uc-sd-grid-card-1-bg"></div>
                 <div className="ucsdgc1-details">
                   <h3>Explore The Globe</h3>
@@ -428,7 +414,7 @@ const UptrendCareer = () => {
                   alt="WinnertrophyImg"
                 />
               </div>
-              <div className="sd-grid-card sd-grid-card-2">
+              <div className="ucsdgc5 sd-grid-card sd-grid-card-2">
                 <div className="uc-sd-grid-card-5-bg"></div>
                 <div className="ucsdgc1-details">
                   <h3>
@@ -483,7 +469,7 @@ const UptrendCareer = () => {
                   </div>
                 </div>
               </div>
-              <div className="sd-grid-card sd-grid-card-1">
+              <div className="ucsdgc6 sd-grid-card sd-grid-card-1">
                 <div className="uc-sd-grid-card-6-bg"></div>
                 <div className="ucsdgc1-details">
                   <h3>Meet Celebrities & Influencers</h3>

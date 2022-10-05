@@ -33,6 +33,9 @@
   max-width: 75rem;
   height: 75rem;
 }
+.im-hero-img.im-hero-img-r {
+  transform: translate(17.5%, 15%);
+}
 .im-hero-img-rotated {
   transform: translate(32%, 15%) rotateY(180deg);
 }
@@ -501,6 +504,7 @@
 .sb-box {
   padding: 0 0 0 1.5rem;
   border-left: 2px solid var(--black);
+  overflow: hidden;
 }
 .sb-box h5 {
   font-size: 2.5rem;
@@ -1245,7 +1249,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
+  transition: 0.5s;
 }
+
 .mm-info-small-grid-box:nth-child(1) {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -1257,6 +1263,9 @@
 }
 .mm-info-small-grid-box:nth-child(4) {
   background-color: var(--black);
+}
+.mm-info-small-grid-box:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 .mm-info-small-grid-box img {
   width: 3.5rem;
@@ -1704,7 +1713,7 @@
     font-size: 2rem;
   }
   .im-hero-headings {
-    width: 75%;
+    width: 100%;
     position: absolute;
     top: 25%;
   }

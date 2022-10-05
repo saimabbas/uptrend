@@ -60,12 +60,17 @@ import NFTGal5 from "../assets/img/nft-gall-5.png";
 import NFTGal6 from "../assets/img/nftgal6.png";
 
 // Icons
-import { MdArrowForward, MdArrowDropDown } from "react-icons/md";
+import {
+  MdArrowForward,
+  MdArrowDropDown,
+  MdEast,
+  MdWest,
+} from "react-icons/md";
 
 // Components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Header from "../components/Header";
-import { Autoplay, FreeMode } from "swiper";
+import { Autoplay, FreeMode, Navigation } from "swiper";
 import Footer from "../components/Footer";
 import TrustedByCompanies from "../components/TrustedByCompanies";
 import UpTrendsEvents from "../components/UpTrendsEvents";
@@ -289,10 +294,11 @@ const Home = () => {
         // y: 0,
         scale: 1,
         opacity: 1,
+        duration: 0.25,
         ease: Linear.easeInOut,
         stagger: {
           ease: Linear.easeInOut,
-          each: 0.15,
+          each: 0.1,
         },
       }
     );
@@ -313,6 +319,7 @@ const Home = () => {
         // y: 0,
         scale: 1,
         opacity: 1,
+        duration: 0.25,
         ease: Linear.easeInOut,
         stagger: {
           ease: Linear.easeInOut,
@@ -375,14 +382,15 @@ const Home = () => {
       .fromTo(
         RTSHeadingWords,
         {
-          y: "250%",
+          y: "200%",
           opacity: 0,
         },
         {
           y: 0,
           opacity: 1,
+          duration: 0.35,
           stagger: {
-            each: 0.1,
+            each: 0.085,
           },
         }
       )
@@ -630,6 +638,78 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <div className="tweets-main-grid-swiper">
+              <span className="fm-prev">
+                <MdWest />
+              </span>
+              <div className="tweets-main-grid-swiper-box">
+                <Swiper
+                  spaceBetween={50}
+                  slidesPerView={"1"}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                  speed={750}
+                  navigation={{
+                    nextEl: ".fm-next",
+                    prevEl: ".fm-prev",
+                  }}
+                >
+                  <SwiperSlide>
+                    <div className="small-tweets-grid-card">
+                      <h6>
+                        🎎 Uptrend is a squad of growth leads, creatives,
+                        designers, marketers, and influencers who collaborate to
+                        unlock growth for iconic brands and startups.
+                      </h6>
+                      <p>1 WEEK AGO</p>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="small-tweets-grid-card">
+                      <h6>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        🎎 Uptrend is a squad of growth leads, creatives,
+                        designers, marketers, and influencers .
+                      </h6>
+                      <p>1 WEEK AGO</p>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="small-tweets-grid-card">
+                      <h6>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        🎎 Uptrend is a squad of growth leads, creatives,
+                        designers, marketers, and influencers .
+                      </h6>
+                      <p>1 WEEK AGO</p>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="small-tweets-grid-card">
+                      <h6>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        🎎 Uptrend is a squad of growth leads, creatives,
+                        designers, marketers, and influencers .
+                      </h6>
+                      <p>1 WEEK AGO</p>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="small-tweets-grid-card">
+                      <h6>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        🎎 Uptrend is a squad of growth leads, creatives,
+                        designers, marketers, and influencers .
+                      </h6>
+                      <p>1 WEEK AGO</p>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <span className="fm-next">
+                <MdEast />
+              </span>
+            </div>
           </div>
         </section>
         <BackedByLogosSwiper backedByLight={false} />
@@ -747,6 +827,140 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <div className="highly-regarded-grid-swiper">
+              <span className="hr-prev">
+                <MdWest />
+              </span>
+              <div className="highly-regarded-grid-swiper-box">
+                <Swiper
+                  spaceBetween={50}
+                  slidesPerView={"1"}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                  speed={750}
+                  navigation={{
+                    nextEl: ".hr-next",
+                    prevEl: ".hr-prev",
+                  }}
+                >
+                  <SwiperSlide>
+                    <div className="highly-regarded-grid-card">
+                      <div className="hrgc-top">
+                        <div className="hrgc-head">
+                          <img loading="lazy" src={Nico} alt="Nico" />
+                          <div className="hrgc-head-name">
+                            <a href="https://twitter.com/NicoVerderosa">
+                              <h4>Nico Verderosa </h4>
+                            </a>
+                            <h6>@nico1991</h6>
+                          </div>
+                        </div>
+                        <h6>
+                          Choosing Uptrend to handle our marketing campaign, was
+                          one of the best decisions we could make. Their service
+                          was really efficient and they got us a great deal with
+                          top influencers.
+                        </h6>
+                      </div>
+                      <div className="hrgc-bottom">
+                        <div className="hrgc-head">
+                          <img
+                            loading="lazy"
+                            src={companyLogo16}
+                            alt="companyLogo16"
+                          />
+                          <div className="hrgc-head-name">
+                            <a href="https://www.kephi.io/">
+                              <h6>Kephi Gallery</h6>
+                            </a>
+                            <p>Chief Operation Officer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="highly-regarded-grid-card">
+                      <div className="hrgc-top">
+                        <div className="hrgc-head">
+                          <img loading="lazy" src={Tony} alt="Tony" />
+                          <div className="hrgc-head-name">
+                            <a href="https://twitter.com/tonyspilotroBTC">
+                              <h4>Tony Spilotro </h4>
+                            </a>
+                            <h6>@black.m</h6>
+                          </div>
+                        </div>
+                        <h6>
+                          I had the pleasure of working with the Uptrend team on
+                          various marketing projects. The agency took my
+                          projects very seriously and worked closely to achieve
+                          my unique KPIs. I highly recommend them and look
+                          forward to working with Uptrend on my next major
+                          project.
+                        </h6>
+                      </div>
+                      <div className="hrgc-bottom">
+                        <div className="hrgc-head">
+                          <img
+                            loading="lazy"
+                            src={companyLogo17}
+                            alt="companyLogo17"
+                          />
+                          <div className="hrgc-head-name">
+                            <a href="https://bitcoinist.com/">
+                              <h6>Bitcoinist</h6>
+                            </a>
+                            <p>Editorial Director</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="highly-regarded-grid-card">
+                      <div className="hrgc-top">
+                        <div className="hrgc-head">
+                          <img loading="lazy" src={Danny} alt="Danny" />
+                          <div className="hrgc-head-name">
+                            <a href="https://twitter.com/TheCryptoLes">
+                              <h4>Danny Les </h4>
+                            </a>
+                            <h6>@black.m</h6>
+                          </div>
+                        </div>
+                        <h6>
+                          When working on more complex contracts we are often
+                          required to seek external support. On many occasions
+                          we have enlisted the assistance of Uptrend. We have
+                          always found them to be professional and incredibly
+                          efficient and our clients are always happy at the
+                          conclusion of the engagement.
+                        </h6>
+                      </div>
+                      <div className="hrgc-bottom">
+                        <div className="hrgc-head">
+                          <img
+                            loading="lazy"
+                            src={companyLogo18}
+                            alt="companyLogo18"
+                          />
+                          <div className="hrgc-head-name">
+                            <a href="https://twitter.com/thecontenttap">
+                              <h6>Content Tap</h6>
+                            </a>
+                            <p>Founder of The Content Tap</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <span className="hr-next">
+                <MdEast />
+              </span>
+            </div>
           </div>
         </section>
         <section className="events-section">
@@ -824,7 +1038,7 @@ const Home = () => {
                 modules={[Autoplay, FreeMode]}
                 className="mySwiper"
                 loop={true}
-                speed={10000}
+                speed={5000}
                 autoplay={{
                   delay: 1,
                 }}

@@ -54,6 +54,11 @@ import Web3Img4 from "../assets/img/w3-img-4.png";
 import Web3Img5 from "../assets/img/w3-img-5.png";
 import Web3Img6 from "../assets/img/w3-img-6.png";
 
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 // Icons
 import {
   MdArrowDownward,
@@ -98,6 +103,13 @@ import Lottie from "react-lottie";
 import animationData from "./../assets/json/sandbox.json";
 
 const Sandbox = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -131,7 +143,7 @@ const Sandbox = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -142,7 +154,7 @@ const Sandbox = () => {
         },
         {
           opacity: 1,
-          duration: 0.25,
+          duration: 0.35,
           stagger: {
             each: 0.05,
           },
@@ -156,6 +168,7 @@ const Sandbox = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -199,9 +212,9 @@ const Sandbox = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 0.4,
+        duration: 0.35,
         stagger: {
-          each: 0.15,
+          each: 0.1,
         },
       }
     );
@@ -214,39 +227,50 @@ const Sandbox = () => {
     });
     homeExpertiseAnim2
       .fromTo(
-        ".msgc2-2-bg",
+        ".msgc1-2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".msgc3-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
+          opacity: 1,
+          duration: 0.35,
         },
         "<0"
       )
       .fromTo(
-        ".msgc4-2-bg",
+        ".msgc2-2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
-          duration: 0.5,
+          opacity: 1,
+          duration: 0.35,
         },
-        "<0"
+        "<0.1"
       )
-
+      .fromTo(
+        ".msgc3-2",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.35,
+        },
+        "<0.1"
+      )
+      .fromTo(
+        ".msgc4-2",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.35,
+        },
+        "<0.1"
+      );
+    /* 
       .fromTo(
         ".msgc2-2 img",
         {
@@ -290,7 +314,7 @@ const Sandbox = () => {
           duration: 0.5,
         },
         "<0"
-      );
+      ); */
   }, []);
 
   return (
@@ -302,7 +326,27 @@ const Sandbox = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Uptrend Office In The Sandbox</h1>
                 <h3>Designed By An Award-Winning Marketing Partner</h3>
@@ -396,7 +440,7 @@ const Sandbox = () => {
               </a>
             </div>
             <div className="service-description-grid service-description-grid-2">
-              <div className="sd-grid-card mm-sd-grid-card-2-1">
+              <div className="sd-grid-card mm-sd-grid-card-2-1 msgc1-2">
                 <div className="mm-info-small-grid-box">
                   <img loading="lazy" src={CrownImg} alt="CrownImg" />
                   <h5>Introduce exclusive NFTs</h5>

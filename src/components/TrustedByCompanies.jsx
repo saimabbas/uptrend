@@ -89,7 +89,7 @@ const TrustedByCompanies = (props) => {
               className="mySwiper"
               loop={true}
               centeredSlides={true}
-              speed={5000}
+              speed={2500}
               autoplay={{
                 delay: 1,
               }}

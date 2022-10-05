@@ -69,14 +69,16 @@ import { SplitText } from "gsap/SplitText";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
-import $ from "jquery";
 import Lottie from "react-lottie";
 import animationData from "./../assets/json/influencer-marketing.json";
 
 const InfluencerMarketing = () => {
-  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(true);
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
   const showIconsBox = () => {
     setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
   };
   const defaultOptions = {
     loop: true,
@@ -111,7 +113,7 @@ const InfluencerMarketing = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -124,7 +126,7 @@ const InfluencerMarketing = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -138,6 +140,7 @@ const InfluencerMarketing = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -189,50 +192,17 @@ const InfluencerMarketing = () => {
     });
     homeExpertiseAnim
       .fromTo(
-        ".sd-grid-card-1-bg",
+        ".sd-grid-card-1",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
-          duration: 0.35,
+          opacity: 1,
+          duration: 0.5,
         }
       )
       .fromTo(
-        ".sd-grid-card-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.35,
-        },
-        "<0.075"
-      )
-      .fromTo(
-        ".sd-grid-card-4-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.35,
-        },
-        "<0.075"
-      )
-      .fromTo(
-        ".sd-grid-card-3-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.35,
-        },
-        "<0.075"
-      )
-      .fromTo(
-        ".sd-grid-card-1 > img",
+        ".sd-grid-card-2",
         {
           opacity: 0,
         },
@@ -240,7 +210,40 @@ const InfluencerMarketing = () => {
           opacity: 1,
           duration: 0.5,
         },
-        "<0.5"
+        "<0.1"
+      )
+      .fromTo(
+        ".sd-grid-card-4",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0.1"
+      )
+      .fromTo(
+        ".sd-grid-card-3",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0.1"
+      )
+      /* .fromTo(
+        ".sd-grid-card-1 > img",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.25,
+        },
+        "<0"
       )
       .fromTo(
         ".sdgc1-details",
@@ -249,7 +252,7 @@ const InfluencerMarketing = () => {
         },
         {
           opacity: 1,
-          duration: 0.5,
+          duration: 0.25,
         },
         "<0"
       )
@@ -260,7 +263,7 @@ const InfluencerMarketing = () => {
         },
         {
           opacity: 1,
-          duration: 0.5,
+          duration: 0.25,
         },
         "<0"
       )
@@ -271,7 +274,7 @@ const InfluencerMarketing = () => {
         },
         {
           opacity: 1,
-          duration: 0.5,
+          duration: 0.25,
         },
         "<0"
       )
@@ -282,7 +285,7 @@ const InfluencerMarketing = () => {
         },
         {
           opacity: 1,
-          duration: 0.5,
+          duration: 0.25,
         },
         "<0"
       )
@@ -293,7 +296,7 @@ const InfluencerMarketing = () => {
         },
         {
           opacity: 1,
-          duration: 0.5,
+          duration: 0.25,
         },
         "<0"
       )
@@ -304,7 +307,7 @@ const InfluencerMarketing = () => {
         },
         {
           opacity: 1,
-          duration: 0.5,
+          duration: 0.25,
         },
         "<0"
       )
@@ -315,7 +318,29 @@ const InfluencerMarketing = () => {
         },
         {
           opacity: 1,
+          duration: 0.25,
+        },
+        "<0"
+      ) */
+      .fromTo(
+        ".sb-box h5",
+        {
+          x: "-150%",
+        },
+        {
           duration: 0.5,
+          x: 0,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".sb-box p",
+        {
+          x: "-150%",
+        },
+        {
+          duration: 0.5,
+          x: 0,
         },
         "<0"
       );
@@ -335,7 +360,7 @@ const InfluencerMarketing = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.65,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -347,7 +372,7 @@ const InfluencerMarketing = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.25,
           },
@@ -370,19 +395,19 @@ const InfluencerMarketing = () => {
                 <div className="hero-icons-line-box">
                   <div></div>
                   <a href="#">
-                    <IconWhatsapp color="#000" />
+                    <IconWhatsapp color="#fff" />
                   </a>
                   <a href="https://twitter.com/UptrendAgency">
-                    <IconTwitter color="#000" />
+                    <IconTwitter color="#fff" />
                   </a>
                   <a href="https://www.linkedin.com/company/UptrendAgency">
-                    <IconLinkedIn color="#000" />
+                    <IconLinkedIn color="#fff" />
                   </a>
                   <a href="http://instagram.com/uptrendagency">
-                    <IconInstagram color="#000" />
+                    <IconInstagram color="#fff" />
                   </a>
                   <a href="https://facebook.com/UptrendAgency">
-                    <IconFacebook color="#000" />
+                    <IconFacebook color="#fff" />
                   </a>
                 </div>
               ) : null}

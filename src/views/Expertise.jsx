@@ -40,6 +40,11 @@ import RoundTree from "../assets/img/round-tree.png";
 import MMSD4thImg from "../assets/img/mm-sd-4th-img.png";
 import EventMarketingImg from "../assets/img/EM-img.png";
 import EventMarketingImgMob from "../assets/img/event-img-1.png";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -77,6 +82,13 @@ import FuelBrandGrowthSwiper from "../components/FuelBrandGrowthSwiper";
 import { Link } from "react-router-dom";
 
 const Expertise = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -107,7 +119,7 @@ const Expertise = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -120,7 +132,7 @@ const Expertise = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -134,6 +146,7 @@ const Expertise = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -209,49 +222,71 @@ const Expertise = () => {
     });
     homeExpertiseAnim
       .fromTo(
-        ".sd-grid-card-1-bg",
+        ".sd-grid-card-1",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         }
       )
       .fromTo(
-        ".sd-grid-card-2-bg",
+        ".sd-grid-card-2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".sd-grid-card-4-bg",
+        ".sd-grid-card-4",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".sd-grid-card-3-bg",
+        ".sd-grid-card-3",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
+        ".sb-box h5",
+        {
+          x: "-150%",
+        },
+        {
+          duration: 0.5,
+          x: 0,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".sb-box p",
+        {
+          x: "-150%",
+        },
+        {
+          duration: 0.5,
+          x: 0,
+        },
+        "<0"
+      );
+    /*  .fromTo(
         ".sd-grid-card-1 > img",
         {
           opacity: 0,
@@ -338,7 +373,7 @@ const Expertise = () => {
           duration: 0.5,
         },
         "<0"
-      );
+      ); */
 
     let homeExpertiseAnim2 = gsap.timeline({
       scrollTrigger: {
@@ -348,49 +383,49 @@ const Expertise = () => {
     });
     homeExpertiseAnim2
       .fromTo(
-        ".irgc-1-bg",
+        ".ir-sd-grid-card-1",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         }
       )
       .fromTo(
-        ".irgc-2-bg",
+        ".ir-sd-grid-card-2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".irgc-3-bg",
+        ".ir-sd-grid-card-3",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".irgc-4-bg",
+        ".ir-sd-grid-card-4",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
-      )
-      .fromTo(
+        "<0.1"
+      );
+    /* .fromTo(
         ".ir-sd-grid-card-1 img",
         {
           opacity: 0,
@@ -510,7 +545,7 @@ const Expertise = () => {
           duration: 0.5,
         },
         "<0"
-      );
+      ); */
     let homeExpertiseAnim3 = gsap.timeline({
       scrollTrigger: {
         trigger: ".service-description-grid-3",
@@ -519,50 +554,50 @@ const Expertise = () => {
     });
     homeExpertiseAnim3
       .fromTo(
-        ".msgc1-bg",
+        ".msgc1",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         }
       )
       .fromTo(
-        ".msgc2-bg",
+        ".msgc2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".msgc3-bg",
+        ".msgc3",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".msgc4-bg",
+        ".msgc4",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
-      )
+        "<0.1"
+      );
 
-      .fromTo(
+    /* .fromTo(
         ".msgc1 img",
         {
           opacity: 0,
@@ -638,7 +673,7 @@ const Expertise = () => {
           duration: 0.5,
         },
         "<0"
-      );
+      ); */
   }, []);
 
   return (
@@ -650,7 +685,27 @@ const Expertise = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings expertise-hero-headings">
                 <h1>
                   Award-Winning Marketing Partner Deemed Skillful by{" "}

@@ -23,6 +23,11 @@ import companyLogo11 from "../assets/img/logo-citibank.svg";
 import companyLogo12 from "../assets/img/logo-oracle.svg";
 import EventMarketingImg from "../assets/img/EM-img.png";
 import EventMarketingImgMob from "../assets/img/event-img-1.png";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 // Icons
 import {
   MdArrowDownward,
@@ -53,6 +58,13 @@ import UTLogo from "../assets/icons/UTLogo";
 import BackedByLogosSwiper from "../components/BackedByLogosSwiper";
 
 const TalkToUs = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   gsap.registerPlugin(
     ScrollTrigger,
     SplitText,
@@ -67,6 +79,17 @@ const TalkToUs = () => {
     const marketingHeadingChars = marketingHeading.chars;
     const marketingHeadingLines = marketingHeading.lines;
     const marketingHeadingWords = marketingHeading.words;
+    const UTStoreHead = new SplitText(".ut-store-details h2", {
+      type: "chars, words,lines",
+    });
+    const UTStoreHeadChars = UTStoreHead.chars;
+    const UTStoreHeadWords = UTStoreHead.words;
+    const RTSHeading = new SplitText(".w50-light-content h2", {
+      type: "words,lines",
+    });
+
+    const RTSHeadingWords = RTSHeading.words;
+    const RTSHeadingLines = RTSHeading.lines;
 
     let marketingLandingAnim = gsap.timeline();
     marketingLandingAnim
@@ -83,31 +106,29 @@ const TalkToUs = () => {
         }
       )
       .fromTo(
-        marketingHeadingChars,
+        RTSHeadingWords,
         {
+          y: "200%",
           opacity: 0,
-          rotateY: 90,
-        },
-        {
-          rotateY: 0,
-          opacity: 1,
-          duration: 0.65,
-          stagger: {
-            each: 0.025,
-          },
-        }
-      )
-      .fromTo(
-        ".im-hero-headings h3",
-        {
-          opacity: 0,
-          y: 50,
         },
         {
           y: 0,
           opacity: 1,
+          duration: 0.5,
+          stagger: {
+            each: 0.1,
+          },
+        }
+      )
+      .fromTo(
+        ".ttu-form-grid",
+        {
+          opacity: 0,
         },
-        "<0"
+        {
+          opacity: 1,
+          duration: 0.25,
+        }
       )
       .fromTo(
         ".loading-screen",
@@ -150,7 +171,7 @@ const TalkToUs = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.65,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -162,13 +183,45 @@ const TalkToUs = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.25,
           },
         },
         0
       );
+    /* let readyToStartAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ready-to-start-section",
+        start: "top 50%",
+      },
+    });
+    readyToStartAnim
+      .fromTo(
+        RTSHeadingWords,
+        {
+          y: "200%",
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.5,
+          stagger: {
+            each: 0.1,
+          },
+        }
+      )
+      .fromTo(
+        ".ttu-form-grid",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.25,
+        }
+      ); */
   }, []);
   return (
     <main className="app">
@@ -180,7 +233,27 @@ const TalkToUs = () => {
           <div className="ttuh-dark"></div>
           <div className="ttuh-light"></div>
           <div className="box">
-            <Header lightHeader={false} />
+            <Header lightHeader={false} showIconsBox={showIconsBox} />
+            {isIconsBoxShowing ? (
+              <div className="hero-icons-line-box">
+                <div></div>
+                <a href="#">
+                  <IconWhatsapp color="#fff" />
+                </a>
+                <a href="https://twitter.com/UptrendAgency">
+                  <IconTwitter color="#fff" />
+                </a>
+                <a href="https://www.linkedin.com/company/UptrendAgency">
+                  <IconLinkedIn color="#fff" />
+                </a>
+                <a href="http://instagram.com/uptrendagency">
+                  <IconInstagram color="#fff" />
+                </a>
+                <a href="https://facebook.com/UptrendAgency">
+                  <IconFacebook color="#fff" />
+                </a>
+              </div>
+            ) : null}
           </div>
         </div>
         <section className="ttu-hero-section">

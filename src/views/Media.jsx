@@ -24,13 +24,14 @@ import Article4 from "../assets/img/article4.svg";
 import Article3 from "../assets/img/article3.svg";
 import Article5 from "../assets/img/article5.svg";
 import Article6 from "../assets/img/article6.svg";
+import Telegram from "../assets/icons/Telegram";
+import Email from "../assets/icons/Email";
+import Whatsapp from "../assets/icons/Whatsapp";
 import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
-import Telegram from "../assets/icons/Telegram";
-import Email from "../assets/icons/Email";
-import Whatsapp from "../assets/icons/Whatsapp";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -72,6 +73,13 @@ import Lottie from "react-lottie";
 import animationData from "./../assets/json/media.json";
 
 const Media = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -105,7 +113,7 @@ const Media = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -118,7 +126,7 @@ const Media = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -132,6 +140,7 @@ const Media = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0.5"
@@ -173,155 +182,6 @@ const Media = () => {
         yoyo: true,
       }
     );
-    let homeExpertiseAnim = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".service-description-grid",
-        start: "top 50%",
-      },
-    });
-    homeExpertiseAnim
-      .fromTo(
-        ".em-sd-grid-card-1-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".em-sd-grid-card-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.35,
-        },
-        "<0.075"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.35,
-        },
-        "<0.075"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.35,
-        },
-        "<0.075"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0.5"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-2 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h2",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h6",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 ul",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      );
 
     let nftCardsAnim = gsap.timeline({
       scrollTrigger: {
@@ -338,97 +198,12 @@ const Media = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 0.4,
+        duration: 0.35,
         stagger: {
-          each: 0.15,
+          each: 0.1,
         },
       }
     );
-    let homeExpertiseAnim2 = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".service-description-grid-2",
-        start: "top 50%",
-      },
-    });
-    homeExpertiseAnim2
-      .fromTo(
-        ".msgc2-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".msgc3-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".msgc4-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-
-      .fromTo(
-        ".msgc2-2 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0.5"
-      )
-      .fromTo(
-        ".msgc3-2 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".msgc4-2 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".msgc3-2 h5",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      );
   }, []);
 
   return (
@@ -440,7 +215,27 @@ const Media = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Leading Media Outlets Boosting Brand Profile</h1>
                 <h3>Contact us to start promotion today!</h3>

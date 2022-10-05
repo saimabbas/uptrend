@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // Styles
 import "../styles/reset.css";
 import "../styles/globals.css";
@@ -22,8 +22,19 @@ import JournalImg1 from "../assets/img/journal-img-1.png";
 import JournalImg3 from "../assets/img/journal-img-3.png";
 import BlogCard from "../components/BlogCard";
 import { MdArrowForward } from "react-icons/md";
-
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 const Blog2 = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   return (
     <main className="app">
       {/* <div className="loading-screen">
@@ -32,7 +43,27 @@ const Blog2 = () => {
       <div className="blog-page">
         <div className="blog-page-content">
           <div className="box">
-            <Header lightHeader={false} />
+            <Header lightHeader={false} showIconsBox={showIconsBox} />
+            {isIconsBoxShowing ? (
+              <div className="hero-icons-line-box">
+                <div></div>
+                <a href="#">
+                  <IconWhatsapp color="#fff" />
+                </a>
+                <a href="https://twitter.com/UptrendAgency">
+                  <IconTwitter color="#fff" />
+                </a>
+                <a href="https://www.linkedin.com/company/UptrendAgency">
+                  <IconLinkedIn color="#fff" />
+                </a>
+                <a href="http://instagram.com/uptrendagency">
+                  <IconInstagram color="#fff" />
+                </a>
+                <a href="https://facebook.com/UptrendAgency">
+                  <IconFacebook color="#fff" />
+                </a>
+              </div>
+            ) : null}
           </div>
           <div className="blog-content-wrapper">
             <div className="box box-p">

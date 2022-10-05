@@ -31,7 +31,7 @@ function App() {
     <>
       <Switch>
         <Routes>
-          {/* <Route exact path="/" element={<LinksPage />} /> */}
+          <Route exact path="/links" element={<LinksPage />} />
           <Route exact path="/" element={<Home />} />
           <Route
             exact

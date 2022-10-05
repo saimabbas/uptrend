@@ -81,8 +81,20 @@ import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
 import Lottie from "react-lottie";
 import animationData from "./../assets/json/metaverse-marketing.json";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 const MetaverseMarketing = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -116,7 +128,7 @@ const MetaverseMarketing = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -129,7 +141,7 @@ const MetaverseMarketing = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -143,6 +155,7 @@ const MetaverseMarketing = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -180,50 +193,50 @@ const MetaverseMarketing = () => {
     });
     homeExpertiseAnim
       .fromTo(
-        ".msgc1-bg",
+        ".msgc1",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
-          duration: 0.35,
+          opacity: 1,
+          duration: 0.5,
         }
       )
       .fromTo(
-        ".msgc2-bg",
+        ".msgc2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
-          duration: 0.35,
+          opacity: 1,
+          duration: 0.5,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".msgc3-bg",
+        ".msgc3",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
-          duration: 0.35,
+          opacity: 1,
+          duration: 0.5,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".msgc4-bg",
+        ".msgc4",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
-          duration: 0.35,
+          opacity: 1,
+          duration: 0.5,
         },
-        "<0.075"
-      )
+        "<0.1"
+      );
 
-      .fromTo(
+    /*  .fromTo(
         ".msgc1 img",
         {
           opacity: 0,
@@ -299,7 +312,7 @@ const MetaverseMarketing = () => {
           duration: 0.5,
         },
         "<0"
-      );
+      ); */
 
     let homeExpertiseAnim2 = gsap.timeline({
       scrollTrigger: {
@@ -309,40 +322,50 @@ const MetaverseMarketing = () => {
     });
     homeExpertiseAnim2
       .fromTo(
-        ".msgc2-2-bg",
+        ".msgc1-2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.5,
-        },
-        "<0"
+        }
       )
       .fromTo(
-        ".msgc3-2-bg",
+        ".msgc2-2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.5,
         },
-        "<0"
+        "<0.1"
       )
       .fromTo(
-        ".msgc4-2-bg",
+        ".msgc3-2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.5,
         },
-        "<0"
+        "<0.1"
       )
+      .fromTo(
+        ".msgc4-2",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.5,
+        },
+        "<0.1"
+      );
 
-      .fromTo(
+    /* .fromTo(
         ".msgc2-2 img",
         {
           opacity: 0,
@@ -385,7 +408,7 @@ const MetaverseMarketing = () => {
           duration: 0.5,
         },
         "<0"
-      );
+      ); */
     let nftCardsAnim1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
@@ -402,7 +425,7 @@ const MetaverseMarketing = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.65,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -414,7 +437,7 @@ const MetaverseMarketing = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.25,
           },
@@ -432,7 +455,27 @@ const MetaverseMarketing = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Metaverse Marketing</h1>
                 <h3>The bridge to brand success</h3>
@@ -558,7 +601,7 @@ const MetaverseMarketing = () => {
               </Link>
             </div>
             <div className="service-description-grid service-description-grid-2">
-              <div className="sd-grid-card mm-sd-grid-card-2-1">
+              <div className="sd-grid-card mm-sd-grid-card-2-1 msgc1-2">
                 <div className="mm-info-small-grid-box">
                   <img loading="lazy" src={CrownImg} alt="CrownImg" />
                   <h5>Introduce exclusive NFTs</h5>

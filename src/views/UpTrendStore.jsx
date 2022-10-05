@@ -23,6 +23,11 @@ import NFTGal3 from "../assets/img/nft-gall-3.png";
 import NFTGal4 from "../assets/img/nft-gall-4.png";
 import NFTGal5 from "../assets/img/nft-gall-5.png";
 import NFTGal6 from "../assets/img/nftgal6.png";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -64,6 +69,13 @@ import Lottie from "react-lottie";
 import animationData from "./../assets/json/uptrend-store.json";
 
 const UpTrendStore = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -97,7 +109,7 @@ const UpTrendStore = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -110,7 +122,7 @@ const UpTrendStore = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -124,6 +136,7 @@ const UpTrendStore = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -167,13 +180,13 @@ const UpTrendStore = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 0.4,
+        duration: 0.35,
         stagger: {
           each: 0.15,
         },
       }
     );
-    let nftCardsAnim = gsap.timeline({
+    /* let nftCardsAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".nft-gallery-section",
         start: "top 50%",
@@ -193,7 +206,7 @@ const UpTrendStore = () => {
           each: 0.15,
         },
       }
-    );
+    ); */
   }, []);
 
   return (
@@ -205,7 +218,27 @@ const UpTrendStore = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Uptrend Store</h1>
                 <h3>Limited Edition</h3>
@@ -224,7 +257,7 @@ const UpTrendStore = () => {
             src={EmHeroImg}
             alt="EmHeroImg"
           /> */}
-          <div className="im-hero-img">
+          <div className="im-hero-img im-hero-img-r">
             <Lottie className="im-hero-img" options={defaultOptions} />
           </div>
         </section>

@@ -38,6 +38,11 @@ import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
 import JournalImg4 from "../assets/img/journal-img-4.png";
 import Lottie from "react-lottie";
 import animationData from "./../assets/json/blog.json";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -81,6 +86,13 @@ import BlogCard from "../components/BlogCard";
 import { Tab, Nav } from "react-bootstrap";
 
 const EventMarketing = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -114,7 +126,7 @@ const EventMarketing = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -127,7 +139,7 @@ const EventMarketing = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -141,6 +153,7 @@ const EventMarketing = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -169,155 +182,6 @@ const EventMarketing = () => {
         yoyo: true,
       }
     );
-    let homeExpertiseAnim = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".service-description-grid",
-        start: "top 50%",
-      },
-    });
-    homeExpertiseAnim
-      .fromTo(
-        ".em-sd-grid-card-1-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        }
-      )
-      .fromTo(
-        ".em-sd-grid-card-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0.5"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-2 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h2",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h6",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 ul",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      );
 
     let nftCardsAnim = gsap.timeline({
       scrollTrigger: {
@@ -334,9 +198,9 @@ const EventMarketing = () => {
       {
         opacity: 1,
         y: 0,
-        duration: 0.4,
+        duration: 0.35,
         stagger: {
-          each: 0.15,
+          each: 0.1,
         },
       }
     );
@@ -372,7 +236,27 @@ const EventMarketing = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Uptrend Journal</h1>
               </div>

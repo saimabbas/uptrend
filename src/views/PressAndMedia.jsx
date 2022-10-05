@@ -27,6 +27,11 @@ import InPressImg5 from "../assets/img/in-press-img-5.svg";
 import InPressImg6 from "../assets/img/in-press-img-6.svg";
 import MOCRImg1 from "../assets/img/mocr-img-1.png";
 import MOCRImg2 from "../assets/img/mocr-img-2.png";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -68,6 +73,13 @@ import Lottie from "react-lottie";
 import animationData from "./../assets/json/press-and-media.json";
 
 const PressAndMedia = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -101,7 +113,7 @@ const PressAndMedia = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -114,7 +126,7 @@ const PressAndMedia = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -128,6 +140,7 @@ const PressAndMedia = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -156,155 +169,6 @@ const PressAndMedia = () => {
         yoyo: true,
       }
     );
-    let homeExpertiseAnim = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".service-description-grid",
-        start: "top 50%",
-      },
-    });
-    homeExpertiseAnim
-      .fromTo(
-        ".em-sd-grid-card-1-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        }
-      )
-      .fromTo(
-        ".em-sd-grid-card-2-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4-bg",
-        {
-          width: 0,
-        },
-        {
-          width: "100%",
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0.5"
-      )
-      .fromTo(
-        ".em-sd-grid-card-1 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-2 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h2",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-3 h6",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 img",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 h4",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      )
-      .fromTo(
-        ".em-sd-grid-card-4 ul",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.5,
-        },
-        "<0"
-      );
 
     let nftCardsAnim = gsap.timeline({
       scrollTrigger: {
@@ -323,9 +187,9 @@ const PressAndMedia = () => {
         opacity: 1,
         y: 0,
         scale: 1,
-        duration: 0.4,
+        duration: 0.35,
         stagger: {
-          each: 0.15,
+          each: 0.085,
         },
       }
     );
@@ -340,7 +204,27 @@ const PressAndMedia = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Press And Media</h1>
                 <h3>
@@ -361,7 +245,7 @@ const PressAndMedia = () => {
             src={EmHeroImg}
             alt="EmHeroImg"
           /> */}
-          <div className="im-hero-img">
+          <div className="im-hero-img im-hero-img-r">
             <Lottie className="im-hero-img" options={defaultOptions} />
           </div>
         </section>

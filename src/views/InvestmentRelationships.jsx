@@ -35,6 +35,11 @@ import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";
 import FundingDistribution from "../assets/img/funding-distribution.svg";
 import Lottie from "react-lottie";
 import animationData from "./../assets/json/investor-relations.json";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -74,6 +79,13 @@ import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
 
 const InvestmentRelationships = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+    setTimeout(() => {
+      setIsIconsBoxShowing(false);
+    }, 5000);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -107,7 +119,7 @@ const InvestmentRelationships = () => {
         {
           opacity: "0",
           delay: 1,
-          duration: 0.5,
+          duration: 0.35,
           ease: Linear.easeInOut,
         }
       )
@@ -120,7 +132,7 @@ const InvestmentRelationships = () => {
         {
           rotateY: 0,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.35,
           stagger: {
             each: 0.025,
           },
@@ -134,6 +146,7 @@ const InvestmentRelationships = () => {
         },
         {
           y: 0,
+          duration: 0.35,
           opacity: 1,
         },
         "<0"
@@ -170,49 +183,49 @@ const InvestmentRelationships = () => {
     });
     homeExpertiseAnim
       .fromTo(
-        ".irgc-1-bg",
+        ".ir-sd-grid-card-1",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         }
       )
       .fromTo(
-        ".irgc-2-bg",
+        ".ir-sd-grid-card-2",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".irgc-3-bg",
+        ".ir-sd-grid-card-3",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
+        "<0.1"
       )
       .fromTo(
-        ".irgc-4-bg",
+        ".ir-sd-grid-card-4",
         {
-          width: 0,
+          opacity: 0,
         },
         {
-          width: "100%",
+          opacity: 1,
           duration: 0.35,
         },
-        "<0.075"
-      )
-      .fromTo(
+        "<0.1"
+      );
+    /*   .fromTo(
         ".ir-sd-grid-card-1 img",
         {
           opacity: 0,
@@ -332,7 +345,7 @@ const InvestmentRelationships = () => {
           duration: 0.5,
         },
         "<0"
-      );
+      ); */
     let fundingDistributionAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".funding-distribution-section",
@@ -385,7 +398,7 @@ const InvestmentRelationships = () => {
         {
           opacity: 1,
           x: 0,
-          duration: 0.65,
+          duration: 0.35,
         }
       )
       .fromTo(
@@ -397,7 +410,7 @@ const InvestmentRelationships = () => {
         {
           opacity: 1,
           y: 0,
-          duration: 0.65,
+          duration: 0.35,
           stagger: {
             each: 0.25,
           },
@@ -415,7 +428,27 @@ const InvestmentRelationships = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#fff" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#fff" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#fff" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#fff" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#fff" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Investor Relations</h1>
                 <h3>
