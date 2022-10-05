@@ -1044,6 +1044,9 @@
   left: 125%;
   opacity: 1;
 }
+.sj-input-box button span {
+  margin: 0 0 0 0.5rem;
+}
 /* EVENT MARKETING */
 .em-sd-grid-card-1-bg {
   width: 100%;

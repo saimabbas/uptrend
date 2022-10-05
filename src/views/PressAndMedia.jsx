@@ -415,7 +415,7 @@ const PressAndMedia = () => {
                   <div></div>
                   <button>
                     <div></div>
-                    SUBSCRIBE TO OUR JOURNAL
+                    SUBSCRIBE <span> TO OUR JOURNAL</span>
                   </button>
                 </div>
               </div>
