@@ -335,6 +335,10 @@
   align-items: flex-start;
   transition: 0.5s;
   color: var(--black);
+  text-decoration: none;
+}
+.egc1-top a:hover {
+  text-decoration: none !important;
 }
 .expertise-grid-card:nth-child(3) a,
 .expertise-grid-card:nth-child(4) a,
@@ -344,6 +348,7 @@
 }
 .expertise-grid-card a:hover {
   color: var(--black);
+  text-decoration: none;
 }
 .expertise-grid-card:hover a {
   text-decoration: underline;
@@ -1396,5 +1401,8 @@
   }
   .rts-form-grid textarea {
     grid-column: unset;
+  }
+  .expertise-grid-card a {
+    font-size: 3rem;
   }
 }
