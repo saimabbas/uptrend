@@ -11,21 +11,6 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // Images
-import EmHeroImg from "../assets/img/blog-hero-img.svg";
-import LocalStartupImg from "../assets/img/local-startup-img.svg";
-import BullElevatorImg from "../assets/img/bull-elevator-img-2.png";
-import PhotoImg from "../assets/img/photo-img.png";
-import EMSD2ndImg from "../assets/img/em-sd-2nd-img.png";
-import EMSD3rdImg from "../assets/img/em-sd-3rd-img.png";
-import KnotImg from "../assets/img/knot-img.png";
-import TrImg from "../assets/img/tr.svg";
-import ECImg from "../assets/img/ec.svg";
-import BBLogo1Dark from "../assets/img/backedby-logo-1-dark.svg";
-import BBLogo2Dark from "../assets/img/backedby-logo-2-dark.svg";
-import BBLogo3Dark from "../assets/img/backedby-logo-3-dark.svg";
-import BBLogo4Dark from "../assets/img/backedby-logo-4-dark.svg";
-import BBLogo5Dark from "../assets/img/backedby-logo-5-dark.svg";
-import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";
 import Person from "../assets/img/blog-person.svg";
 import Person1 from "../assets/img/donna.png";
 import Person2 from "../assets/img/alex.png";
@@ -84,6 +69,7 @@ import $ from "jquery";
 import Tabs from "react-bootstrap/Tabs";
 import BlogCard from "../components/BlogCard";
 import { Tab, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const EventMarketing = () => {
   const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
@@ -363,43 +349,49 @@ const EventMarketing = () => {
                       </div>
                     </div>
                     <div className="blog-cards-grid">
-                      <BlogCard
-                        lightBlogCard={false}
-                        blogImg={JournalImg1}
-                        heading="3 Proven Strategies To Building Brand Awareness in 2022"
-                        description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
-                        personImg={Person2}
-                        personName="Alex Wanstein"
-                        date="10.06.2022"
-                        readTime="5 min read"
-                      >
-                        <span>Gaming</span>
-                        <span>News</span>
-                      </BlogCard>
-                      <BlogCard
-                        lightBlogCard={false}
-                        blogImg={JournalImg2}
-                        heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
-                        description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
-                        personImg={Person1}
-                        personName="Donna Wanstein"
-                        date="7.06.2022"
-                        readTime="5 min read"
-                      >
-                        <span>Gaming</span>
-                      </BlogCard>
-                      <BlogCard
-                        lightBlogCard={false}
-                        blogImg={JournalImg3}
-                        heading="3 Proven Strategies To Building Brand Awareness in 2022"
-                        description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
-                        personImg={Person1}
-                        personName="Donna Wanstein"
-                        date="7.06.2022"
-                        readTime="5 min read"
-                      >
-                        <span>News</span>
-                      </BlogCard>
+                      <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
+                        <BlogCard
+                          lightBlogCard={false}
+                          blogImg={JournalImg1}
+                          heading="3 Proven Strategies To Building Brand Awareness in 2022"
+                          description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                          personImg={Person2}
+                          personName="Alex Wanstein"
+                          date="10.06.2022"
+                          readTime="5 min read"
+                        >
+                          <span>Gaming</span>
+                          <span>News</span>
+                        </BlogCard>
+                      </Link>
+                      <Link to="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                        <BlogCard
+                          lightBlogCard={false}
+                          blogImg={JournalImg2}
+                          heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
+                          description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                          personImg={Person1}
+                          personName="Donna Wanstein"
+                          date="7.06.2022"
+                          readTime="5 min read"
+                        >
+                          <span>Gaming</span>
+                        </BlogCard>
+                      </Link>
+                      <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022">
+                        <BlogCard
+                          lightBlogCard={false}
+                          blogImg={JournalImg3}
+                          heading="3 Proven Strategies To Building Brand Awareness in 2022"
+                          description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                          personImg={Person1}
+                          personName="Donna Wanstein"
+                          date="7.06.2022"
+                          readTime="5 min read"
+                        >
+                          <span>News</span>
+                        </BlogCard>
+                      </Link>
                     </div>
                     <div className="blog-bcr">
                       <div className="ut-breadcrumbs-section">
@@ -449,42 +441,48 @@ const EventMarketing = () => {
             <h2 className="ts-head">Top Stories</h2>
             <div className="top-stories-content">
               <div className="topstories-right">
-                <BlogCard
-                  lightBlogCard={true}
-                  blogImg={JournalImg5}
-                  heading="Top-5 Influencer Marketing Software Solutions To Boost Your Brand in 2022 (Part 2)"
-                  personImg={Person}
-                  personName="Donna Wanstein"
-                  date="12.06.2022"
-                  readTime="10 min read"
-                >
-                  <span>Gaming</span>
-                </BlogCard>
-                <BlogCard
-                  lightBlogCard={true}
-                  blogImg={JournalImg6}
-                  heading="Top Regions With The Best Marketing Performance"
-                  personImg={Person}
-                  personName="Sarah Evans"
-                  date="18.06.2022"
-                  readTime="5 min read"
-                >
-                  <span>Gaming</span>
-                </BlogCard>
+                <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
+                  <BlogCard
+                    lightBlogCard={true}
+                    blogImg={JournalImg5}
+                    heading="Top-5 Influencer Marketing Software Solutions To Boost Your Brand in 2022 (Part 2)"
+                    personImg={Person}
+                    personName="Donna Wanstein"
+                    date="12.06.2022"
+                    readTime="10 min read"
+                  >
+                    <span>Gaming</span>
+                  </BlogCard>
+                </Link>
+                <Link to="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                  <BlogCard
+                    lightBlogCard={true}
+                    blogImg={JournalImg6}
+                    heading="Top Regions With The Best Marketing Performance"
+                    personImg={Person}
+                    personName="Sarah Evans"
+                    date="18.06.2022"
+                    readTime="5 min read"
+                  >
+                    <span>Gaming</span>
+                  </BlogCard>
+                </Link>
               </div>
               <div className="blog-card-big">
-                <BlogCard
-                  lightBlogCard={true}
-                  blogImg={JournalImg4}
-                  heading="New Local Region? Tips To Get Started"
-                  description="The ultimate marketing plan for dominating local markets. Get the fundamental insights to impact your customers. We introduce essential marketing tips for brands to create the valuable experience."
-                  personImg={Person}
-                  personName="Emre Murry"
-                  date="18.06.2022"
-                  readTime="5 min read"
-                >
-                  <span>Influencer Marketing</span>
-                </BlogCard>
+                <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022">
+                  <BlogCard
+                    lightBlogCard={true}
+                    blogImg={JournalImg4}
+                    heading="New Local Region? Tips To Get Started"
+                    description="The ultimate marketing plan for dominating local markets. Get the fundamental insights to impact your customers. We introduce essential marketing tips for brands to create the valuable experience."
+                    personImg={Person}
+                    personName="Emre Murry"
+                    date="18.06.2022"
+                    readTime="5 min read"
+                  >
+                    <span>Influencer Marketing</span>
+                  </BlogCard>
+                </Link>
               </div>
             </div>
           </div>
@@ -500,7 +498,7 @@ const EventMarketing = () => {
                   <input type="text" placeholder="Email" />
                   <button>
                     <div></div>
-                    SUBSCRIBE TO OUR JOURNAL
+                    SUBSCRIBE <span> TO OUR JOURNAL</span>
                   </button>
                 </div>
               </div>

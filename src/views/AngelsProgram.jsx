@@ -240,7 +240,7 @@ const Sandbox = () => {
         <section className="hero-section im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              <Header lightHeader={true} showIconsBox={showIconsBox} />
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>
@@ -329,7 +329,7 @@ const Sandbox = () => {
                   <input type="text" placeholder="Email" />
                   <button>
                     <div></div>
-                    SUBSCRIBE TO OUR JOURNAL
+                    SUBSCRIBE <span> TO OUR JOURNAL</span>
                   </button>
                 </div>
               </div>

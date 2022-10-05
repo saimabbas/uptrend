@@ -604,9 +604,11 @@
 .blog-card h4 {
   font-size: 2.5rem;
   font-weight: 700;
+  color: var(--black);
   margin: 2.5rem 0;
 }
 .blog-card p {
+  color: var(--black);
   font-size: 1.75rem;
   font-weight: 300;
   margin: 0 0 2.5rem 0;

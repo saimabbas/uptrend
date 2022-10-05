@@ -1007,7 +1007,7 @@ const UptrendGrowthStories = () => {
                   <input type="text" placeholder="Email" />
                   <button>
                     <div></div>
-                    SUBSCRIBE TO OUR JOURNAL
+                    SUBSCRIBE <span> TO OUR JOURNAL</span>
                   </button>
                 </div>
               </div>

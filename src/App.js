@@ -61,9 +61,21 @@ function App() {
           <Route exact path="/influencers" element={<Influencers />} />
           <Route exact path="/pressandmedia" element={<PressAndMedia />} />
           <Route exact path="/blog" element={<Blog />} />
-          <Route exact path="/blog1" element={<Blog1 />} />
-          <Route exact path="/blog2" element={<Blog2 />} />
-          <Route exact path="/blog3" element={<Blog3 />} />
+          <Route
+            exact
+            path="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022"
+            element={<Blog1 />}
+          />
+          <Route
+            exact
+            path="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022"
+            element={<Blog2 />}
+          />
+          <Route
+            exact
+            path="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022"
+            element={<Blog3 />}
+          />
           <Route exact path="/blog4" element={<Blog4 />} />
           <Route exact path="/blog5" element={<Blog5 />} />
           <Route exact path="/blog6" element={<Blog6 />} />

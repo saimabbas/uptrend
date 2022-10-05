@@ -1044,6 +1044,9 @@
   left: 125%;
   opacity: 1;
 }
+.sj-input-box button span {
+  margin: 0 0 0 0.5rem;
+}
 /* EVENT MARKETING */
 .em-sd-grid-card-1-bg {
   width: 100%;
@@ -1642,6 +1645,9 @@
   }
 }
 @media screen and (max-width: 1000px) {
+  .positions-grid {
+    grid-template-columns: 1fr;
+  }
   .im-hero-img.ap-hero-img {
     transform: translate(40%, 15%);
     max-width: 65rem;
@@ -1973,9 +1979,6 @@
   }
   .expertise-hero-headings.im-hero-headings h1 {
     font-size: 3rem;
-  }
-  .positions-grid {
-    grid-template-columns: 1fr;
   }
   .ucsdgc1-details h6 {
     font-size: 1.75rem;
