@@ -31,8 +31,8 @@ function App() {
     <>
       <Switch>
         <Routes>
-          <Route exact path="/" element={<LinksPage />} />
-          <Route exact path="/home" element={<Home />} />
+          {/* <Route exact path="/" element={<LinksPage />} /> */}
+          <Route exact path="/" element={<Home />} />
           <Route
             exact
             path="/influencermarketing"

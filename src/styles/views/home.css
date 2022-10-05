@@ -31,10 +31,13 @@
   right: 0;
   z-index: 1000;
 }
+.hero-icons-line-box.hero-icons-line-box-dark > div {
+  background-color: var(--white);
+}
 .hero-icons-line-box > div {
   width: 1px;
   height: 7.5rem;
-  background-color: var(--white);
+  background-color: var(--black);
 }
 .hero-icons-line-box a svg {
   width: 2.25rem;

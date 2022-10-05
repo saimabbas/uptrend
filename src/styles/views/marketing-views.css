@@ -1568,6 +1568,9 @@
   max-width: unset;
 }
 @media screen and (max-width: 1150px) {
+  .uc-etg {
+    border-bottom: 1px solid var(--white);
+  }
   .service-description-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;

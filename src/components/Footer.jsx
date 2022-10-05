@@ -8,6 +8,7 @@ import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,7 +16,9 @@ const Footer = () => {
       <div className="box">
         <div className="footer-grid">
           <div className="footer-grid-card-1">
-            <UTLogo color="#31dd8c" />
+            <Link to="/">
+              <UTLogo color="#31dd8c" />
+            </Link>
           </div>
           <div className="footer-grid-card-2">
             <h6>Expertise</h6>

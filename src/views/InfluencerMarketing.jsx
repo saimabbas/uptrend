@@ -32,6 +32,11 @@ import CPBeeImg from "../assets/img/cp-bee-img.png";
 import PlatformStatsImg from "../assets/img/platform-stats-img.svg";
 import BigThingsWave from "../assets/img/big-things-wave.svg";
 import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
+import IconLinkedIn from "../assets/icons/IconLinkedIn";
+import IconFacebook from "../assets/icons/IconFacebook";
+import IconInstagram from "../assets/icons/IconInstagram";
+import IconTwitter from "../assets/icons/IconTwitter";
+import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
 // Icons
 import {
@@ -69,6 +74,10 @@ import Lottie from "react-lottie";
 import animationData from "./../assets/json/influencer-marketing.json";
 
 const InfluencerMarketing = () => {
+  const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(true);
+  const showIconsBox = () => {
+    setIsIconsBoxShowing(!isIconsBoxShowing);
+  };
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -356,7 +365,27 @@ const InfluencerMarketing = () => {
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} />
+              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              {isIconsBoxShowing ? (
+                <div className="hero-icons-line-box">
+                  <div></div>
+                  <a href="#">
+                    <IconWhatsapp color="#000" />
+                  </a>
+                  <a href="https://twitter.com/UptrendAgency">
+                    <IconTwitter color="#000" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/UptrendAgency">
+                    <IconLinkedIn color="#000" />
+                  </a>
+                  <a href="http://instagram.com/uptrendagency">
+                    <IconInstagram color="#000" />
+                  </a>
+                  <a href="https://facebook.com/UptrendAgency">
+                    <IconFacebook color="#000" />
+                  </a>
+                </div>
+              ) : null}
               <div className="im-hero-headings">
                 <h1>Influencer Marketing</h1>
                 <h3>Outstanding opportunity to dominate the market</h3>

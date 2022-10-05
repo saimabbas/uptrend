@@ -389,7 +389,7 @@ const Home = () => {
                 </span>
               </h1>
               {isIconsBoxShowing ? (
-                <div className="hero-icons-line-box">
+                <div className="hero-icons-line-box hero-icons-line-box-dark">
                   <div></div>
                   <a href="#">
                     <IconWhatsapp color="#fff" />

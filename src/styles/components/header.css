@@ -32,6 +32,12 @@ header {
   align-items: center;
   justify-content: center; */
 }
+.header-center > * {
+  transition: 0.5s;
+}
+.header-center > *:hover {
+  transform: translate(0, -0.75rem);
+}
 .header-center a {
   font-size: 1.65rem;
   text-decoration: none;
@@ -54,16 +60,17 @@ header {
   transform: translate(0, -1rem);
   transition: 0.35s;
 }
-.header-center > a:hover::after,
+/* .header-center > a:hover::after,
 .bookmark-link a:hover::after {
   width: 100%;
-}
+} */
 .bookmark-link {
   position: relative;
 }
 .bookmark-link img {
   width: 1rem;
   height: max-content;
+  transition: 0.5s;
   object-fit: contain;
   object-position: bottom;
   position: absolute;

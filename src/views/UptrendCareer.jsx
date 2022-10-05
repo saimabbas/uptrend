@@ -416,7 +416,7 @@ const UptrendCareer = () => {
                   <h6>Premier events with exclusive interactive experiences</h6>
                 </div>
               </div>
-              <div className="sd-grid-card sd-grid-card-1">
+              <div className="sd-grid-card sd-grid-card-1 uc-etg">
                 <div className="uc-sd-grid-card-1-bg"></div>
                 <div className="ucsdgc1-details">
                   <h3>Explore The Globe</h3>
