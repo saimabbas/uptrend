@@ -713,7 +713,9 @@ const UptrendGrowthStories = () => {
                   <div className="hrgc-head">
                     <img loading="lazy" src={Nico} alt="Nico" />
                     <div className="hrgc-head-name">
-                      <h4>Nico Verderosa </h4>
+                      <a href="https://twitter.com/NicoVerderosa">
+                        <h4>Nico Verderosa </h4>
+                      </a>
                       <h6>@nico1991</h6>
                     </div>
                   </div>
@@ -732,7 +734,9 @@ const UptrendGrowthStories = () => {
                       alt="companyLogo16"
                     />
                     <div className="hrgc-head-name">
-                      <h6>Kephi Gallery</h6>
+                      <a href="https://www.kephi.io/">
+                        <h6>Kephi Gallery</h6>
+                      </a>
                       <p>Chief Operation Officer</p>
                     </div>
                   </div>
@@ -743,7 +747,9 @@ const UptrendGrowthStories = () => {
                   <div className="hrgc-head">
                     <img loading="lazy" src={Tony} alt="Tony" />
                     <div className="hrgc-head-name">
-                      <h4>Tony Spilotro </h4>
+                      <a href="https://twitter.com/tonyspilotroBTC">
+                        <h4>Tony Spilotro </h4>
+                      </a>
                       <h6>@black.m</h6>
                     </div>
                   </div>

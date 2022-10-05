@@ -774,6 +774,8 @@ const Expertise = () => {
                   loading="lazy"
                   src={WinnertrophyImg}
                   alt="WinnertrophyImg"
+                  x
+                  className="winner-img-mob"
                 />
               </div>
               <div className="sd-grid-card sd-grid-card-2">

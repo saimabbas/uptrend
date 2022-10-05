@@ -471,6 +471,7 @@ const InfluencerMarketing = () => {
                   loading="lazy"
                   src={WinnertrophyImg}
                   alt="WinnertrophyImg"
+                  className="winner-img-mob"
                 />
               </div>
               <div className="sd-grid-card sd-grid-card-2">

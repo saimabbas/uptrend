@@ -140,4 +140,10 @@
   .angelsprogram-details {
     padding: 7.5rem 0 18rem 0;
   }
+  .apd-grid-right h3 {
+    font-size: 2.5rem;
+  }
+  .apd-grid-right p {
+    font-size: 1.85rem;
+  }
 }

@@ -1035,4 +1035,17 @@ h2.oa-head {
     font-size: 1.6rem;
     padding: 1.5rem;
   }
+  .main-blog-grid-left h3 {
+    font-size: 2.25rem;
+  }
+  .main-blog-grid-left p {
+    font-size: 1.75rem;
+    line-height: unset;
+  }
+  .main-blog-grid-left .blog-img-para {
+    width: 100%;
+  }
+  .event-marketing-page .upcoming-events {
+    padding: 5rem 0 18rem 0;
+  }
 }

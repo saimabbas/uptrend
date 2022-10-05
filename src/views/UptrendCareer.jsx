@@ -368,7 +368,7 @@ const UptrendCareer = () => {
               <h2>Uptrend Benefits</h2>
             </div>
             <div className="service-description-grid">
-              <div className="ucsdgc1 sd-grid-card sd-grid-card-1">
+              <div className="ucsdgc1 sd-grid-card sd-grid-card-1 sdg-img">
                 <div className="uc-sd-grid-card-1-bg"></div>
                 <div className="ucsdgc1-details">
                   <h3>Flexible Work Schedule</h3>
@@ -402,7 +402,7 @@ const UptrendCareer = () => {
                   <h6>Premier events with exclusive interactive experiences</h6>
                 </div>
               </div>
-              <div className="ucsdgc4 sd-grid-card sd-grid-card-1 uc-etg">
+              <div className="ucsdgc4 sd-grid-card sd-grid-card-1 uc-etg sdg-img-2">
                 <div className="uc-sd-grid-card-1-bg"></div>
                 <div className="ucsdgc1-details">
                   <h3>Explore The Globe</h3>
@@ -469,7 +469,7 @@ const UptrendCareer = () => {
                   </div>
                 </div>
               </div>
-              <div className="ucsdgc6 sd-grid-card sd-grid-card-1">
+              <div className=" ucsdgc6 sd-grid-card sd-grid-card-1 sdg-img-1">
                 <div className="uc-sd-grid-card-6-bg"></div>
                 <div className="ucsdgc1-details">
                   <h3>Meet Celebrities & Influencers</h3>

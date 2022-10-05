@@ -1378,6 +1378,14 @@
   right: 0;
   z-index: 10;
 }
+.mm-sd-grid-card-1 img {
+  height: 95%;
+  object-fit: contain;
+  position: absolute;
+  bottom: 2rem;
+  right: -2rem;
+  z-index: 10;
+}
 .mm-sd-grid-card-2 {
   display: flex;
   flex-direction: column;
@@ -1395,7 +1403,18 @@
 .platform-stats-grid.fashion-brand-grid {
   margin: 0 0 15rem 0;
 }
-
+.sd-grid-card.sd-grid-card-1.sdg-img {
+  align-items: flex-start;
+}
+.sd-grid-card.sd-grid-card-1.sdg-img img {
+  width: 17rem;
+}
+.sd-grid-card.sd-grid-card-1.sdg-img-2 img {
+  width: 30rem;
+}
+.sd-grid-card.sd-grid-card-1.sdg-img-1 img {
+  width: 20rem;
+}
 .Event-marketing-section {
   padding: 5rem 0 18rem 0;
   display: flex;
@@ -1663,9 +1682,9 @@
     height: 100%;
     width: 100%;
   }
-  .backedby-section.backedby-section-light .box {
+  /* .backedby-section.backedby-section-light .box {
     padding: 0;
-  }
+  } */
   .ucsdgc1-details br {
     display: none;
   }
@@ -1769,9 +1788,9 @@
     grid-template-columns: 1fr;
   }
   .sd-grid-card-1 > img {
-    width: 40%;
+    width: 27%;
     position: absolute;
-    bottom: 1rem;
+    bottom: 4rem;
     right: 1rem;
   }
   .sd-grid-card h3 span {
@@ -1960,6 +1979,7 @@
   }
   .ucsdgc1-details h6 {
     font-size: 1.75rem;
+    width: 70%;
   }
   .ucsdgc1-details-p {
     padding: 2rem 1.5rem 1.5rem 1.5rem;
@@ -1981,6 +2001,34 @@
     display: none;
   }
   .sd-grid-card .ucsdgc1-details h3 {
-    font-size: 3rem;
+    font-size: 2.25rem;
+  }
+  .positions-grid-card a {
+    font-size: 2.5rem;
+  }
+  .positions-grid-card a span {
+    font-size: 2.25rem;
+  }
+  .pgc-bottom p {
+    font-size: 1.8rem;
+  }
+  .mm-sd-grid-card-1 img {
+    bottom: 0;
+    right: 0;
+  }
+  .sd-grid-card.sd-grid-card-1.sdg-img {
+    align-items: flex-end;
+  }
+  .sd-grid-card.sd-grid-card-1.sdg-img img {
+    width: 27%;
+  }
+  .sd-grid-card.sd-grid-card-1.sdg-img-2 img {
+    width: 27%;
+  }
+  .sd-grid-card.sd-grid-card-1.sdg-img-1 img {
+    width: 27%;
+  }
+  .sd-grid-card.sd-grid-card-1 .winner-img-mob {
+    width: 45%;
   }
 }
