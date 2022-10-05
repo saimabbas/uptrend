@@ -110,6 +110,11 @@ const Home = () => {
     });
     const UTStoreHeadChars = UTStoreHead.chars;
     const UTStoreHeadWords = UTStoreHead.words;
+    const RTSHeading = new SplitText(".rts-form h3", {
+      type: "words,lines",
+    });
+    const RTSHeadingWords = RTSHeading.words;
+    const RTSHeadingLines = RTSHeading.lines;
 
     /* var HH1BoxANim = gsap.timeline({
       repeat: -1,
@@ -360,6 +365,37 @@ const Home = () => {
         },
         "<0"
       );
+    let readyToStartAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".ready-to-start-section",
+        start: "top 50%",
+      },
+    });
+    readyToStartAnim
+      .fromTo(
+        RTSHeadingWords,
+        {
+          y: "250%",
+          opacity: 0,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: {
+            each: 0.1,
+          },
+        }
+      )
+      .fromTo(
+        ".rts-form-grid",
+        {
+          opacity: 0,
+        },
+        {
+          opacity: 1,
+          duration: 0.15,
+        }
+      );
   }, []);
 
   return (
@@ -408,7 +444,6 @@ const Home = () => {
                   </a>
                 </div>
               ) : null}
-
               <TrustedByCompanies trustedByLight={true} />
             </div>
           </div>
