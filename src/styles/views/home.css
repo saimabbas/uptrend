@@ -1066,6 +1066,9 @@
   .uptrends-events-grid {
     padding: 0;
   }
+  .rts-form.rts-form-bull {
+    padding: 5rem 0 18rem 0;
+  }
 }
 @media screen and (max-width: 1000px) {
   .nft-gallery-content-1 img {
@@ -1494,5 +1497,11 @@
   }
   .expertise-grid-card a {
     font-size: 3rem;
+  }
+  .section-heading-box.shb-mob {
+    flex-direction: row;
+  }
+  .rts-form.rts-form-bull {
+    padding: 5rem 0 18rem 0;
   }
 }

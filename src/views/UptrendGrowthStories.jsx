@@ -48,10 +48,14 @@ import {
   MdArrowForward,
   MdRemove,
   MdAdd,
+  MdWest,
+  MdEast,
 } from "react-icons/md";
 
 // Components
 import Header from "../components/Header";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode, Navigation } from "swiper";
 import TrustedByCompanies from "../components/TrustedByCompanies";
 import Accordion from "react-bootstrap/Accordion";
 import Footer from "../components/Footer";
@@ -697,7 +701,7 @@ const UptrendGrowthStories = () => {
 
         <section className="highly-regarded-section">
           <div className="box box-p">
-            <div className="section-heading-box">
+            <div className="section-heading-box shb-mob">
               <h3 className="head-subhead">
                 highly regarded <br />
                 <span>by industry partners</span>
@@ -807,6 +811,140 @@ const UptrendGrowthStories = () => {
                 </div>
               </div>
             </div>
+            <div className="highly-regarded-grid-swiper">
+              <span className="hr-prev">
+                <MdWest />
+              </span>
+              <div className="highly-regarded-grid-swiper-box">
+                <Swiper
+                  spaceBetween={50}
+                  slidesPerView={"1"}
+                  modules={[Navigation]}
+                  className="mySwiper"
+                  speed={750}
+                  navigation={{
+                    nextEl: ".hr-next",
+                    prevEl: ".hr-prev",
+                  }}
+                >
+                  <SwiperSlide>
+                    <div className="highly-regarded-grid-card">
+                      <div className="hrgc-top">
+                        <div className="hrgc-head">
+                          <img loading="lazy" src={Nico} alt="Nico" />
+                          <div className="hrgc-head-name">
+                            <a href="https://twitter.com/NicoVerderosa">
+                              <h4>Nico Verderosa </h4>
+                            </a>
+                            <h6>@nico1991</h6>
+                          </div>
+                        </div>
+                        <h6>
+                          Choosing Uptrend to handle our marketing campaign, was
+                          one of the best decisions we could make. Their service
+                          was really efficient and they got us a great deal with
+                          top influencers.
+                        </h6>
+                      </div>
+                      <div className="hrgc-bottom">
+                        <div className="hrgc-head">
+                          <img
+                            loading="lazy"
+                            src={companyLogo16}
+                            alt="companyLogo16"
+                          />
+                          <div className="hrgc-head-name">
+                            <a href="https://www.kephi.io/">
+                              <h6>Kephi Gallery</h6>
+                            </a>
+                            <p>Chief Operation Officer</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="highly-regarded-grid-card">
+                      <div className="hrgc-top">
+                        <div className="hrgc-head">
+                          <img loading="lazy" src={Tony} alt="Tony" />
+                          <div className="hrgc-head-name">
+                            <a href="https://twitter.com/tonyspilotroBTC">
+                              <h4>Tony Spilotro </h4>
+                            </a>
+                            <h6>@black.m</h6>
+                          </div>
+                        </div>
+                        <h6>
+                          I had the pleasure of working with the Uptrend team on
+                          various marketing projects. The agency took my
+                          projects very seriously and worked closely to achieve
+                          my unique KPIs. I highly recommend them and look
+                          forward to working with Uptrend on my next major
+                          project.
+                        </h6>
+                      </div>
+                      <div className="hrgc-bottom">
+                        <div className="hrgc-head">
+                          <img
+                            loading="lazy"
+                            src={companyLogo17}
+                            alt="companyLogo17"
+                          />
+                          <div className="hrgc-head-name">
+                            <a href="https://bitcoinist.com/">
+                              <h6>Bitcoinist</h6>
+                            </a>
+                            <p>Editorial Director</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="highly-regarded-grid-card">
+                      <div className="hrgc-top">
+                        <div className="hrgc-head">
+                          <img loading="lazy" src={Danny} alt="Danny" />
+                          <div className="hrgc-head-name">
+                            <a href="https://twitter.com/TheCryptoLes">
+                              <h4>Danny Les </h4>
+                            </a>
+                            <h6>@black.m</h6>
+                          </div>
+                        </div>
+                        <h6>
+                          When working on more complex contracts we are often
+                          required to seek external support. On many occasions
+                          we have enlisted the assistance of Uptrend. We have
+                          always found them to be professional and incredibly
+                          efficient and our clients are always happy at the
+                          conclusion of the engagement.
+                        </h6>
+                      </div>
+                      <div className="hrgc-bottom">
+                        <div className="hrgc-head">
+                          <img
+                            loading="lazy"
+                            src={companyLogo18}
+                            alt="companyLogo18"
+                          />
+                          <div className="hrgc-head-name">
+                            <a href="https://twitter.com/thecontenttap">
+                              <h6>Content Tap</h6>
+                            </a>
+                            <p>Founder of The Content Tap</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+              <span className="hr-next">
+                <MdEast />
+              </span>
+            </div>
           </div>
         </section>
         <section className="im-trusted-by-utgs">
@@ -817,7 +955,7 @@ const UptrendGrowthStories = () => {
         <section className="ready-to-start-section ugs-ready-to-start-section">
           <div className="box">
             <div className="rts-content">
-              <div className="rts-form">
+              <div className="rts-form rts-form-bull">
                 <h3>
                   Ready to start a <br /> new Uptrend?
                 </h3>

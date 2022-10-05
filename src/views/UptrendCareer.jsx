@@ -547,7 +547,7 @@ const UptrendCareer = () => {
         <section className="ready-to-start-section ugs-ready-to-start-section">
           <div className="box">
             <div className="rts-content">
-              <div className="rts-form">
+              <div className="rts-form rts-form-bull">
                 <h3>Join Uptrend!</h3>
                 <div className="rts-form-grid">
                   <input

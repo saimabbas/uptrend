@@ -19,6 +19,7 @@
   font-weight: 700;
   text-transform: capitalize;
 }
+
 .moc-left h6 {
   color: var(--white);
   font-weight: 400;
@@ -146,5 +147,9 @@
   }
   .moc-right-card {
     margin: 0 0 4rem 0;
+    width: 100%;
+  }
+  .moc-right-card a {
+    width: 100%;
   }
 }
