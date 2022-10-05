@@ -990,6 +990,10 @@
 .hrgc-head-name a {
   color: #000 !important;
 }
+.highly-regarded-grid-swiper,
+.tweets-main-grid-swiper {
+  display: none;
+}
 @media screen and (max-width: 1250px) {
   .our-mission-content {
     padding: 0;
@@ -1052,10 +1056,15 @@
 @media screen and (max-width: 1150px) {
   .ready-to-start-section.ready-to-start-section .rts-content {
     grid-template-columns: 1fr;
-    padding: 0 0 15rem 0;
   }
   .hero-icons-line-box {
     display: none;
+  }
+  .ready-to-start-section .bull-elevator-img-box {
+    display: none;
+  }
+  .uptrends-events-grid {
+    padding: 0;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1140,7 +1149,7 @@
     padding: 3.5rem 0;
   }
   .our-mission-section {
-    padding: 1.5rem 0 3.5rem 0;
+    padding: 5rem 0;
   }
   .expertise-grid-card h2,
   .ut-store-wave-box h2 {
@@ -1232,11 +1241,16 @@
     left: 0;
     top: 20vh;
   }
+  .home-page .hero-section h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .hero-section h1 span {
     padding: 0 0.75rem;
   }
   .hero-bull {
-    height: 65vh;
+    height: 60vh;
     right: 0;
   }
   .hero-blue-overlay {
