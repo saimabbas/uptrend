@@ -513,7 +513,7 @@ const MetaverseMarketing = () => {
             <div className="service-description-grid">
               <div className="sd-grid-card mm-sd-grid-card-1 msgc1">
                 <div className="msgc1-bg"></div>
-                <img loading="lazy" src={BoyMetaverse} alt="BoyMetaverse" />
+                <img src={BoyMetaverse} alt="BoyMetaverse" />
                 <h5>
                   Establish brands presence in the Metaverse with
                   <b> exclusive interactive experience</b>

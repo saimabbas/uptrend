@@ -14,17 +14,17 @@ import ImHeroImg from "../assets/img/im-hero-img.png";
 import ImHeroVideo from "../assets/videos/im-hero-video.mp4";
 import WinnertrophyImg from "../assets/img/winner-trophy.png";
 import SpeakerImg from "../assets/img/speaker-img-orange.png";
-import PlatformLogo1 from "../assets/icons/twitch-logo-2.svg";
-import PlatformLogo2 from "../assets/icons/twitter-logo-2.svg";
-import PlatformLogo3 from "../assets/icons/youtube-logo-2.svg";
-import PlatformLogo4 from "../assets/icons/snapchat-logo-2.svg";
-import PlatformLogo5 from "../assets/icons/weibo-logo-2.svg";
-import PlatformLogo6 from "../assets/icons/linkedin-logo-2.svg";
-import PlatformLogo7 from "../assets/icons/tiktok-logo-2.svg";
-import PlatformLogo8 from "../assets/icons/instagram-logo-2.svg";
-import PlatformLogo9 from "../assets/icons/facebook-logo-2.svg";
-import PlatformLogo10 from "../assets/icons/wechat-logo-2.svg";
-import PlatformLogo11 from "../assets/icons/kakaotalk-logo-2.svg";
+import PlatformLogo1 from "../assets/img/twitch-l.png";
+import PlatformLogo2 from "../assets/img/twitter-l.png";
+import PlatformLogo3 from "../assets/img/youtube-l.png";
+import PlatformLogo4 from "../assets/img/snapchat-l.png";
+import PlatformLogo5 from "../assets/img/weibo-l.png";
+import PlatformLogo6 from "../assets/img/linkedin-l.png";
+import PlatformLogo7 from "../assets/img/tiktok-l.png";
+import PlatformLogo8 from "../assets/img/instagram-l.png";
+import PlatformLogo9 from "../assets/img/facebook-l.png";
+import PlatformLogo10 from "../assets/img/wechat-l.png";
+import PlatformLogo11 from "../assets/img/kakaotalk-l.png";
 import UTPartners from "../assets/img/ut-partners-img-red.png";
 import IndustriesPlanetImg from "../assets/img/industries-planet.png";
 import CrossPolinationImg from "../assets/img/cross-polination.png";
@@ -484,83 +484,72 @@ const InfluencerMarketing = () => {
                   <img loading="lazy" src={SpeakerImg} alt="SpeakerImg" />
                 </div>
                 <div className="all-platforms-grid">
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo1}
-                      alt="PlatformLogo1"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo2}
-                      alt="PlatformLogo2"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo3}
-                      alt="PlatformLogo3"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo4}
-                      alt="PlatformLogo4"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo5}
-                      alt="PlatformLogo5"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo6}
-                      alt="PlatformLogo6"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo7}
-                      alt="PlatformLogo7"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo8}
-                      alt="PlatformLogo8"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo9}
-                      alt="PlatformLogo9"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo10}
-                      alt="PlatformLogo10"
-                    />
-                  </div>
-                  <div className="apg-box">
-                    <img
-                      loading="lazy"
-                      src={PlatformLogo11}
-                      alt="PlatformLogo11"
-                    />
-                  </div>
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo1}
+                    alt="PlatformLogo1"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo2}
+                    alt="PlatformLogo2"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo3}
+                    alt="PlatformLogo3"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo4}
+                    alt="PlatformLogo4"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo5}
+                    alt="PlatformLogo5"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo6}
+                    alt="PlatformLogo6"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo7}
+                    alt="PlatformLogo7"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo8}
+                    alt="PlatformLogo8"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo9}
+                    alt="PlatformLogo9"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo10}
+                    alt="PlatformLogo10"
+                  />
+                  <img
+                    className="orange-box-icon"
+                    loading="lazy"
+                    src={PlatformLogo11}
+                    alt="PlatformLogo11"
+                  />
                 </div>
               </div>
               <div className="sd-grid-card sd-grid-card-3">
