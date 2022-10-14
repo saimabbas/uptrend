@@ -79,14 +79,23 @@ import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
 import Lottie from "react-lottie";
 import animationData from "./../assets/json/ut-growth-stories.json";
+import chartAnimation1 from "./../assets/json/chart-animation-1.json";
+import chartAnimation2 from "./../assets/json/chart-animation-2.json";
+import chartAnimation3 from "./../assets/json/chart-animation-3.json";
+import chartAnimation4 from "./../assets/json/chart-animation-4.json";
+import chartAnimation5 from "./../assets/json/chart-animation-5.json";
 import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
 import IconWhatsapp from "../assets/icons/IconWhatsapp";
-
 const UptrendGrowthStories = () => {
   const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const [isStopped1, setIsStopped1] = useState(true);
+  const [isStopped2, setIsStopped2] = useState(true);
+  const [isStopped3, setIsStopped3] = useState(true);
+  const [isStopped4, setIsStopped4] = useState(true);
+  const [isStopped5, setIsStopped5] = useState(true);
   const showIconsBox = () => {
     setIsIconsBoxShowing(!isIconsBoxShowing);
     setTimeout(() => {
@@ -97,6 +106,46 @@ const UptrendGrowthStories = () => {
     loop: true,
     autoplay: true,
     animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const chartOptions1 = {
+    loop: false,
+    autoplay: false,
+    animationData: chartAnimation1,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const chartOptions2 = {
+    loop: false,
+    autoplay: false,
+    animationData: chartAnimation2,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const chartOptions3 = {
+    loop: false,
+    autoplay: false,
+    animationData: chartAnimation3,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const chartOptions4 = {
+    loop: false,
+    autoplay: false,
+    animationData: chartAnimation4,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const chartOptions5 = {
+    loop: false,
+    autoplay: false,
+    animationData: chartAnimation5,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -187,182 +236,136 @@ const UptrendGrowthStories = () => {
         yoyo: true,
       }
     );
-
+    const playChartAnimation1 = () => {
+      setIsStopped1(false);
+    };
+    const playChartAnimation2 = () => {
+      setIsStopped2(false);
+    };
+    const playChartAnimation3 = () => {
+      setIsStopped3(false);
+    };
+    const playChartAnimation4 = () => {
+      setIsStopped4(false);
+    };
+    const playChartAnimation5 = () => {
+      setIsStopped5(false);
+    };
     let nftCardsAnim1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation1,
     });
-    nftCardsAnim1
-      .fromTo(
-        ".ugs-pss-1 .platform-stats-img img",
-        {
-          opacity: 0,
-          x: "20rem",
+    nftCardsAnim1.fromTo(
+      ".ugs-pss-1 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ugs-pss-1 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
+      },
+      0
+    );
     let nftCardsAnim2 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-2",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation2,
     });
-    nftCardsAnim2
-      .fromTo(
-        ".ugs-pss-2 .platform-stats-img img",
-        {
-          opacity: 0,
-          x: "20rem",
+    nftCardsAnim2.fromTo(
+      ".ugs-pss-2 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ugs-pss-2 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
+      },
+      0
+    );
     let nftCardsAnim3 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-3",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation3,
     });
-    nftCardsAnim3
-      .fromTo(
-        ".ugs-pss-3 .fashion-brand-img",
-        {
-          opacity: 0,
-          x: "20rem",
+    nftCardsAnim3.fromTo(
+      ".ugs-pss-3 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ugs-pss-3 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
+      },
+      0
+    );
     let nftCardsAnim4 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-4",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation4,
     });
-    nftCardsAnim4
-      .fromTo(
-        ".ugs-pss-4 .platform-stats-img img",
-        {
-          opacity: 0,
-          x: "20rem",
+    nftCardsAnim4.fromTo(
+      ".ugs-pss-4 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ugs-pss-4 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
+      },
+      0
+    );
     let nftCardsAnim5 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-5",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation5,
     });
-    nftCardsAnim5
-      .fromTo(
-        ".ugs-pss-5 .platform-stats-img img",
-        {
-          opacity: 0,
-          x: "20rem",
+    nftCardsAnim5.fromTo(
+      ".ugs-pss-5 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ugs-pss-5 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
+      },
+      0
+    );
     let readyToStartAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".ready-to-start-section",
@@ -463,10 +466,15 @@ const UptrendGrowthStories = () => {
                   </p>
                 </div>
                 <div className="platform-stats-img">
-                  <img
+                  {/* <img
                     loading="lazy"
                     src={PlatformStatsImg1}
                     alt="PlatformStatsImg"
+                  /> */}
+                  <Lottie
+                    className="im-hero-img"
+                    options={chartOptions1}
+                    isStopped={isStopped1}
                   />
                 </div>
               </div>
@@ -513,10 +521,15 @@ const UptrendGrowthStories = () => {
                   </p>
                 </div>
                 <div className="platform-stats-img">
-                  <img
+                  {/* <img
                     loading="lazy"
                     src={PlatformStatsImg2}
                     alt="PlatformStatsImg"
+                  /> */}
+                  <Lottie
+                    className="im-hero-img"
+                    options={chartOptions2}
+                    isStopped={isStopped2}
                   />
                 </div>
               </div>
@@ -549,11 +562,14 @@ const UptrendGrowthStories = () => {
             </div>
           </section>
           <section className="platform-stats-section ugs-pss-3">
-            <img
+            {/* <img
               className="fashion-brand-img"
               src={FashionBrandImg}
               alt="FashionBrandImg"
-            />
+            /> */}
+            <div className="fashion-brand-img">
+              <Lottie options={chartOptions3} isStopped={isStopped3} />
+            </div>
 
             <div className="box box-p">
               <div className="platform-stats-grid fashion-brand-grid">
@@ -569,7 +585,7 @@ const UptrendGrowthStories = () => {
                   </p>
                 </div>
                 <div className="platform-stats-img fashion-brand-img-box">
-                  <img src={FashionBrandImg} alt="FashionBrandImg" />
+                  {/* <img src={FashionBrandImg} alt="FashionBrandImg" /> */}
                 </div>
               </div>
               <div className="platform-stats-text-grid">
@@ -613,10 +629,15 @@ const UptrendGrowthStories = () => {
                   </p>
                 </div>
                 <div className="platform-stats-img">
-                  <img
+                  {/* <img
                     loading="lazy"
                     src={LocalStartupImg}
                     alt="LocalStartupImg"
+                  /> */}
+                  <Lottie
+                    className="im-hero-img"
+                    options={chartOptions4}
+                    isStopped={isStopped4}
                   />
                 </div>
               </div>
@@ -662,10 +683,15 @@ const UptrendGrowthStories = () => {
                   </p>
                 </div>
                 <div className="platform-stats-img">
-                  <img
+                  {/* <img
                     loading="lazy"
                     src={PlatformStatsImg3}
                     alt="PlatformStatsImg"
+                  /> */}
+                  <Lottie
+                    className="im-hero-img"
+                    options={chartOptions5}
+                    isStopped={isStopped5}
                   />
                 </div>
               </div>

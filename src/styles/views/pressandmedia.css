@@ -83,18 +83,22 @@
   width: 100%;
   transition: 0.5s;
   padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .in-press-grid-card:hover {
   transform: translate(0, -1rem) !important;
   background-color: var(--main-light1);
 }
 .in-press-grid-card img {
-  max-height: 5rem;
-  max-width: 15rem;
+  max-height: 7.5rem;
+  max-width: 25rem;
   object-fit: contain;
 }
 .in-press-grid-card h6 {
-  font-weight: 400;
+  font-weight: 500;
   margin: 3.5rem 0;
   min-height: 4rem;
 }
@@ -151,5 +155,9 @@
   }
   .moc-right-card a {
     width: 100%;
+  }
+  .in-press-grid-card img {
+    max-height: 5rem;
+    max-width: 20rem;
   }
 }

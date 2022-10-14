@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import UTLogo from "../assets/icons/UTLogo";
-import Person from "../assets/img/blog-person.svg";
+import Person from "../assets/img/emre.png";
 import JournalImg3 from "../assets/img/journal-img-3.png";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";

@@ -4,10 +4,10 @@ import React from "react";
 import "../styles/globals.css";
 import "../styles/components/footer.css";
 import UTLogo from "../assets/icons/UTLogo";
-import IconLinkedIn from "../assets/icons/IconLinkedIn";
-import IconFacebook from "../assets/icons/IconFacebook";
-import IconInstagram from "../assets/icons/IconInstagram";
-import IconTwitter from "../assets/icons/IconTwitter";
+import IconLinkedIn from "../assets/img/footer-linkedin.png";
+import IconFacebook from "../assets/img/footer-facebook.png";
+import IconInstagram from "../assets/img/footer-instagram.png";
+import IconTwitter from "../assets/img/footer-twitter.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -21,7 +21,9 @@ const Footer = () => {
             </Link>
           </div>
           <div className="footer-grid-card-2">
-            <h6>Expertise</h6>
+            <h6>
+              <Link to="/expertise">Expertise</Link>
+            </h6>
             <a href="/influencermarketing">Influencer Marketing</a>
             <a href="/metaversemarketing">Metaverse Promotion</a>
             <a href="/investmentrelationships">Investor Relations</a>
@@ -35,6 +37,7 @@ const Footer = () => {
             <a href="/uptrendcareer">Careers</a>
             <a href="/events">Events</a>
             <a href="/uptrendstore">Merch</a>
+            <a href="/angelsprogram">Angels Program</a>
             <a href="/sandbox">Office in the Sandbox</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Public Offer Agreement</a>
@@ -50,16 +53,20 @@ const Footer = () => {
             </div>
             <div className="footer-icons-box">
               <a href="https://www.linkedin.com/company/UptrendAgency">
-                <IconLinkedIn color="#000" />
+                <img src={IconLinkedIn} alt="social icon" />
+                {/* <IconLinkedIn color="#000" /> */}
               </a>
               <a href="https://facebook.com/UptrendAgency">
-                <IconFacebook color="#000" />
+                <img src={IconFacebook} alt="social icon" />
+                {/* <IconFacebook color="#000" /> */}
               </a>
               <a href="http://instagram.com/uptrendagency">
-                <IconInstagram color="#000" />
+                <img src={IconInstagram} alt="social icon" />
+                {/* <IconInstagram color="#000" /> */}
               </a>
               <a href="https://twitter.com/UptrendAgency">
-                <IconTwitter color="#000" />
+                <img src={IconTwitter} alt="social icon" />
+                {/* <IconTwitter color="#000" /> */}
               </a>
             </div>
           </div>

@@ -16,17 +16,19 @@ import PurplePlanetImg from "../assets/img/purple-planet-img.png";
 import ShokhiGirlImg from "../assets/img/shokhi-girl-img.png";
 import ExploreGlobeImg from "../assets/img/explore-globe-img.png";
 import MeetCelebritiesImg from "../assets/img/meet-celebrities-img.png";
-import PlatformLogo2 from "../assets/icons/twitter-logo-2.svg";
-import PlatformLogo3 from "../assets/icons/youtube-logo-2.svg";
-import PlatformLogo4 from "../assets/icons/snapchat-logo-2.svg";
-import PlatformLogo5 from "../assets/icons/weibo-logo-2.svg";
-import PlatformLogo6 from "../assets/icons/linkedin-logo-2.svg";
-import PlatformLogo7 from "../assets/icons/tiktok-logo-2.svg";
-import PlatformLogo8 from "../assets/icons/instagram-logo-2.svg";
-import PlatformLogo9 from "../assets/icons/facebook-logo-2.svg";
-import PlatformLogo10 from "../assets/icons/wechat-logo-2.svg";
+
+import PlatformLogo1 from "../assets/img/twitch-l.png";
+import PlatformLogo2 from "../assets/img/twitter-l.png";
+import PlatformLogo3 from "../assets/img/youtube-l.png";
+import PlatformLogo4 from "../assets/img/snapchat-l.png";
+import PlatformLogo5 from "../assets/img/weibo-l.png";
+import PlatformLogo6 from "../assets/img/linkedin-l.png";
+import PlatformLogo7 from "../assets/img/tiktok-l.png";
+import PlatformLogo8 from "../assets/img/instagram-l.png";
+import PlatformLogo9 from "../assets/img/facebook-l.png";
+import PlatformLogo10 from "../assets/img/wechat-l.png";
+import PlatformLogo11 from "../assets/img/kakaotalk-l.png";
 import BullElevatorImg from "../assets/img/bull-elevator-img-2.png";
-import PlatformLogo11 from "../assets/icons/kakaotalk-logo-2.svg";
 import UTPartners from "../assets/img/ut-partners-img-red.png";
 import IndustriesPlanetImg from "../assets/img/industries-planet.png";
 import CrossPolinationImg from "../assets/img/cross-polination.png";
@@ -417,11 +419,13 @@ const UptrendCareer = () => {
               <div className="ucsdgc5 sd-grid-card sd-grid-card-2">
                 <div className="uc-sd-grid-card-5-bg"></div>
                 <div className="ucsdgc1-details">
-                  <h3>
-                    Upgrade Your <br /> Social Media{" "}
-                  </h3>
-                  <h6>Unleash the power of personal branding</h6>
-                  <div className="all-platforms-grid">
+                  <div>
+                    <h3>
+                      Upgrade Your <br /> Social Media{" "}
+                    </h3>
+                    <h6>Unleash the power of personal branding</h6>
+                  </div>
+                  <div className="all-platforms-grid all-platforms-grid-uc">
                     <div className="apg-box">
                       <a href="https://twitter.com/UptrendAgency">
                         <img
@@ -471,9 +475,11 @@ const UptrendCareer = () => {
               </div>
               <div className=" ucsdgc6 sd-grid-card sd-grid-card-1 sdg-img-1">
                 <div className="uc-sd-grid-card-6-bg"></div>
-                <div className="ucsdgc1-details">
+                <div className="ucsdgc1-details uc-ucsdgc1-details">
                   <h3>Meet Celebrities & Influencers</h3>
-                  <h6>Take advantage of the Uptrend network</h6>
+                  <h6>
+                    Take advantage of the <br /> Uptrend network
+                  </h6>
                 </div>
                 <img
                   loading="lazy"

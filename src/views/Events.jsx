@@ -26,7 +26,7 @@ import BBLogo3Dark from "../assets/img/backedby-logo-3-dark.svg";
 import BBLogo4Dark from "../assets/img/backedby-logo-4-dark.svg";
 import BBLogo5Dark from "../assets/img/backedby-logo-5-dark.svg";
 import BBLogo6Dark from "../assets/img/backedby-logo-6-dark.svg";
-import Person from "../assets/img/blog-person.svg";
+import Person from "../assets/img/emre.png";
 import JournalImg1 from "../assets/img/journal-img-1.png";
 import JournalImg2 from "../assets/img/journal-img-2.png";
 import JournalImg3 from "../assets/img/journal-img-3.png";

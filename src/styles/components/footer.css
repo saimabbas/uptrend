@@ -36,6 +36,11 @@ footer {
   text-decoration: none;
   position: relative;
 }
+.footer-grid-card-2 h6 a {
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+}
 .footer-grid-card-2 a::after,
 .footer-grid-card-3 a::after {
   content: "";
@@ -110,7 +115,7 @@ footer {
 .footer-icons-box a {
   width: 4rem;
   height: 4rem;
-  background-color: var(--white);
+  /* background-color: var(--white); */
   border-radius: 50%;
   display: flex;
   align-items: center;

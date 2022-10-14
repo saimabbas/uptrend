@@ -677,7 +677,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
-.topstories-right:last-child {
+.topstories-right a:last-child {
   margin: 3rem 0 0 0;
 }
 /* .top-stories-content :nth-child(2) {

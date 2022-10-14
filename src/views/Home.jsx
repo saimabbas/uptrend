@@ -42,7 +42,7 @@ import JournalImg1 from "../assets/img/journal-img-1.png";
 import JournalImg2 from "../assets/img/journal-img-2.png";
 import JournalImg3 from "../assets/img/journal-img-3.png";
 import JournalImg4 from "../assets/img/journal-img-4.png";
-import JournalImg5 from "../assets/img/journal-img-5.png";
+import JournalImg5 from "../assets/img/Journel-img-5.png";
 import IconDiamond from "../assets/img/icon-diamond.svg";
 import StorefrontImg from "../assets/img/storefront-img.png";
 import LimitedEditionImg from "../assets/img/limited-edition-img.svg";

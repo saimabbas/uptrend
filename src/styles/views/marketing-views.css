@@ -22,6 +22,9 @@
   position: relative;
   z-index: 10;
 }
+.all-platforms-grid-uc {
+  margin: 5rem 0 0 0;
+}
 .im-hero-img {
   width: max-content;
   object-fit: contain;
@@ -442,6 +445,9 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+.ucsdgc1-details > div {
+  width: 100%;
+}
 .ucsdgc1-details h3 {
   margin: 0 0 5rem 0;
   font-weight: 800;
@@ -450,9 +456,9 @@
   color: var(--white);
 }
 .ucsdgc1-details h6 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   color: var(--white);
-  font-weight: 400;
+  font-weight: 300;
   max-width: 82%;
 }
 .sd-grid-card.mm-sd-grid-card-2.msgc2 h3 {
@@ -700,19 +706,19 @@
   background-color: #101216;
 }
 .platform-stats-section.ugs-pss-1 {
-  background-color: #191c22;
+  background-color: #101216;
 }
 .platform-stats-section.ugs-pss-2 {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #0d0e12;
 }
 .platform-stats-section.ugs-pss-3 {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #0a0b0d;
 }
 .platform-stats-section.ugs-pss-4 {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #060709;
 }
 .platform-stats-section.ugs-pss-5 {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #020202;
 }
 .platform-stats-grid {
   width: 100%;
@@ -808,6 +814,11 @@
   justify-content: center;
 }
 .platform-stats-img img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 40rem;
+}
+.platform-stats-img canvas {
   width: 100%;
   object-fit: contain;
   max-height: 40rem;
@@ -1422,7 +1433,13 @@
   width: 30rem;
 }
 .sd-grid-card.sd-grid-card-1.sdg-img-1 img {
-  width: 20rem;
+  width: 25rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.uc-ucsdgc1-details {
+  max-width: 85%;
 }
 .Event-marketing-section {
   padding: 5rem 0 18rem 0;

@@ -288,112 +288,126 @@ const PressAndMedia = () => {
               <h3> UPTREND IN THE PRESS</h3>
               <div className="in-press-grid">
                 <div className="in-press-grid-card">
-                  <img src={InPressImg1} alt="InPressImg" />
-                  <h6>
-                    Uptrend Review 2022: The Leading Marketing Agency Deemed
-                    Skillful By Fortune 500 Brands
-                  </h6>
-                  <p>
-                    Uptrend is one of the leading marketing agencies in the
-                    digital space. Let's take a look at Uptrend features and
-                    competitive advantages.
-                    <br />
+                  <div>
+                    <img src={InPressImg1} alt="InPressImg" />
+                    <h6>
+                      Uptrend Review 2022: The Leading Marketing Agency Deemed
+                      Skillful By Fortune 500 Brands
+                    </h6>
+                    <p>
+                      Uptrend is one of the leading marketing agencies in the
+                      digital space. Let's take a look at Uptrend features and
+                      competitive advantages.
+                      {/* <br />
                     <a href="https://www.businessinsider.com/">
                       https://www.businessinsider.com/
-                    </a>
-                  </p>
+                    </a> */}
+                    </p>
+                  </div>
                   <a href="#" className="arrow-link">
                     <span>READ MORE</span>
                     <MdArrowForward />
                   </a>
                 </div>
                 <div className="in-press-grid-card">
-                  <img src={InPressImg2} alt="InPressImg" />
-                  <h6>
-                    Uptrend Establishes Virtual Office Inside the Metaverse,
-                    Visit It Today!
-                  </h6>
-                  <p>
-                    The exclusive Uptrend virtual office in The Sandbox shows
-                    brands how they can get involved in Web 3
-                    <br />
+                  <div>
+                    <img src={InPressImg2} alt="InPressImg" />
+                    <h6>
+                      Uptrend Establishes Virtual Office Inside the Metaverse,
+                      Visit It Today!
+                    </h6>
+                    <p>
+                      The exclusive Uptrend virtual office in The Sandbox shows
+                      brands how they can get involved in Web 3
+                      {/* <br />
                     <a href="https://www.newsbtc.com/">
                       https://www.newsbtc.com/
-                    </a>
-                  </p>
+                    </a> */}
+                    </p>
+                  </div>
                   <a href="#" className="arrow-link">
                     <span>READ MORE</span>
                     <MdArrowForward />
                   </a>
                 </div>
                 <div className="in-press-grid-card">
-                  <img src={InPressImg3} alt="InPressImg" />
-                  <h6>
-                    Uptrend Research: Top 10 Luxury Fashion Brands Embracing The
-                    Metaverse
-                  </h6>
-                  <p>
-                    We round up the best examples of luxury brands embracing a
-                    virtual interactive experience to engage the audience within
-                    leading metaverses
-                    <br />
+                  <div>
+                    <img src={InPressImg3} alt="InPressImg" />
+                    <h6>
+                      Uptrend Research: Top 10 Luxury Fashion Brands Embracing
+                      The Metaverse
+                    </h6>
+                    <p>
+                      We round up the best examples of luxury brands embracing a
+                      virtual interactive experience to engage the audience
+                      within leading metaverses
+                      {/* <br />
                     <a href="https://thenewsmansion.com/">
                       https://thenewsmansion.com/
-                    </a>
-                  </p>
+                    </a> */}
+                    </p>
+                  </div>
                   <a href="#" className="arrow-link">
                     <span>READ MORE</span>
                     <MdArrowForward />
                   </a>
                 </div>
                 <div className="in-press-grid-card">
-                  <img src={InPressImg4} alt="InPressImg" />
-                  <h6>
-                    Uptrend Research: Top 5 Most Popular Assets In The
-                    Decentraland Metaverse
-                  </h6>
-                  <p>
-                    Uptrend experts have prepared a virtual runway showing off
-                    the best-selling fashion assets produced by the industry's
-                    top fashion brands.
-                    <br />
-                    <a href="https://apnews.com/">https://apnews.com/</a>
-                  </p>
+                  <div>
+                    <img src={InPressImg4} alt="InPressImg" />
+                    <h6>
+                      Uptrend Research: Top 5 Most Popular Assets In The
+                      Decentraland Metaverse
+                    </h6>
+                    <p>
+                      Uptrend experts have prepared a virtual runway showing off
+                      the best-selling fashion assets produced by the industry's
+                      top fashion brands.
+                      {/* <br />
+                    <a href="https://apnews.com/">https://apnews.com/</a> */}
+                    </p>
+                  </div>
                   <a href="#" className="arrow-link">
                     <span>READ MORE</span>
                     <MdArrowForward />
                   </a>
                 </div>
                 <div className="in-press-grid-card">
-                  <img src={InPressImg5} alt="InPressImg" />
-                  <h6>
-                    How To Choose A Results-Driven Marketing Agency: A Complete
-                    Guide Designed By Uptrend
-                  </h6>
-                  <p>
-                    Picking the right partner can make a major difference in the
-                    success of a marketing campaign. Learn how to spot the signs
-                    of a reputable marketing agency.
-                    <br />
+                  <div>
+                    <img src={InPressImg5} alt="InPressImg" />
+                    <h6>
+                      How To Choose A Results-Driven Marketing Agency: A
+                      Complete Guide Designed By Uptrend
+                    </h6>
+                    <p>
+                      Picking the right partner can make a major difference in
+                      the success of a marketing campaign. Learn how to spot the
+                      signs of a reputable marketing agency.
+                      {/* <br />
                     <a href="https://news.yahoo.com/">
                       https://news.yahoo.com/
-                    </a>
-                  </p>
+                    </a> */}
+                    </p>
+                  </div>
                   <a href="#" className="arrow-link">
                     <span>READ MORE</span>
                     <MdArrowForward />
                   </a>
                 </div>
                 <div className="in-press-grid-card">
-                  <img src={InPressImg6} alt="InPressImg" />
-                  <h6>3 Proven Twitter Strategies for Brand Growth in 2022</h6>
-                  <p>
-                    Uptrend social media experts have put together five
-                    effective strategies for driving engagement and audience
-                    growth on Twitter.
-                    <br />
-                    <a href="https://u.today/">https://u.today/</a>
-                  </p>
+                  <div>
+                    <img src={InPressImg6} alt="InPressImg" />
+                    <h6>
+                      3 Proven Twitter Strategies for Brand Growth in 2022
+                    </h6>
+                    <p>
+                      Uptrend social media experts have put together five
+                      effective strategies for driving engagement and audience
+                      growth on Twitter.
+                      {/* <br />
+                    <a href="https://u.today/">https://u.today/</a> */}
+                    </p>
+                  </div>
                   <a href="#" className="arrow-link">
                     <span>READ MORE</span>
                     <MdArrowForward />

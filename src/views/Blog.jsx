@@ -11,14 +11,16 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 // Images
-import Person from "../assets/img/blog-person.svg";
+import Person from "../assets/img/emre.png";
 import Person1 from "../assets/img/donna.png";
 import Person2 from "../assets/img/alex.png";
+import Person3 from "../assets/img/sarah.png";
 import JournalImg1 from "../assets/img/journal-img-1.png";
 import JournalImg2 from "../assets/img/journal-img-2.png";
 import JournalImg3 from "../assets/img/journal-img-3.png";
 import JournalImg6 from "../assets/img/Journel-img-6.png";
 import JournalImg5 from "../assets/img/Journel-img-5.png";
+import JournalImg5Cat from "../assets/img/journal-img-5-cat.png";
 import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
 import JournalImg4 from "../assets/img/journal-img-4.png";
 import Lottie from "react-lottie";
@@ -352,7 +354,7 @@ const EventMarketing = () => {
                       <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
                         <BlogCard
                           lightBlogCard={false}
-                          blogImg={JournalImg1}
+                          blogImg={JournalImg2}
                           heading="3 Proven Strategies To Building Brand Awareness in 2022"
                           description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
                           personImg={Person2}
@@ -367,7 +369,7 @@ const EventMarketing = () => {
                       <Link to="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
                         <BlogCard
                           lightBlogCard={false}
-                          blogImg={JournalImg2}
+                          blogImg={JournalImg1}
                           heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
                           description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
                           personImg={Person1}
@@ -381,7 +383,7 @@ const EventMarketing = () => {
                       <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022">
                         <BlogCard
                           lightBlogCard={false}
-                          blogImg={JournalImg3}
+                          blogImg={JournalImg5Cat}
                           heading="3 Proven Strategies To Building Brand Awareness in 2022"
                           description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
                           personImg={Person1}
@@ -446,7 +448,7 @@ const EventMarketing = () => {
                     lightBlogCard={true}
                     blogImg={JournalImg5}
                     heading="Top-5 Influencer Marketing Software Solutions To Boost Your Brand in 2022 (Part 2)"
-                    personImg={Person}
+                    personImg={Person1}
                     personName="Donna Wanstein"
                     date="12.06.2022"
                     readTime="10 min read"
@@ -459,7 +461,7 @@ const EventMarketing = () => {
                     lightBlogCard={true}
                     blogImg={JournalImg6}
                     heading="Top Regions With The Best Marketing Performance"
-                    personImg={Person}
+                    personImg={Person3}
                     personName="Sarah Evans"
                     date="18.06.2022"
                     readTime="5 min read"
