@@ -8,7 +8,7 @@ import IconLinkedIn from "../assets/img/footer-linkedin.png";
 import IconFacebook from "../assets/img/footer-facebook.png";
 import IconInstagram from "../assets/img/footer-instagram.png";
 import IconTwitter from "../assets/img/footer-twitter.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="footer-grid-card-3">
             <h6>Features</h6>
             <a href="/expertise">About us</a>
-            <a href="/pressandmedia">Press and Media</a>
+            <NavLink to="/pressandmedia">Press and Media</NavLink>
             <a href="/uptrendgrowthstories">Case Studies</a>
             <a href="/uptrendcareer">Careers</a>
             <a href="/events">Events</a>

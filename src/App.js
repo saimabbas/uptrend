@@ -3,7 +3,13 @@ import EventMarketing from "./views/EventMarketing";
 import InfluencerMarketing from "./views/InfluencerMarketing";
 import Home from "./views/Home";
 import LinksPage from "./views/Links";
-import { BrowserRouter as Switch, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Switch,
+  Routes,
+  Route,
+  Router,
+  useLocation,
+} from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import TalkToUs from "./views/TalkToUs";
 import UptrendGrowthStories from "./views/UptrendGrowthStories";
@@ -25,6 +31,8 @@ import Events from "./views/Events";
 import Sandbox from "./views/Sandbox";
 import AngelsProgram from "./views/AngelsProgram";
 import UptrendCareer from "./views/UptrendCareer";
+
+import React, { useEffect, useRef } from "react";
 
 function App() {
   return (
@@ -59,7 +67,7 @@ function App() {
           <Route exact path="/media" element={<Media />} />
           <Route exact path="/uptrendstore" element={<UpTrendStore />} />
           <Route exact path="/influencers" element={<Influencers />} />
-          <Route exact path="/pressandmedia" element={<PressAndMedia />} />
+          <Route exact path="/pressandmedia/" element={<PressAndMedia />} />
           <Route exact path="/blog" element={<Blog />} />
           <Route
             exact
@@ -91,3 +99,13 @@ function App() {
 }
 
 export default App;
+
+/* 
+
+1. CHange chart animations on all pages ...DONE...
+2. Change images 
+3. Do bees and mission animations
+4. Put videos in place of images 
+5. Blog Click Issue
+
+*/

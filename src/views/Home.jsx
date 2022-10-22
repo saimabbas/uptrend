@@ -20,6 +20,11 @@ import companyLogo16 from "../assets/img/logo-kephi.png";
 import companyLogo17 from "../assets/img/logo-bitcoinist.svg";
 import companyLogo18 from "../assets/img/logo-tct.svg";
 import OurMissionImg from "../assets/img/our-mission-img.png";
+import OMGreenBig from "../assets/img/om-green-big.png";
+import OMGreenSmall from "../assets/img/om-green-small.png";
+import OMBlueSmall from "../assets/img/om-blue-small.png";
+import OMBlueBig from "../assets/img/om-blue-big.png";
+import OMText from "../assets/img/om-text.png";
 import MissionIcon1 from "../assets/img/mission-icon-1.svg";
 import MissionIcon2 from "../assets/img/mission-icon-2.svg";
 import MissionIcon3 from "../assets/img/mission-icon-3.svg";
@@ -404,6 +409,82 @@ const Home = () => {
           duration: 0.15,
         }
       );
+    let ourMissionAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".our-mission-section",
+        start: "top 65%",
+      },
+    });
+    ourMissionAnim
+      .fromTo(
+        ".om-blue-big",
+        {
+          opacity: 0,
+          transform: "translate(50%, 0)",
+        },
+        {
+          transform: "translate(0%, 0)",
+          duration: 1,
+          opacity: 1,
+          ease: Back.easeInOut,
+        }
+      )
+      .fromTo(
+        ".om-green-big",
+        {
+          opacity: 0,
+          transform: "translate(-50%, 0)",
+        },
+        {
+          transform: "translate(0%, 0)",
+          opacity: 1,
+          duration: 1,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".om-green-small",
+        {
+          transform: "translate(5rem, -5rem)",
+          opacity: 0,
+        },
+        {
+          transform: "translate(0, 0)",
+          opacity: 1,
+          duration: 1,
+          ease: Back.easeInOut,
+        },
+        "<0.5"
+      )
+      .fromTo(
+        ".om-blue-small",
+        {
+          transform: "translate(-5rem, -2rem)",
+          opacity: 0,
+        },
+        {
+          transform: "translate(0, 0)",
+          opacity: 1,
+          duration: 1,
+          ease: Back.easeInOut,
+        },
+        "<0"
+      )
+      .fromTo(
+        ".om-text",
+        {
+          transform: "translate(-50%, 150%)",
+          opacity: 0,
+        },
+        {
+          transform: "translate(-50%, 100%)",
+          opacity: 1,
+          duration: 1,
+          ease: Back.easeInOut,
+        },
+        "<0.15"
+      );
   }, []);
 
   return (
@@ -460,7 +541,44 @@ const Home = () => {
           <div className="box">
             <div className="our-mission-content">
               <div className="our-mission-left">
-                <img loading="lazy" src={OurMissionImg} alt="OurMissionImg" />
+                <div className="our-mission-img-box">
+                  <img
+                    className="om-main-img"
+                    loading="lazy"
+                    src={OurMissionImg}
+                    alt="OurMissionImg"
+                  />
+                  <img
+                    className="om-green-big"
+                    loading="lazy"
+                    src={OMGreenBig}
+                    alt="OMGreenBig"
+                  />
+                  <img
+                    className="om-green-small"
+                    loading="lazy"
+                    src={OMGreenSmall}
+                    alt="OMGreenSmall"
+                  />
+                  <img
+                    className="om-blue-big"
+                    loading="lazy"
+                    src={OMBlueBig}
+                    alt="OMBlueBig"
+                  />
+                  <img
+                    className="om-blue-small"
+                    loading="lazy"
+                    src={OMBlueSmall}
+                    alt="OMBlueSmall"
+                  />
+                  <img
+                    className="om-text"
+                    loading="lazy"
+                    src={OMText}
+                    alt="OMText"
+                  />
+                </div>
               </div>
               <div className="our-mission-right">
                 <h2>Our Mission</h2>

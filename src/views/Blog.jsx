@@ -351,7 +351,7 @@ const EventMarketing = () => {
                       </div>
                     </div>
                     <div className="blog-cards-grid">
-                      <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
+                      <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
                         <BlogCard
                           lightBlogCard={false}
                           blogImg={JournalImg2}
@@ -365,8 +365,8 @@ const EventMarketing = () => {
                           <span>Gaming</span>
                           <span>News</span>
                         </BlogCard>
-                      </Link>
-                      <Link to="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                      </a>
+                      <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
                         <BlogCard
                           lightBlogCard={false}
                           blogImg={JournalImg1}
@@ -379,8 +379,8 @@ const EventMarketing = () => {
                         >
                           <span>Gaming</span>
                         </BlogCard>
-                      </Link>
-                      <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022">
+                      </a>
+                      <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022">
                         <BlogCard
                           lightBlogCard={false}
                           blogImg={JournalImg5Cat}
@@ -393,7 +393,7 @@ const EventMarketing = () => {
                         >
                           <span>News</span>
                         </BlogCard>
-                      </Link>
+                      </a>
                     </div>
                     <div className="blog-bcr">
                       <div className="ut-breadcrumbs-section">
@@ -443,7 +443,7 @@ const EventMarketing = () => {
             <h2 className="ts-head">Top Stories</h2>
             <div className="top-stories-content">
               <div className="topstories-right">
-                <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
+                <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
                   <BlogCard
                     lightBlogCard={true}
                     blogImg={JournalImg5}
@@ -455,8 +455,8 @@ const EventMarketing = () => {
                   >
                     <span>Gaming</span>
                   </BlogCard>
-                </Link>
-                <Link to="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                </a>
+                <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
                   <BlogCard
                     lightBlogCard={true}
                     blogImg={JournalImg6}
@@ -468,10 +468,10 @@ const EventMarketing = () => {
                   >
                     <span>Gaming</span>
                   </BlogCard>
-                </Link>
+                </a>
               </div>
               <div className="blog-card-big">
-                <Link to="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022">
+                <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022">
                   <BlogCard
                     lightBlogCard={true}
                     blogImg={JournalImg4}
@@ -484,7 +484,7 @@ const EventMarketing = () => {
                   >
                     <span>Influencer Marketing</span>
                   </BlogCard>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

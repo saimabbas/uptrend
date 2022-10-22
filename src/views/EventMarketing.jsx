@@ -69,9 +69,12 @@ import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
 import IconWhatsapp from "../assets/icons/IconWhatsapp";
+import chartAnimation4 from "./../assets/json/chart-animation-4.json";
 
 const EventMarketing = () => {
   const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const [isStopped4, setIsStopped4] = useState(true);
+
   const showIconsBox = () => {
     setIsIconsBoxShowing(!isIconsBoxShowing);
     setTimeout(() => {
@@ -82,6 +85,14 @@ const EventMarketing = () => {
     loop: true,
     autoplay: true,
     animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const chartOptions4 = {
+    loop: false,
+    autoplay: false,
+    animationData: chartAnimation4,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -316,41 +327,32 @@ const EventMarketing = () => {
         },
         "<0"
       ); */
-    let nftCardsAnim1 = gsap.timeline({
+    const playChartAnimation4 = () => {
+      setIsStopped4(false);
+    };
+    let nftCardsAnim4 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation4,
     });
-    nftCardsAnim1
-      .fromTo(
-        ".ugs-pss-1 .platform-stats-img img",
-        {
-          opacity: 0,
-          x: "20rem",
+    nftCardsAnim4.fromTo(
+      ".ugs-pss-1 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ugs-pss-1 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
+      },
+      0
+    );
   }, []);
 
   return (
@@ -498,14 +500,19 @@ const EventMarketing = () => {
                 </p>
               </div>
               <div className="platform-stats-img">
-                <img
+                {/* <img
                   loading="lazy"
                   src={LocalStartupImg}
                   alt="LocalStartupImg"
+                /> */}
+                <Lottie
+                  className="im-hero-img"
+                  options={chartOptions4}
+                  isStopped={isStopped4}
                 />
               </div>
             </div>
-            <div className="platform-stats-text-grid">
+            <div className="platform-stats-text-grid pstgm">
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>

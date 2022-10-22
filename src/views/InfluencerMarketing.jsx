@@ -71,9 +71,20 @@ import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import Lottie from "react-lottie";
 import animationData from "./../assets/json/influencer-marketing.json";
+import chartAnimation1 from "./../assets/json/chart-animation-1.json";
 
+const chartOptions1 = {
+  loop: false,
+  autoplay: false,
+  animationData: chartAnimation1,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 const InfluencerMarketing = () => {
   const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const [isStopped1, setIsStopped1] = useState(true);
+
   const showIconsBox = () => {
     setIsIconsBoxShowing(!isIconsBoxShowing);
     setTimeout(() => {
@@ -344,41 +355,33 @@ const InfluencerMarketing = () => {
         },
         "<0"
       );
+
+    const playChartAnimation1 = () => {
+      setIsStopped1(false);
+    };
     let nftCardsAnim1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation1,
     });
-    nftCardsAnim1
-      .fromTo(
-        ".ugs-pss-1 .platform-stats-img img",
-        {
-          opacity: 0,
-          x: "20rem",
+    nftCardsAnim1.fromTo(
+      ".ugs-pss-1 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ugs-pss-1 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
+      },
+      0
+    );
   }, []);
 
   return (
@@ -635,14 +638,19 @@ const InfluencerMarketing = () => {
                 </p>
               </div>
               <div className="platform-stats-img">
-                <img
+                {/* <img
                   loading="lazy"
                   src={PlatformStatsImg}
                   alt="PlatformStatsImg"
+                /> */}
+                <Lottie
+                  className="im-hero-img"
+                  options={chartOptions1}
+                  isStopped={isStopped1}
                 />
               </div>
             </div>
-            <div className="platform-stats-text-grid">
+            <div className="platform-stats-text-grid pstgm2">
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>

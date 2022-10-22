@@ -764,7 +764,12 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+.pstgm {
   margin: 7.5rem 0 0 0;
+}
+.pstgm2 {
+  margin: -7.5rem 0 0 0;
 }
 .ps-box {
   width: max-content;

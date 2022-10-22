@@ -77,9 +77,12 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 import UTLogo from "../assets/icons/UTLogo";
 import $ from "jquery";
+import chartAnimation5 from "./../assets/json/chart-animation-5.json";
 
 const InvestmentRelationships = () => {
   const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const [isStopped5, setIsStopped5] = useState(true);
+
   const showIconsBox = () => {
     setIsIconsBoxShowing(!isIconsBoxShowing);
     setTimeout(() => {
@@ -90,6 +93,14 @@ const InvestmentRelationships = () => {
     loop: true,
     autoplay: true,
     animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const chartOptions5 = {
+    loop: false,
+    autoplay: false,
+    animationData: chartAnimation5,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -382,41 +393,33 @@ const InvestmentRelationships = () => {
         },
         0
       );
-    let nftCardsAnim1 = gsap.timeline({
+
+    const playChartAnimation5 = () => {
+      setIsStopped5(false);
+    };
+    let nftCardsAnim5 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation5,
     });
-    nftCardsAnim1
-      .fromTo(
-        ".ugs-pss-1 .platform-stats-img img",
-        {
-          opacity: 0,
-          x: "20rem",
+    nftCardsAnim5.fromTo(
+      ".ugs-pss-1 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ugs-pss-1 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
+      },
+      0
+    );
   }, []);
 
   return (
@@ -563,14 +566,19 @@ const InvestmentRelationships = () => {
                 </p>
               </div>
               <div className="platform-stats-img">
-                <img
+                {/* <img
                   loading="lazy"
                   src={PlatformStatsImg3}
                   alt="PlatformStatsImg3"
+                /> */}
+                <Lottie
+                  className="im-hero-img"
+                  options={chartOptions5}
+                  isStopped={isStopped5}
                 />
               </div>
             </div>
-            <div className="platform-stats-text-grid">
+            <div className="platform-stats-text-grid pstgm2">
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>

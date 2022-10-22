@@ -92,6 +92,7 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  min-height: -webkit-fill-available;
 }
 .box {
   width: 100%;

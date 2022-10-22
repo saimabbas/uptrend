@@ -478,7 +478,7 @@ const UptrendGrowthStories = () => {
                   />
                 </div>
               </div>
-              <div className="platform-stats-text-grid">
+              <div className="platform-stats-text-grid pstgm2">
                 <div className="ps-box ps-box-1">
                   <div className="ps-box-content">
                     <h3>
@@ -641,7 +641,7 @@ const UptrendGrowthStories = () => {
                   />
                 </div>
               </div>
-              <div className="platform-stats-text-grid">
+              <div className="platform-stats-text-grid pstgm">
                 <div className="ps-box ps-box-1">
                   <div className="ps-box-content">
                     <h3>
@@ -695,7 +695,7 @@ const UptrendGrowthStories = () => {
                   />
                 </div>
               </div>
-              <div className="platform-stats-text-grid">
+              <div className="platform-stats-text-grid pstgm2">
                 <div className="ps-box ps-box-1">
                   <div className="ps-box-content">
                     <h3>

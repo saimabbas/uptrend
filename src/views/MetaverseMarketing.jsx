@@ -86,9 +86,21 @@ import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
 import IconWhatsapp from "../assets/icons/IconWhatsapp";
+import chartAnimation3 from "./../assets/json/chart-animation-3.json";
+
+const chartOptions3 = {
+  loop: false,
+  autoplay: false,
+  animationData: chartAnimation3,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 const MetaverseMarketing = () => {
   const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const [isStopped3, setIsStopped3] = useState(true);
+
   const showIconsBox = () => {
     setIsIconsBoxShowing(!isIconsBoxShowing);
     setTimeout(() => {
@@ -409,41 +421,32 @@ const MetaverseMarketing = () => {
         },
         "<0"
       ); */
-    let nftCardsAnim1 = gsap.timeline({
+    const playChartAnimation3 = () => {
+      setIsStopped3(false);
+    };
+    let nftCardsAnim3 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation3,
     });
-    nftCardsAnim1
-      .fromTo(
-        ".ugs-pss-1 .fashion-brand-img",
-        {
-          opacity: 0,
-          x: "20rem",
+    nftCardsAnim3.fromTo(
+      ".ugs-pss-1 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ugs-pss-1 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
+      },
+      0
+    );
   }, []);
 
   return (
@@ -644,11 +647,15 @@ const MetaverseMarketing = () => {
           </div>
         </section>
         <section className="platform-stats-section ugs-pss-1">
-          <img
+          {/* <img
             className="fashion-brand-img"
             src={FashionBrandImg}
             alt="FashionBrandImg"
           />
+          */}
+          <div className="fashion-brand-img">
+            <Lottie options={chartOptions3} isStopped={isStopped3} />
+          </div>
 
           <div className="box">
             <div className="platform-stats-grid fashion-brand-grid">

@@ -54,11 +54,22 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import Lottie from "react-lottie";
 import UTLogo from "../assets/icons/UTLogo";
 import BackedByLogosSwiper from "../components/BackedByLogosSwiper";
-
+import chartAnimation1 from "./../assets/json/chart-animation-1.json";
+const chartOptions1 = {
+  loop: false,
+  autoplay: false,
+  animationData: chartAnimation1,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 const TalkToUs = () => {
   const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
+  const [isStopped1, setIsStopped1] = useState(true);
+
   const showIconsBox = () => {
     setIsIconsBoxShowing(!isIconsBoxShowing);
     setTimeout(() => {
@@ -154,74 +165,32 @@ const TalkToUs = () => {
         yoyo: true,
       }
     );
-
+    const playChartAnimation1 = () => {
+      setIsStopped1(false);
+    };
     let nftCardsAnim1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ttu-pss-1",
-        start: "top 25%",
+        start: "top 100%",
       },
+      onComplete: playChartAnimation1,
     });
-    nftCardsAnim1
-      .fromTo(
-        ".ttu-pss-1 .platform-stats-img img",
-        {
-          opacity: 0,
-          x: "20rem",
-        },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.35,
-        }
-      )
-      .fromTo(
-        ".ttu-pss-1 .ps-box",
-        {
-          y: "5rem",
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.35,
-          stagger: {
-            each: 0.25,
-          },
-        },
-        0
-      );
-    /* let readyToStartAnim = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".ready-to-start-section",
-        start: "top 50%",
+    nftCardsAnim1.fromTo(
+      ".ttu-pss-1 .ps-box",
+      {
+        y: "5rem",
+        opacity: 0,
       },
-    });
-    readyToStartAnim
-      .fromTo(
-        RTSHeadingWords,
-        {
-          y: "200%",
-          opacity: 0,
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0,
+        stagger: {
+          each: 0.25,
         },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.5,
-          stagger: {
-            each: 0.1,
-          },
-        }
-      )
-      .fromTo(
-        ".ttu-form-grid",
-        {
-          opacity: 0,
-        },
-        {
-          opacity: 1,
-          duration: 0.25,
-        }
-      ); */
+      },
+      0
+    );
   }, []);
   return (
     <main className="app">
@@ -338,14 +307,19 @@ const TalkToUs = () => {
                 </p>
               </div>
               <div className="platform-stats-img">
-                <img
+                {/* <img
                   loading="lazy"
                   src={PlatformStatsImg}
                   alt="PlatformStatsImg"
+                /> */}
+                <Lottie
+                  className="im-hero-img"
+                  options={chartOptions1}
+                  isStopped={isStopped1}
                 />
               </div>
             </div>
-            <div className="platform-stats-text-grid">
+            <div className="platform-stats-text-grid pstgm2">
               <div className="ps-box ps-box-1">
                 <div className="ps-box-content">
                   <h3>
