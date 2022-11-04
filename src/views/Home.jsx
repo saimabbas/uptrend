@@ -18,7 +18,7 @@ import companyLogo14 from "../assets/img/logo-meta.png";
 import companyLogo15 from "../assets/img/logo-sandbox.svg";
 import companyLogo16 from "../assets/img/logo-kephi.png";
 import companyLogo17 from "../assets/img/logo-bitcoinist.svg";
-import companyLogo18 from "../assets/img/logo-tct.png";
+import companyLogo18 from "../assets/img/logo-tct.svg";
 import OurMissionImg from "../assets/img/our-mission-img.png";
 import OMGreenBig from "../assets/img/om-green-big.png";
 import OMGreenSmall from "../assets/img/om-green-small.png";

@@ -26,7 +26,7 @@ import PlatformLogo10 from "../assets/icons/wechat-logo-2.svg";
 import PlatformLogo11 from "../assets/icons/kakaotalk-logo-2.svg";
 import UTPartners from "../assets/img/ut-partners-img-red.png";
 import IndustriesPlanetImg from "../assets/img/industries-planet.png";
-import CrossPolinationImg from "../assets/img/cross-polination.png";
+import CrossPolinationImg from "../assets/img/cp-bee-img.webp";
 import CPBeeImg from "../assets/img/cp-bee-img.png";
 import PlatformStatsImg from "../assets/img/platform-stats-img.svg";
 import BigThingsWave from "../assets/img/big-things-wave.svg";

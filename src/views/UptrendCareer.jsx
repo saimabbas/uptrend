@@ -31,7 +31,7 @@ import PlatformLogo11 from "../assets/img/kakaotalk-l.png";
 import BullElevatorImg from "../assets/img/bull-elevator-img-2.png";
 import UTPartners from "../assets/img/ut-partners-img-red.png";
 import IndustriesPlanetImg from "../assets/img/industries-planet.png";
-import CrossPolinationImg from "../assets/img/cross-polination.png";
+import CrossPolinationImg from "../assets/img/cp-bee-img.webp";
 import CPBeeImg from "../assets/img/cp-bee-img.png";
 import PlatformStatsImg from "../assets/img/platform-stats-img.svg";
 import BigThingsWave from "../assets/img/big-things-wave.svg";

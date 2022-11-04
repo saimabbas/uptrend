@@ -637,7 +637,7 @@
   top: 0;
   right: 0;
 }
-.cross-polination-section {
+.beesimg-section {
   width: 100%;
   background-color: var(--main-dark3);
   padding: 7.5rem 0;
@@ -1867,7 +1867,7 @@
     margin: 0 -2rem;
     width: 95vw;
   }
-  .cross-polination-section,
+  .beesimg-section,
   .platform-stats-section {
     padding: 3.5rem 0;
   }
