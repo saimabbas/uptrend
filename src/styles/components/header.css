@@ -60,6 +60,9 @@ header {
   transform: translate(0, -1rem);
   transition: 0.35s;
 }
+.ut-dropdown button:hover {
+  background-color: transparent !important;
+}
 /* .header-center > a:hover::after,
 .bookmark-link a:hover::after {
   width: 100%;
