@@ -16,7 +16,7 @@ import companyLogo2 from "../assets/img/logo-swissborg.svg";
 import companyLogo8 from "../assets/img/logo-compound.svg";
 import companyLogo14 from "../assets/img/logo-meta.png";
 import companyLogo15 from "../assets/img/logo-sandbox.svg";
-import companyLogo16 from "../assets/img/logo-kephi.png";
+import companyLogo16 from "../assets/img/logo-kephi.svg";
 import companyLogo17 from "../assets/img/logo-bitcoinist.svg";
 import companyLogo18 from "../assets/img/logo-tct.png";
 import OurMissionImg from "../assets/img/our-mission-img.png";
@@ -633,7 +633,7 @@ const Home = () => {
 
               <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
                 <div>
-                  <Link to="/eventmarketing">
+                  <Link to="/metaversemarketing">
                     <a>
                       metaverse <br />
                     </a>
@@ -860,11 +860,13 @@ const Home = () => {
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img
-                      loading="lazy"
-                      src={companyLogo16}
-                      alt="companyLogo16"
-                    />
+                    <a href="https://www.kephi.io/">
+                      <img
+                        loading="lazy"
+                        src={companyLogo16}
+                        alt="companyLogo16"
+                      />
+                    </a>
                     <div className="hrgc-head-name">
                       <a href="https://www.kephi.io/">
                         <h6>Kephi Gallery</h6>
@@ -895,11 +897,13 @@ const Home = () => {
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img
-                      loading="lazy"
-                      src={companyLogo17}
-                      alt="companyLogo17"
-                    />
+                    <a href="https://bitcoinist.com/">
+                      <img
+                        loading="lazy"
+                        src={companyLogo17}
+                        alt="companyLogo17"
+                      />
+                    </a>
                     <div className="hrgc-head-name">
                       <a href="https://bitcoinist.com/">
                         <h6>Bitcoinist</h6>
@@ -930,11 +934,13 @@ const Home = () => {
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img
-                      loading="lazy"
-                      src={companyLogo18}
-                      alt="companyLogo18"
-                    />
+                    <a href="https://twitter.com/thecontenttap">
+                      <img
+                        loading="lazy"
+                        src={companyLogo18}
+                        alt="companyLogo18"
+                      />
+                    </a>
                     <div className="hrgc-head-name">
                       <a href="https://twitter.com/thecontenttap">
                         <h6>Content Tap</h6>
@@ -982,11 +988,13 @@ const Home = () => {
                       </div>
                       <div className="hrgc-bottom">
                         <div className="hrgc-head">
-                          <img
-                            loading="lazy"
-                            src={companyLogo16}
-                            alt="companyLogo16"
-                          />
+                          <a href="https://www.kephi.io/">
+                            <img
+                              loading="lazy"
+                              src={companyLogo16}
+                              alt="companyLogo16"
+                            />
+                          </a>
                           <div className="hrgc-head-name">
                             <a href="https://www.kephi.io/">
                               <h6>Kephi Gallery</h6>
@@ -1020,11 +1028,13 @@ const Home = () => {
                       </div>
                       <div className="hrgc-bottom">
                         <div className="hrgc-head">
-                          <img
-                            loading="lazy"
-                            src={companyLogo17}
-                            alt="companyLogo17"
-                          />
+                          <a href="https://bitcoinist.com/">
+                            <img
+                              loading="lazy"
+                              src={companyLogo17}
+                              alt="companyLogo17"
+                            />
+                          </a>
                           <div className="hrgc-head-name">
                             <a href="https://bitcoinist.com/">
                               <h6>Bitcoinist</h6>
@@ -1058,11 +1068,13 @@ const Home = () => {
                       </div>
                       <div className="hrgc-bottom">
                         <div className="hrgc-head">
-                          <img
-                            loading="lazy"
-                            src={companyLogo18}
-                            alt="companyLogo18"
-                          />
+                          <a href="https://twitter.com/thecontenttap">
+                            <img
+                              loading="lazy"
+                              src={companyLogo18}
+                              alt="companyLogo18"
+                            />
+                          </a>
                           <div className="hrgc-head-name">
                             <a href="https://twitter.com/thecontenttap">
                               <h6>Content Tap</h6>
@@ -1098,31 +1110,37 @@ const Home = () => {
                     className="ut-input"
                     type="text"
                     placeholder="First Name"
+                    required
                   />
                   <input
                     className="ut-input"
                     type="text"
                     placeholder="Last Name"
+                    required
                   />
                   <input
                     className="ut-input"
                     type="text"
                     placeholder="Company Email"
+                    required
                   />
                   <input
                     className="ut-input"
                     type="text"
                     placeholder="Telegram or Whatsapp"
+                    required
                   />
                   <input
                     className="ut-input"
                     type="text"
                     placeholder="Website"
+                    required
                   />
                   <input
                     className="ut-input"
                     type="text"
                     placeholder="How can we lend a helping hand?"
+                    required
                   />
                 </div>
                 <button className="ut-btn-green">SEND</button>

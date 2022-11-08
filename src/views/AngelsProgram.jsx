@@ -333,7 +333,7 @@ const Sandbox = () => {
                   </button>
                 </div>
               </div>
-              <div className="sj-bull-elevator-img-box">
+              <div className="sj-bull-elevator-img-box angels-bulls">
                 <img
                   loading="lazy"
                   src={BullElevatorImg2}

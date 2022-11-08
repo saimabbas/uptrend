@@ -4,10 +4,10 @@ import React from "react";
 import "../styles/globals.css";
 import "../styles/components/footer.css";
 import UTLogo from "../assets/icons/UTLogo";
-import IconLinkedIn from "../assets/img/footer-linkedin.png";
-import IconFacebook from "../assets/img/footer-facebook.png";
-import IconInstagram from "../assets/img/footer-instagram.png";
-import IconTwitter from "../assets/img/footer-twitter.png";
+import IconLinkedIn from "../assets/img/footer-linkedin.svg";
+import IconFacebook from "../assets/img/footer-facebook.svg";
+import IconInstagram from "../assets/img/footer-instagram.svg";
+import IconTwitter from "../assets/img/footer-twitter.svg";
 import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -36,7 +36,7 @@ const Footer = () => {
             <a href="/uptrendgrowthstories">Case Studies</a>
             <a href="/uptrendcareer">Careers</a>
             <a href="/events">Events</a>
-            <a href="/uptrendstore">Merch</a>
+            <a href="/uptrendstore">Uptrend Store</a>
             <a href="/angelsprogram">Angels Program</a>
             <a href="/sandbox">Office in the Sandbox</a>
             <a href="#">Privacy Policy</a>
