@@ -9,14 +9,17 @@
 }
 .ttu-header {
   position: relative;
-  z-index: 10000;
+  z-index: 9999;
   width: 100%;
-  padding: 2.5rem 0;
+  padding: 3.5rem 0;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
 }
-.ttu-header header {
+/* .ttu-header header {
   filter: invert(1);
   mix-blend-mode: difference;
-}
+} */
 .ttuh-dark {
   width: 50%;
   height: 100%;

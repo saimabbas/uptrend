@@ -864,7 +864,9 @@ const Home = () => {
                       <a href="https://twitter.com/NicoVerderosa">
                         <h4>Nico Verderosa </h4>
                       </a>
-                      <h6>@nico1991</h6>
+                      <a href="https://twitter.com/Mighty_PirateTM">
+                        <h6>@nico1991</h6>
+                      </a>
                     </div>
                   </div>
                   <h6>
@@ -887,7 +889,9 @@ const Home = () => {
                       <a href="https://www.kephi.io/">
                         <h6>Kephi Gallery</h6>
                       </a>
-                      <p>Chief Operation Officer</p>
+                      <a href="https://twitter.com/TheCryptoLes">
+                        <p>Chief Operation Officer</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -900,7 +904,9 @@ const Home = () => {
                       <a href="https://twitter.com/tonyspilotroBTC">
                         <h4>Tony Spilotro </h4>
                       </a>
-                      <h6>@black.m</h6>
+                      <a href="https://twitter.com/tonyspilotroBTC">
+                        <h6>@black.m</h6>
+                      </a>
                     </div>
                   </div>
                   <h6>

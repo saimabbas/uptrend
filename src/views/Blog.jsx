@@ -326,28 +326,31 @@ const EventMarketing = () => {
                 <Tab.Pane eventKey="a1">
                   <div className="blog-tabs-content">
                     <div className="main-blog-grid">
-                      <div className="main-blog-grid-left">
-                        <div className="white-tag">Branding</div>
-                        <h3>
-                          Working With Leading YouTube Influencers:{" "}
-                          <span> A How To Guide</span>
-                        </h3>
-                        <p>
-                          Learn exclusive insights on how to develop
-                          long-lasting partnerships with powerful influencers
-                          based on responsibility and trust
-                        </p>
-                        <div className="blog-img-para">
-                          <div className="bipara-left">
-                            <img src={Person} alt="" />
-                            <div className="bi-text">
-                              <h5>Emre Murry</h5>
-                              <p>18.06.2022</p>
+                      <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
+                        <div className="main-blog-grid-left">
+                          <div className="white-tag">Branding</div>
+                          <h3>
+                            Working With Leading YouTube Influencers:{" "}
+                            <span> A How To Guide</span>
+                          </h3>
+                          <p>
+                            Learn exclusive insights on how to develop
+                            long-lasting partnerships with powerful influencers
+                            based on responsibility and trust
+                          </p>
+                          <div className="blog-img-para">
+                            <div className="bipara-left">
+                              <img src={Person} alt="" />
+                              <div className="bi-text">
+                                <h5>Emre Murry</h5>
+                                <p>18.06.2022</p>
+                              </div>
                             </div>
+                            <span>5 min read</span>
                           </div>
-                          <span>5 min read</span>
                         </div>
-                      </div>
+                      </a>
+
                       <div className="main-blog-grid-right">
                         <img src={JournalImg3} alt="JournalImg3" />
                       </div>

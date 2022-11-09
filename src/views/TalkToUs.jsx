@@ -74,7 +74,7 @@ const TalkToUs = () => {
     setIsIconsBoxShowing(!isIconsBoxShowing);
     setTimeout(() => {
       setIsIconsBoxShowing(false);
-    }, 5000);
+    }, 50000);
   };
   gsap.registerPlugin(
     ScrollTrigger,
@@ -199,10 +199,8 @@ const TalkToUs = () => {
       </div>
       <div className="talktous-page">
         <Header lightHeader={false} showIconsBox={showIconsBox} />
-
-        <div className="ttu-header">
-          <div className="box">
-            <div></div>
+        <div className="box">
+          <div className="ttu-header">
             {isIconsBoxShowing ? (
               <div className="hero-icons-line-box">
                 <div></div>
