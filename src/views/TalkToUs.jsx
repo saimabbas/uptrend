@@ -198,11 +198,11 @@ const TalkToUs = () => {
         <UTLogo color="#fff" />
       </div>
       <div className="talktous-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <div className="ttu-header">
-          <div className="ttuh-dark"></div>
-          <div className="ttuh-light"></div>
           <div className="box">
-            <Header lightHeader={false} showIconsBox={showIconsBox} />
+            <div></div>
             {isIconsBoxShowing ? (
               <div className="hero-icons-line-box">
                 <div></div>

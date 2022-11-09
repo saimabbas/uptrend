@@ -427,7 +427,7 @@ const MetaverseMarketing = () => {
     let nftCardsAnim3 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
-        start: "top 100%",
+        start: "top 85%",
       },
       onComplete: playChartAnimation3,
     });
@@ -455,10 +455,12 @@ const MetaverseMarketing = () => {
         <UTLogo color="#fff" />
       </div>
       <div className="metaverse-marketing-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              <div></div>
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>
@@ -504,14 +506,11 @@ const MetaverseMarketing = () => {
         <section id="explore" className="service-description-section">
           <div className="box">
             <div className="heading-sublink-box">
-              <h2>SERVICE DESCRIPTION</h2>
-              <Link to="/talktous">
-                {" "}
-                <a href="#" className="arrow-link">
-                  <span>GET STARTED</span>
-                  <MdArrowForward />
-                </a>
-              </Link>
+              <h2>SERVICE DESCRIPTION</h2>{" "}
+              <a href="/talktous" className="arrow-link">
+                <span>GET STARTED</span>
+                <MdArrowForward />
+              </a>
             </div>
             <div className="service-description-grid">
               <div className="sd-grid-card mm-sd-grid-card-1 msgc1">
@@ -596,12 +595,10 @@ const MetaverseMarketing = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>Engage With Uptrend In The Metaverse</h2>
-              <Link to="/sandbox">
-                <a href="#" className="arrow-link">
-                  <span>Get Started</span>
-                  <MdArrowForward />
-                </a>
-              </Link>
+              <a href="/sandbox" className="arrow-link">
+                <span>Get Started</span>
+                <MdArrowForward />
+              </a>
             </div>
             <div className="service-description-grid service-description-grid-2">
               <div className="sd-grid-card mm-sd-grid-card-2-1 msgc1-2">

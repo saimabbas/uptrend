@@ -244,8 +244,8 @@ const InfluencerMarketing = () => {
           duration: 0.5,
         },
         "<0.1"
-      )
-      /* .fromTo(
+      );
+    /* .fromTo(
         ".sd-grid-card-1 > img",
         {
           opacity: 0,
@@ -333,7 +333,7 @@ const InfluencerMarketing = () => {
         },
         "<0"
       ) */
-      .fromTo(
+    /* .fromTo(
         ".sb-box h5",
         {
           x: "-150%",
@@ -354,7 +354,7 @@ const InfluencerMarketing = () => {
           x: 0,
         },
         "<0"
-      );
+      ); */
 
     const playChartAnimation1 = () => {
       setIsStopped1(false);
@@ -362,7 +362,7 @@ const InfluencerMarketing = () => {
     let nftCardsAnim1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
-        start: "top 100%",
+        start: "top 85%",
       },
       onComplete: playChartAnimation1,
     });
@@ -390,10 +390,12 @@ const InfluencerMarketing = () => {
         <UTLogo color="#fff" />
       </div>
       <div className="influencer-marketing-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              <div></div>
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>
@@ -440,13 +442,11 @@ const InfluencerMarketing = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>SERVICE DESCRIPTION</h2>
-              <Link to="/talktous">
+              <a href="/talktous" className="arrow-link">
                 {" "}
-                <a href="#" className="arrow-link">
-                  <span>GET STARTED</span>
-                  <MdArrowForward />
-                </a>
-              </Link>
+                <span>GET STARTED</span>
+                <MdArrowForward />
+              </a>
             </div>
             <div className="service-description-grid">
               <div className="sd-grid-card sd-grid-card-1">

@@ -254,7 +254,7 @@ const UptrendGrowthStories = () => {
     let nftCardsAnim1 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
-        start: "top 100%",
+        start: "top 85%",
       },
       onComplete: playChartAnimation1,
     });
@@ -300,7 +300,7 @@ const UptrendGrowthStories = () => {
     let nftCardsAnim3 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-3",
-        start: "top 100%",
+        start: "top 125%",
       },
       onComplete: playChartAnimation3,
     });
@@ -405,10 +405,12 @@ const UptrendGrowthStories = () => {
         <UTLogo color="#fff" />
       </div>
       <div className="ut-growth-stories-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              <div></div>
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>
@@ -1017,6 +1019,7 @@ const UptrendGrowthStories = () => {
                     placeholder="How can we lend a helping hand?"
                   />
                 </div>
+                <p className="error-msg">We need more info</p>
                 <button className="ut-btn-green">SEND</button>
               </div>
             </div>

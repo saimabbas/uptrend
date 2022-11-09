@@ -323,10 +323,12 @@ const Sandbox = () => {
         <UTLogo color="#fff" />
       </div> */}
       <div className="event-marketing-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              <div></div>
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>
@@ -382,7 +384,14 @@ const Sandbox = () => {
                   </p>
                 </div>
                 <div className="main-blog-grid-right">
-                  <img src={ImpactfulImg} alt="ImpactFulImg" />
+                  <iframe
+                    src="https://www.youtube.com/embed/6Ae_U_4uwQA"
+                    title="Uptrend Metaverse Marketing"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  {/* <img src={ImpactfulImg} alt="ImpactFulImg" /> */}
                 </div>
               </div>
             </div>

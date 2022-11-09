@@ -13,7 +13,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import UTLogo from "../assets/icons/UTLogo";
 import Person from "../assets/img/emre.png";
-import JournalImg5 from "../assets/img/Journel-img-5.png";
+import JournalImg5 from "../assets/img/journal-img-5.png";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";
 import OrangeBulb from "../assets/icons/OrangeBulb";
@@ -44,9 +44,11 @@ const Blog4 = () => {
             <UTLogo color="#fff" />
           </div> */}
       <div className="blog-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <div className="blog-page-content">
           <div className="box">
-            <Header lightHeader={false} showIconsBox={showIconsBox} />
+            <div></div>
             {isIconsBoxShowing ? (
               <div className="hero-icons-line-box">
                 <div></div>

@@ -47,7 +47,7 @@ import JournalImg1 from "../assets/img/journal-img-1.png";
 import JournalImg2 from "../assets/img/journal-img-2.png";
 import JournalImg3 from "../assets/img/journal-img-3.png";
 import JournalImg4 from "../assets/img/journal-img-4.png";
-import JournalImg5 from "../assets/img/Journel-img-5.png";
+import JournalImg5 from "../assets/img/journal-img-5.png";
 import IconDiamond from "../assets/img/icon-diamond.svg";
 import StorefrontImg from "../assets/img/storefront-img.png";
 import LimitedEditionImg from "../assets/img/limited-edition-img.svg";
@@ -485,6 +485,23 @@ const Home = () => {
         },
         "<0.15"
       );
+    let headerBGAnim = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".hero-section",
+        start: "top 0",
+        end: "bottom 80%",
+        scrub: 1,
+      },
+    });
+    headerBGAnim.fromTo(
+      ".home-page header",
+      {
+        backgroundColor: "rgba(16, 18, 22, 0)",
+      },
+      {
+        backgroundColor: "rgba(16, 18, 22, 1)",
+      }
+    );
   }, []);
 
   return (
@@ -493,6 +510,8 @@ const Home = () => {
         <UTLogo color="#fff" />
       </div>
       <div className="home-page">
+        <Header lightHeader={true} showIconsBox={showIconsBox} />
+
         <section className="hero-section">
           <img className="hero-bull" src={HeroBull} alt="HeroBull" />
           <img
@@ -502,8 +521,7 @@ const Home = () => {
           />
           <div className="box">
             <div className="hero-content">
-              <Header lightHeader={true} showIconsBox={showIconsBox} />
-
+              <div></div>
               <h1>
                 LEADING MARKETING PARTNER <br /> BUILDING
                 <span>
@@ -611,11 +629,9 @@ const Home = () => {
               <div className="expertise-grid-card expertise-grid-card-1 ddd-cube-p">
                 <div className="egc1-top">
                   <div>
-                    <Link to="/influencermarketing">
-                      <a>
-                        Influencer <br />
-                      </a>
-                    </Link>
+                    <a target={"_blank"} href="/influencermarketing">
+                      Influencer <br />
+                    </a>
                     <span>Marketing</span>
                   </div>
 
@@ -633,11 +649,9 @@ const Home = () => {
 
               <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
                 <div>
-                  <Link to="/metaversemarketing">
-                    <a>
-                      metaverse <br />
-                    </a>
-                  </Link>
+                  <a target={"_blank"} href="/metaversemarketing">
+                    metaverse <br />
+                  </a>
                   <span>promotion</span>
                 </div>
                 <h5>
@@ -645,8 +659,14 @@ const Home = () => {
                   <b>with interactive experiences</b>
                 </h5>
                 <div className="egc2-img-grid">
-                  <img loading="lazy" src={companyLogo14} alt="companyLogo14" />
-                  <a href="https://www.sandbox.game/en/">
+                  <a target={"_blank"} href="https://www.meta.com/">
+                    <img
+                      loading="lazy"
+                      src={companyLogo14}
+                      alt="companyLogo14"
+                    />
+                  </a>
+                  <a target={"_blank"} href="https://www.sandbox.game/en/">
                     <img
                       loading="lazy"
                       src={companyLogo15}
@@ -658,11 +678,9 @@ const Home = () => {
 
               <div className="expertise-grid-card expertise-grid-card-2 ddd-cube-p">
                 <div>
-                  <Link to="/investmentrelationships">
-                    <a>
-                      Investor <br />
-                    </a>
-                  </Link>
+                  <a target={"_blank"} href="/investmentrelationships">
+                    Investor <br />
+                  </a>
                   <span>Relations</span>
                 </div>
                 <h5>
@@ -677,11 +695,9 @@ const Home = () => {
               <div className="expertise-grid-card expertise-grid-card-1 ddd-cube-p">
                 <div className="egc1-top">
                   <div>
-                    <Link to="/eventmarketing">
-                      <a>
-                        EVENT <br />
-                      </a>
-                    </Link>
+                    <a target={"_blank"} href="/eventmarketing">
+                      EVENT <br />
+                    </a>
                     <span>MARKETING</span>
                   </div>
                   <img loading="lazy" src={OnlineMeeting} alt="OnlineMeeting" />
@@ -1143,6 +1159,7 @@ const Home = () => {
                     required
                   />
                 </div>
+                <p className="error-msg">We need more info</p>
                 <button className="ut-btn-green">SEND</button>
               </div>
               <div className="bull-elevator-img-box">
@@ -1231,10 +1248,10 @@ const Home = () => {
               />
             </div>
 
-            <Link to="/uptrendstore">
+            <a href="/uptrendstore">
               {" "}
               <button className="ut-btn-green">SHOW IT!</button>
-            </Link>
+            </a>
           </div>
           <div className="ut-store-wave-box">
             <img loading="lazy" src={UtStoreWave} alt="UtStoreWave" />
@@ -1253,12 +1270,12 @@ const Home = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>Uptrend Journal</h2>
-              <Link to="/blog">
+              <a href="/blog">
                 <a href="#" className="arrow-link">
                   <span>READ MORE </span>
                   <MdArrowForward />
                 </a>
-              </Link>
+              </a>
             </div>
             <div className="journal-grid">
               <div className="journal-grid-card">

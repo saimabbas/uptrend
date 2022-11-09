@@ -18,8 +18,8 @@ import Person3 from "../assets/img/sarah.png";
 import JournalImg1 from "../assets/img/journal-img-1.png";
 import JournalImg2 from "../assets/img/journal-img-2.png";
 import JournalImg3 from "../assets/img/journal-img-3.png";
-import JournalImg6 from "../assets/img/Journel-img-6.png";
-import JournalImg5 from "../assets/img/Journel-img-5.png";
+import JournalImg6 from "../assets/img/journal-img-6.png";
+import JournalImg5 from "../assets/img/journal-img-5.png";
 import JournalImg5Cat from "../assets/img/journal-img-5-cat.png";
 import BullElevatorImg2 from "../assets/img/bull-elevator-img-2.png";
 import JournalImg4 from "../assets/img/journal-img-4.png";
@@ -221,10 +221,12 @@ const EventMarketing = () => {
         <UTLogo color="#fff" />
       </div> */}
       <div className="event-marketing-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              <div></div>
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>

@@ -682,10 +682,12 @@ const Expertise = () => {
         <UTLogo color="#fff" />
       </div>
       <div className="expertise-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              <div></div>
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>
@@ -741,12 +743,10 @@ const Expertise = () => {
           <div className="box">
             <div className="heading-sublink-box">
               <h2>INFLUENCER MARKETING</h2>
-              <Link to="/influencermarketing">
-                <a href="#" className="arrow-link">
-                  <span>GET STARTED</span>
-                  <MdArrowForward />
-                </a>
-              </Link>
+              <a href="/influencermarketing" className="arrow-link">
+                <span>GET STARTED</span>
+                <MdArrowForward />
+              </a>
             </div>
             <div className="service-description-grid service-description-grid-1">
               <div className="sd-grid-card sd-grid-card-1">

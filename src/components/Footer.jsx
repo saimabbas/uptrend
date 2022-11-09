@@ -16,13 +16,13 @@ const Footer = () => {
       <div className="box">
         <div className="footer-grid">
           <div className="footer-grid-card-1">
-            <Link to="/">
+            <a href="/">
               <UTLogo color="#31dd8c" />
-            </Link>
+            </a>
           </div>
           <div className="footer-grid-card-2">
             <h6>
-              <Link to="/expertise">Expertise</Link>
+              <a href="/expertise">Expertise</a>
             </h6>
             <a href="/influencermarketing">Influencer Marketing</a>
             <a href="/metaversemarketing">Metaverse Promotion</a>

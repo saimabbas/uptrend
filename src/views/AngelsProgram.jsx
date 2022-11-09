@@ -237,10 +237,12 @@ const Sandbox = () => {
         <UTLogo color="#fff" />
       </div> */}
       <div className="event-marketing-page angelsprogram-page">
+        <Header lightHeader={true} showIconsBox={showIconsBox} />
+
         <section className="hero-section im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={true} showIconsBox={showIconsBox} />
+              <div></div>
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>

@@ -364,7 +364,7 @@
   background-color: var(--white);
 }
 .sd-grid-card-1 > img {
-  width: 31.5rem;
+  width: 30rem;
   position: relative;
   z-index: 15;
   transition: 0.5s;
@@ -1626,7 +1626,7 @@
   transform: translate(40%, 15%);
   max-width: unset;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
   .uc-etg {
     border-bottom: 1px solid var(--white);
   }
@@ -1831,7 +1831,7 @@
   .sd-grid-card-1 > img {
     width: 27%;
     position: absolute;
-    bottom: 4rem;
+    bottom: 1.5rem;
     right: 1rem;
   }
   .sd-grid-card h3 span {
@@ -2068,5 +2068,16 @@
   }
   .sd-grid-card.sd-grid-card-1 .winner-img-mob {
     width: 45%;
+    height: 85%;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .sd-grid-card-1 > img {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .sd-grid-card-1 > img {
+    width: 20rem;
   }
 }

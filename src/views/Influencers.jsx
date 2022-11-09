@@ -223,10 +223,12 @@ const Influencers = () => {
         <UTLogo color="#fff" />
       </div>
       <div className="influencers-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content influencer-marketing-content-2">
-              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              <div></div>
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>

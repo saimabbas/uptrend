@@ -42,9 +42,11 @@ const Blog1 = () => {
         <UTLogo color="#fff" />
       </div> */}
       <div className="blog-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <div className="blog-page-content">
           <div className="box">
-            <Header lightHeader={false} showIconsBox={showIconsBox} />
+            <div></div>
             {isIconsBoxShowing ? (
               <div className="hero-icons-line-box">
                 <div></div>

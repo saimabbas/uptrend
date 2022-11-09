@@ -360,7 +360,7 @@ const InvestmentRelationships = () => {
     let fundingDistributionAnim = gsap.timeline({
       scrollTrigger: {
         trigger: ".funding-distribution-section",
-        start: "top 50%",
+        start: "top 25%",
       },
     });
     fundingDistributionAnim
@@ -371,6 +371,7 @@ const InvestmentRelationships = () => {
         },
         {
           width: "100%",
+          duration: 0.75,
         }
       )
       .fromTo(
@@ -380,6 +381,7 @@ const InvestmentRelationships = () => {
         },
         {
           width: "100%",
+          duration: 0.75,
         },
         0
       )
@@ -390,6 +392,7 @@ const InvestmentRelationships = () => {
         },
         {
           opacity: "1",
+          duration: 0.75,
         },
         0
       );
@@ -400,7 +403,7 @@ const InvestmentRelationships = () => {
     let nftCardsAnim5 = gsap.timeline({
       scrollTrigger: {
         trigger: ".ugs-pss-1",
-        start: "top 100%",
+        start: "top 85%",
       },
       onComplete: playChartAnimation5,
     });
@@ -428,10 +431,12 @@ const InvestmentRelationships = () => {
         <UTLogo color="#fff" />
       </div>
       <div className="event-marketing-page">
+        <Header lightHeader={false} showIconsBox={showIconsBox} />
+
         <section className="im-hero-section">
           <div className="box">
             <div className="influencer-marketing-content">
-              <Header lightHeader={false} showIconsBox={showIconsBox} />
+              <div></div>
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>

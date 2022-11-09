@@ -127,7 +127,36 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.hero-company-logos-swiper,
+.bb-logos-swiper {
+  position: relative;
+}
+.hero-company-logos-swiper::after,
+.bb-logos-swiper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  position: absolute;
+}
+.hero-company-logos-swiper .swiper-slide,
+.bb-logos-swiper .swiper-slide {
+  position: relative;
+  z-index: 500;
+}
+.error-msg {
+  color: red;
+  margin: 0 0 2.5rem 0;
+  display: none;
+}
+.angelsprogram-page header {
+  background-color: var(--main-dark3) !important;
+}
+/* .home-page header {
+  background-color: var(--main-dark3) !important;
+} */
 .app h2 {
   font-size: 5rem;
   font-weight: 700;

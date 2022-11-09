@@ -92,6 +92,7 @@ const TrustedByCompanies = (props) => {
               speed={2500}
               autoplay={{
                 delay: 1,
+                disableOnInteraction: false,
               }}
             >
               <SwiperSlide>
