@@ -943,7 +943,9 @@ const Home = () => {
                       <a href="https://twitter.com/TheCryptoLes">
                         <h4>Danny Les </h4>
                       </a>
-                      <h6>@black.m</h6>
+                      <a href="https://twitter.com/TheCryptoLes">
+                        <h6>@black.m</h6>
+                      </a>
                     </div>
                   </div>
                   <h6>
