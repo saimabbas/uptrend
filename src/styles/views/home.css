@@ -983,7 +983,7 @@
 .jgc-details {
   padding: 2rem;
 }
-.journal-grid-card:nth-child(3) {
+.journal-grid a:nth-child(3) {
   height: 100%;
   grid-row: 1/-1;
   grid-column: 3/4;
@@ -1097,7 +1097,7 @@
     grid-template-rows: auto;
     grid-gap: 1rem;
   }
-  .journal-grid-card:nth-child(3) {
+  .journal-grid a:nth-child(3) {
     grid-row: 1/2;
     grid-column: 1/3;
   }
