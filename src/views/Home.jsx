@@ -865,7 +865,7 @@ const Home = () => {
                         <h4>Nico Verderosa </h4>
                       </a>
                       <a href="https://twitter.com/Mighty_PirateTM">
-                        <h6>@nico1991</h6>
+                        <h6>@Mighty_PirateTM</h6>
                       </a>
                     </div>
                   </div>
@@ -905,7 +905,7 @@ const Home = () => {
                         <h4>Tony Spilotro </h4>
                       </a>
                       <a href="https://twitter.com/tonyspilotroBTC">
-                        <h6>@black.m</h6>
+                        <h6>@tonyspilotroBTC</h6>
                       </a>
                     </div>
                   </div>
@@ -944,7 +944,7 @@ const Home = () => {
                         <h4>Danny Les </h4>
                       </a>
                       <a href="https://twitter.com/TheCryptoLes">
-                        <h6>@black.m</h6>
+                        <h6>@TheCryptoLes</h6>
                       </a>
                     </div>
                   </div>
@@ -1000,7 +1000,9 @@ const Home = () => {
                             <a href="https://twitter.com/NicoVerderosa">
                               <h4>Nico Verderosa </h4>
                             </a>
-                            <h6>@nico1991</h6>
+                            <a href="https://twitter.com/Mighty_PirateTM">
+                              <h6>@Mighty_PirateTM</h6>
+                            </a>
                           </div>
                         </div>
                         <h6>
@@ -1038,7 +1040,9 @@ const Home = () => {
                             <a href="https://twitter.com/tonyspilotroBTC">
                               <h4>Tony Spilotro </h4>
                             </a>
-                            <h6>@black.m</h6>
+                            <a href="https://twitter.com/tonyspilotroBTC">
+                              <h6>@tonyspilotroBTC</h6>
+                            </a>
                           </div>
                         </div>
                         <h6>
@@ -1078,7 +1082,9 @@ const Home = () => {
                             <a href="https://twitter.com/TheCryptoLes">
                               <h4>Danny Les </h4>
                             </a>
-                            <h6>@black.m</h6>
+                            <a href="https://twitter.com/TheCryptoLes">
+                              <h6>@bTheCryptoLes</h6>
+                            </a>
                           </div>
                         </div>
                         <h6>
