@@ -615,7 +615,7 @@ const Home = () => {
                 <div className="mission-text-img-box">
                   <img loading="lazy" src={MissionIcon3} alt="MissionIcon3" />
                   <h5>
-                    Leverage <b>date science</b> to deliver results{" "}
+                    Leverage <b>data science</b> to deliver results{" "}
                   </h5>
                 </div>
               </div>
