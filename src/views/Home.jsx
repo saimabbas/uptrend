@@ -1292,58 +1292,68 @@ const Home = () => {
               </a>
             </div>
             <div className="journal-grid">
-              <div className="journal-grid-card">
-                <div className="jgc-img-box">
-                  <img loading="lazy" src={JournalImg1} alt="JournalImg1" />
+              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                <div className="journal-grid-card">
+                  <div className="jgc-img-box">
+                    <img loading="lazy" src={JournalImg1} alt="JournalImg1" />
+                  </div>
+                  <div className="jgc-details">
+                    <h6>
+                      Working With Leading YouTube Influencers: A How To Guide
+                    </h6>
+                  </div>
                 </div>
-                <div className="jgc-details">
-                  <h6>
-                    Working With Leading YouTube Influencers: A How To Guide
-                  </h6>
+              </a>
+              <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
+                <div className="journal-grid-card">
+                  <div className="jgc-img-box">
+                    <img loading="lazy" src={JournalImg2} alt="JournalImg2" />
+                  </div>
+                  <div className="jgc-details">
+                    <h6>
+                      3 Proven Strategies To Building Brand Awareness in 2022
+                    </h6>
+                  </div>
                 </div>
-              </div>
-              <div className="journal-grid-card">
-                <div className="jgc-img-box">
-                  <img loading="lazy" src={JournalImg2} alt="JournalImg2" />
+              </a>
+              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                <div className="journal-grid-card">
+                  <div className="jgc-img-box">
+                    <img loading="lazy" src={JournalImg3} alt="JournalImg" />
+                  </div>
+                  <div className="jgc-details">
+                    <h6>
+                      Top 5 Influencer Marketing Software Solutions To Boost
+                      Brand Growth In 2022 (Part 1)
+                    </h6>
+                    <p>
+                      Check out this comprehensive guide to discovering the most
+                      powerful influencers using popular influencer marketing
+                      software based on Uptrend’s insights and experience.
+                    </p>
+                  </div>
                 </div>
-                <div className="jgc-details">
-                  <h6>
-                    3 Proven Strategies To Building Brand Awareness in 2022
-                  </h6>
+              </a>
+              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                <div className="journal-grid-card">
+                  <div className="jgc-img-box">
+                    <img loading="lazy" src={JournalImg4} alt="JournalImg" />
+                  </div>
+                  <div className="jgc-details">
+                    <h6>New Local Region? Tips To Get Started</h6>
+                  </div>
+                </div>{" "}
+              </a>
+              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                <div className="journal-grid-card">
+                  <div className="jgc-img-box">
+                    <img loading="lazy" src={JournalImg5} alt="JournalImg" />
+                  </div>
+                  <div className="jgc-details">
+                    <h6>The Art of SEO: Proven Search Engine Strategies</h6>
+                  </div>
                 </div>
-              </div>
-              <div className="journal-grid-card">
-                <div className="jgc-img-box">
-                  <img loading="lazy" src={JournalImg3} alt="JournalImg" />
-                </div>
-                <div className="jgc-details">
-                  <h6>
-                    Top 5 Influencer Marketing Software Solutions To Boost Brand
-                    Growth In 2022 (Part 1)
-                  </h6>
-                  <p>
-                    Check out this comprehensive guide to discovering the most
-                    powerful influencers using popular influencer marketing
-                    software based on Uptrend’s insights and experience.
-                  </p>
-                </div>
-              </div>
-              <div className="journal-grid-card">
-                <div className="jgc-img-box">
-                  <img loading="lazy" src={JournalImg4} alt="JournalImg" />
-                </div>
-                <div className="jgc-details">
-                  <h6>New Local Region? Tips To Get Started</h6>
-                </div>
-              </div>
-              <div className="journal-grid-card">
-                <div className="jgc-img-box">
-                  <img loading="lazy" src={JournalImg5} alt="JournalImg" />
-                </div>
-                <div className="jgc-details">
-                  <h6>The Art of SEO: Proven Search Engine Strategies</h6>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>
