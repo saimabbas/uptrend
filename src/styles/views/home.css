@@ -1311,8 +1311,8 @@
     padding: 2rem 0 3.5rem 0;
   }
   .hero-section h1 {
-    font-size: 2.25rem;
-    line-height: 3.25rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     text-align: center;
     width: 100%;
     position: absolute;
@@ -1569,11 +1569,15 @@
     padding: 5rem 0 18rem 0;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 350px) {
   .home-page .hero-section h1 .hero-head-pc-br {
     display: none;
   }
   .home-page .hero-section h1 .hero-head-mob-br {
     display: block;
+  }
+  .hero-section h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
   }
 }
