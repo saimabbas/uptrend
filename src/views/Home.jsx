@@ -523,8 +523,8 @@ const Home = () => {
             <div className="hero-content">
               <div></div>
               <h1>
-                LEADING MARKETING PARTNER <br className="hero-head-pc-br" />{" "}
-                BUILDING
+                LEADING MARKETING <br className="hero-head-mob-br" /> PARTNER{" "}
+                <br className="hero-head-pc-br" /> BUILDING
                 <br className="hero-head-mob-br" />
                 <span>
                   <div className="head-box-green">
