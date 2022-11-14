@@ -1042,7 +1042,8 @@
   color: #000 !important;
 }
 .highly-regarded-grid-swiper,
-.tweets-main-grid-swiper {
+.tweets-main-grid-swiper,
+.home-page .hero-section h1 .hero-head-mob-br {
   display: none;
 }
 @media screen and (max-width: 1250px) {
@@ -1566,5 +1567,13 @@
   }
   .rts-form.rts-form-bull {
     padding: 5rem 0 18rem 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .home-page .hero-section h1 .hero-head-pc-br {
+    display: none;
+  }
+  .home-page .hero-section h1 .hero-head-mob-br {
+    display: block;
   }
 }

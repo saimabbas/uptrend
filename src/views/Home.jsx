@@ -523,7 +523,9 @@ const Home = () => {
             <div className="hero-content">
               <div></div>
               <h1>
-                LEADING MARKETING PARTNER <br /> BUILDING
+                LEADING MARKETING PARTNER <br className="hero-head-pc-br" />{" "}
+                BUILDING
+                <br className="hero-head-mob-br" />
                 <span>
                   <div className="head-box-green">
                     <div className="head-box-green-inner"></div>
@@ -1269,12 +1271,16 @@ const Home = () => {
           </div>
           <div className="ut-store-wave-box">
             <img loading="lazy" src={UtStoreWave} alt="UtStoreWave" />
-            <h2>
-              <span>OFFICE IN</span> <br />
-              SANDBOX
-            </h2>
+            <a href="/sandbox">
+              <MdArrowForward />
+
+              <h2>
+                <span>OFFICE IN</span> <br />
+                SANDBOX
+              </h2>
+            </a>
             <div className="box ut-store-right-arrow">
-              <a href="#">
+              <a href="/sandbox">
                 <MdArrowForward />
               </a>
             </div>
