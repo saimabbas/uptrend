@@ -1569,7 +1569,7 @@
     padding: 5rem 0 18rem 0;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .home-page .hero-section h1 .hero-head-pc-br {
     display: none;
   }
