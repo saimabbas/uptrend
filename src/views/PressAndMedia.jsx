@@ -210,7 +210,7 @@ const PressAndMedia = () => {
               {isIconsBoxShowing ? (
                 <div className="hero-icons-line-box">
                   <div></div>
-                  <a href="#">
+                  <a href="https://wa.me/message/UVIGWUX7PGR6A1">
                     <IconWhatsapp color="#fff" />
                   </a>
                   <a href="https://twitter.com/UptrendAgency">
