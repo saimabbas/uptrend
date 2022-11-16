@@ -564,58 +564,48 @@ const Home = () => {
                 <div className="our-mission-img-box">
                   <img
                     className="om-main-img"
-                    loading="lazy"
                     src={OurMissionImg}
                     alt="OurMissionImg"
                   />
                   <img
                     className="om-green-big"
-                    loading="lazy"
                     src={OMGreenBig}
                     alt="OMGreenBig"
                   />
                   <img
                     className="om-green-small"
-                    loading="lazy"
                     src={OMGreenSmall}
                     alt="OMGreenSmall"
                   />
                   <img
                     className="om-blue-big"
-                    loading="lazy"
                     src={OMBlueBig}
                     alt="OMBlueBig"
                   />
                   <img
                     className="om-blue-small"
-                    loading="lazy"
                     src={OMBlueSmall}
                     alt="OMBlueSmall"
                   />
-                  <img
-                    className="om-text"
-                    loading="lazy"
-                    src={OMText}
-                    alt="OMText"
-                  />
+                  <img className="om-text" src={OMText} alt="OMText" />
                 </div>
               </div>
               <div className="our-mission-right">
                 <h2>Our Mission</h2>
                 <div className="mission-text-img-box">
-                  <img loading="lazy" src={MissionIcon1} alt="MissionIcon1" />
+                  <img src={MissionIcon1} alt="MissionIcon1" />
                   <h5>
                     Enable <b>industry solutions</b> designed for innovators
                   </h5>
                 </div>
                 <div className="mission-text-img-box">
-                  <img loading="lazy" src={MissionIcon2} alt="MissionIcon2" />
+                  <img src={MissionIcon2} alt="MissionIcon2" />
                   <h5>
                     Become the premier <b>marketing trendsetter</b>
                   </h5>
                 </div>
                 <div className="mission-text-img-box">
-                  <img loading="lazy" src={MissionIcon3} alt="MissionIcon3" />
+                  <img src={MissionIcon3} alt="MissionIcon3" />
                   <h5>
                     Leverage <b>data science</b> to deliver results{" "}
                   </h5>
@@ -637,11 +627,7 @@ const Home = () => {
                     <span>Marketing</span>
                   </div>
 
-                  <img
-                    loading="lazy"
-                    src={MaleInfluencer}
-                    alt="MaleInfluencer"
-                  />
+                  <img src={MaleInfluencer} alt="MaleInfluencer" />
                 </div>
                 <h5>
                   #1 international content studio supported by{" "}
@@ -662,18 +648,10 @@ const Home = () => {
                 </h5>
                 <div className="egc2-img-grid">
                   <a target={"_blank"} href="https://www.meta.com/">
-                    <img
-                      loading="lazy"
-                      src={companyLogo14}
-                      alt="companyLogo14"
-                    />
+                    <img src={companyLogo14} alt="companyLogo14" />
                   </a>
                   <a target={"_blank"} href="https://www.sandbox.game/en/">
-                    <img
-                      loading="lazy"
-                      src={companyLogo15}
-                      alt="companyLogo11"
-                    />
+                    <img src={companyLogo15} alt="companyLogo11" />
                   </a>
                 </div>
               </div>
@@ -690,8 +668,8 @@ const Home = () => {
                   <b>scaling and growth</b>
                 </h5>
                 <div className="egc2-img-grid egc2-imgs">
-                  <img loading="lazy" src={companyLogo2} alt="companyLogo14" />
-                  <img loading="lazy" src={companyLogo8} alt="companyLogo11" />
+                  <img src={companyLogo2} alt="companyLogo14" />
+                  <img src={companyLogo8} alt="companyLogo11" />
                 </div>
               </div>
               <div className="expertise-grid-card expertise-grid-card-1 ddd-cube-p">
@@ -702,7 +680,7 @@ const Home = () => {
                     </a>
                     <span>MARKETING</span>
                   </div>
-                  <img loading="lazy" src={OnlineMeeting} alt="OnlineMeeting" />
+                  <img src={OnlineMeeting} alt="OnlineMeeting" />
                 </div>
                 <h5>
                   <b>We guide brands</b> through event planning of any magnitude
@@ -716,11 +694,7 @@ const Home = () => {
             <div className="section-heading-box">
               <div className="up-twitter-name">
                 <a href="https://twitter.com/UptrendAgency">
-                  <img
-                    loading="lazy"
-                    src={IconTwitterFilled}
-                    alt="IconTwitterFilled"
-                  />
+                  <img src={IconTwitterFilled} alt="IconTwitterFilled" />
                 </a>
                 <p>@UptrendAgency</p>
               </div>
@@ -861,7 +835,7 @@ const Home = () => {
               <div className="highly-regarded-grid-card">
                 <div className="hrgc-top">
                   <div className="hrgc-head">
-                    <img loading="lazy" src={Nico} alt="Nico" />
+                    <img src={Nico} alt="Nico" />
                     <div className="hrgc-head-name">
                       <a href="https://twitter.com/NicoVerderosa">
                         <h4>Nico Verderosa </h4>
@@ -881,11 +855,7 @@ const Home = () => {
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
                     <a href="https://www.kephi.io/">
-                      <img
-                        loading="lazy"
-                        src={companyLogo16}
-                        alt="companyLogo16"
-                      />
+                      <img src={companyLogo16} alt="companyLogo16" />
                     </a>
                     <div className="hrgc-head-name">
                       <a href="https://www.kephi.io/">
@@ -901,7 +871,7 @@ const Home = () => {
               <div className="highly-regarded-grid-card">
                 <div className="hrgc-top">
                   <div className="hrgc-head">
-                    <img loading="lazy" src={Tony} alt="Tony" />
+                    <img src={Tony} alt="Tony" />
                     <div className="hrgc-head-name">
                       <a href="https://twitter.com/tonyspilotroBTC">
                         <h4>Tony Spilotro </h4>
@@ -922,11 +892,7 @@ const Home = () => {
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
                     <a href="https://bitcoinist.com/">
-                      <img
-                        loading="lazy"
-                        src={companyLogo17}
-                        alt="companyLogo17"
-                      />
+                      <img src={companyLogo17} alt="companyLogo17" />
                     </a>
                     <div className="hrgc-head-name">
                       <a href="https://bitcoinist.com/">
@@ -940,7 +906,7 @@ const Home = () => {
               <div className="highly-regarded-grid-card">
                 <div className="hrgc-top">
                   <div className="hrgc-head">
-                    <img loading="lazy" src={Danny} alt="Danny" />
+                    <img src={Danny} alt="Danny" />
                     <div className="hrgc-head-name">
                       <a href="https://twitter.com/TheCryptoLes">
                         <h4>Danny Les </h4>
@@ -961,11 +927,7 @@ const Home = () => {
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
                     <a href="https://twitter.com/thecontenttap">
-                      <img
-                        loading="lazy"
-                        src={companyLogo18}
-                        alt="companyLogo18"
-                      />
+                      <img src={companyLogo18} alt="companyLogo18" />
                     </a>
                     <div className="hrgc-head-name">
                       <a href="https://twitter.com/thecontenttap">
@@ -997,7 +959,7 @@ const Home = () => {
                     <div className="highly-regarded-grid-card">
                       <div className="hrgc-top">
                         <div className="hrgc-head">
-                          <img loading="lazy" src={Nico} alt="Nico" />
+                          <img src={Nico} alt="Nico" />
                           <div className="hrgc-head-name">
                             <a href="https://twitter.com/NicoVerderosa">
                               <h4>Nico Verderosa </h4>
@@ -1017,11 +979,7 @@ const Home = () => {
                       <div className="hrgc-bottom">
                         <div className="hrgc-head">
                           <a href="https://www.kephi.io/">
-                            <img
-                              loading="lazy"
-                              src={companyLogo16}
-                              alt="companyLogo16"
-                            />
+                            <img src={companyLogo16} alt="companyLogo16" />
                           </a>
                           <div className="hrgc-head-name">
                             <a href="https://www.kephi.io/">
@@ -1037,7 +995,7 @@ const Home = () => {
                     <div className="highly-regarded-grid-card">
                       <div className="hrgc-top">
                         <div className="hrgc-head">
-                          <img loading="lazy" src={Tony} alt="Tony" />
+                          <img src={Tony} alt="Tony" />
                           <div className="hrgc-head-name">
                             <a href="https://twitter.com/tonyspilotroBTC">
                               <h4>Tony Spilotro </h4>
@@ -1059,11 +1017,7 @@ const Home = () => {
                       <div className="hrgc-bottom">
                         <div className="hrgc-head">
                           <a href="https://bitcoinist.com/">
-                            <img
-                              loading="lazy"
-                              src={companyLogo17}
-                              alt="companyLogo17"
-                            />
+                            <img src={companyLogo17} alt="companyLogo17" />
                           </a>
                           <div className="hrgc-head-name">
                             <a href="https://bitcoinist.com/">
@@ -1079,7 +1033,7 @@ const Home = () => {
                     <div className="highly-regarded-grid-card">
                       <div className="hrgc-top">
                         <div className="hrgc-head">
-                          <img loading="lazy" src={Danny} alt="Danny" />
+                          <img src={Danny} alt="Danny" />
                           <div className="hrgc-head-name">
                             <a href="https://twitter.com/TheCryptoLes">
                               <h4>Danny Les </h4>
@@ -1101,11 +1055,7 @@ const Home = () => {
                       <div className="hrgc-bottom">
                         <div className="hrgc-head">
                           <a href="https://twitter.com/thecontenttap">
-                            <img
-                              loading="lazy"
-                              src={companyLogo18}
-                              alt="companyLogo18"
-                            />
+                            <img src={companyLogo18} alt="companyLogo18" />
                           </a>
                           <div className="hrgc-head-name">
                             <a href="https://twitter.com/thecontenttap">
@@ -1179,11 +1129,7 @@ const Home = () => {
                 <button className="ut-btn-green">SEND</button>
               </div>
               <div className="bull-elevator-img-box">
-                <img
-                  loading="lazy"
-                  src={BullElevatorImg}
-                  alt="BullElevatorImg"
-                />
+                <img src={BullElevatorImg} alt="BullElevatorImg" />
               </div>
             </div>
           </div>
@@ -1253,15 +1199,11 @@ const Home = () => {
           </div>
         </section>
         <section className="ut-store-section">
-          <img loading="lazy" src={StorefrontImg} alt="StorefrontImg" />
+          <img src={StorefrontImg} alt="StorefrontImg" />
           <div className="ut-store-details">
             <h2>UPTREND STORE</h2>
             <div>
-              <img
-                loading="lazy"
-                src={LimitedEditionImg}
-                alt="LimitedEditionImg"
-              />
+              <img src={LimitedEditionImg} alt="LimitedEditionImg" />
             </div>
 
             <a href="/uptrendstore">
@@ -1270,7 +1212,7 @@ const Home = () => {
             </a>
           </div>
           <div className="ut-store-wave-box">
-            <img loading="lazy" src={UtStoreWave} alt="UtStoreWave" />
+            <img src={UtStoreWave} alt="UtStoreWave" />
             <a href="/sandbox">
               <MdArrowForward />
 
@@ -1301,7 +1243,7 @@ const Home = () => {
               <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
                 <div className="journal-grid-card">
                   <div className="jgc-img-box">
-                    <img loading="lazy" src={JournalImg1} alt="JournalImg1" />
+                    <img src={JournalImg1} alt="JournalImg1" />
                   </div>
                   <div className="jgc-details">
                     <h6>
@@ -1313,7 +1255,7 @@ const Home = () => {
               <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
                 <div className="journal-grid-card">
                   <div className="jgc-img-box">
-                    <img loading="lazy" src={JournalImg2} alt="JournalImg2" />
+                    <img src={JournalImg2} alt="JournalImg2" />
                   </div>
                   <div className="jgc-details">
                     <h6>
@@ -1325,7 +1267,7 @@ const Home = () => {
               <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
                 <div className="journal-grid-card">
                   <div className="jgc-img-box">
-                    <img loading="lazy" src={JournalImg3} alt="JournalImg" />
+                    <img src={JournalImg3} alt="JournalImg" />
                   </div>
                   <div className="jgc-details">
                     <h6>
@@ -1343,7 +1285,7 @@ const Home = () => {
               <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
                 <div className="journal-grid-card">
                   <div className="jgc-img-box">
-                    <img loading="lazy" src={JournalImg4} alt="JournalImg" />
+                    <img src={JournalImg4} alt="JournalImg" />
                   </div>
                   <div className="jgc-details">
                     <h6>New Local Region? Tips To Get Started</h6>
@@ -1353,7 +1295,7 @@ const Home = () => {
               <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
                 <div className="journal-grid-card">
                   <div className="jgc-img-box">
-                    <img loading="lazy" src={JournalImg5} alt="JournalImg" />
+                    <img src={JournalImg5} alt="JournalImg" />
                   </div>
                   <div className="jgc-details">
                     <h6>The Art of SEO: Proven Search Engine Strategies</h6>
