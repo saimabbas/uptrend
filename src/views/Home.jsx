@@ -1294,7 +1294,7 @@ const Home = () => {
               </a>
             </div>
             <div className="journal-grid">
-              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+              <a href="/Blog/Working-With-Leading-YouTube-Influencers:A-How-To-Guide">
                 <div className="journal-grid-card">
                   <div className="jgc-img-box">
                     <img loading="lazy" src={JournalImg1} alt="JournalImg1" />
@@ -1318,7 +1318,7 @@ const Home = () => {
                   </div>
                 </div>
               </a>
-              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022(Part1)">
                 <div className="journal-grid-card">
                   <div className="jgc-img-box">
                     <img loading="lazy" src={JournalImg3} alt="JournalImg" />
@@ -1336,7 +1336,7 @@ const Home = () => {
                   </div>
                 </div>
               </a>
-              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+              <a href="/Blog/New-Local-Region-Tips-To-Get-Started">
                 <div className="journal-grid-card">
                   <div className="jgc-img-box">
                     <img loading="lazy" src={JournalImg4} alt="JournalImg" />
@@ -1346,7 +1346,7 @@ const Home = () => {
                   </div>
                 </div>{" "}
               </a>
-              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+              <a href="/Blog/The-Art-of-SEO:Proven-Search-Engine-Strategies">
                 <div className="journal-grid-card">
                   <div className="jgc-img-box">
                     <img loading="lazy" src={JournalImg5} alt="JournalImg" />

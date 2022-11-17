@@ -12,7 +12,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import UTLogo from "../assets/icons/UTLogo";
 import Person from "../assets/img/emre.png";
-import JournalImg5 from "../assets/img/journal-img-5.png";
+import JournalImg4 from "../assets/img/journal-img-4.png";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";
 import OrangeBulb from "../assets/icons/OrangeBulb";
@@ -21,7 +21,7 @@ import OrangeBulbImg from "../assets/img/orange-bulb.png";
 import BlogCard from "../components/BlogCard";
 import JournalImg1 from "../assets/img/journal-img-1.png";
 import JournalImg2 from "../assets/img/journal-img-2.png";
-import JournalImg3 from "../assets/img/journal-img-3.png";
+import JournalImg3 from "../assets/img/journal-img-2.png";
 import { MdArrowForward } from "react-icons/md";
 import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import IconFacebook from "../assets/icons/IconFacebook";
@@ -29,7 +29,7 @@ import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
 import IconWhatsapp from "../assets/icons/IconWhatsapp";
 
-const Blog7 = () => {
+const Blog5 = () => {
   const [isIconsBoxShowing, setIsIconsBoxShowing] = useState(false);
   const showIconsBox = () => {
     setIsIconsBoxShowing(!isIconsBoxShowing);
@@ -44,7 +44,6 @@ const Blog7 = () => {
           </div> */}
       <div className="blog-page">
         <Header lightHeader={false} showIconsBox={showIconsBox} />
-
         <div className="blog-page-content">
           <div className="box">
             <div></div>
@@ -75,217 +74,228 @@ const Blog7 = () => {
                 <div className="bipara-left">
                   <img src={Person} alt="" />
                   <div className="bi-text">
-                    <h5>Donna Wanstein</h5>
-                    <p>7.06.2022</p>
+                    <h5>Emre Murry</h5>
+                    <p>5.06.2022</p>
                   </div>
                 </div>
                 <span>5 min read</span>
               </div>
-              <div className="blog-main-content">
-                <h3>Top Regions With The Best Marketing Performance</h3>
+              <div className="blog-main-content bmc-blog-5 ">
+                <h3>New Local Region? Tips To Get Started</h3>
                 <p>
-                  In this guide, Uptrend experts explain how to effectively
-                  distribute a marketing budget and launch a profitable
-                  advertising campaign in new local regions.
+                  Successful projects are always seeking to scale business
+                  operations and increase the number of active users. Joining a
+                  new region is one of the most powerful ways to attract new
+                  clients and maximize revenue. <br />
                   <br />
-                  <br />
-                  After years of working extensively with top brands, we have
-                  tested a plethora of marketing strategies designed to ensure
-                  brand success. Keep reading for helpful recommendations for
-                  beginner marketers or startups on how to build an effective
-                  strategy geared toward entering new local markets.
+                  Products or solutions designed for international markets scale
+                  business by entering new markets with a vast audience.
+                  According to Wikipedia, more than 470 million people speak
+                  Spanish. Spanish is the second most used language after
+                  Chinese. Let's consider the best marketing strategies to get
+                  massive awareness for your brand in Spanish-speaking countries
+                  in 2022.
                 </p>
-                <img src={JournalImg5} alt="BlogImg" />
-                <h3>
-                  Each marketing campaign will have unique conditions that must
-                  be addressed differently, such as:
+                <img src={JournalImg4} alt="BlogImg" />
+                <h3>How to get started</h3>
+                <p>
+                  The first step is the development of a product promotion
+                  strategy. Brands should take into account the local specifics
+                  of the target region. We recommend onboarding a native speaker
+                  who lives or has lived in the region your company plans to
+                  capture. <br />
+                  <br />
+                  It is necessary to study the tactics used by main competitors
+                  and conduct research to identify insights on how to promote
+                  content in the target region.
+                </p>
+                <br />
+                <br />
+                <h3 className="m-0">
+                  {" "}
+                  Research of target audience and competitors
                 </h3>
+                <h4>What do we mean by research?</h4>
+                <p>
+                  It is the task of exploring information related to the
+                  behaviors of potential users –– the people who'll use your
+                  product.
+                </p>
+                <h4>
+                  Why is it necessary to provide market (user/competitor)
+                  research?
+                </h4>
+                <p>
+                  Because no one on the team can position themselves as the
+                  client and know for certain how the product looks in the eyes
+                  of the client from the local region, competitor research is
+                  necessary. <br />
+                  <br />
+                  This is due to the fact that the team knows more about their
+                  product than the potential user and simply cannot forget about
+                  this knowledge. Therefore, all conclusions and arguments are
+                  not subjective. <br />
+                  <br />
+                  The only way to get unbiased information is to conduct proper
+                  research.
+                </p>
                 <br />
                 <br />
+                <h3>What are the main criteria? </h3>
+                <p>
+                  - If the product does not yet have customers, then based on
+                  the primary data from the customer, select all possible
+                  segments that logically fit into the necessary criteria.{" "}
+                  <br />
+                  <br />- Search the Internet for available information on how
+                  representatives of selected segments behave in relation to
+                  products similar to ours. For example, we read reviews on
+                  competitors, read forums, look at comments on articles, study
+                  competitors' social networks, what subscribers like / dislike,
+                  and look for the results of previous studies. <br />
+                  <br />
+                  - Based on the information we collected from the points above,
+                  we put forward hypotheses regarding the various
+                  characteristics of the target segments (attitude towards the
+                  product, what is important for clients in the product, how
+                  they choose, what to fear, etc.) <br />
+                  <br />
+                  - Draw up hypotheses in the form of a list of questions with
+                  ready-made answers and invite representatives of the target
+                  audience to take a survey. Alternatively, look for respondents
+                  for a voice interview. Respondents most often need
+                  remuneration for completing a survey of, on average, 5-10$
+                  (depending on the length of the survey). For an interview, a
+                  more significant bonus may be necessary –– we use a guideline
+                  of 50$. <br />
+                  <br />
+                  - Based on the survey answers, we improve the hypotheses and
+                  take them as a basis to shape the positioning. <br /> <br />
+                  - Using this method, we find out much more accurately what the
+                  target audience needs, how they see the product, and how we
+                  should promote it. <br />
+                  <br />
+                </p>
+                <h4 className="mt-2">How do we provide competitor research?</h4>
                 <ul>
                   <li>
-                    {" "}
-                    There is an unlimited budget / or there is a limit of up to
-                    $5,000 per month;
+                    We study the target market and make a list of the most
+                    powerful competitors
+                  </li>
+                  <li>Study positioning</li>
+                  <li>
+                    We analyze the community of competitors on different
+                    platforms: compare quantitative indicators, promotion
+                    campaigns, and events
                   </li>
                   <li>
-                    The project is popular (good reputation, loyal community,
-                    and a constant inflow of customers) / or it is a new
-                    startup;
+                    We analyze the activity of community managers and social
+                    media
+                  </li>
+                </ul>
+                <h4 className="mt-2">What do we receive as a result? </h4>
+                <ul>
+                  <li>We understand what the target audience really needs</li>
+                  <li>We know what competitors offer to our target audience</li>
+                  <li>
+                    We position ourselves using competitive advantages according
+                    to the criteria that are highly regarded by the target
+                    audience
+                  </li>
+                </ul>
+                <h4 className="mt-2">
+                  What are the disadvantages of research?
+                </h4>
+                <ul>
+                  <li>
+                    Preparing proper qualitative research takes a lot of time
                   </li>
                   <li>
-                    The brand already launched promotions in several countries /
-                    or worked with only one geolocation{" "}
+                    Additional costs to use the software, buy reports, provide
+                    interviews, etc.
                   </li>
+                </ul>
+                <h4 className="mt-2">
+                  What are the advantages of research based on our experience?{" "}
+                </h4>
+                <ul>
                   <li>
-                    Performs marketing in-house / or contacts a specialized
-                    agency.
+                    Increase revenue, conversions, sign-up rate, and LTV. The
+                    research helps to increase brand presence and awareness.
+                    This is the most critical part of the brand's long-term
+                    presence in the target region.
                   </li>
                 </ul>
                 <br />
                 <br />
-                <h4>
-                  Despite all the conditions and differences –– the patterns
-                  discussed will work almost the same for any project.
-                </h4>
+                <p>
+                  As you may have noticed, providing the research is a complex
+                  task, but it helps if brands to do the first steps and approve
+                  the profitable marketing direction, which can save budget and
+                  get loyal clients.
+                </p>
                 <br />
                 <br />
-                <h3>Arrange the objectives for entering local markets:</h3>
-                <h4>
-                  <span>1</span> Choose best-performing influencers
-                </h4>
+                <br />
+                <br />
+                <h3>Product localization </h3>
                 <p>
-                  SEO stands for Search Engine Optimization –– the process of
-                  improving the quality and quantity of traffic sent to your
-                  website from search engines like Google or Bing. Optimizing
-                  your website improves the chances of acquiring more organic
-                  traffic, as most websites don't rely on paid or direct
-                  traffic.
-                  <br /> <br />
-                  The traffic from your website can come from various sources in
-                  search engines ranging from text, image, video, news, or
-                  industry-specific vertical search engines. SEO experts take
-                  into account how the search engines work, how the algorithms
-                  work, and what people are looking for in order to get the best
-                  result from <b>keywords</b>. The higher your website ranks on
-                  multiple keywords, the higher the chance of acquiring more
-                  organic traffic. This is why when you write an article; you
-                  must structure it according to SEO best practices to get the
-                  most out of it –– but more on this later.
+                  Brands that join new local regions should localize their
+                  products to increase the client acquisition rate. Most users
+                  from foreign countries do not use English as their primary
+                  language. That's why it's crucial to provide users with the
+                  correct information regarding your product in their preferred
+                  language.
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <h3>Сommunity building</h3>
+                <p>
+                  After the localization of the product, it's time to create a
+                  strong brand community. Based on the specificity of your
+                  product and preferred region, the target community could
+                  aggregate on messenger apps or social media. Telegram &
+                  Facebook are the most popular messenger applications in
+                  Spanish-speaking countries, particularly in Latin America.
+                  Therefore, the next step is to set up the brand group, provide
+                  regular content, hire a community manager, and implement a
+                  community growth strategy. <br />
                   <br />
-                </p>
-                <h4>
-                  {" "}
-                  <span>2</span> What is a keyword?
-                </h4>
-                <p>
-                  A <b>keyword</b> is a word that emphasizes what is your
-                  content/topic all about and what search engines use to
-                  discover and recommend your content. When keywords are used
-                  effectively, users on the web will be able to find your
-                  website or blog.
-                </p>
-                <h4>Brief History of SEO</h4>
-                <p>
-                  It all began in the mid-90s when the first search engines
-                  appeared. At first, webmasters only needed to submit an URL
-                  address to search engines that, in return, would send a web
-                  crawler to crawl it and extract links and words to be indexed.{" "}
+                  The selection of chat admins is critical, and their work
+                  should not be underestimated. An intelligent admin will allow
+                  brands to achieve widespread user retention. <br />
                   <br />
+                  The content plan should be prepared in advance. The content
+                  should be published every day, including all product updates.
+                  Leading brands provide AMA sessions, engagement giveaways, and
+                  other incentives inside of the community. <br />
                   <br />
-                  The first versions of search algos mainly relied on
-                  information provided by a webmaster, such as a keyword meta
-                  tag or index files from ALIWEB engines. In 1997 engineers of
-                  search engines realized that people were abusing the system,
-                  gaming it by doing keyword stuffing. Keyword stuffing is the
-                  practice of filling content with unnecessary and irrelevant
-                  keywords, thus leading to manipulation. In order for search
-                  engines to fix this situation, they needed to adapt and
-                  improve, moving to a more holistic process for semantic
-                  signals. <br />
+                  In the next step, we onboard target users in the brand
+                  community through influencer marketing, digital marketing, and
+                  CPA marketing. <br />
                   <br />
-                  Google released the Panda update in February of 2011, which
-                  penalized websites with duplicated content taken from other
-                  websites.
-                </p>
-                <h4>
-                  {" "}
-                  <span>3</span> How to proceed when starting with SEO?
-                </h4>
-                <p>
-                  Create a plan, research keywords, and use websites like
-                  <a href="#"> https://neilpatel.com/</a> or{" "}
-                  <a href="#">https://moz.com/</a> to further aid your research.
-                  Knowing the most searched keywords for the industry you are
-                  aiming for is very important. This will help you appropriately
-                  structure your articles. <br />
+                  Influencer marketing is the most conventional type of
+                  marketing campaign for community building. Choose the
+                  influencers you want to advertise with very carefully. There
+                  are many software solutions on the market, like
+                  https://hypeauditor.com/ and https://www.noxinfluencer.com/.
+                  We recommend analyzing each influencer to avoid fraud
+                  activity. <br />
                   <br />
-                  Don't forget the images! Be very careful and mindful of the
-                  size of an image, and also make sure that it has a description
-                  with specific keywords that will help rank the picture in the
-                  search engines. <br />
+                  An effective advertising campaign should proceed for at least
+                  one month, with regular publications at least 10-15 per week
+                  on the brand's social media and 20+ publications provided by
+                  target influencers. <br />
                   <br />
-                  Ensure your article is linked to other articles on your
-                  website or blog. You need to create an internal web of pages
-                  in a sense. Imagine a pyramid that grows over time.
-                </p>
-              </div>
-              <div className="divider"></div>
-              <div className="categories-box cat-blog-4">
-                <div className="influ-type-box">
-                  <img src={InfluTypeImg} alt="" />
-                  <div className="influ-text">
-                    <h3>
-                      Why is SEO (Search Engine Optimization) necessary for your
-                      website?{" "}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-              <div className="promo-box">
-                <h3>Higher visibility</h3>
-                <p>
-                  This is the most obvious one on the list, as good SEO
-                  optimization provides more exposure to your website to users
-                  as it ranks higher in the search engine list. If you are not
-                  ranked higher on the SERP (search engine results page), don't
-                  expect to see a lot of traffic to your website. The higher you
-                  are ranked, you can expect a more significant number of people
-                  to click on your website and vice versa when you rank lower in
-                  SERP.
-                </p>
-                <h4>Improves overall credibility</h4>
-                <p>
-                  Having your website ranking higher in the SERP boosts
-                  credibility and can also cause people to return to your
-                  website. If your info is good, expect people to return for
-                  reference to your blog or website. Schema markup is very
-                  important as it gives out information to Google and provides
-                  more info to the users in a concise manner.
-                </p>
-                <h4>SEO keeps you ahead of the competition</h4>
-                <p>
-                  It is a battlefield out there, and having your website SEO
-                  optimized is like being battle ready. This is how to attract
-                  more users/clients rather than the competition. The best part
-                  of SEO is that you can continuously improve and stay
-                  competitive in the SERP rankings. Researching competitors is
-                  an integral part of staying ahead in the game.
-                </p>
-                <h4>Better user experience</h4>
-                <p>
-                  User Experience (UX) is one of the most critical aspects of
-                  any website or product. Making the website easy to load and
-                  navigate improves the potential for it to rank higher in
-                  search engines like Google or DuckDuckGo. Keeping the website
-                  clear of errors is part of the UX process, and if you don't
-                  fix website errors, your blog or website could fall in the
-                  SERP ranks by a considerable margin.{" "}
-                </p>
-                <h4>Reach a wider audience</h4>
-                <p>
-                  SEO optimization helps you to reach a wider audience with
-                  different capital and affinity interests. The better optimized
-                  a blog or website is, the higher the conversion rate will be.
-                  You need to aim to deliver the right content to the right
-                  people who search for it, and this is where keyword mapping
-                  comes into play. <br />
-                  <br />
-                  Keyword mapping is creating a spreadsheet that correlates the
-                  URLs to the keywords in them. This will help you optimize
-                  content, landing pages, structure your website, etc.
-                </p>
-              </div>
-              <div className="social-network-box sn-blog-4">
-                <h3>Is it expensive to do SEO?</h3>
-                <p>
-                  <b>SEO</b> is not expensive if you want to do it yourself, but
-                  it is time-consuming as you must edit every article, link,
-                  description, and meta tag. You may need to pay at some point
-                  if your website has errors on a more profound level that will
-                  require advanced expertise to solve. SEO is a slow and mundane
-                  job and is beneficial for the long term. If done right, you
-                  can expect dramatic results in the long term.
+                  After successfully shaping a brand community, it's time to
+                  organize an offline brand event. Brand events increase the
+                  level of credibility. The most loyal community participants
+                  are perfectly fit to support the marketing growth in the
+                  region. Upon conclusion of these main points, readers will be
+                  equipped to address the challenge of discovering new local
+                  regions.
                 </p>
               </div>
               <div className="conclusion-box">
@@ -300,7 +310,7 @@ const Blog7 = () => {
                   stand a chance on google.
                 </p>
               </div>
-            </div>
+            </div>{" "}
           </div>
         </div>
         <section className="other-articles">
@@ -371,4 +381,4 @@ const Blog7 = () => {
   );
 };
 
-export default Blog7;
+export default Blog5;

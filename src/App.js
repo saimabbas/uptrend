@@ -71,23 +71,40 @@ function App() {
           <Route exact path="/blog" element={<Blog />} />
           <Route
             exact
-            path="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022"
+            path="/Blog/Working-With-Leading-YouTube-Influencers:A-How-To-Guide"
             element={<Blog1 />}
           />
           <Route
             exact
-            path="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022"
+            path="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022"
             element={<Blog2 />}
           />
           <Route
             exact
-            path="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022"
+            path="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022(Part1)"
             element={<Blog3 />}
           />
-          <Route exact path="/blog4" element={<Blog4 />} />
-          <Route exact path="/blog5" element={<Blog5 />} />
-          <Route exact path="/blog6" element={<Blog6 />} />
-          <Route exact path="/blog7" element={<Blog7 />} />
+          <Route
+            exact
+            path="/Blog/The-Art-of-SEO:Proven-Search-Engine-Strategies"
+            element={<Blog4 />}
+          />
+
+          <Route
+            exact
+            path="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022(Part2)"
+            element={<Blog5 />}
+          />
+          <Route
+            exact
+            path="/Blog/Top-Regions-With-The-Best-Marketing-Performance"
+            element={<Blog6 />}
+          />
+          <Route
+            exact
+            path="/Blog/New-Local-Region-Tips-To-Get-Started"
+            element={<Blog7 />}
+          />
           <Route exact path="/events" element={<Events />} />
           <Route exact path="/sandbox" element={<Sandbox />} />
           <Route exact path="/angelsprogram" element={<AngelsProgram />} />

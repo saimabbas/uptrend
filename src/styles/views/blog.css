@@ -510,7 +510,7 @@
 .main-blog-grid-right video,
 .main-blog-grid-right iframe {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 1.5rem;
   min-height: 40rem;
 }

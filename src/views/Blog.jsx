@@ -326,7 +326,7 @@ const EventMarketing = () => {
                 <Tab.Pane eventKey="a1">
                   <div className="blog-tabs-content">
                     <div className="main-blog-grid">
-                      <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
+                      <a href="/Blog/Working-With-Leading-YouTube-Influencers:A-How-To-Guide">
                         <div className="main-blog-grid-left">
                           <div className="white-tag">Branding</div>
                           <h3>
@@ -365,36 +365,36 @@ const EventMarketing = () => {
                           personImg={Person2}
                           personName="Alex Wanstein"
                           date="10.06.2022"
-                          readTime="5 min read"
+                          readTime="8 min read"
                         >
                           <span>Gaming</span>
                           <span>News</span>
                         </BlogCard>
                       </a>
-                      <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                      <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022(Part1)">
                         <BlogCard
                           lightBlogCard={false}
                           blogImg={JournalImg1}
                           heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
-                          description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                          description="Check out this comprehensive guide to discovering the most powerful influencers using popular influencer marketing software based on Uptrend’s insights and experience"
                           personImg={Person1}
                           personName="Donna Wanstein"
                           date="7.06.2022"
-                          readTime="5 min read"
+                          readTime="10 min read"
                         >
                           <span>Gaming</span>
                         </BlogCard>
                       </a>
-                      <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022">
+                      <a href="/Blog/The-Art-of-SEO:Proven-Search-Engine-Strategies">
                         <BlogCard
                           lightBlogCard={false}
                           blogImg={JournalImg5Cat}
-                          heading="3 Proven Strategies To Building Brand Awareness in 2022"
-                          description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                          heading="The Art of SEO: Proven Search Engine Strategies"
+                          description="Uptrend search engine experts demonstrate how to prepare and deploy a multi-faceted SEO strategy using innovative techniques and proven effective processes"
                           personImg={Person1}
                           personName="Donna Wanstein"
                           date="7.06.2022"
-                          readTime="5 min read"
+                          readTime="10 min read"
                         >
                           <span>News</span>
                         </BlogCard>
@@ -448,7 +448,7 @@ const EventMarketing = () => {
             <h2 className="ts-head">Top Stories</h2>
             <div className="top-stories-content">
               <div className="topstories-right">
-                <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
+                <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022(Part2)">
                   <BlogCard
                     lightBlogCard={true}
                     blogImg={JournalImg5}
@@ -461,14 +461,14 @@ const EventMarketing = () => {
                     <span>Gaming</span>
                   </BlogCard>
                 </a>
-                <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022">
+                <a href="/Blog/Top-Regions-With-The-Best-Marketing-Performance">
                   <BlogCard
                     lightBlogCard={true}
                     blogImg={JournalImg6}
                     heading="Top Regions With The Best Marketing Performance"
                     personImg={Person3}
                     personName="Sarah Evans"
-                    date="18.06.2022"
+                    date="20.06.2022"
                     readTime="5 min read"
                   >
                     <span>Gaming</span>
@@ -476,7 +476,7 @@ const EventMarketing = () => {
                 </a>
               </div>
               <div className="blog-card-big">
-                <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-in-2022">
+                <a href="/Blog/New-Local-Region-Tips-To-Get-Started">
                   <BlogCard
                     lightBlogCard={true}
                     blogImg={JournalImg4}
@@ -484,7 +484,7 @@ const EventMarketing = () => {
                     description="The ultimate marketing plan for dominating local markets. Get the fundamental insights to impact your customers. We introduce essential marketing tips for brands to create the valuable experience."
                     personImg={Person}
                     personName="Emre Murry"
-                    date="18.06.2022"
+                    date="5.06.2022"
                     readTime="5 min read"
                   >
                     <span>Influencer Marketing</span>
