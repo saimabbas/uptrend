@@ -81,7 +81,9 @@ const Blog1 = () => {
                 <span>5 min read</span>
               </div>
               <div className="blog-main-content">
-                <h3>Working With Leading YouTube Influencers:A How To Guide</h3>
+                <h3>
+                  Working With Leading YouTube Influencers: A How To Guide
+                </h3>
                 <p>
                   The emergence of social networks has revolutionized the
                   promotion of goods and services. Marketers began actively

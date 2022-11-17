@@ -16,6 +16,7 @@ import YouTubeIcon from "../assets/img/youtube-white-bg.svg";
 import Person from "../assets/img/emre.png";
 import JournalImg3 from "../assets/img/journal-img-3.png";
 import InfluencerLogo from "../assets/img/influencer-logo.svg";
+import InfluenceLogo from "../assets/img/influence-logo.png";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";
 import OrangeBulb from "../assets/icons/OrangeBulb";
@@ -24,6 +25,7 @@ import OrangeBulbImg from "../assets/img/orange-bulb.png";
 import BlogCard from "../components/BlogCard";
 import JournalImg1 from "../assets/img/journal-img-1.png";
 import JournalImg2 from "../assets/img/journal-img-2.png";
+import JournalImg5 from "../assets/img/journal-img-5.png";
 import { MdArrowForward } from "react-icons/md";
 import IconLinkedIn from "../assets/icons/IconLinkedIn";
 import IconFacebook from "../assets/icons/IconFacebook";
@@ -77,7 +79,7 @@ const Blog6 = () => {
                 <div className="bipara-left">
                   <img src={Person} alt="" />
                   <div className="bi-text">
-                    <h5>Emre Murry</h5>
+                    <h5>Donna Wanstein</h5>
                     <p>18.06.2022</p>
                   </div>
                 </div>
@@ -89,154 +91,203 @@ const Blog6 = () => {
                   Brand In 2022 (Part 2)
                 </h3>
                 <p>
-                  Today, influencer marketing has become a mainstream form of
-                  online marketing. It is one of the most essential instruments
-                  for brands that are looking to increase their brand awareness
-                  and client acquisition. While it sounds simple enough, finding
-                  the right influencer for a brand can get tricky.
+                  In this article, we have collected a comprehensive list of
+                  marketing platforms that help to utilize brand promotion on
+                  social media. Using these platforms, brands receive access to
+                  one-stop-shop solutions that automate marketing campaigns on
+                  social media across the globe.
                   <br />
                   <br />
-                  To achieve permanent growth, one must find reputable and
-                  relevant influencers to promote their brand. Also, to maximize
-                  performance and protect the campaign, brands should be able to
-                  detect potentially fraudulent activities. Given the size of
-                  the influencer marketing sector, manually selecting the
-                  best-suited influencer is nearly impossible. Luckily,
-                  comprehensive software comes to the rescue!
+                  These are the top 5 platforms that will make it easier to
+                  build a successful, results-driven marketing campaign.
                 </p>
-                <img src={JournalImg3} alt="BlogImg" />
-                <h3>Comprehensive Software</h3>
-                <p>
-                  Using comprehensive software is one of the best ways to scout
-                  and work with renowned influencers. These types of software
-                  provide brands with in-depth influencer profile analytics,
-                  such as engagement rates and audience reviews, allowing brands
-                  to find and work with the right influencers seamlessly.
-                  <br />
-                  <br />
-                  The Uptrend team has exclusively prepared the ultimate guide
-                  for influencer marketing software solutions. Here are our top
-                  5 picks!
-                </p>
+                <img src={JournalImg5} alt="BlogImg" />
               </div>
               <div className="top-5-picks-box">
                 <div className="pick-box-content">
                   <div className="pbc-top-grid">
                     <div className="pbc-top-grid-left">
-                      <img src={InfluencerLogo} alt="InfluencerLogo" />
+                      <img src={InfluenceLogo} alt="InfluencerLogo" />
                       <div>
-                        <h3>NoxInfluencer</h3>
+                        <h3>Upfluence</h3>
                         <br />
                         <p>
-                          NoxInfluencer is a comprehensive marketing software
-                          located in Singapore. It boasts 20 million creators to
-                          offer Influencer Discovery and Outreach, Influencer
-                          Relationship Management, Campaign Running, and Social
-                          Media Analytics. Its additional tools specifically
-                          designed for YouTube makes NoxInfluencer stand out as
-                          one of the top software to manage influencers on the
-                          popular video platform.
+                          Upfluence is a cloud-based influencer management
+                          solution designed to help businesses of all sizes
+                          manage their social media marketing campaigns.
                         </p>
-                      </div>
-                    </div>
-                    <div className="pbc-top-grid-right">
-                      <div className="pbc-right-grid-card">
-                        <h5>Contact details:</h5>
-                        <br />
-                        <p>Located in Singapore</p>
-                        <a href="https://www.noxinfluencer.com">
-                          https://www.noxinfluencer.com
-                        </a>
-                      </div>
-                      <div className="pbc-right-grid-card">
-                        <h5>Social Media: </h5>
-                        <br />
-                        <div className="pbc-social-media-grid">
-                          <div className="pbc-social-icon">
-                            <a href="#">
-                              <img src={TikTokIcon} alt="TikTokIcon" />
-                              <p>TikTok</p>
-                            </a>
-                          </div>
-                          <div className="pbc-social-icon">
-                            <a href="http://instagram.com/uptrendagency">
-                              <img src={InstagramIcon} alt="InstagramIcon" />
-                              <p>Instagram</p>
-                            </a>
-                          </div>
-                          <div className="pbc-social-icon">
-                            <a href="#">
-                              <img src={YouTubeIcon} alt="YouTubeIcon" />
-                              <p>YouTube</p>
-                            </a>
-                          </div>
+                        <div className="pbc-pros-cons">
+                          <p>
+                            <b>Pros: </b>
+                          </p>
+
+                          <ul>
+                            <li>
+                              Ability to search via YouTuber's URL, video URL,
+                              name, category, keywords, or the competitor
+                            </li>
+                            <li>
+                              Creating an advertising campaign and target
+                              influencer lists
+                            </li>
+                            <li>Competitor monitoring</li>
+                            <li>
+                              A rich library of search criteria for influencers,
+                              including profile descriptions
+                            </li>
+                            <li>
+                              Ability to directly contact influencers inside the
+                              platform
+                            </li>
+                            <li>
+                              SocialBook Checker (Chrome plugin for YouTube and
+                              Instagram)
+                            </li>
+                            <li>Influencer payment management</li>
+                            <li>Campaign KPI Tracking</li>
+                            <li>
+                              Additional tools include a media kit, photo
+                              studio, NFT maker, photo background remover, etc.
+                            </li>
+                          </ul>
+                          <br />
+                          <br />
                         </div>
                       </div>
-                      <div className="pbc-right-grid-card">
-                        <h5>Main features:</h5>
-                        <br />
-                        <ul>
-                          <li>Campaign Management</li>
-                          <li>CRM</li>
-                          <li>Influencer Discovery</li>
-                          <li>Influencer Relationship Management</li>
-                          <li>Influencer Tracking</li>
-                          <li>Social Media Monitoring</li>
-                        </ul>
+                    </div>
+                    <div className="pbc-right-grid-b5">
+                      <div className="pbc-top-grid-right">
+                        <div className="pbc-social-contact-cards">
+                          <div className="pbc-right-grid-card">
+                            <h5>Contact details:</h5>
+                            <br />
+                            <p>Located in the United States </p>
+                            <p>Founded in 2013</p>
+                            <a href="https://www.upfluence.com">
+                              https://www.upfluence.com
+                            </a>
+                          </div>
+                          <div className="pbc-right-grid-card pbc-sm-card">
+                            <h5>Social Media: </h5>
+                            <br />
+                            <div className="pbc-social-media-grid">
+                              <div className="pbc-social-icon">
+                                <a href="#">
+                                  <img src={TikTokIcon} alt="TikTokIcon" />
+                                  <p>TikTok</p>
+                                </a>
+                              </div>
+                              <div className="pbc-social-icon">
+                                <a href="http://instagram.com/uptrendagency">
+                                  <img
+                                    src={InstagramIcon}
+                                    alt="InstagramIcon"
+                                  />
+                                  <p>Instagram</p>
+                                </a>
+                              </div>
+                              <div className="pbc-social-icon">
+                                <a href="#">
+                                  <img src={YouTubeIcon} alt="YouTubeIcon" />
+                                  <p>YouTube</p>
+                                </a>
+                              </div>
+                            </div>
+                            <div className="pbc-social-media-grid">
+                              <div className="pbc-social-icon">
+                                <a href="#">
+                                  <img src={TikTokIcon} alt="TikTokIcon" />
+                                  <p>Pinterest</p>
+                                </a>
+                              </div>
+                              <div className="pbc-social-icon">
+                                <a href="http://instagram.com/uptrendagency">
+                                  <img
+                                    src={InstagramIcon}
+                                    alt="InstagramIcon"
+                                  />
+                                  <p>Blog</p>
+                                </a>
+                              </div>
+                              <div className="pbc-social-icon">
+                                <a href="#">
+                                  <img src={YouTubeIcon} alt="YouTubeIcon" />
+                                  <p>Twitter</p>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="pbc-right-grid-card">
+                          <h5>Main features:</h5>
+                          <br />
+                          <ul>
+                            <li>Campaign Analytics</li>
+                            <li>Contact Management</li>
+                            <li>Campaign Management</li>
+                            <li>CRM</li>
+                            <li>Faceted Search/Filter</li>
+                            <li>Influencer Discovery</li>
+                            <li>Influencer Relationship Management</li>
+                            <li>Reporting/Analytics</li>
+                            <li>ROI Tracking</li>
+                          </ul>
+                        </div>
                       </div>
-                      <div className="pbc-right-grid-card">
+                      <div className="pbc-right-grid-card pbc-addtools">
                         <h5>Additional tools:</h5>
                         <br />
                         <ul>
-                          <li>YouTubers Calculator</li>
-                          <li>YouTube Video Analytics</li>
-                          <li>YouTuber Comparing</li>
-                          <li>Real-time YouTube Subscriber Count</li>
-                          <li>Influencers' Marketing Calculators</li>
-                          <li>YouTube Video Title Generator</li>
-                          <li>Find the best YouTube Video Thumbnails</li>
-                          <li>YouTube Trends</li>
-                          <li>YouTube Keywords Tool</li>
+                          <li>
+                            <b>Ecommerce tool.</b> Access e-Commerce
+                            integrations to help you identify the best
+                            influencers, generate more sales, and grow your
+                            brand.
+                          </li>
+                          <li>
+                            <b>Influencer discovery.</b> With Upfluence's suite
+                            of discovery tools, find influencers wherever they
+                            are; your client base, your point of sale system,
+                            your website, or via a database of influencer
+                            profiles.
+                          </li>
+                          <li>
+                            <b>Influencer analysis.</b> Analyze influencer's
+                            performance metrics on Instagram, YouTube, TikTok,
+                            Twitch, and more to make data-based decisions.
+                          </li>
+                          <li>
+                            <b>Campaign management.</b> Manage your influencer
+                            campaigns in one place.
+                          </li>
+                          <li>
+                            <b>Product seeding.</b> Run influencer product
+                            seeding campaigns.
+                          </li>
+                          <li>
+                            <b>Affiliate management.</b> Upfluence provides
+                            everything you need to manage your affiliate
+                            program, from affiliate search to relationship
+                            management, promotion code & performance tracking,
+                            payments, and much more.
+                          </li>
+                          <li>
+                            <b>Influencer payments.</b>Pay your influencers
+                            easily, all in one place — using secure and seamless
+                            international creator payments.
+                          </li>
+                          <li>
+                            <b>Campaign analytics.</b> Understand your business
+                            better with sponsored post tracking to detect
+                            top-performing posts, gauge influencer engagement,
+                            review campaign ROI insights, and dive into
+                            competitor comparison analysis.
+                          </li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div className="pbc-pros-cons">
-                    <p>
-                      <b>Pros: </b>
-                    </p>
-
-                    <ul>
-                      <li>
-                        Ability to search via YouTuber's URL, video URL, name,
-                        category, keywords, or the competitor
-                      </li>
-                      <li>
-                        Creating an advertising campaign and target influencer
-                        lists
-                      </li>
-                      <li>Competitor monitoring</li>
-                      <li>
-                        A rich library of search criteria for influencers,
-                        including profile descriptions
-                      </li>
-                      <li>
-                        Ability to directly contact influencers inside the
-                        platform
-                      </li>
-                      <li>
-                        SocialBook Checker (Chrome plugin for YouTube and
-                        Instagram)
-                      </li>
-                      <li>Influencer payment management</li>
-                      <li>Campaign KPI Tracking</li>
-                      <li>
-                        Additional tools include a media kit, photo studio, NFT
-                        maker, photo background remover, etc.
-                      </li>
-                    </ul>
-                    <br />
-                    <br />
                     <p>
                       <b>Cons: </b>
                     </p>
@@ -260,24 +311,6 @@ const Blog6 = () => {
                         included in the influencer profiles
                       </li>
                     </ul>
-                  </div>
-                  <p>
-                    <b>Price: </b>
-                  </p>
-                  <br />
-                  <div className="price-boxes-grid">
-                    <div className="price-box-card">
-                      <h5>
-                        PLATINUM <br /> <span>PLAN</span>
-                      </h5>
-                      <h6>$499 /month</h6>
-                    </div>
-                    <div className="price-box-card">
-                      <h5>
-                        DIAMOND <br /> <span>PLAN</span>
-                      </h5>
-                      <h6>$999 /month</h6>
-                    </div>
                   </div>
                 </div>
                 <div className="divider"></div>
