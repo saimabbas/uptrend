@@ -24,6 +24,10 @@ import JournalImg2 from "../assets/img/journal-img-2.png";
 import JournalImg3 from "../assets/img/journal-img-3.png";
 import { MdArrowForward } from "react-icons/md";
 import IconLinkedIn from "../assets/icons/IconLinkedIn";
+
+import JournalImg5Cat from "../assets/img/journal-img-5-cat.png";
+import Person1 from "../assets/img/donna.png";
+import Person2 from "../assets/img/alex.png";
 import IconFacebook from "../assets/icons/IconFacebook";
 import IconInstagram from "../assets/icons/IconInstagram";
 import IconTwitter from "../assets/icons/IconTwitter";
@@ -307,43 +311,49 @@ const Blog7 = () => {
           <div className="box">
             <h2 className="oa-head">Check our other articles</h2>
             <div className="blog-cards-grid">
-              <BlogCard
-                lightBlogCard={false}
-                blogImg={JournalImg1}
-                heading="3 Proven Strategies To Building Brand Awareness in 2022"
-                description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
-                personImg={Person}
-                personName="Alex Wanstein"
-                date="10.06.2022"
-                readTime="5 min read"
-              >
-                <span>Gaming</span>
-                <span>News</span>
-              </BlogCard>
-              <BlogCard
-                lightBlogCard={false}
-                blogImg={JournalImg2}
-                heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
-                description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
-                personImg={Person}
-                personName="Donna Wanstein"
-                date="7.06.2022"
-                readTime="5 min read"
-              >
-                <span>Gaming</span>
-              </BlogCard>
-              <BlogCard
-                lightBlogCard={false}
-                blogImg={JournalImg3}
-                heading="3 Proven Strategies To Building Brand Awareness in 2022"
-                description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
-                personImg={Person}
-                personName="Donna Wanstein"
-                date="7.06.2022"
-                readTime="5 min read"
-              >
-                <span>News</span>
-              </BlogCard>
+              <a href="/Blog/3-Proven-Strategies-To-Building-Brand-Awareness-In-2022">
+                <BlogCard
+                  lightBlogCard={false}
+                  blogImg={JournalImg2}
+                  heading="3 Proven Strategies To Building Brand Awareness in 2022"
+                  description="Explore proven brand-boosting strategies for social media that will allow your business to extend its reach broadly across the globe"
+                  personImg={Person2}
+                  personName="Alex Wanstein"
+                  date="10.06.2022"
+                  readTime="8 min read"
+                >
+                  <span>Gaming</span>
+                  <span>News</span>
+                </BlogCard>
+              </a>
+              <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022(Part1)">
+                <BlogCard
+                  lightBlogCard={false}
+                  blogImg={JournalImg1}
+                  heading="Top 5 Influencer Marketing Software Solutions To Boost  Brand Growth In 2022 (Part 1)"
+                  description="Check out this comprehensive guide to discovering the most powerful influencers using popular influencer marketing software based on Uptrend’s insights and experience"
+                  personImg={Person1}
+                  personName="Donna Wanstein"
+                  date="7.06.2022"
+                  readTime="10 min read"
+                >
+                  <span>Gaming</span>
+                </BlogCard>
+              </a>
+              <a href="/Blog/The-Art-of-SEO:Proven-Search-Engine-Strategies">
+                <BlogCard
+                  lightBlogCard={false}
+                  blogImg={JournalImg5Cat}
+                  heading="The Art of SEO: Proven Search Engine Strategies"
+                  description="Uptrend search engine experts demonstrate how to prepare and deploy a multi-faceted SEO strategy using innovative techniques and proven effective processes"
+                  personImg={Person1}
+                  personName="Donna Wanstein"
+                  date="7.06.2022"
+                  readTime="10 min read"
+                >
+                  <span>News</span>
+                </BlogCard>
+              </a>
             </div>
             <div className="blog-bcr">
               <div className="ut-breadcrumbs-section">
