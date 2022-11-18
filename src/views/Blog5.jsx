@@ -415,7 +415,7 @@ const Blog6 = () => {
                             <div className="pbc-social-media-grid">
                               <div className="pbc-social-icon">
                                 <a href="#">
-                                  <img src={TiktokIcon} alt="TiktokIcon" />
+                                  <img src={TikTokIcon} alt="TikTokIcon" />
                                   <p>Pinterest</p>
                                 </a>
                               </div>
