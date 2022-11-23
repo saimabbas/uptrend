@@ -81,13 +81,14 @@ const Blog3 = () => {
             <div className="box box-p">
               <div className="blog-img-para">
                 <div className="bipara-left">
-                  <img src={Person} alt="" />
+                  <img src={Person1} alt="" />
                   <div className="bi-text">
-                    <h5>Emre Murry</h5>
-                    <p>18.06.2022</p>
+                    <h5>Donna Wanstein</h5>
+                    <p>7.06.2022</p>
                   </div>
                 </div>
-                <span>5 min read</span>
+
+                <span>10 min read</span>
               </div>
               <div className="blog-main-content">
                 <h3>
@@ -479,7 +480,8 @@ const Blog3 = () => {
                   date="12.06.2022"
                   readTime="10 min read"
                 >
-                  <span>Gaming</span>
+                  <span>Branding</span>
+                  <span>Influnncer Marketing</span>
                 </BlogCard>
               </a>
               <a href="/Blog/Top-Regions-With-The-Best-Marketing-Performance">
@@ -493,7 +495,8 @@ const Blog3 = () => {
                   date="20.06.2022"
                   readTime="5 min read"
                 >
-                  <span>Gaming</span>
+                  <span>Branding</span>
+                  <span>Crypto</span>
                 </BlogCard>
               </a>
               <a href="/Blog/New-Local-Region-Tips-To-Get-Started">
@@ -507,6 +510,7 @@ const Blog3 = () => {
                   date="5.06.2022"
                   readTime="5 min read"
                 >
+                  <span>News</span>
                   <span>Influencer Marketing</span>
                 </BlogCard>
               </a>

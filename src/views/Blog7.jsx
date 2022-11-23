@@ -332,8 +332,8 @@ const Blog5 = () => {
                   date="10.06.2022"
                   readTime="8 min read"
                 >
-                  <span>Gaming</span>
-                  <span>News</span>
+                  <span>Branding</span>
+                  <span>Performance</span>
                 </BlogCard>
               </a>
               <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022(Part1)">
@@ -347,7 +347,8 @@ const Blog5 = () => {
                   date="7.06.2022"
                   readTime="10 min read"
                 >
-                  <span>Gaming</span>
+                  <span>News</span>
+                  <span>Influencer Marketing</span>
                 </BlogCard>
               </a>
               <a href="/Blog/The-Art-of-SEO:Proven-Search-Engine-Strategies">
@@ -361,7 +362,7 @@ const Blog5 = () => {
                   date="7.06.2022"
                   readTime="10 min read"
                 >
-                  <span>News</span>
+                  <span>Performance</span>
                 </BlogCard>
               </a>
             </div>

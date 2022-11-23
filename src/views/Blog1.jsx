@@ -509,7 +509,8 @@ const Blog1 = () => {
                   date="12.06.2022"
                   readTime="10 min read"
                 >
-                  <span>Gaming</span>
+                  <span>Branding</span>
+                  <span>Influnncer Marketing</span>
                 </BlogCard>
               </a>
               <a href="/Blog/Top-Regions-With-The-Best-Marketing-Performance">
@@ -523,7 +524,8 @@ const Blog1 = () => {
                   date="20.06.2022"
                   readTime="5 min read"
                 >
-                  <span>Gaming</span>
+                  <span>Branding</span>
+                  <span>Crypto</span>
                 </BlogCard>
               </a>
               <a href="/Blog/New-Local-Region-Tips-To-Get-Started">
@@ -537,6 +539,7 @@ const Blog1 = () => {
                   date="5.06.2022"
                   readTime="5 min read"
                 >
+                  <span>News</span>
                   <span>Influencer Marketing</span>
                 </BlogCard>
               </a>

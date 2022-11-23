@@ -367,8 +367,8 @@ const EventMarketing = () => {
                           date="10.06.2022"
                           readTime="8 min read"
                         >
-                          <span>Gaming</span>
-                          <span>News</span>
+                          <span>Branding</span>
+                          <span>Performance</span>
                         </BlogCard>
                       </a>
                       <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022(Part1)">
@@ -382,7 +382,8 @@ const EventMarketing = () => {
                           date="7.06.2022"
                           readTime="10 min read"
                         >
-                          <span>Gaming</span>
+                          <span>News</span>
+                          <span>Influencer Marketing</span>
                         </BlogCard>
                       </a>
                       <a href="/Blog/The-Art-of-SEO:Proven-Search-Engine-Strategies">
@@ -396,7 +397,7 @@ const EventMarketing = () => {
                           date="7.06.2022"
                           readTime="10 min read"
                         >
-                          <span>News</span>
+                          <span>Performance</span>
                         </BlogCard>
                       </a>
                     </div>
@@ -458,7 +459,8 @@ const EventMarketing = () => {
                     date="12.06.2022"
                     readTime="10 min read"
                   >
-                    <span>Gaming</span>
+                    <span>Branding</span>
+                    <span>Influnncer Marketing</span>
                   </BlogCard>
                 </a>
                 <a href="/Blog/Top-Regions-With-The-Best-Marketing-Performance">
@@ -471,7 +473,8 @@ const EventMarketing = () => {
                     date="20.06.2022"
                     readTime="5 min read"
                   >
-                    <span>Gaming</span>
+                    <span>Branding</span>
+                    <span>Crypto</span>
                   </BlogCard>
                 </a>
               </div>
@@ -487,6 +490,7 @@ const EventMarketing = () => {
                     date="5.06.2022"
                     readTime="5 min read"
                   >
+                    <span>News</span>
                     <span>Influencer Marketing</span>
                   </BlogCard>
                 </a>

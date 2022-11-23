@@ -748,7 +748,9 @@ const UptrendGrowthStories = () => {
                       <a href="https://twitter.com/NicoVerderosa">
                         <h4>Nico Verderosa </h4>
                       </a>
-                      <h6>@nico1991</h6>
+                      <a href="https://twitter.com/Mighty_PirateTM">
+                        <h6>@Mighty_PirateTM</h6>
+                      </a>
                     </div>
                   </div>
                   <h6>
@@ -760,16 +762,20 @@ const UptrendGrowthStories = () => {
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img
-                      loading="lazy"
-                      src={companyLogo16}
-                      alt="companyLogo16"
-                    />
+                    <a href="https://www.kephi.io/">
+                      <img
+                        loading="lazy"
+                        src={companyLogo16}
+                        alt="companyLogo16"
+                      />
+                    </a>
                     <div className="hrgc-head-name">
                       <a href="https://www.kephi.io/">
                         <h6>Kephi Gallery</h6>
                       </a>
-                      <p>Chief Operation Officer</p>
+                      <a href="https://twitter.com/TheCryptoLes">
+                        <p>Chief Operation Officer</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -782,7 +788,9 @@ const UptrendGrowthStories = () => {
                       <a href="https://twitter.com/tonyspilotroBTC">
                         <h4>Tony Spilotro </h4>
                       </a>
-                      <h6>@black.m</h6>
+                      <a href="https://twitter.com/tonyspilotroBTC">
+                        <h6>@tonyspilotroBTC</h6>
+                      </a>
                     </div>
                   </div>
                   <h6>
@@ -795,13 +803,17 @@ const UptrendGrowthStories = () => {
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img
-                      loading="lazy"
-                      src={companyLogo17}
-                      alt="companyLogo17"
-                    />
+                    <a href="https://bitcoinist.com/">
+                      <img
+                        loading="lazy"
+                        src={companyLogo17}
+                        alt="companyLogo17"
+                      />
+                    </a>
                     <div className="hrgc-head-name">
-                      <h6>Bitcoinist</h6>
+                      <a href="https://bitcoinist.com/">
+                        <h6>Bitcoinist</h6>
+                      </a>
                       <p>Editorial Director</p>
                     </div>
                   </div>
@@ -812,8 +824,12 @@ const UptrendGrowthStories = () => {
                   <div className="hrgc-head">
                     <img loading="lazy" src={Danny} alt="Danny" />
                     <div className="hrgc-head-name">
-                      <h4>Danny Les </h4>
-                      <h6>@black.m</h6>
+                      <a href="https://twitter.com/TheCryptoLes">
+                        <h4>Danny Les </h4>
+                      </a>
+                      <a href="https://twitter.com/TheCryptoLes">
+                        <h6>@TheCryptoLes</h6>
+                      </a>
                     </div>
                   </div>
                   <h6>
@@ -826,13 +842,17 @@ const UptrendGrowthStories = () => {
                 </div>
                 <div className="hrgc-bottom">
                   <div className="hrgc-head">
-                    <img
-                      loading="lazy"
-                      src={companyLogo18}
-                      alt="companyLogo18"
-                    />
+                    <a href="https://twitter.com/thecontenttap">
+                      <img
+                        loading="lazy"
+                        src={companyLogo18}
+                        alt="companyLogo18"
+                      />
+                    </a>
                     <div className="hrgc-head-name">
-                      <h6>Content Tap</h6>
+                      <a href="https://twitter.com/thecontenttap">
+                        <h6>Content Tap</h6>
+                      </a>
                       <p>Founder of The Content Tap</p>
                     </div>
                   </div>
@@ -864,7 +884,9 @@ const UptrendGrowthStories = () => {
                             <a href="https://twitter.com/NicoVerderosa">
                               <h4>Nico Verderosa </h4>
                             </a>
-                            <h6>@nico1991</h6>
+                            <a href="https://twitter.com/Mighty_PirateTM">
+                              <h6>@Mighty_PirateTM</h6>
+                            </a>
                           </div>
                         </div>
                         <h6>
@@ -876,11 +898,13 @@ const UptrendGrowthStories = () => {
                       </div>
                       <div className="hrgc-bottom">
                         <div className="hrgc-head">
-                          <img
-                            loading="lazy"
-                            src={companyLogo16}
-                            alt="companyLogo16"
-                          />
+                          <a href="https://www.kephi.io/">
+                            <img
+                              loading="lazy"
+                              src={companyLogo16}
+                              alt="companyLogo16"
+                            />
+                          </a>
                           <div className="hrgc-head-name">
                             <a href="https://www.kephi.io/">
                               <h6>Kephi Gallery</h6>
@@ -900,7 +924,9 @@ const UptrendGrowthStories = () => {
                             <a href="https://twitter.com/tonyspilotroBTC">
                               <h4>Tony Spilotro </h4>
                             </a>
-                            <h6>@black.m</h6>
+                            <a href="https://twitter.com/tonyspilotroBTC">
+                              <h6>@tonyspilotroBTC</h6>
+                            </a>
                           </div>
                         </div>
                         <h6>
@@ -914,11 +940,13 @@ const UptrendGrowthStories = () => {
                       </div>
                       <div className="hrgc-bottom">
                         <div className="hrgc-head">
-                          <img
-                            loading="lazy"
-                            src={companyLogo17}
-                            alt="companyLogo17"
-                          />
+                          <a href="https://bitcoinist.com/">
+                            <img
+                              loading="lazy"
+                              src={companyLogo17}
+                              alt="companyLogo17"
+                            />
+                          </a>
                           <div className="hrgc-head-name">
                             <a href="https://bitcoinist.com/">
                               <h6>Bitcoinist</h6>
@@ -938,7 +966,9 @@ const UptrendGrowthStories = () => {
                             <a href="https://twitter.com/TheCryptoLes">
                               <h4>Danny Les </h4>
                             </a>
-                            <h6>@black.m</h6>
+                            <a href="https://twitter.com/TheCryptoLes">
+                              <h6>@bTheCryptoLes</h6>
+                            </a>
                           </div>
                         </div>
                         <h6>
@@ -952,11 +982,13 @@ const UptrendGrowthStories = () => {
                       </div>
                       <div className="hrgc-bottom">
                         <div className="hrgc-head">
-                          <img
-                            loading="lazy"
-                            src={companyLogo18}
-                            alt="companyLogo18"
-                          />
+                          <a href="https://twitter.com/thecontenttap">
+                            <img
+                              loading="lazy"
+                              src={companyLogo18}
+                              alt="companyLogo18"
+                            />
+                          </a>
                           <div className="hrgc-head-name">
                             <a href="https://twitter.com/thecontenttap">
                               <h6>Content Tap</h6>

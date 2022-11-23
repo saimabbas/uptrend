@@ -16,6 +16,7 @@ import JournalImg5 from "../assets/img/journal-img-5.png";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";
 import OrangeBulb from "../assets/icons/OrangeBulb";
+import Person3 from "../assets/img/sarah.png";
 import TargetImg from "../assets/img/target-icon.png";
 import OrangeBulbImg from "../assets/img/orange-bulb.png";
 import BlogCard from "../components/BlogCard";
@@ -77,10 +78,10 @@ const Blog7 = () => {
             <div className="box box-p">
               <div className="blog-img-para">
                 <div className="bipara-left">
-                  <img src={Person} alt="" />
+                  <img src={Person3} alt="" />
                   <div className="bi-text">
-                    <h5>Donna Wanstein</h5>
-                    <p>7.06.2022</p>
+                    <h5>Sarah Evans</h5>
+                    <p>20.06.2022</p>
                   </div>
                 </div>
                 <span>5 min read</span>
@@ -322,8 +323,8 @@ const Blog7 = () => {
                   date="10.06.2022"
                   readTime="8 min read"
                 >
-                  <span>Gaming</span>
-                  <span>News</span>
+                  <span>Branding</span>
+                  <span>Performance</span>
                 </BlogCard>
               </a>
               <a href="/Blog/Top-5-Influencer-Marketing-Software-Solutions-To-Boost-Brand-Growth-In-2022(Part1)">
@@ -337,7 +338,8 @@ const Blog7 = () => {
                   date="7.06.2022"
                   readTime="10 min read"
                 >
-                  <span>Gaming</span>
+                  <span>News</span>
+                  <span>Influencer Marketing</span>
                 </BlogCard>
               </a>
               <a href="/Blog/The-Art-of-SEO:Proven-Search-Engine-Strategies">
@@ -351,7 +353,7 @@ const Blog7 = () => {
                   date="7.06.2022"
                   readTime="10 min read"
                 >
-                  <span>News</span>
+                  <span>Performance</span>
                 </BlogCard>
               </a>
             </div>

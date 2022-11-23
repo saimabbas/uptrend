@@ -1271,8 +1271,8 @@ const Home = () => {
               <MdArrowForward />
 
               <h2>
-                <span>OFFICE IN</span> <br />
-                SANDBOX
+                <span>OFFICE IN THE</span> <br />
+                THE SANDBOX
               </h2>
             </a>
             <div className="box ut-store-right-arrow">

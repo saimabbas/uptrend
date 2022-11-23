@@ -12,6 +12,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import UTLogo from "../assets/icons/UTLogo";
 import Person from "../assets/img/emre.png";
+import Person2 from "../assets/img/alex.png";
 import JournalImg2 from "../assets/img/journal-img-2.png";
 import InfluTypeImg from "../assets/img/influtype.svg";
 import BlueArrow from "../assets/icons/BlueArrow";
@@ -76,13 +77,13 @@ const Blog2 = () => {
             <div className="box box-p">
               <div className="blog-img-para">
                 <div className="bipara-left">
-                  <img src={Person} alt="" />
+                  <img src={Person2} alt="" />
                   <div className="bi-text">
                     <h5>Alex Wanstein</h5>
                     <p>10.06.2022</p>
                   </div>
                 </div>
-                <span>5 min read</span>
+                <span>8 min read</span>
               </div>
               <div className="blog-main-content">
                 <h3>3 Proven Strategies To Building Brand Awareness In 2022</h3>
@@ -401,7 +402,8 @@ const Blog2 = () => {
                   date="12.06.2022"
                   readTime="10 min read"
                 >
-                  <span>Gaming</span>
+                  <span>Branding</span>
+                  <span>Influnncer Marketing</span>
                 </BlogCard>
               </a>
               <a href="/Blog/Top-Regions-With-The-Best-Marketing-Performance">
@@ -415,7 +417,8 @@ const Blog2 = () => {
                   date="20.06.2022"
                   readTime="5 min read"
                 >
-                  <span>Gaming</span>
+                  <span>Branding</span>
+                  <span>Crypto</span>
                 </BlogCard>
               </a>
               <a href="/Blog/New-Local-Region-Tips-To-Get-Started">
@@ -429,6 +432,7 @@ const Blog2 = () => {
                   date="5.06.2022"
                   readTime="5 min read"
                 >
+                  <span>News</span>
                   <span>Influencer Marketing</span>
                 </BlogCard>
               </a>
